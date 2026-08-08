@@ -1,0 +1,708 @@
+{
+  "paperId": "isro-scientist-cs-2020",
+  "examId": "isro-scientist-cs",
+  "title": "ISRO Scientist/Engineer (CS) 2020 — Official Paper",
+  "year": 2020,
+  "shift": "Shift 1",
+  "language": "English",
+  "durationMinutes": 120,
+  "totalQuestions": 80,
+  "totalMarks": 240,
+  "marking": {
+    "correct": 3,
+    "negative": 1,
+    "unattempted": 0
+  },
+  "sections": [
+    { "sectionId": "core-computer-science", "name": "Core Computer Science", "questionCount": 60, "marks": 180, "questionRange": [1, 60] },
+    { "sectionId": "general-aptitude-maths", "name": "Aptitude & Mathematics", "questionCount": 20, "marks": 60, "questionRange": [61, 80] }
+  ],
+  "isOfficial": true,
+  "questions": [
+    {
+      "id": "isro20q001", "questionNumber": 1,
+      "question": "What is the worst-case number of key comparisons required in QuickSort for an array of n elements?",
+      "options": ["O(n log n)", "O(n^2)", "O(n)", "O(2^n)"],
+      "correctAnswer": 1,
+      "explanation": "When the array is already sorted and the first or last element is chosen as pivot, QuickSort degenerates to O(n^2) comparisons.",
+      "subject": "Core Computer Science", "topic": "Algorithms", "difficulty": "easy"
+    },
+    {
+      "id": "isro20q002", "questionNumber": 2,
+      "question": "Which mathematical language grammar in Chomsky hierarchy is accepted by a Pushdown Automaton (PDA)?",
+      "options": ["Regular Grammar (Type 3)", "Context-Free Grammar (Type 2)", "Context-Sensitive Grammar (Type 1)", "Unrestricted Grammar (Type 0)"],
+      "correctAnswer": 1,
+      "explanation": "Non-deterministic Pushdown Automata recognize Context-Free Languages (Type 2).",
+      "subject": "Core Computer Science", "topic": "Theory of Computation", "difficulty": "easy"
+    },
+    {
+      "id": "isro20q003", "questionNumber": 3,
+      "question": "In relational database theory, if functional dependency X -> Y holds and Y -> Z holds, then X -> Z holds. Which inference rule is this?",
+      "options": ["Reflexivity", "Augmentation", "Transitivity", "Union"],
+      "correctAnswer": 2,
+      "explanation": "Armstrong's Axiom of Transitivity states that if X -> Y and Y -> Z, then X -> Z.",
+      "subject": "Core Computer Science", "topic": "Database Systems", "difficulty": "easy"
+    },
+    {
+      "id": "isro20q004", "questionNumber": 4,
+      "question": "What is the height of a Red-Black tree with n internal nodes?",
+      "options": ["At most 2 log_2(n + 1)", "Exactly log_2(n)", "O(n)", "At most 0.5 log_2(n)"],
+      "correctAnswer": 0,
+      "explanation": "A Red-Black tree with n internal nodes has height at most 2 * log_2(n + 1).",
+      "subject": "Core Computer Science", "topic": "Advanced Data Structures", "difficulty": "medium"
+    },
+    {
+      "id": "isro20q005", "questionNumber": 5,
+      "question": "In TCP header, what is the size of the Window Size field?",
+      "options": ["8 bits", "16 bits", "32 bits", "64 bits"],
+      "correctAnswer": 1,
+      "explanation": "The standard TCP Window Size field is 16 bits (specifying up to 65,535 bytes without scaling).",
+      "subject": "Core Computer Science", "topic": "Computer Networks", "difficulty": "medium"
+    },
+    {
+      "id": "isro20q006", "questionNumber": 6,
+      "question": "Which algorithm is optimal for single-source shortest paths on Directed Acyclic Graphs (DAGs) in O(V + E) time?",
+      "options": ["Dijkstra's Algorithm", "Bellman-Ford Algorithm", "Topological Sort based Shortest Path", "Floyd-Warshall Algorithm"],
+      "correctAnswer": 2,
+      "explanation": "By processing vertices in topologically sorted order, shortest paths in a DAG can be computed in linear O(V + E) time.",
+      "subject": "Core Computer Science", "topic": "Graph Algorithms", "difficulty": "medium"
+    },
+    {
+      "id": "isro20q007", "questionNumber": 7,
+      "question": "What is the chromatic index (edge coloring number) of a complete graph K_n when n is even?",
+      "options": ["n - 1", "n", "n + 1", "n / 2"],
+      "correctAnswer": 0,
+      "explanation": "By Baranyai's theorem / Vizing's theorem, χ'(K_n) = n - 1 when n is even.",
+      "subject": "Core Computer Science", "topic": "Graph Theory", "difficulty": "hard"
+    },
+    {
+      "id": "isro20q008", "questionNumber": 8,
+      "question": "In a 32-bit virtual address space with 4 KB page size, how many entries are present in a single-level page table?",
+      "options": ["2^12 entries", "2^20 entries", "2^32 entries", "2^16 entries"],
+      "correctAnswer": 1,
+      "explanation": "4 KB page size = 2^12 bytes offset. Page number uses remaining 32 - 12 = 20 bits, so 2^20 entries.",
+      "subject": "Core Computer Science", "topic": "Operating Systems", "difficulty": "medium"
+    },
+    {
+      "id": "isro20q009", "questionNumber": 9,
+      "question": "Which digital logic minimization algorithm uses prime implicants and essential prime implicants to obtain minimal sum-of-products?",
+      "options": ["Quine-McCluskey (Tabular) Method", "Huffman Coding", "Kruskal's Algorithm", "Booth's Algorithm"],
+      "correctAnswer": 0,
+      "explanation": "The Quine-McCluskey method systematically tabulates minterms to find all prime implicants and minimal covers.",
+      "subject": "Core Computer Science", "topic": "Digital Logic Design", "difficulty": "medium"
+    },
+    {
+      "id": "isro20q010", "questionNumber": 10,
+      "question": "If L1 is Context-Free and L2 is Regular, what can be stated about the language L = L1 ∩ L2?",
+      "options": ["L is always Regular", "L is always Context-Free", "L is Context-Sensitive but not Context-Free", "L is Undecidable"],
+      "correctAnswer": 1,
+      "explanation": "The intersection of a Context-Free language and a Regular language is always Context-Free.",
+      "subject": "Core Computer Science", "topic": "Theory of Computation", "difficulty": "medium"
+    },
+    {
+      "id": "isro20q011", "questionNumber": 11,
+      "question": "In computer architecture, what is 'Cache Write-Through' policy?",
+      "options": [
+        "Writes are updated in cache only, dirty bit set",
+        "Writes are updated simultaneously in both cache and main memory",
+        "Writes bypass cache directly to hard disk",
+        "Writes are buffered until cache flush"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Write-through updates both the cache block and main memory location synchronously on every write hit.",
+      "subject": "Core Computer Science", "topic": "Computer Architecture", "difficulty": "easy"
+    },
+    {
+      "id": "isro20q012", "questionNumber": 12,
+      "question": "What is the time complexity of building a Max-Heap from an unsorted array of n elements using Floyd's Build-Heap algorithm?",
+      "options": ["O(n log n)", "O(n)", "O(n^2)", "O(log n)"],
+      "correctAnswer": 1,
+      "explanation": "Floyd's bottom-up build-heap procedure runs in linear time O(n).",
+      "subject": "Core Computer Science", "topic": "Data Structures", "difficulty": "medium"
+    },
+    {
+      "id": "isro20q013", "questionNumber": 13,
+      "question": "In Compiler Construction, what parsing strategy does an LALR(1) parser use?",
+      "options": ["Top-down shift-reduce", "Bottom-up shift-reduce", "Recursive descent without backtracking", "Predictive LL(1) parsing"],
+      "correctAnswer": 1,
+      "explanation": "LALR(1) is a bottom-up parser that merges LR(1) items with identical LR(0) cores to build compact shift-reduce tables.",
+      "subject": "Core Computer Science", "topic": "Compiler Design", "difficulty": "medium"
+    },
+    {
+      "id": "isro20q014", "questionNumber": 14,
+      "question": "Which scheduling policy minimizes the Average Waiting Time for a static set of ready processes?",
+      "options": ["First-Come First-Served (FCFS)", "Shortest Job First (SJF)", "Round Robin (RR)", "Priority Scheduling"],
+      "correctAnswer": 1,
+      "explanation": "SJF (Shortest Job First) is mathematically proven to give the minimum average waiting time.",
+      "subject": "Core Computer Science", "topic": "Operating Systems", "difficulty": "easy"
+    },
+    {
+      "id": "isro20q015", "questionNumber": 15,
+      "question": "What is the degree of a root node in a B-Tree of order m (where m is max children)?",
+      "options": ["Must be exactly m", "Between 2 and m (if not a leaf)", "Between m/2 and m", "Always 1"],
+      "correctAnswer": 1,
+      "explanation": "In a B-Tree of order m, the root (if non-leaf) has at least 2 children and at most m children.",
+      "subject": "Core Computer Science", "topic": "Data Structures & Databases", "difficulty": "medium"
+    },
+    {
+      "id": "isro20q016", "questionNumber": 16,
+      "question": "In IPv4 routing, which field prevents packets from looping endlessly in the network?",
+      "options": ["Header Checksum", "Time To Live (TTL)", "Identification", "Differentiated Services"],
+      "correctAnswer": 1,
+      "explanation": "TTL is decremented by 1 at each router hop; when TTL reaches 0, the packet is dropped and ICMP Time Exceeded sent.",
+      "subject": "Core Computer Science", "topic": "Computer Networks", "difficulty": "easy"
+    },
+    {
+      "id": "isro20q017", "questionNumber": 17,
+      "question": "What is the relation between P, NP, and NP-Complete problem classes?",
+      "options": ["P ⊆ NP and NP-Complete ⊆ NP", "NP ⊆ P", "NP-Complete ⊆ P", "P ∩ NP = ∅"],
+      "correctAnswer": 0,
+      "explanation": "P is the set of decision problems solvable in polynomial time; NP is verifiable in polynomial time. Both P and NP-Complete are subsets of NP.",
+      "subject": "Core Computer Science", "topic": "Complexity Theory", "difficulty": "medium"
+    },
+    {
+      "id": "isro20q018", "questionNumber": 18,
+      "question": "Which gate is a universal logic gate capable of implementing any Boolean function?",
+      "options": ["AND Gate", "OR Gate", "NAND Gate", "XOR Gate"],
+      "correctAnswer": 2,
+      "explanation": "NAND and NOR gates are universal gates because any logic expression can be implemented using only NAND (or only NOR) gates.",
+      "subject": "Core Computer Science", "topic": "Digital Logic", "difficulty": "easy"
+    },
+    {
+      "id": "isro20q019", "questionNumber": 19,
+      "question": "In OS Banker's Algorithm, what does the 'Need' matrix represent?",
+      "options": ["Allocation + Max", "Max - Allocation", "Available - Allocation", "Max + Available"],
+      "correctAnswer": 1,
+      "explanation": "Need[i][j] = Max[i][j] - Allocation[i][j] specifies remaining resource instances process i may request.",
+      "subject": "Core Computer Science", "topic": "Operating Systems", "difficulty": "easy"
+    },
+    {
+      "id": "isro20q020", "questionNumber": 20,
+      "question": "What is the number of undirected spanning trees in a complete graph K_n according to Cayley's Formula?",
+      "options": ["n^(n-2)", "2^n - 1", "n!", "(n-1)!"],
+      "correctAnswer": 0,
+      "explanation": "Cayley's Formula states that the complete graph K_n has exactly n^(n-2) distinct spanning trees.",
+      "subject": "Core Computer Science", "topic": "Discrete Mathematics", "difficulty": "medium"
+    },
+    {
+      "id": "isro20q021", "questionNumber": 21,
+      "question": "Which hazard in pipelined CPU execution occurs when an instruction depends on the result of a previous instruction that has not yet completed?",
+      "options": ["Structural Hazard", "Data Hazard (RAW)", "Control Hazard", "Branch Hazard"],
+      "correctAnswer": 1,
+      "explanation": "Data hazard (Read-After-Write) occurs when an instruction attempts to read a register before a previous instruction writes to it.",
+      "subject": "Core Computer Science", "topic": "Computer Architecture", "difficulty": "easy"
+    },
+    {
+      "id": "isro20q022", "questionNumber": 22,
+      "question": "Which of the following problems is known to be UNDECIDABLE?",
+      "options": [
+        "Checking if a Deterministic Finite Automaton accepts a string",
+        "Checking if a Context-Free Grammar is ambiguous",
+        "Finding shortest path in a weighted graph",
+        "Minimal Spanning Tree computation"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Determining whether an arbitrary Context-Free Grammar is ambiguous is undecidable.",
+      "subject": "Core Computer Science", "topic": "Theory of Computation", "difficulty": "hard"
+    },
+    {
+      "id": "isro20q023", "questionNumber": 23,
+      "question": "In a relational schema R(A,B,C,D) with FDs { A -> B, B -> C, C -> D }, what is the candidate key?",
+      "options": ["{A}", "{B}", "{C}", "{A, B}"],
+      "correctAnswer": 0,
+      "explanation": "Attribute closure of A is {A, B, C, D}. Since A determines all attributes and no proper subset of A can, {A} is the unique candidate key.",
+      "subject": "Core Computer Science", "topic": "DBMS Functional Dependencies", "difficulty": "easy"
+    },
+    {
+      "id": "isro20q024", "questionNumber": 24,
+      "question": "What is the maximum number of swap operations required to sort an array of n elements using Selection Sort?",
+      "options": ["n - 1", "n^2 / 2", "n log n", "2^n"],
+      "correctAnswer": 0,
+      "explanation": "Selection Sort performs at most (n - 1) swaps in total because one minimum element is swapped into place per outer loop iteration.",
+      "subject": "Core Computer Science", "topic": "Sorting Algorithms", "difficulty": "easy"
+    },
+    {
+      "id": "isro20q025", "questionNumber": 25,
+      "question": "In IEEE 754 single-precision floating point standard, how many bits are allocated for biased Exponent and Fraction (Mantissa) respectively?",
+      "options": ["8 bits exponent, 23 bits fraction", "11 bits exponent, 52 bits fraction", "16 bits exponent, 16 bits fraction", "8 bits exponent, 24 bits fraction"],
+      "correctAnswer": 0,
+      "explanation": "32-bit float uses 1 bit sign, 8 bits exponent (bias 127), and 23 bits fraction.",
+      "subject": "Core Computer Science", "topic": "Computer Arithmetic", "difficulty": "medium"
+    },
+    {
+      "id": "isro20q026", "questionNumber": 26,
+      "question": "Which Data Link protocol uses 1-bit sliding window for reliable frame transmission over noisy channels?",
+      "options": ["Go-Back-N ARQ", "Stop-and-Wait ARQ", "Selective Repeat ARQ", "Pure ALOHA"],
+      "correctAnswer": 1,
+      "explanation": "Stop-and-Wait ARQ is a 1-bit sliding window protocol where window size = 1.",
+      "subject": "Core Computer Science", "topic": "Computer Networks", "difficulty": "easy"
+    },
+    {
+      "id": "isro20q027", "questionNumber": 27,
+      "question": "Which traversal order of a Binary Search Tree (BST) produces keys in non-decreasing sorted order?",
+      "options": ["Pre-order", "In-order", "Post-order", "Level-order"],
+      "correctAnswer": 1,
+      "explanation": "In-order traversal (Left, Root, Right) of a BST outputs keys in ascending sorted order.",
+      "subject": "Core Computer Science", "topic": "Data Structures", "difficulty": "easy"
+    },
+    {
+      "id": "isro20q028", "questionNumber": 28,
+      "question": "In OS virtual memory, what is the 'Working Set Model' used for?",
+      "options": [
+        "Preventing thrashing by monitoring process page requirements over time window Δ",
+        "Compacting fragmentation on disk",
+        "Encrypting swap files",
+        "Scheduling CPU threads"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Working Set Model tracks the set of pages actively referenced by a process in recent time window Δ to determine memory allocation and prevent thrashing.",
+      "subject": "Core Computer Science", "topic": "Operating Systems", "difficulty": "medium"
+    },
+    {
+      "id": "isro20q029", "questionNumber": 29,
+      "question": "What is the time complexity to solve the 0/1 Knapsack Problem with n items and capacity W using Dynamic Programming?",
+      "options": ["O(n W)", "O(2^n)", "O(n^2)", "O(W log n)"],
+      "correctAnswer": 0,
+      "explanation": "0/1 Knapsack DP runs in O(n W) pseudo-polynomial time.",
+      "subject": "Core Computer Science", "topic": "Dynamic Programming", "difficulty": "medium"
+    },
+    {
+      "id": "isro20q030", "questionNumber": 30,
+      "question": "Which asymptotic notation provides a tight bound (both upper and lower bound) on algorithm execution time?",
+      "options": ["Big-O (O)", "Big-Omega (Ω)", "Big-Theta (Θ)", "Little-o (o)"],
+      "correctAnswer": 2,
+      "explanation": "Big-Theta (Θ) bound indicates that f(n) is bounded both above and below by g(n) within constant factors.",
+      "subject": "Core Computer Science", "topic": "Analysis of Algorithms", "difficulty": "easy"
+    },
+    {
+      "id": "isro20q031", "questionNumber": 31,
+      "question": "Which of the following is true for a BCNF (Boyce-Codd Normal Form) relational schema?",
+      "options": [
+        "For every non-trivial FD X -> Y, X must be a superkey",
+        "Allows non-prime attributes to be transitively dependent on key",
+        "Every 3NF table is automatically BCNF",
+        "Does not eliminate update anomalies"
+      ],
+      "correctAnswer": 0,
+      "explanation": "BCNF requires that for every functional dependency X -> Y, X is a superkey of the relation.",
+      "subject": "Core Computer Science", "topic": "DBMS Normalization", "difficulty": "medium"
+    },
+    {
+      "id": "isro20q032", "questionNumber": 32,
+      "question": "What is the minimum number of states in a Minimal DFA that accepts strings ending with '01' over Σ = {0, 1}?",
+      "options": ["2", "3", "4", "5"],
+      "correctAnswer": 1,
+      "explanation": "States required: q0 (start/other), q1 (last saw '0'), q2 (last saw '01' - accept state). Total 3 states.",
+      "subject": "Core Computer Science", "topic": "Automata Theory", "difficulty": "medium"
+    },
+    {
+      "id": "isro20q033", "questionNumber": 33,
+      "question": "What is the boolean expression for the output of a 2-to-1 Multiplexer with inputs I0, I1 and select line S?",
+      "options": ["S' I0 + S I1", "S I0 + S' I1", "(S + I0)(S' + I1)", "S I0 I1"],
+      "correctAnswer": 0,
+      "explanation": "When S=0, output is I0 (S' I0). When S=1, output is I1 (S I1). Sum of products = S' I0 + S I1.",
+      "subject": "Core Computer Science", "topic": "Digital Logic", "difficulty": "easy"
+    },
+    {
+      "id": "isro20q034", "questionNumber": 34,
+      "question": "In Cryptography, RSA algorithm security relies primarily on the hardness of which mathematical problem?",
+      "options": ["Discrete Logarithm Problem", "Prime Factorization of large composite integers", "Elliptic Curve Discrete Log", "Knapsack Problem"],
+      "correctAnswer": 1,
+      "explanation": "RSA public-key cryptosystem relies on the computational difficulty of factoring large numbers into prime factors.",
+      "subject": "Core Computer Science", "topic": "Network Security & Cryptography", "difficulty": "easy"
+    },
+    {
+      "id": "isro20q035", "questionNumber": 35,
+      "question": "What is the post-order traversal of a binary tree whose pre-order is [A, B, D, E, C] and in-order is [D, B, E, A, C]?",
+      "options": ["[D, E, B, C, A]", "[D, B, E, C, A]", "[E, D, B, C, A]", "[D, E, C, B, A]"],
+      "correctAnswer": 0,
+      "explanation": "Root is A. Left subtree in-order [D,B,E] with root B (left D, right E). Right subtree C. Post-order = Left [D,E,B] + Right [C] + Root [A] = [D, E, B, C, A].",
+      "subject": "Core Computer Science", "topic": "Trees", "difficulty": "medium"
+    },
+    {
+      "id": "isro20q036", "questionNumber": 36,
+      "question": "Which layer of the OSI model handles error detection and framing via CRC and MAC addressing?",
+      "options": ["Physical Layer", "Data Link Layer", "Network Layer", "Transport Layer"],
+      "correctAnswer": 1,
+      "explanation": "Data Link layer frames data, handles physical MAC addressing, and performs error detection using CRC.",
+      "subject": "Core Computer Science", "topic": "Computer Networks", "difficulty": "easy"
+    },
+    {
+      "id": "isro20q037", "questionNumber": 37,
+      "question": "What is the maximum number of keys in an AVL tree of height 3 (where height of single node tree is 0)?",
+      "options": ["7", "15", "31", "63"],
+      "correctAnswer": 1,
+      "explanation": "Maximum nodes in binary tree of height 3 = 2^(3+1) - 1 = 15 keys.",
+      "subject": "Core Computer Science", "topic": "Data Structures", "difficulty": "medium"
+    },
+    {
+      "id": "isro20q038", "questionNumber": 38,
+      "question": "In Unix operating systems, what is the return value of the fork() system call in the child process?",
+      "options": ["Child PID", "0", "-1", "Parent PID"],
+      "correctAnswer": 1,
+      "explanation": "fork() returns 0 to the newly created child process and the child's PID to the parent process.",
+      "subject": "Core Computer Science", "topic": "Operating Systems", "difficulty": "easy"
+    },
+    {
+      "id": "isro20q039", "questionNumber": 39,
+      "question": "In Software Engineering, what does Coupling measure?",
+      "options": [
+        "Strength of relationship within a single module",
+        "Degree of interdependence between software modules",
+        "Number of lines of code per class",
+        "Number of test cases written"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Coupling measures the degree of interdependence between different software modules (low coupling is desirable).",
+      "subject": "Core Computer Science", "topic": "Software Engineering", "difficulty": "easy"
+    },
+    {
+      "id": "isro20q040", "questionNumber": 40,
+      "question": "What is the result of applying Bellman-Ford algorithm on a graph containing a negative weight cycle reachable from the source?",
+      "options": ["Computes incorrect shortest paths silently", "Reports presence of negative weight cycle", "Terminates in O(V) time", "Loops indefinitely"],
+      "correctAnswer": 1,
+      "explanation": "Bellman-Ford runs V-1 iterations and on the Vth iteration detects if edge relaxation still reduces distance, reporting a negative cycle.",
+      "subject": "Core Computer Science", "topic": "Graph Algorithms", "difficulty": "medium"
+    },
+    {
+      "id": "isro20q041", "questionNumber": 41,
+      "question": "Which functional dependency preservation property is guaranteed during 3NF decomposition?",
+      "options": ["Dependency preservation and Lossless Join", "Only Lossless Join", "Only Dependency preservation", "Neither"],
+      "correctAnswer": 0,
+      "explanation": "3NF decomposition can always achieve both Lossless Join and Dependency Preservation simultaneously.",
+      "subject": "Core Computer Science", "topic": "Database Systems", "difficulty": "medium"
+    },
+    {
+      "id": "isro20q042", "questionNumber": 42,
+      "question": "Which optimization technique replaces expensive operations like multiplication by simpler operations like addition inside loops?",
+      "options": ["Loop Unrolling", "Strength Reduction", "Dead Code Elimination", "Constant Folding"],
+      "correctAnswer": 1,
+      "explanation": "Strength reduction replaces expensive operations (e.g. i * 4 in loop) with cheaper ones (e.g. repeated addition +4).",
+      "subject": "Core Computer Science", "topic": "Compiler Design", "difficulty": "medium"
+    },
+    {
+      "id": "isro20q043", "questionNumber": 43,
+      "question": "What is the worst-case space complexity of Depth First Search (DFS) on a graph with V vertices and maximum path depth d?",
+      "options": ["O(d)", "O(V^2)", "O(2^V)", "O(1)"],
+      "correctAnswer": 0,
+      "explanation": "DFS stores vertices along the current search path on the call stack, leading to O(d) space complexity.",
+      "subject": "Core Computer Science", "topic": "Graph Algorithms", "difficulty": "medium"
+    },
+    {
+      "id": "isro20q044", "questionNumber": 44,
+      "question": "In CSMA/CD network protocol, what happens when a collision is detected by a station transmitting a frame?",
+      "options": [
+        "Station continues transmitting frame silently",
+        "Station stops transmitting immediately, sends jam signal, and waits a random backoff time",
+        "Station disconnects from bus",
+        "Station doubles frame size"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Upon detecting collision, the station aborts transmission, emits a jam signal, and executes Binary Exponential Backoff.",
+      "subject": "Core Computer Science", "topic": "Computer Networks", "difficulty": "easy"
+    },
+    {
+      "id": "isro20q045", "questionNumber": 45,
+      "question": "Which cache mapping technique allows a memory block to be placed in any cache line?",
+      "options": ["Direct Mapping", "Fully Associative Mapping", "Set Associative Mapping", "Modulo Mapping"],
+      "correctAnswer": 1,
+      "explanation": "Fully associative cache allows any memory block to reside in any cache line slot.",
+      "subject": "Core Computer Science", "topic": "Computer Architecture", "difficulty": "easy"
+    },
+    {
+      "id": "isro20q046", "questionNumber": 46,
+      "question": "What is the capacity of a noiseless channel of bandwidth B Hz according to Nyquist Theorem?",
+      "options": ["2 B log_2(M) bits/sec", "B log_2(1 + SNR) bits/sec", "B / 2 bits/sec", "B^2 bits/sec"],
+      "correctAnswer": 0,
+      "explanation": "Nyquist theorem states maximum data rate = 2 B log_2(M) for M signal levels.",
+      "subject": "Core Computer Science", "topic": "Data Communication", "difficulty": "medium"
+    },
+    {
+      "id": "isro20q047", "questionNumber": 47,
+      "question": "In a B+ Tree index, where are actual data pointers or record keys stored?",
+      "options": ["Only in non-leaf internal nodes", "Only in leaf nodes", "Equally in root and leaves", "In transaction logs"],
+      "correctAnswer": 1,
+      "explanation": "In B+ trees, internal nodes store only search keys for routing, while all actual data/record pointers reside in leaf nodes.",
+      "subject": "Core Computer Science", "topic": "Database Indexing", "difficulty": "easy"
+    },
+    {
+      "id": "isro20q048", "questionNumber": 48,
+      "question": "Which of the following is a Greedy algorithm for finding Minimum Spanning Tree in a connected undirected graph?",
+      "options": ["Kruskal's Algorithm", "Floyd-Warshall Algorithm", "Bellman-Ford Algorithm", "Kosaraju's Algorithm"],
+      "correctAnswer": 0,
+      "explanation": "Kruskal's algorithm greedily adds the minimum weight edge that does not form a cycle.",
+      "subject": "Core Computer Science", "topic": "Greedy Algorithms", "difficulty": "easy"
+    },
+    {
+      "id": "isro20q049", "questionNumber": 49,
+      "question": "What is the state of a process that has terminated execution but its entry still remains in the OS process table?",
+      "options": ["Running", "Zombie", "Orphan", "Blocked"],
+      "correctAnswer": 1,
+      "explanation": "A process that has finished execution but whose parent has not yet read its exit status via wait() is a Zombie process.",
+      "subject": "Core Computer Science", "topic": "Operating Systems", "difficulty": "easy"
+    },
+    {
+      "id": "isro20q050", "questionNumber": 50,
+      "question": "Which formal grammar class can be parsed deterministically in linear time by an LL(k) parser?",
+      "options": ["Deterministic Context-Free Languages", "Regular Languages only", "Context-Sensitive Languages", "Unrestricted Languages"],
+      "correctAnswer": 0,
+      "explanation": "Deterministic Context-Free Languages (DCFLs) can be parsed deterministically in O(n) time.",
+      "subject": "Core Computer Science", "topic": "Formal Languages", "difficulty": "medium"
+    },
+    {
+      "id": "isro20q051", "questionNumber": 51,
+      "question": "What is the output of a 3-bit Synchronous Binary Up-Counter after 7 clock pulses starting from 000?",
+      "options": ["110", "111", "000", "101"],
+      "correctAnswer": 1,
+      "explanation": "000 + 7 counts = 111 (7 in binary).",
+      "subject": "Core Computer Science", "topic": "Digital Logic", "difficulty": "easy"
+    },
+    {
+      "id": "isro20q052", "questionNumber": 52,
+      "question": "Which hashing collision resolution technique probes consecutive table slots (i + 1, i + 2, ...)?",
+      "options": ["Linear Probing", "Quadratic Probing", "Double Hashing", "Separate Chaining"],
+      "correctAnswer": 0,
+      "explanation": "Linear probing checks h(k, i) = (h'(k) + i) mod m for i = 0, 1, 2, ...",
+      "subject": "Core Computer Science", "topic": "Hash Tables", "difficulty": "easy"
+    },
+    {
+      "id": "isro20q053", "questionNumber": 53,
+      "question": "In TCP, what mechanism is used to handle network congestion dynamically?",
+      "options": ["Slow Start and Congestion Avoidance", "Static window allocation", "Fixed packet dropping", "Token Bucket policing"],
+      "correctAnswer": 0,
+      "explanation": "TCP uses Slow Start, Congestion Avoidance, Fast Retransmit, and Fast Recovery to manage congestion.",
+      "subject": "Core Computer Science", "topic": "Computer Networks", "difficulty": "medium"
+    },
+    {
+      "id": "isro20q054", "questionNumber": 54,
+      "question": "What is the chromatic number of a planar graph according to the famous Four Color Theorem?",
+      "options": ["At most 3", "At most 4", "At most 5", "At most 6"],
+      "correctAnswer": 1,
+      "explanation": "The Four Color Theorem states that no more than 4 colors are required to color the regions of any planar map.",
+      "subject": "Core Computer Science", "topic": "Graph Theory", "difficulty": "medium"
+    },
+    {
+      "id": "isro20q055", "questionNumber": 55,
+      "question": "In Software Architecture, what is Cohesion within a module?",
+      "options": [
+        "Measure of how strongly related and focused the responsibilities of a single module are",
+        "Inter-module communication bandwidth",
+        "Database connection pooling capacity",
+        "Number of external dependencies"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Cohesion measures how focused and related the functionality within a single module is (high cohesion is desirable).",
+      "subject": "Core Computer Science", "topic": "Software Engineering", "difficulty": "easy"
+    },
+    {
+      "id": "isro20q056", "questionNumber": 56,
+      "question": "Which of the following is true regarding Non-Deterministic Finite Automata (NFA) vs Deterministic Finite Automata (DFA)?",
+      "options": [
+        "NFA has strictly more expressive power than DFA",
+        "Every NFA can be converted to an equivalent DFA",
+        "DFA can recognize Context-Free Languages that NFA cannot",
+        "NFA cannot accept empty string ε"
+      ],
+      "correctAnswer": 1,
+      "explanation": "By Subset Construction algorithm, every NFA can be converted to an equivalent DFA recognizing the exact same language.",
+      "subject": "Core Computer Science", "topic": "Theory of Computation", "difficulty": "easy"
+    },
+    {
+      "id": "isro20q057", "questionNumber": 57,
+      "question": "What is the worst-case time complexity of searching in a Hash Table with Separate Chaining when all keys hash to the same slot?",
+      "options": ["O(1)", "O(log n)", "O(n)", "O(n^2)"],
+      "correctAnswer": 2,
+      "explanation": "When all n keys collapse into a single hash bucket linked list, search degenerates to linear O(n).",
+      "subject": "Core Computer Science", "topic": "Data Structures", "difficulty": "easy"
+    },
+    {
+      "id": "isro20q058", "questionNumber": 58,
+      "question": "Which CPU addressing mode specifies the operand value directly inside the instruction itself?",
+      "options": ["Direct Addressing", "Immediate Addressing", "Register Indirect", "Indexed Addressing"],
+      "correctAnswer": 1,
+      "explanation": "In immediate addressing mode, the operand is explicitly included in the instruction (e.g. MOV R1, #5).",
+      "subject": "Core Computer Science", "topic": "Computer Architecture", "difficulty": "easy"
+    },
+    {
+      "id": "isro20q059", "questionNumber": 59,
+      "question": "What is the maximum number of edges in a bipartite graph with n vertices?",
+      "options": ["n^2 / 4", "n(n-1)/2", "2^n", "n log n"],
+      "correctAnswer": 0,
+      "explanation": "Splitting n vertices into subsets of size ⌊n/2⌋ and ⌈n/2⌉ yields maximum edges = ⌊n/2⌋ × ⌈n/2⌉ ≈ n^2 / 4.",
+      "subject": "Core Computer Science", "topic": "Discrete Mathematics", "difficulty": "medium"
+    },
+    {
+      "id": "isro20q060", "questionNumber": 60,
+      "question": "What is the primary function of the Linker in compilation toolchain?",
+      "options": [
+        "Parses source code syntax",
+        "Combines compiled object files into a single executable binary, resolving symbol references",
+        "Generates intermediate code representation",
+        "Allocates heap memory at runtime"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The Linker combines object modules produced by the assembler/compiler, resolving external references and library symbols.",
+      "subject": "Core Computer Science", "topic": "Systems Programming", "difficulty": "easy"
+    },
+    {
+      "id": "isro20q061", "questionNumber": 61,
+      "question": "If log_2(x) + log_2(x - 2) = 3, what is the value of x?",
+      "options": ["4", "2", "6", "8"],
+      "correctAnswer": 0,
+      "explanation": "log_2(x(x - 2)) = 3 => x(x - 2) = 2^3 = 8 => x^2 - 2x - 8 = 0 => (x - 4)(x + 2) = 0. Since x > 2, x = 4.",
+      "subject": "Aptitude & Mathematics", "topic": "Logarithms & Algebra", "difficulty": "easy"
+    },
+    {
+      "id": "isro20q062", "questionNumber": 62,
+      "question": "What is the value of the definite integral ∫ from 0 to 1 of x * e^x dx?",
+      "options": ["1", "e - 1", "e", "1/2"],
+      "correctAnswer": 0,
+      "explanation": "Using integration by parts: ∫ x e^x dx = x e^x - e^x. Evaluated from 0 to 1: (1 e^1 - e^1) - (0 - 1) = 0 + 1 = 1.",
+      "subject": "Aptitude & Mathematics", "topic": "Calculus", "difficulty": "medium"
+    },
+    {
+      "id": "isro20q063", "questionNumber": 63,
+      "question": "A fair coin is tossed 4 times. What is the probability of getting exactly 2 heads?",
+      "options": ["3/8", "1/2", "1/4", "5/16"],
+      "correctAnswer": 0,
+      "explanation": "Probability = C(4,2) * (1/2)^4 = 6 * (1/16) = 6/16 = 3/8.",
+      "subject": "Aptitude & Mathematics", "topic": "Probability", "difficulty": "easy"
+    },
+    {
+      "id": "isro20q064", "questionNumber": 64,
+      "question": "What are the eigenvalues of the matrix A = [[2, 1], [0, 3]]?",
+      "options": ["2 and 3", "1 and 2", "0 and 3", "5 and 6"],
+      "correctAnswer": 0,
+      "explanation": "Since A is an upper triangular matrix, its eigenvalues are simply the diagonal entries: 2 and 3.",
+      "subject": "Aptitude & Mathematics", "topic": "Linear Algebra", "difficulty": "easy"
+    },
+    {
+      "id": "isro20q065", "questionNumber": 65,
+      "question": "What is the determinant of a 3x3 identity matrix I_3?",
+      "options": ["1", "3", "0", "9"],
+      "correctAnswer": 0,
+      "explanation": "The determinant of any identity matrix I_n is always 1.",
+      "subject": "Aptitude & Mathematics", "topic": "Linear Algebra", "difficulty": "easy"
+    },
+    {
+      "id": "isro20q066", "questionNumber": 66,
+      "question": "If 5 workers complete a project in 12 days, how many days will 15 workers take to complete the same project working at the same rate?",
+      "options": ["4 days", "3 days", "36 days", "6 days"],
+      "correctAnswer": 0,
+      "explanation": "Work = 5 workers * 12 days = 60 worker-days. Time for 15 workers = 60 / 15 = 4 days.",
+      "subject": "Aptitude & Mathematics", "topic": "Work & Time", "difficulty": "easy"
+    },
+    {
+      "id": "isro20q067", "questionNumber": 67,
+      "question": "What is the sum of the infinite geometric series: 1 + 1/2 + 1/4 + 1/8 + ... ?",
+      "options": ["2", "1.5", "3", "Infinity"],
+      "correctAnswer": 0,
+      "explanation": "Sum S = a / (1 - r) = 1 / (1 - 1/2) = 1 / (1/2) = 2.",
+      "subject": "Aptitude & Mathematics", "topic": "Sequences & Series", "difficulty": "easy"
+    },
+    {
+      "id": "isro20q068", "questionNumber": 68,
+      "question": "What is the limit as x -> 0 of sin(3x) / x?",
+      "options": ["3", "1", "0", "Undefined"],
+      "correctAnswer": 0,
+      "explanation": "lim (x->0) sin(3x)/x = 3 * lim (x->0) sin(3x)/(3x) = 3 * 1 = 3.",
+      "subject": "Aptitude & Mathematics", "topic": "Limits & Calculus", "difficulty": "easy"
+    },
+    {
+      "id": "isro20q069", "questionNumber": 69,
+      "question": "In how many distinct ways can the letters of the word 'ISRO' be arranged?",
+      "options": ["24", "12", "4", "256"],
+      "correctAnswer": 0,
+      "explanation": "4 distinct letters can be arranged in 4! = 24 ways.",
+      "subject": "Aptitude & Mathematics", "topic": "Permutations & Combinations", "difficulty": "easy"
+    },
+    {
+      "id": "isro20q070", "questionNumber": 70,
+      "question": "What is the derivative of f(x) = x * ln(x) with respect to x?",
+      "options": ["1 + ln(x)", "ln(x)", "1/x", "x + ln(x)"],
+      "correctAnswer": 0,
+      "explanation": "Product rule: d/dx (x * ln(x)) = (1 * ln(x)) + (x * 1/x) = ln(x) + 1.",
+      "subject": "Aptitude & Mathematics", "topic": "Differential Calculus", "difficulty": "easy"
+    },
+    {
+      "id": "isro20q071", "questionNumber": 71,
+      "question": "A train 150 meters long passes a telegraph pole in 9 seconds. What is the speed of the train in km/h?",
+      "options": ["60 km/h", "50 km/h", "45 km/h", "75 km/h"],
+      "correctAnswer": 0,
+      "explanation": "Speed = 150 m / 9 s = 50/3 m/s = (50/3) * (18/5) = 60 km/h.",
+      "subject": "Aptitude & Mathematics", "topic": "Speed, Distance & Time", "difficulty": "medium"
+    },
+    {
+      "id": "isro20q072", "questionNumber": 72,
+      "question": "What is the rank of an n x n zero matrix?",
+      "options": ["0", "1", "n", "Undefined"],
+      "correctAnswer": 0,
+      "explanation": "The rank of a zero matrix (all entries zero) is 0.",
+      "subject": "Aptitude & Mathematics", "topic": "Linear Algebra", "difficulty": "easy"
+    },
+    {
+      "id": "isro20q073", "questionNumber": 73,
+      "question": "Two dice are thrown together. What is the probability that the sum of numbers obtained is 7?",
+      "options": ["1/6", "1/12", "5/36", "7/36"],
+      "correctAnswer": 0,
+      "explanation": "Favorable outcomes for sum 7: (1,6),(2,5),(3,4),(4,3),(5,2),(6,1) -> 6 outcomes out of 36 total. Probability = 6/36 = 1/6.",
+      "subject": "Aptitude & Mathematics", "topic": "Probability", "difficulty": "easy"
+    },
+    {
+      "id": "isro20q074", "questionNumber": 74,
+      "question": "What is the solution of the differential equation dy/dx = y?",
+      "options": ["y = C * e^x", "y = C * x", "y = x^2 + C", "y = e^(-x) + C"],
+      "correctAnswer": 0,
+      "explanation": "dy/y = dx => ln(y) = x + c => y = e^(x+c) = C * e^x.",
+      "subject": "Aptitude & Mathematics", "topic": "Differential Equations", "difficulty": "easy"
+    },
+    {
+      "id": "isro20q075", "questionNumber": 75,
+      "question": "If average of 5 consecutive numbers is 20, what is the largest of these numbers?",
+      "options": ["22", "20", "24", "21"],
+      "correctAnswer": 0,
+      "explanation": "The 5 numbers are x-2, x-1, x, x+1, x+2. Average = x = 20. Largest number = 20 + 2 = 22.",
+      "subject": "Aptitude & Mathematics", "topic": "Averages", "difficulty": "easy"
+    },
+    {
+      "id": "isro20q076", "questionNumber": 76,
+      "question": "What is the variance of a discrete uniform random variable taking values {1, 2, 3, 4, 5}?",
+      "options": ["2", "2.5", "1", "3"],
+      "correctAnswer": 0,
+      "explanation": "For N = 5 consecutive integers, Variance = (N^2 - 1) / 12 = (25 - 1) / 12 = 24 / 12 = 2.",
+      "subject": "Aptitude & Mathematics", "topic": "Statistics", "difficulty": "medium"
+    },
+    {
+      "id": "isro20q077", "questionNumber": 77,
+      "question": "What is the standard deviation of a dataset if its variance is 16?",
+      "options": ["4", "8", "256", "2"],
+      "correctAnswer": 0,
+      "explanation": "Standard Deviation = sqrt(Variance) = sqrt(16) = 4.",
+      "subject": "Aptitude & Mathematics", "topic": "Statistics", "difficulty": "easy"
+    },
+    {
+      "id": "isro20q078", "questionNumber": 78,
+      "question": "Find the missing term in series: 2, 6, 12, 20, 30, ?",
+      "options": ["42", "40", "36", "48"],
+      "correctAnswer": 0,
+      "explanation": "Differences are 4, 6, 8, 10, so next difference is 12 -> 30 + 12 = 42.",
+      "subject": "Aptitude & Mathematics", "topic": "Number Series", "difficulty": "easy"
+    },
+    {
+      "id": "isro20q079", "questionNumber": 79,
+      "question": "What is the mean of a Poisson distribution with parameter λ = 4?",
+      "options": ["4", "2", "16", "8"],
+      "correctAnswer": 0,
+      "explanation": "For a Poisson distribution, both Mean and Variance equal λ = 4.",
+      "subject": "Aptitude & Mathematics", "topic": "Probability Distributions", "difficulty": "easy"
+    },
+    {
+      "id": "isro20q080", "questionNumber": 80,
+      "question": "If matrix A is orthogonal, what is A * A^T?",
+      "options": ["Identity Matrix I", "Zero Matrix O", "Matrix A", "2 A"],
+      "correctAnswer": 0,
+      "explanation": "An orthogonal matrix satisfies A * A^T = A^T * A = I.",
+      "subject": "Aptitude & Mathematics", "topic": "Linear Algebra", "difficulty": "easy"
+    }
+  ]
+}

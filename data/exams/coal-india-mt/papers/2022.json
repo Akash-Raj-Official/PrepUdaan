@@ -1,0 +1,924 @@
+{
+  "paperId": "coal-india-mt-2022",
+  "examId": "coal-india-mt",
+  "title": "Coal India MT CS/IT 2022 — Previous Year Paper",
+  "year": 2022,
+  "shift": "Shift 1",
+  "language": "English",
+  "durationMinutes": 120,
+  "totalQuestions": 100,
+  "totalMarks": 200,
+  "marking": {
+    "correct": 2,
+    "negative": 0.5,
+    "unattempted": 0
+  },
+  "sections": [
+    { "sectionId": "general-english", "name": "General English", "questionCount": 20, "marks": 40, "questionRange": [1, 20] },
+    { "sectionId": "general-knowledge", "name": "General Knowledge", "questionCount": 20, "marks": 40, "questionRange": [21, 40] },
+    { "sectionId": "technical", "name": "Technical (CS/IT)", "questionCount": 60, "marks": 120, "questionRange": [41, 100] }
+  ],
+  "isOfficial": true,
+  "questions": [
+    {
+      "id": "cil22q001", "questionNumber": 1,
+      "question": "Select the correct synonym of 'METICULOUS':",
+      "options": ["Careless", "Painstaking", "Hasty", "Sloppy"],
+      "correctAnswer": 1,
+      "explanation": "'Meticulous' means showing great attention to detail; careful and precise. 'Painstaking' is a synonym.",
+      "subject": "General English", "topic": "Synonyms", "difficulty": "easy"
+    },
+    {
+      "id": "cil22q002", "questionNumber": 2,
+      "question": "Choose the correctly spelt word:",
+      "options": ["Accommodation", "Acommodation", "Accomodation", "Acomodation"],
+      "correctAnswer": 0,
+      "explanation": "The correct spelling is 'Accommodation' with double 'c' and double 'm'.",
+      "subject": "General English", "topic": "Spelling Check", "difficulty": "easy"
+    },
+    {
+      "id": "cil22q003", "questionNumber": 3,
+      "question": "Fill in the blank: 'Neither the manager nor the employees _____ present at the meeting.'",
+      "options": ["was", "were", "is", "has"],
+      "correctAnswer": 1,
+      "explanation": "When subject components are joined by 'neither... nor', the verb agrees with the subject closest to it ('employees' -> plural -> 'were').",
+      "subject": "General English", "topic": "Subject-Verb Agreement", "difficulty": "medium"
+    },
+    {
+      "id": "cil22q004", "questionNumber": 4,
+      "question": "Select the idiom that best means 'to accept a difficult situation courageously':",
+      "options": ["Bite the bullet", "Burn the candle at both ends", "Break a leg", "Hit the nail on the head"],
+      "correctAnswer": 0,
+      "explanation": "'Bite the bullet' means to face a difficult situation with courage and fortitude.",
+      "subject": "General English", "topic": "Idioms & Phrases", "difficulty": "easy"
+    },
+    {
+      "id": "cil22q005", "questionNumber": 5,
+      "question": "Identify the antonym for 'CANDID':",
+      "options": ["Frank", "Deceitful", "Honest", "Sincere"],
+      "correctAnswer": 1,
+      "explanation": "'Candid' means truthful and straightforward. 'Deceitful' is its direct antonym.",
+      "subject": "General English", "topic": "Antonyms", "difficulty": "easy"
+    },
+    {
+      "id": "cil22q006", "questionNumber": 6,
+      "question": "Change into passive voice: 'The committee approved the new coal mining policy.'",
+      "options": [
+        "The new coal mining policy was approved by the committee.",
+        "The new coal mining policy is approved by the committee.",
+        "The new coal mining policy has been approved by the committee.",
+        "The committee had approved the new coal mining policy."
+      ],
+      "correctAnswer": 0,
+      "explanation": "Simple past active ('approved') changes to 'was approved' in passive voice.",
+      "subject": "General English", "topic": "Active/Passive Voice", "difficulty": "medium"
+    },
+    {
+      "id": "cil22q007", "questionNumber": 7,
+      "question": "One-word substitution: 'A person who looks at the bright side of things.'",
+      "options": ["Pessimist", "Optimist", "Altruist", "Egoist"],
+      "correctAnswer": 1,
+      "explanation": "An optimist is a person who tends to be hopeful and confident about the future or the success of something.",
+      "subject": "General English", "topic": "One Word Substitution", "difficulty": "easy"
+    },
+    {
+      "id": "cil22q008", "questionNumber": 8,
+      "question": "Identify the error in: 'She is more cleverer than her sister.'",
+      "options": ["She is", "more cleverer", "than her", "sister"],
+      "correctAnswer": 1,
+      "explanation": "Double comparatives ('more cleverer') are grammatically incorrect. It should be 'cleverer' or 'more clever'.",
+      "subject": "General English", "topic": "Error Spotting", "difficulty": "easy"
+    },
+    {
+      "id": "cil22q009", "questionNumber": 9,
+      "question": "Fill in the blank: 'The scientist was awarded for his _____ contribution to renewable energy.'",
+      "options": ["exemplary", "negligible", "ordinary", "superficial"],
+      "correctAnswer": 0,
+      "explanation": "'Exemplary' means serving as a desirable model; outstanding.",
+      "subject": "General English", "topic": "Vocabulary", "difficulty": "medium"
+    },
+    {
+      "id": "cil22q010", "questionNumber": 10,
+      "question": "Select the correct indirect form: He said, 'I am reading a research paper on AI.'",
+      "options": [
+        "He said that he was reading a research paper on AI.",
+        "He said that he is reading a research paper on AI.",
+        "He said that I was reading a research paper on AI.",
+        "He told that he had been reading a research paper on AI."
+      ],
+      "correctAnswer": 0,
+      "explanation": "Present continuous ('am reading') becomes past continuous ('was reading') in indirect speech.",
+      "subject": "General English", "topic": "Direct/Indirect Speech", "difficulty": "medium"
+    },
+    {
+      "id": "cil22q011", "questionNumber": 11,
+      "question": "Choose the appropriate preposition: 'He is proficient _____ Python programming.'",
+      "options": ["at", "in", "with", "for"],
+      "correctAnswer": 1,
+      "explanation": "The word 'proficient' is followed by the preposition 'in' when referring to a skill or domain.",
+      "subject": "General English", "topic": "Prepositions", "difficulty": "easy"
+    },
+    {
+      "id": "cil22q012", "questionNumber": 12,
+      "question": "Select the correct sentence:",
+      "options": [
+        "Each of the candidates have submitted their application.",
+        "Each of the candidates has submitted his or her application.",
+        "Each of the candidate has submitted their application.",
+        "Each candidates have submitted application."
+      ],
+      "correctAnswer": 1,
+      "explanation": "'Each of' takes a plural noun ('candidates') followed by a singular verb ('has').",
+      "subject": "General English", "topic": "Grammar", "difficulty": "medium"
+    },
+    {
+      "id": "cil22q013", "questionNumber": 13,
+      "question": "Select the synonym for 'PRAGMATIC':",
+      "options": ["Practical", "Theoretical", "Idealistic", "Fanciful"],
+      "correctAnswer": 0,
+      "explanation": "'Pragmatic' means dealing with things sensibly and realistically; practical.",
+      "subject": "General English", "topic": "Synonyms", "difficulty": "medium"
+    },
+    {
+      "id": "cil22q014", "questionNumber": 14,
+      "question": "Choose the correct antonym of 'AMBIGUOUS':",
+      "options": ["Unclear", "Vague", "Explicit", "Obscure"],
+      "correctAnswer": 2,
+      "explanation": "'Ambiguous' means open to more than one interpretation. 'Explicit' means clear and stated in detail.",
+      "subject": "General English", "topic": "Antonyms", "difficulty": "medium"
+    },
+    {
+      "id": "cil22q015", "questionNumber": 15,
+      "question": "Fill in the blank: 'Hardly had he entered the laboratory _____ the power supply failed.'",
+      "options": ["than", "when", "then", "that"],
+      "correctAnswer": 1,
+      "explanation": "'Hardly... when' is the correct correlative conjunction pair.",
+      "subject": "General English", "topic": "Conjunctions", "difficulty": "medium"
+    },
+    {
+      "id": "cil22q016", "questionNumber": 16,
+      "question": "One-word substitution: 'The study of ancient human societies through physical remains.'",
+      "options": ["Anthropology", "Archaeology", "Ethnology", "Paleontology"],
+      "correctAnswer": 1,
+      "explanation": "'Archaeology' is the study of human activity through the recovery and analysis of material culture.",
+      "subject": "General English", "topic": "One Word Substitution", "difficulty": "easy"
+    },
+    {
+      "id": "cil22q017", "questionNumber": 17,
+      "question": "Find the misspelled word:",
+      "options": ["Bureaucracy", "Maintenance", "Questionnaire", "Inheritence"],
+      "correctAnswer": 3,
+      "explanation": "The correct spelling is 'Inheritance' (ending in -ance).",
+      "subject": "General English", "topic": "Spelling Check", "difficulty": "medium"
+    },
+    {
+      "id": "cil22q018", "questionNumber": 18,
+      "question": "Meaning of 'Burn the midnight oil':",
+      "options": ["Waste resources", "Work late into the night", "Cause an explosion", "Rest peacefully"],
+      "correctAnswer": 1,
+      "explanation": "'Burn the midnight oil' means to study or work late into the night.",
+      "subject": "General English", "topic": "Idioms & Phrases", "difficulty": "easy"
+    },
+    {
+      "id": "cil22q019", "questionNumber": 19,
+      "question": "Identify the segment containing a grammatical error: 'The team of researchers are preparing the report.'",
+      "options": ["The team", "of researchers", "are preparing", "the report"],
+      "correctAnswer": 2,
+      "explanation": "'Team' is a collective noun acting as a single unit here, so it requires the singular verb 'is preparing'.",
+      "subject": "General English", "topic": "Error Spotting", "difficulty": "medium"
+    },
+    {
+      "id": "cil22q020", "questionNumber": 20,
+      "question": "Select the correct phrase to complete: 'In spite _____ heavy rain, the survey was completed.'",
+      "options": ["of", "for", "with", "to"],
+      "correctAnswer": 0,
+      "explanation": "The standard prepositional phrase is 'In spite of'.",
+      "subject": "General English", "topic": "Prepositions", "difficulty": "easy"
+    },
+    {
+      "id": "cil22q021", "questionNumber": 21,
+      "question": "Where is the headquarters of Coal India Limited (CIL) situated?",
+      "options": ["Ranchi", "Kolkata", "Dhanbad", "New Delhi"],
+      "correctAnswer": 1,
+      "explanation": "Coal India Limited (CIL) is headquartered in Kolkata, West Bengal.",
+      "subject": "General Knowledge", "topic": "PSU General Awareness", "difficulty": "easy"
+    },
+    {
+      "id": "cil22q022", "questionNumber": 22,
+      "question": "Coal India Limited functions under which Ministry of the Government of India?",
+      "options": ["Ministry of Power", "Ministry of Mines", "Ministry of Coal", "Ministry of Heavy Industries"],
+      "correctAnswer": 2,
+      "explanation": "CIL is a Maharatna PSU under the Ministry of Coal.",
+      "subject": "General Knowledge", "topic": "PSU General Awareness", "difficulty": "easy"
+    },
+    {
+      "id": "cil22q023", "questionNumber": 23,
+      "question": "Which subsidiary of CIL operates predominantly in the Singrauli region across MP and UP?",
+      "options": ["BCCL", "NCL", "ECL", "SECL"],
+      "correctAnswer": 1,
+      "explanation": "Northern Coalfields Limited (NCL) operates in the Singrauli district of MP and UP.",
+      "subject": "General Knowledge", "topic": "CIL Subsidiaries", "difficulty": "medium"
+    },
+    {
+      "id": "cil22q024", "questionNumber": 24,
+      "question": "What status was conferred upon Coal India Limited in 2011?",
+      "options": ["Miniratna Category I", "Navratna", "Maharatna", "Super-Ratna"],
+      "correctAnswer": 2,
+      "explanation": "CIL was conferred Maharatna status by the Government of India in April 2011.",
+      "subject": "General Knowledge", "topic": "PSU Status", "difficulty": "medium"
+    },
+    {
+      "id": "cil22q025", "questionNumber": 25,
+      "question": "Which type of coal is found in the highest quantity in Indian coal reserves?",
+      "options": ["Anthracite", "Bituminous", "Lignite", "Peat"],
+      "correctAnswer": 1,
+      "explanation": "Bituminous coal (non-coking and coking) accounts for the vast majority of Indian coal reserves.",
+      "subject": "General Knowledge", "topic": "Indian Geography & Resources", "difficulty": "easy"
+    },
+    {
+      "id": "cil22q026", "questionNumber": 26,
+      "question": "Who was the chief architect of the Indian Constitution?",
+      "options": ["Dr. B.R. Ambedkar", "Jawaharlal Nehru", "Sardar Vallabhbhai Patel", "Dr. Rajendra Prasad"],
+      "correctAnswer": 0,
+      "explanation": "Dr. B.R. Ambedkar was the Chairman of the Drafting Committee of the Constituent Assembly.",
+      "subject": "General Knowledge", "topic": "Indian Polity", "difficulty": "easy"
+    },
+    {
+      "id": "cil22q027", "questionNumber": 27,
+      "question": "Which Article of the Indian Constitution guarantees the Right to Equality before Law?",
+      "options": ["Article 14", "Article 19", "Article 21", "Article 32"],
+      "correctAnswer": 0,
+      "explanation": "Article 14 guarantees equality before law and equal protection of the laws within the territory of India.",
+      "subject": "General Knowledge", "topic": "Indian Constitution", "difficulty": "medium"
+    },
+    {
+      "id": "cil22q028", "questionNumber": 28,
+      "question": "What is the primary objective of the PM Gati Shakti National Master Plan?",
+      "options": [
+        "Financial inclusion",
+        "Multimodal connectivity infrastructure",
+        "Digital literacy in rural areas",
+        "Coal gasification promotion"
+      ],
+      "correctAnswer": 1,
+      "explanation": "PM Gati Shakti is aimed at integrated planning and coordinated implementation of infrastructure projects across India.",
+      "subject": "General Knowledge", "topic": "Government Schemes", "difficulty": "medium"
+    },
+    {
+      "id": "cil22q029", "questionNumber": 29,
+      "question": "Which planet in our solar system is known as the 'Red Planet'?",
+      "options": ["Venus", "Mars", "Jupiter", "Saturn"],
+      "correctAnswer": 1,
+      "explanation": "Mars is known as the Red Planet due to the prevalence of iron oxide on its surface.",
+      "subject": "General Knowledge", "topic": "General Science", "difficulty": "easy"
+    },
+    {
+      "id": "cil22q030", "questionNumber": 30,
+      "question": "What is the SI unit of electric current?",
+      "options": ["Volt", "Ampere", "Ohm", "Watt"],
+      "correctAnswer": 1,
+      "explanation": "Ampere (A) is the SI unit of electric current.",
+      "subject": "General Knowledge", "topic": "Physics Basics", "difficulty": "easy"
+    },
+    {
+      "id": "cil22q031", "questionNumber": 31,
+      "question": "In the Union Budget of India, the fiscal deficit is defined as:",
+      "options": [
+        "Total expenditure minus total receipts excluding borrowings",
+        "Revenue expenditure minus revenue receipts",
+        "Capital expenditure minus capital receipts",
+        "Monetized deficit plus fiscal liabilities"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Fiscal Deficit = Total Expenditure − Total Receipts (excluding borrowings).",
+      "subject": "General Knowledge", "topic": "Indian Economy", "difficulty": "hard"
+    },
+    {
+      "id": "cil22q032", "questionNumber": 32,
+      "question": "Which Indian city is known as the 'Silicon Valley of India'?",
+      "options": ["Hyderabad", "Bengaluru", "Pune", "Noida"],
+      "correctAnswer": 1,
+      "explanation": "Bengaluru is recognized as the Silicon Valley of India due to its central role as the nation's leading IT exporter.",
+      "subject": "General Knowledge", "topic": "Indian IT Industry", "difficulty": "easy"
+    },
+    {
+      "id": "cil22q033", "questionNumber": 33,
+      "question": "Which international organization publishes the World Economic Outlook report?",
+      "options": ["World Bank", "International Monetary Fund (IMF)", "UNCTAD", "World Economic Forum"],
+      "correctAnswer": 1,
+      "explanation": "The World Economic Outlook (WEO) is published semi-annually by the International Monetary Fund (IMF).",
+      "subject": "General Knowledge", "topic": "International Bodies", "difficulty": "medium"
+    },
+    {
+      "id": "cil22q034", "questionNumber": 34,
+      "question": "Which sanctuary in Assam is famous for the one-horned rhinoceros?",
+      "options": ["Gir National Park", "Kaziranga National Park", "Jim Corbett National Park", "Sundarbans"],
+      "correctAnswer": 1,
+      "explanation": "Kaziranga National Park in Assam hosts two-thirds of the world's great one-horned rhinoceroses.",
+      "subject": "General Knowledge", "topic": "Environment & Ecology", "difficulty": "easy"
+    },
+    {
+      "id": "cil22q035", "questionNumber": 35,
+      "question": "What is the chemical symbol for Gold?",
+      "options": ["Ag", "Au", "Fe", "Cu"],
+      "correctAnswer": 1,
+      "explanation": "The chemical symbol for Gold is Au (from the Latin 'Aurum').",
+      "subject": "General Knowledge", "topic": "Chemistry Basics", "difficulty": "easy"
+    },
+    {
+      "id": "cil22q036", "questionNumber": 36,
+      "question": "Who was the first Indian to win a Nobel Prize?",
+      "options": ["C.V. Raman", "Rabindranath Tagore", "Mother Teresa", "Homi Bhabha"],
+      "correctAnswer": 1,
+      "explanation": "Rabindranath Tagore won the Nobel Prize in Literature in 1913 for his work 'Gitanjali'.",
+      "subject": "General Knowledge", "topic": "Indian History & Culture", "difficulty": "easy"
+    },
+    {
+      "id": "cil22q037", "questionNumber": 37,
+      "question": "Which layer of the atmosphere contains the protective Ozone layer?",
+      "options": ["Troposphere", "Stratosphere", "Mesosphere", "Thermosphere"],
+      "correctAnswer": 1,
+      "explanation": "The stratosphere contains the ozone layer, which absorbs solar ultraviolet radiation.",
+      "subject": "General Knowledge", "topic": "Environmental Science", "difficulty": "medium"
+    },
+    {
+      "id": "cil22q038", "questionNumber": 38,
+      "question": "Which regulatory body regulates the stock markets in India?",
+      "options": ["RBI", "SEBI", "IRDAI", "PFRDA"],
+      "correctAnswer": 1,
+      "explanation": "Securities and Exchange Board of India (SEBI) regulates the capital and securities market in India.",
+      "subject": "General Knowledge", "topic": "Indian Financial System", "difficulty": "easy"
+    },
+    {
+      "id": "cil22q039", "questionNumber": 39,
+      "question": "What is the primary function of RAM in a computer system?",
+      "options": [
+        "Long-term data archiving",
+        "Volatile high-speed temporary storage for active execution",
+        "Executing arithmetic instructions",
+        "Managing power distribution"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Random Access Memory (RAM) provides fast, volatile read/write storage for processes currently executing.",
+      "subject": "General Knowledge", "topic": "Computer Fundamentals", "difficulty": "easy"
+    },
+    {
+      "id": "cil22q040", "questionNumber": 40,
+      "question": "Which Indian state has the longest coastline?",
+      "options": ["Tamil Nadu", "Maharashtra", "Gujarat", "Andhra Pradesh"],
+      "correctAnswer": 2,
+      "explanation": "Gujarat has the longest mainland coastline in India (~1,214 km).",
+      "subject": "General Knowledge", "topic": "Indian Geography", "difficulty": "medium"
+    },
+    {
+      "id": "cil22q041", "questionNumber": 41,
+      "question": "In a relational database, what does ACID stand for?",
+      "options": [
+        "Atomicity, Consistency, Isolation, Durability",
+        "Accuracy, Completeness, Integrity, Durability",
+        "Aggregation, Concurrency, Indexing, Data",
+        "Authentication, Control, Isolation, Distribution"
+      ],
+      "correctAnswer": 0,
+      "explanation": "ACID properties (Atomicity, Consistency, Isolation, Durability) guarantee reliable database transactions.",
+      "subject": "Technical (CS/IT)", "topic": "Database Management Systems", "difficulty": "easy"
+    },
+    {
+      "id": "cil22q042", "questionNumber": 42,
+      "question": "Which SQL command is used to remove a table and all its contents permanently from a schema?",
+      "options": ["DELETE TABLE", "REMOVE TABLE", "DROP TABLE", "TRUNCATE SCHEMA"],
+      "correctAnswer": 2,
+      "explanation": "DROP TABLE deletes the table definition as well as all rows, indexes, and constraints.",
+      "subject": "Technical (CS/IT)", "topic": "SQL", "difficulty": "easy"
+    },
+    {
+      "id": "cil22q043", "questionNumber": 43,
+      "question": "What is the time complexity of searching for an element in a balanced Binary Search Tree (BST)?",
+      "options": ["O(1)", "O(log n)", "O(n)", "O(n log n)"],
+      "correctAnswer": 1,
+      "explanation": "Search, insertion, and deletion in a balanced BST (such as AVL or Red-Black tree) take O(log n) time.",
+      "subject": "Technical (CS/IT)", "topic": "Data Structures & Algorithms", "difficulty": "easy"
+    },
+    {
+      "id": "cil22q044", "questionNumber": 44,
+      "question": "Which CPU scheduling algorithm can lead to the 'Convoy Effect'?",
+      "options": ["Round Robin", "Shortest Job First (SJF)", "First-Come First-Served (FCFS)", "Priority Scheduling"],
+      "correctAnswer": 2,
+      "explanation": "FCFS can cause a Convoy Effect where small processes wait behind a long CPU-bound process.",
+      "subject": "Technical (CS/IT)", "topic": "Operating Systems", "difficulty": "medium"
+    },
+    {
+      "id": "cil22q045", "questionNumber": 45,
+      "question": "Which layer of the OSI model is responsible for end-to-end process-to-process communication?",
+      "options": ["Network Layer", "Transport Layer", "Data Link Layer", "Session Layer"],
+      "correctAnswer": 1,
+      "explanation": "The Transport Layer (TCP/UDP) provides process-to-process communication using port numbers.",
+      "subject": "Technical (CS/IT)", "topic": "Computer Networks", "difficulty": "medium"
+    },
+    {
+      "id": "cil22q046", "questionNumber": 46,
+      "question": "What is the default subnet mask for a Class C IP address?",
+      "options": ["255.0.0.0", "255.255.0.0", "255.255.255.0", "255.255.255.255"],
+      "correctAnswer": 2,
+      "explanation": "Class C networks use a 24-bit network prefix, yielding a default mask of 255.255.255.0.",
+      "subject": "Technical (CS/IT)", "topic": "IP Networking", "difficulty": "easy"
+    },
+    {
+      "id": "cil22q047", "questionNumber": 47,
+      "question": "Which object-oriented programming concept allows a subclass to provide a specific implementation of a method already defined in its superclass?",
+      "options": ["Method Overloading", "Method Overriding", "Abstraction", "Encapsulation"],
+      "correctAnswer": 1,
+      "explanation": "Method Overriding allows a derived class to override a virtual/base method with its own specific logic.",
+      "subject": "Technical (CS/IT)", "topic": "Object-Oriented Programming", "difficulty": "easy"
+    },
+    {
+      "id": "cil22q048", "questionNumber": 48,
+      "question": "Which normal form removes transitive dependencies in relational database design?",
+      "options": ["1NF", "2NF", "3NF", "BCNF"],
+      "correctAnswer": 2,
+      "explanation": "Third Normal Form (3NF) requires a relation to be in 2NF and have no non-key attribute transitively dependent on the primary key.",
+      "subject": "Technical (CS/IT)", "topic": "Database Normalization", "difficulty": "medium"
+    },
+    {
+      "id": "cil22q049", "questionNumber": 49,
+      "question": "In process management, what condition occurs when two or more processes are blocked waiting for resources held by each other?",
+      "options": ["Starvation", "Deadlock", "Race Condition", "Livelock"],
+      "correctAnswer": 1,
+      "explanation": "Deadlock is a state where each process in a set is waiting for a resource that another process in the set holds.",
+      "subject": "Technical (CS/IT)", "topic": "Operating Systems", "difficulty": "easy"
+    },
+    {
+      "id": "cil22q050", "questionNumber": 50,
+      "question": "Which sorting algorithm relies on the Divide and Conquer strategy and has an average time complexity of O(n log n)?",
+      "options": ["Bubble Sort", "Insertion Sort", "Quick Sort", "Selection Sort"],
+      "correctAnswer": 2,
+      "explanation": "Quick Sort partitions arrays recursively using a pivot (Divide & Conquer), achieving average O(n log n).",
+      "subject": "Technical (CS/IT)", "topic": "Algorithms", "difficulty": "easy"
+    },
+    {
+      "id": "cil22q051", "questionNumber": 51,
+      "question": "What is the maximum number of nodes in a binary tree of height 'h' (where height of root node is 0)?",
+      "options": ["2^h", "2^(h+1) - 1", "2^h - 1", "2^(h-1)"],
+      "correctAnswer": 1,
+      "explanation": "For height h starting at 0, max nodes = 1 + 2 + 4 + ... + 2^h = 2^(h+1) - 1.",
+      "subject": "Technical (CS/IT)", "topic": "Tree Data Structures", "difficulty": "medium"
+    },
+    {
+      "id": "cil22q052", "questionNumber": 52,
+      "question": "Which HTTP status code signifies '200 OK'?",
+      "options": ["200", "301", "404", "500"],
+      "correctAnswer": 0,
+      "explanation": "HTTP status code 200 indicates standard success for HTTP requests.",
+      "subject": "Technical (CS/IT)", "topic": "Web Technologies", "difficulty": "easy"
+    },
+    {
+      "id": "cil22q053", "questionNumber": 53,
+      "question": "Which data structure follows the LIFO (Last In First Out) principle?",
+      "options": ["Queue", "Stack", "Linked List", "Tree"],
+      "correctAnswer": 1,
+      "explanation": "Stack operates on LIFO order for insertion (push) and deletion (pop).",
+      "subject": "Technical (CS/IT)", "topic": "Data Structures", "difficulty": "easy"
+    },
+    {
+      "id": "cil22q054", "questionNumber": 54,
+      "question": "What is the function of the ARP (Address Resolution Protocol) in IP networking?",
+      "options": [
+        "Resolves domain names to IP addresses",
+        "Resolves IP addresses to MAC (Physical) addresses",
+        "Allocates dynamic IP addresses",
+        "Routes packets across different networks"
+      ],
+      "correctAnswer": 1,
+      "explanation": "ARP maps 32-bit IPv4 addresses to 48-bit Ethernet MAC addresses within a local network.",
+      "subject": "Technical (CS/IT)", "topic": "Computer Networks", "difficulty": "medium"
+    },
+    {
+      "id": "cil22q055", "questionNumber": 55,
+      "question": "Which design pattern ensures a class has only one instance and provides a global access point to it?",
+      "options": ["Factory Pattern", "Singleton Pattern", "Observer Pattern", "Strategy Pattern"],
+      "correctAnswer": 1,
+      "explanation": "Singleton Pattern restricts instantiation of a class to a single object instance.",
+      "subject": "Technical (CS/IT)", "topic": "Software Engineering & Patterns", "difficulty": "medium"
+    },
+    {
+      "id": "cil22q056", "questionNumber": 56,
+      "question": "In C++, what type of member function cannot access non-static class members?",
+      "options": ["Virtual function", "Inline function", "Static member function", "Friend function"],
+      "correctAnswer": 2,
+      "explanation": "Static member functions do not possess a 'this' pointer and can only directly access static data members.",
+      "subject": "Technical (CS/IT)", "topic": "C++ Programming", "difficulty": "medium"
+    },
+    {
+      "id": "cil22q057", "questionNumber": 57,
+      "question": "Which graph traversal technique uses a Queue data structure?",
+      "options": ["Depth First Search (DFS)", "Breadth First Search (BFS)", "Pre-order Traversal", "In-order Traversal"],
+      "correctAnswer": 1,
+      "explanation": "BFS uses a FIFO queue to visit adjacent vertices level by level.",
+      "subject": "Technical (CS/IT)", "topic": "Graph Algorithms", "difficulty": "easy"
+    },
+    {
+      "id": "cil22q058", "questionNumber": 58,
+      "question": "What is the result of binary addition: 1011 + 0101?",
+      "options": ["10000", "1111", "1000", "11000"],
+      "correctAnswer": 0,
+      "explanation": "1011 (11 in decimal) + 0101 (5 in decimal) = 10000 (16 in decimal).",
+      "subject": "Technical (CS/IT)", "topic": "Digital Logic", "difficulty": "easy"
+    },
+    {
+      "id": "cil22q059", "questionNumber": 59,
+      "question": "In virtual memory systems, what is 'Thrashing'?",
+      "options": [
+        "Excessive CPU clocking",
+        "A state where the system spends more time paging than executing processes",
+        "Rapid disk fragmentation",
+        "Unauthorized cache purging"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Thrashing occurs when memory allocation is inadequate and page fault rates spike, spending most cycles page swapping.",
+      "subject": "Technical (CS/IT)", "topic": "Operating Systems", "difficulty": "medium"
+    },
+    {
+      "id": "cil22q060", "questionNumber": 60,
+      "question": "Which logic gate outputs HIGH (1) if and only if both of its inputs are HIGH (1)?",
+      "options": ["OR Gate", "AND Gate", "XOR Gate", "NAND Gate"],
+      "correctAnswer": 1,
+      "explanation": "An AND gate gives a 1 output only when both input signals are 1.",
+      "subject": "Technical (CS/IT)", "topic": "Digital Logic", "difficulty": "easy"
+    },
+    {
+      "id": "cil22q061", "questionNumber": 61,
+      "question": "What is the primary role of a Compiler in software development?",
+      "options": [
+        "Executes code line by line",
+        "Translates high-level source code into low-level machine code at once",
+        "Links object code with DLL libraries at runtime",
+        "Manages database schema migrations"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Compilers translate entire high-level program modules into target machine instructions.",
+      "subject": "Technical (CS/IT)", "topic": "Compiler Design", "difficulty": "easy"
+    },
+    {
+      "id": "cil22q062", "questionNumber": 62,
+      "question": "In Software Testing, what is Regression Testing?",
+      "options": [
+        "Testing newly written code modules",
+        "Re-running tests to ensure code modifications haven't broken existing functionality",
+        "Testing system limits under heavy stress load",
+        "Testing user interface accessibility"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Regression testing verifies that past software features continue to work as expected after updates.",
+      "subject": "Technical (CS/IT)", "topic": "Software Testing", "difficulty": "medium"
+    },
+    {
+      "id": "cil22q063", "questionNumber": 63,
+      "question": "What is a Foreign Key in relational database tables?",
+      "options": [
+        "A key that uniquely identifies a row within its own table",
+        "A field in one table that refers to the primary key in another table",
+        "An encrypted database index key",
+        "A composite key spanning three tables"
+      ],
+      "correctAnswer": 1,
+      "explanation": "A foreign key establishes a link between data in two tables by matching primary key columns.",
+      "subject": "Technical (CS/IT)", "topic": "RDBMS Concepts", "difficulty": "easy"
+    },
+    {
+      "id": "cil22q064", "questionNumber": 64,
+      "question": "Which of the following is a non-preemptive scheduling algorithm?",
+      "options": ["Round Robin", "Shortest Remaining Time First (SRTF)", "First-Come First-Served (FCFS)", "Preemptive Priority"],
+      "correctAnswer": 2,
+      "explanation": "FCFS runs tasks until completion or explicit I/O blocking without preemptive interrupt.",
+      "subject": "Technical (CS/IT)", "topic": "Operating Systems", "difficulty": "medium"
+    },
+    {
+      "id": "cil22q065", "questionNumber": 65,
+      "question": "Which layer of TCP/IP protocol suite corresponds to OSI Data Link + Physical layers?",
+      "options": ["Application", "Transport", "Internet", "Network Access"],
+      "correctAnswer": 3,
+      "explanation": "Network Access (Link) layer in TCP/IP maps to OSI Physical and Data Link layers.",
+      "subject": "Technical (CS/IT)", "topic": "Computer Networks", "difficulty": "medium"
+    },
+    {
+      "id": "cil22q066", "questionNumber": 66,
+      "question": "Which data structure is best suited for implementing a Queue?",
+      "options": ["Singly Linked List with head and tail pointers", "Stack", "Binary Tree", "Hash Map"],
+      "correctAnswer": 0,
+      "explanation": "A linked list with head (dequeue) and tail (enqueue) pointers allows O(1) enqueue and dequeue operations.",
+      "subject": "Technical (CS/IT)", "topic": "Data Structures", "difficulty": "easy"
+    },
+    {
+      "id": "cil22q067", "questionNumber": 67,
+      "question": "What is the main advantage of dynamic programming over simple recursion?",
+      "options": [
+        "Eliminates memory consumption",
+        "Stores solutions to overlapping subproblems to avoid redundant computation",
+        "Converts non-linear algorithms into linear ones automatically",
+        "Enables multi-threaded execution"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Dynamic programming uses memoization or tabulation to store already solved subproblem results.",
+      "subject": "Technical (CS/IT)", "topic": "Algorithms", "difficulty": "medium"
+    },
+    {
+      "id": "cil22q068", "questionNumber": 68,
+      "question": "In Java, which keyword is used to prevent class inheritance?",
+      "options": ["static", "final", "abstract", "super"],
+      "correctAnswer": 1,
+      "explanation": "Declaring a class as 'final' prevents it from being extended by any subclass.",
+      "subject": "Technical (CS/IT)", "topic": "Java Programming", "difficulty": "easy"
+    },
+    {
+      "id": "cil22q069", "questionNumber": 69,
+      "question": "Which algorithm is used to find the shortest path from a single source vertex to all other vertices in a weighted graph with non-negative edge weights?",
+      "options": ["Prim's Algorithm", "Kruskal's Algorithm", "Dijkstra's Algorithm", "Floyd-Warshall Algorithm"],
+      "correctAnswer": 2,
+      "explanation": "Dijkstra's algorithm computes single-source shortest paths on graphs with non-negative edge weights.",
+      "subject": "Technical (CS/IT)", "topic": "Graph Algorithms", "difficulty": "medium"
+    },
+    {
+      "id": "cil22q070", "questionNumber": 70,
+      "question": "What does DNS stand for?",
+      "options": ["Domain Name System", "Dynamic Network Service", "Digital Name Server", "Data Network Storage"],
+      "correctAnswer": 0,
+      "explanation": "DNS stands for Domain Name System, resolving domain names (like coalindia.in) to IP addresses.",
+      "subject": "Technical (CS/IT)", "topic": "Computer Networks", "difficulty": "easy"
+    },
+    {
+      "id": "cil22q071", "questionNumber": 71,
+      "question": "Which component in an OS manages hardware interrupts and system calls?",
+      "options": ["Shell", "Kernel", "Compiler", "File System"],
+      "correctAnswer": 1,
+      "explanation": "The Kernel is the core component of an operating system, directly interacting with hardware and managing system calls.",
+      "subject": "Technical (CS/IT)", "topic": "Operating Systems", "difficulty": "easy"
+    },
+    {
+      "id": "cil22q072", "questionNumber": 72,
+      "question": "What is the function of a Semaphore in concurrent programming?",
+      "options": [
+        "Compiles multi-threaded applications",
+        "Synchronization primitive used to control access to shared resources by multiple processes",
+        "Encrypts inter-process messages",
+        "Allocates virtual memory blocks"
+      ],
+      "correctAnswer": 1,
+      "explanation": "A semaphore is a variable used to control access to a common resource in a parallel programming environment.",
+      "subject": "Technical (CS/IT)", "topic": "Operating Systems", "difficulty": "medium"
+    },
+    {
+      "id": "cil22q073", "questionNumber": 73,
+      "question": "In Python, which built-in data type is immutable?",
+      "options": ["List", "Dictionary", "Tuple", "Set"],
+      "correctAnswer": 2,
+      "explanation": "Tuples in Python are immutable sequences; their elements cannot be altered after creation.",
+      "subject": "Technical (CS/IT)", "topic": "Python Programming", "difficulty": "easy"
+    },
+    {
+      "id": "cil22q074", "questionNumber": 74,
+      "question": "What is the maximum number of edges in an undirected simple graph with 'n' vertices?",
+      "options": ["n(n-1)/2", "n^2", "2^n", "n(n+1)/2"],
+      "correctAnswer": 0,
+      "explanation": "Each of the n vertices can connect to (n-1) other vertices, halved because edges are undirected: n(n-1)/2.",
+      "subject": "Technical (CS/IT)", "topic": "Discrete Mathematics & Graph Theory", "difficulty": "medium"
+    },
+    {
+      "id": "cil22q075", "questionNumber": 75,
+      "question": "In software engineering, what does the Agile manifesto prioritize over processes and tools?",
+      "options": [
+        "Comprehensive documentation",
+        "Individuals and interactions",
+        "Contract negotiation",
+        "Following a strict upfront plan"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The Agile Manifesto values 'Individuals and interactions over processes and tools'.",
+      "subject": "Technical (CS/IT)", "topic": "Software Engineering", "difficulty": "easy"
+    },
+    {
+      "id": "cil22q076", "questionNumber": 76,
+      "question": "Which layer of the OSI model performs encryption and compression?",
+      "options": ["Application Layer", "Presentation Layer", "Session Layer", "Transport Layer"],
+      "correctAnswer": 1,
+      "explanation": "The Presentation Layer (Layer 6) formats, encrypts, and compresses data for the application layer.",
+      "subject": "Technical (CS/IT)", "topic": "Computer Networks", "difficulty": "easy"
+    },
+    {
+      "id": "cil22q077", "questionNumber": 77,
+      "question": "What is the worst-case time complexity of Merge Sort?",
+      "options": ["O(n^2)", "O(n log n)", "O(n)", "O(log n)"],
+      "correctAnswer": 1,
+      "explanation": "Merge sort guarantees O(n log n) time complexity in all cases (worst, average, best).",
+      "subject": "Technical (CS/IT)", "topic": "Algorithms", "difficulty": "easy"
+    },
+    {
+      "id": "cil22q078", "questionNumber": 78,
+      "question": "In SQL, which clause is used to filter records after aggregation (GROUP BY)?",
+      "options": ["WHERE", "HAVING", "ORDER BY", "FILTER"],
+      "correctAnswer": 1,
+      "explanation": "HAVING applies filter conditions to summarized group results produced by GROUP BY.",
+      "subject": "Technical (CS/IT)", "topic": "Database Management Systems", "difficulty": "easy"
+    },
+    {
+      "id": "cil22q079", "questionNumber": 79,
+      "question": "What is the main goal of Cyber Security 'Defense-in-Depth' strategy?",
+      "options": [
+        "Rely on a single strong firewall",
+        "Layering multiple security mechanisms to protect data and assets",
+        "Disabling network wireless access",
+        "Storing passwords in plain text"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Defense-in-depth uses multiple redundant security layers so if one fails, others continue protecting the system.",
+      "subject": "Technical (CS/IT)", "topic": "Cyber Security", "difficulty": "medium"
+    },
+    {
+      "id": "cil22q080", "questionNumber": 80,
+      "question": "Which type of memory is directly integrated inside the CPU chip to reduce latency?",
+      "options": ["Main RAM", "Cache Memory (L1/L2)", "Hard Disk Drive", "Virtual Memory"],
+      "correctAnswer": 1,
+      "explanation": "Cache memory (L1, L2, L3) resides directly on CPU silicon to provide high-speed data access.",
+      "subject": "Technical (CS/IT)", "topic": "Computer Architecture", "difficulty": "easy"
+    },
+    {
+      "id": "cil22q081", "questionNumber": 81,
+      "question": "What is the postfix expression for the infix expression: A + B * C ?",
+      "options": ["A B C * +", "+ A * B C", "A B + C *", "A B * C +"],
+      "correctAnswer": 0,
+      "explanation": "Precedence gives B*C first (BC*), then addition with A yields A BC * +.",
+      "subject": "Technical (CS/IT)", "topic": "Data Structures", "difficulty": "medium"
+    },
+    {
+      "id": "cil22q082", "questionNumber": 82,
+      "question": "Which IP address range is reserved for private local area networks (Class A private)?",
+      "options": ["10.0.0.0 to 10.255.255.255", "172.16.0.0 to 172.31.255.255", "192.168.0.0 to 192.168.255.255", "127.0.0.0 to 127.255.255.255"],
+      "correctAnswer": 0,
+      "explanation": "10.0.0.0/8 is reserved by RFC 1918 as Class A private IP space.",
+      "subject": "Technical (CS/IT)", "topic": "Computer Networks", "difficulty": "medium"
+    },
+    {
+      "id": "cil22q083", "questionNumber": 83,
+      "question": "What is the primary role of a Load Balancer in distributed systems?",
+      "options": [
+        "Compresses database storage",
+        "Distributes incoming network traffic across multiple servers to ensure responsiveness",
+        "Generates SSL certificates",
+        "Monitors CPU thermal levels"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Load balancers distribute traffic across server pools to optimize resource utilization and prevent server overload.",
+      "subject": "Technical (CS/IT)", "topic": "System Design", "difficulty": "medium"
+    },
+    {
+      "id": "cil22q084", "questionNumber": 84,
+      "question": "In Unix/Linux, which command changes file access permissions?",
+      "options": ["chown", "chmod", "chgrp", "touch"],
+      "correctAnswer": 1,
+      "explanation": "chmod (change mode) modifies read, write, and execute permissions for user, group, and others.",
+      "subject": "Technical (CS/IT)", "topic": "Linux Systems", "difficulty": "easy"
+    },
+    {
+      "id": "cil22q085", "questionNumber": 85,
+      "question": "What does COCOMO stand for in software estimation?",
+      "options": [
+        "Constructive Cost Model",
+        "Computer Controlled Module",
+        "Coordinated Code Monitoring",
+        "Comparative Component Optimization"
+      ],
+      "correctAnswer": 0,
+      "explanation": "COCOMO (Constructive Cost Model) is a procedural software cost estimation model developed by Barry Boehm.",
+      "subject": "Technical (CS/IT)", "topic": "Software Engineering", "difficulty": "medium"
+    },
+    {
+      "id": "cil22q086", "questionNumber": 86,
+      "question": "Which searching algorithm requires the input array to be sorted beforehand?",
+      "options": ["Linear Search", "Binary Search", "Depth-First Search", "Hash Lookup"],
+      "correctAnswer": 1,
+      "explanation": "Binary search compares the target value to the middle element of a sorted array.",
+      "subject": "Technical (CS/IT)", "topic": "Algorithms", "difficulty": "easy"
+    },
+    {
+      "id": "cil22q087", "questionNumber": 87,
+      "question": "What is the output of XOR gate when both inputs are 1?",
+      "options": ["1", "0", "Undefined", "High impedance"],
+      "correctAnswer": 1,
+      "explanation": "XOR output is 1 when inputs differ. When both inputs are 1 (equal), XOR output is 0.",
+      "subject": "Technical (CS/IT)", "topic": "Digital Logic", "difficulty": "easy"
+    },
+    {
+      "id": "cil22q088", "questionNumber": 88,
+      "question": "What is the main drawback of a bus topology in local area networking?",
+      "options": [
+        "Requires expensive switches",
+        "A single break in the main backbone cable downs the entire network",
+        "High cabling cost",
+        "Does not support CSMA/CD"
+      ],
+      "correctAnswer": 1,
+      "explanation": "In bus topology, failure of the shared central bus cable disables communication across all connected nodes.",
+      "subject": "Technical (CS/IT)", "topic": "Computer Networks", "difficulty": "medium"
+    },
+    {
+      "id": "cil22q089", "questionNumber": 89,
+      "question": "In relational algebra, which operator is represented by the Greek symbol Sigma (σ)?",
+      "options": ["Projection", "Selection", "Cartesian Product", "Join"],
+      "correctAnswer": 1,
+      "explanation": "Sigma (σ) represents the Selection operator in relational algebra (filters rows satisfying a condition).",
+      "subject": "Technical (CS/IT)", "topic": "Database Systems", "difficulty": "medium"
+    },
+    {
+      "id": "cil22q090", "questionNumber": 90,
+      "question": "Which memory management scheme allows process physical address space to be non-contiguous?",
+      "options": ["Single Contiguous Allocation", "Paging", "Fixed Partitioning", "Overlaying"],
+      "correctAnswer": 1,
+      "explanation": "Paging divides memory into fixed-size pages and frames, allowing physical placement to be non-contiguous.",
+      "subject": "Technical (CS/IT)", "topic": "Operating Systems", "difficulty": "medium"
+    },
+    {
+      "id": "cil22q091", "questionNumber": 91,
+      "question": "Which protocol operates at the Application layer and is used to retrieve email from a server to a local client?",
+      "options": ["SMTP", "POP3 / IMAP", "SNMP", "FTP"],
+      "correctAnswer": 1,
+      "explanation": "POP3 and IMAP are used by clients to retrieve email messages from mail servers.",
+      "subject": "Technical (CS/IT)", "topic": "Network Protocols", "difficulty": "easy"
+    },
+    {
+      "id": "cil22q092", "questionNumber": 92,
+      "question": "What is the space complexity of an adjacency matrix representation of a graph with V vertices?",
+      "options": ["O(V)", "O(V + E)", "O(V^2)", "O(E^2)"],
+      "correctAnswer": 2,
+      "explanation": "An adjacency matrix allocates a V × V 2D array, taking O(V^2) memory space regardless of edge count.",
+      "subject": "Technical (CS/IT)", "topic": "Graph Representation", "difficulty": "medium"
+    },
+    {
+      "id": "cil22q093", "questionNumber": 93,
+      "question": "Which technique is used by modern CPUs to execute multiple instructions simultaneously across different stages?",
+      "options": ["Paging", "Pipelining", "Swapping", "Caching"],
+      "correctAnswer": 1,
+      "explanation": "Instruction pipelining breaks execution into sub-steps (Fetch, Decode, Execute, Writeback) for parallel processing.",
+      "subject": "Technical (CS/IT)", "topic": "Computer Architecture", "difficulty": "easy"
+    },
+    {
+      "id": "cil22q094", "questionNumber": 94,
+      "question": "What is the time complexity to insert a new element at the head of a Singly Linked List?",
+      "options": ["O(1)", "O(log n)", "O(n)", "O(n^2)"],
+      "correctAnswer": 0,
+      "explanation": "Inserting at the head requires updating the new node's next pointer and head pointer, taking constant O(1) time.",
+      "subject": "Technical (CS/IT)", "topic": "Data Structures", "difficulty": "easy"
+    },
+    {
+      "id": "cil22q095", "questionNumber": 95,
+      "question": "What does SSL stand for in web communication?",
+      "options": ["Secure Sockets Layer", "System Security Level", "Serial Socket Link", "System Service Logic"],
+      "correctAnswer": 0,
+      "explanation": "SSL (Secure Sockets Layer) and its successor TLS provide security and cryptographic encryption over web networks.",
+      "subject": "Technical (CS/IT)", "topic": "Network Security", "difficulty": "easy"
+    },
+    {
+      "id": "cil22q096", "questionNumber": 96,
+      "question": "Which indexing structure is commonly used by RDBMS databases to optimize range query lookups?",
+      "options": ["Hash Table", "B+ Tree", "Heap", "Binary Tree"],
+      "correctAnswer": 1,
+      "explanation": "B+ Trees keep data balanced and link leaf nodes together, enabling efficient sequential range queries in relational databases.",
+      "subject": "Technical (CS/IT)", "topic": "Database Systems", "difficulty": "hard"
+    },
+    {
+      "id": "cil22q097", "questionNumber": 97,
+      "question": "In Object-Oriented Software Design, what does the SOLID principles 'S' stand for?",
+      "options": [
+        "Single Responsibility Principle",
+        "Subclass Substitution Principle",
+        "System Security Principle",
+        "Sequential Structure Principle"
+      ],
+      "correctAnswer": 0,
+      "explanation": "S in SOLID stands for Single Responsibility Principle: a class should have one, and only one, reason to change.",
+      "subject": "Technical (CS/IT)", "topic": "Object-Oriented Design", "difficulty": "easy"
+    },
+    {
+      "id": "cil22q098", "questionNumber": 98,
+      "question": "Which error detection method uses polynomial division to detect transmission errors in data frames?",
+      "options": ["Parity Check", "Checksum", "Cyclic Redundancy Check (CRC)", "Hamming Distance"],
+      "correctAnswer": 2,
+      "explanation": "CRC uses binary polynomial division to generate frame check sequences for detecting hardware transmission errors.",
+      "subject": "Technical (CS/IT)", "topic": "Computer Networks", "difficulty": "medium"
+    },
+    {
+      "id": "cil22q099", "questionNumber": 99,
+      "question": "What is the minimum number of binary bits required to uniquely represent 50 distinct states?",
+      "options": ["5 bits", "6 bits", "7 bits", "8 bits"],
+      "correctAnswer": 1,
+      "explanation": "5 bits = 2^5 = 32 states (insufficient). 6 bits = 2^6 = 64 states (sufficient to represent 50 states).",
+      "subject": "Technical (CS/IT)", "topic": "Digital Logic & Information Theory", "difficulty": "easy"
+    },
+    {
+      "id": "cil22q0100", "questionNumber": 100,
+      "question": "Which cloud computing model delivers raw virtual machines, storage, and networking resources on demand?",
+      "options": ["SaaS (Software as a Service)", "PaaS (Platform as a Service)", "IaaS (Infrastructure as a Service)", "FaaS (Function as a Service)"],
+      "correctAnswer": 2,
+      "explanation": "IaaS (e.g. AWS EC2, Azure VMs) provides fundamental compute, storage, and networking infrastructure.",
+      "subject": "Technical (CS/IT)", "topic": "Cloud Computing", "difficulty": "easy"
+    }
+  ]
+}

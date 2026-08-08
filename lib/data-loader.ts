@@ -36,8 +36,8 @@ export async function getPaper(
 // In production this would be a manifest file; for MVP we use a static map
 const PAPER_MANIFEST: Record<string, string[]> = {
   "ibps-so-it-officer": ["2024", "2023"],
-  "coal-india-mt": ["2023"],
-  "isro-scientist-cs": ["2023"],
+  "coal-india-mt": ["2023", "2022"],
+  "isro-scientist-cs": ["2023", "2020"],
 };
 
 export async function getPapersForExam(examId: string): Promise<PaperSummary[]> {
@@ -107,3 +107,33 @@ export async function getExamsByCategory(): Promise<ExamsByCategory> {
     return acc;
   }, {});
 }
+
+// ─── Aggregate stats for platform ──────────────────────────────────────────────
+export interface GlobalExamStats {
+  totalExams: number;
+  totalPapers: number;
+  totalQuestions: number;
+  categoriesCount: number;
+}
+
+export async function getExamStats(): Promise<GlobalExamStats> {
+  const summaries = await getAllExamSummaries();
+  let totalPapers = 0;
+  let totalQuestions = 0;
+  const categories = new Set<string>();
+
+  for (const summary of summaries) {
+    categories.add(summary.category);
+    const papers = await getPapersForExam(summary.examId);
+    totalPapers += papers.length;
+    totalQuestions += papers.reduce((sum, p) => sum + p.totalQuestions, 0);
+  }
+
+  return {
+    totalExams: summaries.length,
+    totalPapers,
+    totalQuestions,
+    categoriesCount: categories.size,
+  };
+}
+

@@ -38,8 +38,8 @@ ExamForge is an open-source, client-side examination platform designed to help s
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/Akash-Raj-Official/Exam-Forage.git
-   cd Exam-Forage/examforge
+   git clone https://github.com/Akash-Raj-Official/Exam-Forge.git
+   cd Exam-Forge/examforge
    ```
 
 2. **Install dependencies**:

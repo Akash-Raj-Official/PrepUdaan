@@ -19,9 +19,32 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { examId } = await params;
   const exam = await getExamConfig(examId);
   if (!exam) return {};
+
+  const pageTitle = `${exam.name} | ExamForge`;
+  const pageDescription = `Practice official previous-year papers and mock tests for ${exam.name} (${exam.authority}). Detailed subject breakdown, speed ratings, and technical analysis.`;
+  const customKeywords = [
+    `${exam.name.toLowerCase()} mock test`,
+    `${exam.shortName.toLowerCase()} previous year paper`,
+    `${exam.shortName.toLowerCase()} solved paper`,
+    `${exam.authority.toLowerCase()} exam mock test`,
+    `${exam.category.toLowerCase()} exam practice`,
+    ...exam.tags.map((t) => `${t.toLowerCase()} mock test`),
+  ];
+
   return {
     title: exam.name,
-    description: exam.description,
+    description: pageDescription,
+    keywords: customKeywords,
+    openGraph: {
+      title: pageTitle,
+      description: pageDescription,
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: pageTitle,
+      description: pageDescription,
+    },
   };
 }
 

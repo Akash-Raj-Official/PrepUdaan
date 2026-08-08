@@ -30,9 +30,31 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     getPaper(examId, `${examId}-${paperId}`),
   ]);
   if (!exam || !paper) return {};
+
+  const fullTitle = `${paper.title} | ExamForge`;
+  const fullDesc = `Start ${paper.title} online mock test under official exam conditions. ${paper.totalQuestions} questions, ${paper.durationMinutes} minutes, detailed score & accuracy analysis.`;
+  const keywords = [
+    `${paper.title.toLowerCase()} mock test`,
+    `${exam.shortName.toLowerCase()} ${paper.year} paper`,
+    `${exam.name.toLowerCase()} previous paper`,
+    "online mock test",
+    "exam simulator",
+  ];
+
   return {
     title: `${paper.title} — Instructions`,
-    description: `Start ${paper.title} mock exam. ${paper.totalQuestions} questions, ${paper.durationMinutes} minutes.`,
+    description: fullDesc,
+    keywords,
+    openGraph: {
+      title: fullTitle,
+      description: fullDesc,
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: fullTitle,
+      description: fullDesc,
+    },
   };
 }
 
