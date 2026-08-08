@@ -1,0 +1,824 @@
+{
+  "paperId": "coal-india-mt-2023",
+  "examId": "coal-india-mt",
+  "title": "Coal India MT CS/IT 2023 — Previous Year Paper",
+  "year": 2023,
+  "shift": "Shift 1",
+  "language": "English",
+  "durationMinutes": 120,
+  "totalQuestions": 100,
+  "totalMarks": 200,
+  "marking": {
+    "correct": 2,
+    "negative": 0.5,
+    "unattempted": 0
+  },
+  "sections": [
+    { "sectionId": "general-english", "name": "General English", "questionCount": 20, "marks": 40, "questionRange": [1, 20] },
+    { "sectionId": "general-knowledge", "name": "General Knowledge", "questionCount": 20, "marks": 40, "questionRange": [21, 40] },
+    { "sectionId": "technical", "name": "Technical (CS/IT)", "questionCount": 60, "marks": 120, "questionRange": [41, 100] }
+  ],
+  "isOfficial": true,
+  "questions": [
+    {
+      "id": "cil23q001", "questionNumber": 1,
+      "question": "Choose the correct antonym for 'BENEVOLENT':",
+      "options": ["Malevolent", "Generous", "Kind", "Sympathetic"],
+      "correctAnswer": 0,
+      "explanation": "Benevolent means well-meaning and kindly. Its antonym is Malevolent (wishing evil or harm).",
+      "subject": "General English", "topic": "Vocabulary", "difficulty": "easy"
+    },
+    {
+      "id": "cil23q002", "questionNumber": 2,
+      "question": "Fill in the blank: The committee ________ divided in their opinions.",
+      "options": ["was", "were", "is", "has"],
+      "correctAnswer": 1,
+      "explanation": "When a collective noun like 'committee' acts as individuals having differing opinions, it takes a plural verb ('were').",
+      "subject": "General English", "topic": "Subject-Verb Agreement", "difficulty": "medium"
+    },
+    {
+      "id": "cil23q003", "questionNumber": 3,
+      "question": "Identify the passive voice: 'They built this bridge in 1995.'",
+      "options": ["This bridge was built in 1995.", "This bridge is built in 1995.", "This bridge had been built in 1995.", "This bridge built by them in 1995."],
+      "correctAnswer": 0,
+      "explanation": "Simple past active 'built' becomes 'was built' in passive voice.",
+      "subject": "General English", "topic": "Active Passive", "difficulty": "easy"
+    },
+    {
+      "id": "cil23q004", "questionNumber": 4,
+      "question": "Find the correctly spelt word:",
+      "options": ["Accommodate", "Acommodate", "Accomodate", "Acomodate"],
+      "correctAnswer": 0,
+      "explanation": "Accommodate has double 'c' and double 'm'.",
+      "subject": "General English", "topic": "Spelling", "difficulty": "easy"
+    },
+    {
+      "id": "cil23q005", "questionNumber": 5,
+      "question": "What does the idiom 'Break the ice' mean?",
+      "options": ["To start a conflict", "To make people feel comfortable in a social setting", "To freeze water", "To break a promise"],
+      "correctAnswer": 1,
+      "explanation": "'Break the ice' means to initiate conversation and overcome social awkwardness.",
+      "subject": "General English", "topic": "Idioms", "difficulty": "easy"
+    },
+    {
+      "id": "cil23q006", "questionNumber": 6,
+      "question": "Substitute one word: 'A person who collects or studies stamps'",
+      "options": ["Numismatist", "Philatelist", "Anthropologist", "Bibliophile"],
+      "correctAnswer": 1,
+      "explanation": "A philatelist is a person who studies or collects postage stamps.",
+      "subject": "General English", "topic": "One Word Substitution", "difficulty": "medium"
+    },
+    {
+      "id": "cil23q007", "questionNumber": 7,
+      "question": "Select the synonym for 'CANDID':",
+      "options": ["Frank", "Secretive", "Deceitful", "Shy"],
+      "correctAnswer": 0,
+      "explanation": "Candid means truthful and straightforward; Frank.",
+      "subject": "General English", "topic": "Vocabulary", "difficulty": "easy"
+    },
+    {
+      "id": "cil23q008", "questionNumber": 8,
+      "question": "Fill in the blank: He is senior ________ me in service.",
+      "options": ["than", "to", "from", "with"],
+      "correctAnswer": 1,
+      "explanation": "Adjectives ending in '-ior' like senior, junior, superior take 'to' instead of 'than'.",
+      "subject": "General English", "topic": "Prepositions", "difficulty": "easy"
+    },
+    {
+      "id": "cil23q009", "questionNumber": 9,
+      "question": "Spot the error: 'Neither of the two candidates have submitted their application.'",
+      "options": ["Neither of", "the two candidates", "have submitted", "their application"],
+      "correctAnswer": 2,
+      "explanation": "'Neither' is singular and requires the singular verb 'has submitted'.",
+      "subject": "General English", "topic": "Error Spotting", "difficulty": "medium"
+    },
+    {
+      "id": "cil23q010", "questionNumber": 10,
+      "question": "Fill in: She ran as fast as she ________.",
+      "options": ["can", "could", "may", "might"],
+      "correctAnswer": 1,
+      "explanation": "Past tense main clause ('ran') requires past modal auxiliary 'could'.",
+      "subject": "General English", "topic": "Grammar", "difficulty": "easy"
+    },
+    {
+      "id": "cil23q011", "questionNumber": 11,
+      "question": "Select the correct indirect speech: He said, 'I am reading a book.'",
+      "options": ["He said that he was reading a book.", "He said that he is reading a book.", "He told that he read a book.", "He said he had been reading a book."],
+      "correctAnswer": 0,
+      "explanation": "Present continuous 'am reading' becomes past continuous 'was reading' in reported speech.",
+      "subject": "General English", "topic": "Direct Indirect", "difficulty": "easy"
+    },
+    {
+      "id": "cil23q012", "questionNumber": 12,
+      "question": "Meaning of 'Burn the candle at both ends':",
+      "options": ["To exhaust oneself by working late and getting up early", "To waste candle wax", "To be very rich", "To live dangerously"],
+      "correctAnswer": 0,
+      "explanation": "It means to overwork oneself by going to bed late and getting up early.",
+      "subject": "General English", "topic": "Idioms", "difficulty": "medium"
+    },
+    {
+      "id": "cil23q013", "questionNumber": 13,
+      "question": "Antonym for 'METICULOUS':",
+      "options": ["Careless", "Thorough", "Detailed", "Precise"],
+      "correctAnswer": 0,
+      "explanation": "Meticulous means taking extreme care; Careless is the opposite.",
+      "subject": "General English", "topic": "Vocabulary", "difficulty": "medium"
+    },
+    {
+      "id": "cil23q014", "questionNumber": 14,
+      "question": "Rearrange into coherent sentence: P: of renewable energy Q: the rapid growth R: has reduced S: carbon emissions",
+      "options": ["QPRS", "QPSR", "PQRS", "RQPS"],
+      "correctAnswer": 0,
+      "explanation": "The rapid growth (Q) of renewable energy (P) has reduced (R) carbon emissions (S).",
+      "subject": "General English", "topic": "Sentence Rearrangement", "difficulty": "easy"
+    },
+    {
+      "id": "cil23q015", "questionNumber": 15,
+      "question": "Which of the following is an adjective in: 'She wore a beautiful necklace.'?",
+      "options": ["wore", "beautiful", "necklace", "She"],
+      "correctAnswer": 1,
+      "explanation": "'Beautiful' modifies the noun 'necklace' and is an adjective.",
+      "subject": "General English", "topic": "Parts of Speech", "difficulty": "easy"
+    },
+    {
+      "id": "cil23q016", "questionNumber": 16,
+      "question": "Choose the plural of 'Criterion':",
+      "options": ["Criterions", "Criteria", "Criterias", "Criteriones"],
+      "correctAnswer": 1,
+      "explanation": "Criterion is of Greek origin; its plural is Criteria.",
+      "subject": "General English", "topic": "Nouns", "difficulty": "medium"
+    },
+    {
+      "id": "cil23q017", "questionNumber": 17,
+      "question": "Synonym of 'PERSEVERANCE':",
+      "options": ["Persistence", "Hesitation", "Weakness", "Laziness"],
+      "correctAnswer": 0,
+      "explanation": "Perseverance means continued effort despite difficulties; Persistence.",
+      "subject": "General English", "topic": "Vocabulary", "difficulty": "easy"
+    },
+    {
+      "id": "cil23q018", "questionNumber": 18,
+      "question": "Fill in: No sooner did he reach the station ________ the train left.",
+      "options": ["when", "than", "then", "before"],
+      "correctAnswer": 1,
+      "explanation": "'No sooner' is always paired with 'than'.",
+      "subject": "General English", "topic": "Conjunctions", "difficulty": "medium"
+    },
+    {
+      "id": "cil23q019", "questionNumber": 19,
+      "question": "Choose the correct spelling:",
+      "options": ["Entrepreneur", "Entreprenure", "Enterprenuer", "Entreprenur"],
+      "correctAnswer": 0,
+      "explanation": "The correct spelling is Entrepreneur.",
+      "subject": "General English", "topic": "Spelling", "difficulty": "medium"
+    },
+    {
+      "id": "cil23q020", "questionNumber": 20,
+      "question": "Meaning of 'Once in a blue moon':",
+      "options": ["Very frequently", "Very rarely", "During a full moon", "Never"],
+      "correctAnswer": 1,
+      "explanation": "'Once in a blue moon' means something that occurs very rarely.",
+      "subject": "General English", "topic": "Idioms", "difficulty": "easy"
+    },
+    {
+      "id": "cil23q021", "questionNumber": 21,
+      "question": "Where is the headquarters of Coal India Limited (CIL) situated?",
+      "options": ["New Delhi", "Kolkata", "Ranchi", "Dhanbad"],
+      "correctAnswer": 1,
+      "explanation": "Coal India Limited headquarters is located in Kolkata, West Bengal.",
+      "subject": "General Knowledge", "topic": "CIL Awareness", "difficulty": "easy"
+    },
+    {
+      "id": "cil23q022", "questionNumber": 22,
+      "question": "Which subsidiary of CIL is the largest coal-producing company in India?",
+      "options": ["Mahanadi Coalfields Limited (MCL)", "South Eastern Coalfields Limited (SECL)", "Northern Coalfields Limited (NCL)", "Central Coalfields Limited (CCL)"],
+      "correctAnswer": 0,
+      "explanation": "MCL (Mahanadi Coalfields Limited) is one of the top coal producing subsidiaries of CIL.",
+      "subject": "General Knowledge", "topic": "CIL Awareness", "difficulty": "medium"
+    },
+    {
+      "id": "cil23q023", "questionNumber": 23,
+      "question": "In India, Coal India Limited is designated as a:",
+      "options": ["Miniratna Category-I", "Navratna", "Maharatna", "Public Limited Sector II"],
+      "correctAnswer": 2,
+      "explanation": "CIL was conferred Maharatna status by the Government of India in April 2011.",
+      "subject": "General Knowledge", "topic": "PSU Status", "difficulty": "medium"
+    },
+    {
+      "id": "cil23q024", "questionNumber": 24,
+      "question": "Which fundamental right cannot be suspended even during a National Emergency?",
+      "options": ["Article 19", "Article 20 and 21", "Article 14", "Article 32"],
+      "correctAnswer": 1,
+      "explanation": "Articles 20 (protection in respect of conviction for offences) and 21 (protection of life and personal liberty) cannot be suspended during an emergency.",
+      "subject": "General Knowledge", "topic": "Indian Polity", "difficulty": "hard"
+    },
+    {
+      "id": "cil23q025", "questionNumber": 25,
+      "question": "The Booker Prize is awarded annually for the best work in which field?",
+      "options": ["Journalism", "Fiction Literature in English", "Environmental Science", "Peace & Human Rights"],
+      "correctAnswer": 1,
+      "explanation": "The Booker Prize is a prestigious literary award conferred each year for the best original novel written in English.",
+      "subject": "General Knowledge", "topic": "Awards", "difficulty": "easy"
+    },
+    {
+      "id": "cil23q026", "questionNumber": 26,
+      "question": "Which Indian state has the maximum coal reserves?",
+      "options": ["Odisha", "Jharkhand", "Chhattisgarh", "West Bengal"],
+      "correctAnswer": 1,
+      "explanation": "Jharkhand holds the highest coal reserves in India, primarily in the Jharia coalfield region.",
+      "subject": "General Knowledge", "topic": "Geography & Mining", "difficulty": "medium"
+    },
+    {
+      "id": "cil23q027", "questionNumber": 27,
+      "question": "Which article of the Indian Constitution empowers the President to declare a Financial Emergency?",
+      "options": ["Article 352", "Article 356", "Article 360", "Article 368"],
+      "correctAnswer": 2,
+      "explanation": "Article 360 deals with the declaration of Financial Emergency.",
+      "subject": "General Knowledge", "topic": "Indian Polity", "difficulty": "medium"
+    },
+    {
+      "id": "cil23q028", "questionNumber": 28,
+      "question": "Who was appointed as the Governor of Reserve Bank of India in December 2018?",
+      "options": ["Urjit Patel", "Raghuram Rajan", "Shaktikanta Das", "D. Subbarao"],
+      "correctAnswer": 2,
+      "explanation": "Shaktikanta Das assumed charge as the 25th Governor of RBI in December 2018.",
+      "subject": "General Knowledge", "topic": "Economy & Current Affairs", "difficulty": "easy"
+    },
+    {
+      "id": "cil23q029", "questionNumber": 29,
+      "question": "What is the primary constituent of Natural Gas?",
+      "options": ["Ethane", "Methane", "Propane", "Butane"],
+      "correctAnswer": 1,
+      "explanation": "Methane (CH4) makes up around 70-90% of natural gas.",
+      "subject": "General Knowledge", "topic": "Science", "difficulty": "easy"
+    },
+    {
+      "id": "cil23q030", "questionNumber": 30,
+      "question": "In which city is the Central Institute of Mining and Fuel Research (CIMFR) located?",
+      "options": ["Dhanbad", "Asansol", "Nagpur", "Ranchi"],
+      "correctAnswer": 0,
+      "explanation": "CSIR-CIMFR is located in Dhanbad, Jharkhand.",
+      "subject": "General Knowledge", "topic": "Research Institutes", "difficulty": "medium"
+    },
+    {
+      "id": "cil23q031", "questionNumber": 31,
+      "question": "Who is known as the Father of Indian Space Program?",
+      "options": ["Dr. Homi J. Bhabha", "Dr. Vikram Sarabhai", "Dr. A.P.J. Abdul Kalam", "Satish Dhawan"],
+      "correctAnswer": 1,
+      "explanation": "Dr. Vikram Sarabhai is considered the father of the Indian space program.",
+      "subject": "General Knowledge", "topic": "Indian History & Science", "difficulty": "easy"
+    },
+    {
+      "id": "cil23q032", "questionNumber": 32,
+      "question": "Which river is known as the 'Sorrow of Bengal'?",
+      "options": ["Kosi", "Damodar", "Hooghly", "Mahanadi"],
+      "correctAnswer": 1,
+      "explanation": "Damodar River was historically called the 'Sorrow of Bengal' due to devastating floods.",
+      "subject": "General Knowledge", "topic": "Indian Geography", "difficulty": "easy"
+    },
+    {
+      "id": "cil23q033", "questionNumber": 33,
+      "question": "NITI Aayog replaced which of the following commissions in 2015?",
+      "options": ["Finance Commission", "Planning Commission", "Law Commission", "Staff Selection Commission"],
+      "correctAnswer": 1,
+      "explanation": "NITI Aayog (National Institution for Transforming India) replaced the Planning Commission on January 1, 2015.",
+      "subject": "General Knowledge", "topic": "Indian Polity", "difficulty": "easy"
+    },
+    {
+      "id": "cil23q034", "questionNumber": 34,
+      "question": "Which gas is released during coal seam gas extraction (Coal Bed Methane)?",
+      "options": ["Methane", "Carbon Monoxide", "Sulfur Dioxide", "Nitrous Oxide"],
+      "correctAnswer": 0,
+      "explanation": "Coalbed Methane (CBM) is an unconventional form of natural gas found in coal deposits.",
+      "subject": "General Knowledge", "topic": "Mining & Energy", "difficulty": "medium"
+    },
+    {
+      "id": "cil23q035", "questionNumber": 35,
+      "question": "The International Court of Justice (ICJ) is headquartered at:",
+      "options": ["Geneva", "New York", "The Hague", "Paris"],
+      "correctAnswer": 2,
+      "explanation": "The ICJ is located at the Peace Palace in The Hague, Netherlands.",
+      "subject": "General Knowledge", "topic": "International Organizations", "difficulty": "medium"
+    },
+    {
+      "id": "cil23q036", "questionNumber": 36,
+      "question": "Which spectrum color has the shortest wavelength?",
+      "options": ["Red", "Green", "Violet", "Yellow"],
+      "correctAnswer": 2,
+      "explanation": "Violet has the shortest wavelength (around 380-450 nm) in the visible spectrum.",
+      "subject": "General Knowledge", "topic": "Physics", "difficulty": "medium"
+    },
+    {
+      "id": "cil23q037", "questionNumber": 37,
+      "question": "Which Maharatna PSU company operates the Jharia and Raniganj coalfields?",
+      "options": ["BCCAL & ECL (Subsidiaries of CIL)", "NTPC", "SAIL", "ONGC"],
+      "correctAnswer": 0,
+      "explanation": "Bharat Coking Coal Limited (BCCL) and Eastern Coalfields Limited (ECL) operate in Jharia and Raniganj under CIL.",
+      "subject": "General Knowledge", "topic": "CIL Awareness", "difficulty": "medium"
+    },
+    {
+      "id": "cil23q038", "questionNumber": 38,
+      "question": "Who wrote the national anthem 'Jana Gana Mana'?",
+      "options": ["Bankim Chandra Chattopadhyay", "Rabindranath Tagore", "Sarojini Naidu", "Sri Aurobindo"],
+      "correctAnswer": 1,
+      "explanation": "Rabindranath Tagore composed Jana Gana Mana originally in Bengali.",
+      "subject": "General Knowledge", "topic": "Indian Culture", "difficulty": "easy"
+    },
+    {
+      "id": "cil23q039", "questionNumber": 39,
+      "question": "Which device converts Chemical Energy into Electrical Energy?",
+      "options": ["Motor", "Generator", "Battery", "Transformer"],
+      "correctAnswer": 2,
+      "explanation": "An electrochemical cell or battery converts chemical energy into electrical energy.",
+      "subject": "General Knowledge", "topic": "Science", "difficulty": "easy"
+    },
+    {
+      "id": "cil23q040", "questionNumber": 40,
+      "question": "When is National Science Day celebrated in India?",
+      "options": ["28th February", "15th August", "5th September", "11th May"],
+      "correctAnswer": 0,
+      "explanation": "National Science Day is celebrated on 28th February to mark the discovery of Raman Effect by Sir C.V. Raman.",
+      "subject": "General Knowledge", "topic": "Important Days", "difficulty": "easy"
+    },
+    {
+      "id": "cil23q041", "questionNumber": 41,
+      "question": "What is the worst-case time complexity of QuickSort?",
+      "options": ["O(n log n)", "O(n²)", "O(n)", "O(log n)"],
+      "correctAnswer": 1,
+      "explanation": "QuickSort takes O(n²) time in the worst case when the pivot chosen is always the extreme element (e.g. already sorted array).",
+      "subject": "Technical (CS/IT)", "topic": "Algorithms", "difficulty": "easy"
+    },
+    {
+      "id": "cil23q042", "questionNumber": 42,
+      "question": "Which Data Structure uses LIFO (Last In First Out) principle?",
+      "options": ["Queue", "Stack", "Tree", "Graph"],
+      "correctAnswer": 1,
+      "explanation": "Stack works on Last In First Out (LIFO) order.",
+      "subject": "Technical (CS/IT)", "topic": "Data Structures", "difficulty": "easy"
+    },
+    {
+      "id": "cil23q043", "questionNumber": 43,
+      "question": "Which RAID level provides striping with dual distributed parity?",
+      "options": ["RAID 5", "RAID 6", "RAID 10", "RAID 0"],
+      "correctAnswer": 1,
+      "explanation": "RAID 6 uses block-level striping with two distributed parity blocks per array.",
+      "subject": "Technical (CS/IT)", "topic": "Operating Systems & Storage", "difficulty": "medium"
+    },
+    {
+      "id": "cil23q044", "questionNumber": 44,
+      "question": "What is the maximum number of nodes in a binary tree of height h (where root is at height 1)?",
+      "options": ["2^h - 1", "2^h", "2^(h-1)", "2^(h+1)"],
+      "correctAnswer": 0,
+      "explanation": "Max nodes in a binary tree of height h = 2^0 + 2^1 + ... + 2^(h-1) = 2^h - 1.",
+      "subject": "Technical (CS/IT)", "topic": "Data Structures", "difficulty": "medium"
+    },
+    {
+      "id": "cil23q045", "questionNumber": 45,
+      "question": "In SQL, which clause is used to filter groups created by GROUP BY?",
+      "options": ["WHERE", "HAVING", "ORDER BY", "FILTER"],
+      "correctAnswer": 1,
+      "explanation": "HAVING clause is used to filter aggregated group results.",
+      "subject": "Technical (CS/IT)", "topic": "DBMS", "difficulty": "easy"
+    },
+    {
+      "id": "cil23q046", "questionNumber": 46,
+      "question": "Which transport layer protocol is connectionless and un-reliable?",
+      "options": ["TCP", "UDP", "SCTP", "FTP"],
+      "correctAnswer": 1,
+      "explanation": "UDP (User Datagram Protocol) is a lightweight connectionless transport layer protocol.",
+      "subject": "Technical (CS/IT)", "topic": "Computer Networks", "difficulty": "easy"
+    },
+    {
+      "id": "cil23q047", "questionNumber": 47,
+      "question": "Banker's Algorithm is used for:",
+      "options": ["Deadlock Prevention", "Deadlock Avoidance", "Deadlock Detection", "Memory Allocation"],
+      "correctAnswer": 1,
+      "explanation": "Dijkstra's Banker's Algorithm is a deadlock avoidance algorithm testing for safe states.",
+      "subject": "Technical (CS/IT)", "topic": "Operating Systems", "difficulty": "medium"
+    },
+    {
+      "id": "cil23q048", "questionNumber": 48,
+      "question": "What is the size of an IPv6 address?",
+      "options": ["32 bits", "64 bits", "128 bits", "256 bits"],
+      "correctAnswer": 2,
+      "explanation": "IPv6 addresses are 128 bits long.",
+      "subject": "Technical (CS/IT)", "topic": "Computer Networks", "difficulty": "easy"
+    },
+    {
+      "id": "cil23q049", "questionNumber": 49,
+      "question": "In B-Tree of order m, every internal node except root has at least how many children?",
+      "options": ["m/2", "ceil(m/2)", "m - 1", "ceil(m/2) - 1"],
+      "correctAnswer": 1,
+      "explanation": "Every non-root internal node in a B-Tree of order m has at least ceil(m/2) children.",
+      "subject": "Technical (CS/IT)", "topic": "Data Structures", "difficulty": "hard"
+    },
+    {
+      "id": "cil23q050", "questionNumber": 50,
+      "question": "What is ACID property 'I' in database management?",
+      "options": ["Integrity", "Isolation", "Index", "Idempotency"],
+      "correctAnswer": 1,
+      "explanation": "ACID stands for Atomicity, Consistency, Isolation, Durability.",
+      "subject": "Technical (CS/IT)", "topic": "DBMS", "difficulty": "easy"
+    },
+    {
+      "id": "cil23q051", "questionNumber": 51,
+      "question": "Which algorithm is used for finding Minimum Spanning Tree?",
+      "options": ["Kruskal's Algorithm", "Dijkstra's Algorithm", "Bellman-Ford Algorithm", "Floyd-Warshall Algorithm"],
+      "correctAnswer": 0,
+      "explanation": "Kruskal's and Prim's algorithms are greedy algorithms used to find MST.",
+      "subject": "Technical (CS/IT)", "topic": "Algorithms", "difficulty": "easy"
+    },
+    {
+      "id": "cil23q052", "questionNumber": 52,
+      "question": "Which layer in OSI model performs data compression and encryption?",
+      "options": ["Application Layer", "Presentation Layer", "Session Layer", "Transport Layer"],
+      "correctAnswer": 1,
+      "explanation": "Presentation Layer (Layer 6) handles syntax translation, data formatting, encryption, and compression.",
+      "subject": "Technical (CS/IT)", "topic": "Computer Networks", "difficulty": "easy"
+    },
+    {
+      "id": "cil23q053", "questionNumber": 53,
+      "question": "A scheduling algorithm assigns CPU to the process with smallest execution time. This is called:",
+      "options": ["FCFS", "SJF (Shortest Job First)", "Round Robin", "Priority Scheduling"],
+      "correctAnswer": 1,
+      "explanation": "SJF selects the process with the shortest burst time for execution.",
+      "subject": "Technical (CS/IT)", "topic": "Operating Systems", "difficulty": "easy"
+    },
+    {
+      "id": "cil23q054", "questionNumber": 54,
+      "question": "Which of the following is a non-linear data structure?",
+      "options": ["Array", "Linked List", "Tree", "Queue"],
+      "correctAnswer": 2,
+      "explanation": "Trees and Graphs are non-linear data structures. Arrays, Lists, and Queues are linear.",
+      "subject": "Technical (CS/IT)", "topic": "Data Structures", "difficulty": "easy"
+    },
+    {
+      "id": "cil23q055", "questionNumber": 55,
+      "question": "What is the time complexity of searching an element in a balanced Binary Search Tree (BST)?",
+      "options": ["O(1)", "O(log n)", "O(n)", "O(n log n)"],
+      "correctAnswer": 1,
+      "explanation": "Searching in a balanced BST takes O(log n) time.",
+      "subject": "Technical (CS/IT)", "topic": "Data Structures", "difficulty": "easy"
+    },
+    {
+      "id": "cil23q056", "questionNumber": 56,
+      "question": "Which Normal Form removes Partial Functional Dependency?",
+      "options": ["1NF", "2NF", "3NF", "BCNF"],
+      "correctAnswer": 1,
+      "explanation": "2NF eliminates partial dependencies (non-prime attribute depending on proper subset of candidate key).",
+      "subject": "Technical (CS/IT)", "topic": "DBMS", "difficulty": "medium"
+    },
+    {
+      "id": "cil23q057", "questionNumber": 57,
+      "question": "A process transitions from Running to Ready state because of:",
+      "options": ["I/O completion", "Interrupt or time quantum expiration", "Process termination", "Waiting for event"],
+      "correctAnswer": 1,
+      "explanation": "A running process moves back to Ready state when preempted by timer interrupt or higher priority process.",
+      "subject": "Technical (CS/IT)", "topic": "Operating Systems", "difficulty": "medium"
+    },
+    {
+      "id": "cil23q058", "questionNumber": 58,
+      "question": "Which IP address range belongs to Class C network?",
+      "options": ["1.0.0.0 to 126.255.255.255", "128.0.0.0 to 191.255.255.255", "192.0.0.0 to 223.255.255.255", "224.0.0.0 to 239.255.255.255"],
+      "correctAnswer": 2,
+      "explanation": "Class C IP addresses range from 192.0.0.0 to 223.255.255.255.",
+      "subject": "Technical (CS/IT)", "topic": "Computer Networks", "difficulty": "medium"
+    },
+    {
+      "id": "cil23q059", "questionNumber": 59,
+      "question": "What is the degree of a root node in a binary tree if it has 2 child nodes?",
+      "options": ["0", "1", "2", "3"],
+      "correctAnswer": 2,
+      "explanation": "The degree of a node is the total number of children it has.",
+      "subject": "Technical (CS/IT)", "topic": "Data Structures", "difficulty": "easy"
+    },
+    {
+      "id": "cil23q060", "questionNumber": 60,
+      "question": "In Object-Oriented Programming, wrapping data and methods into a single unit is known as:",
+      "options": ["Inheritance", "Polymorphism", "Encapsulation", "Abstraction"],
+      "correctAnswer": 2,
+      "explanation": "Encapsulation binds together code and the data it manipulates, keeping both safe from outside interference.",
+      "subject": "Technical (CS/IT)", "topic": "OOP Concepts", "difficulty": "easy"
+    },
+    {
+      "id": "cil23q061", "questionNumber": 61,
+      "question": "Which grammar in Chomsky hierarchy can be recognized by a Deterministic Finite Automaton (DFA)?",
+      "options": ["Type 0 (Unrestricted)", "Type 1 (Context Sensitive)", "Type 2 (Context Free)", "Type 3 (Regular)"],
+      "correctAnswer": 3,
+      "explanation": "Type 3 Regular grammars are accepted by Finite Automata (DFA/NFA).",
+      "subject": "Technical (CS/IT)", "topic": "Theory of Computation", "difficulty": "medium"
+    },
+    {
+      "id": "cil23q062", "questionNumber": 62,
+      "question": "Which compiler phase checks for grammatical structure and builds a Parse Tree?",
+      "options": ["Lexical Analysis", "Syntax Analysis", "Semantic Analysis", "Code Generation"],
+      "correctAnswer": 1,
+      "explanation": "Syntax analysis (Parser) takes tokens and generates a parse tree according to formal grammar.",
+      "subject": "Technical (CS/IT)", "topic": "Compiler Design", "difficulty": "easy"
+    },
+    {
+      "id": "cil23q063", "questionNumber": 63,
+      "question": "Which software engineering model is also known as Linear Sequential Model?",
+      "options": ["Spiral Model", "Waterfall Model", "RAD Model", "Agile Model"],
+      "correctAnswer": 1,
+      "explanation": "The Waterfall model is a sequential software development process.",
+      "subject": "Technical (CS/IT)", "topic": "Software Engineering", "difficulty": "easy"
+    },
+    {
+      "id": "cil23q064", "questionNumber": 64,
+      "question": "Which protocol is used by ping utility to test network reachability?",
+      "options": ["ARP", "ICMP", "IGMP", "SNMP"],
+      "correctAnswer": 1,
+      "explanation": "Ping uses ICMP (Internet Control Message Protocol) Echo Request and Echo Reply messages.",
+      "subject": "Technical (CS/IT)", "topic": "Computer Networks", "difficulty": "easy"
+    },
+    {
+      "id": "cil23q065", "questionNumber": 65,
+      "question": "What is Belady's Anomaly in Operating Systems?",
+      "options": ["More page frames lead to fewer page faults", "More page frames lead to more page faults in FIFO page replacement", "CPU utilization drops when multiprogramming increases", "Page table size grows exponentially"],
+      "correctAnswer": 1,
+      "explanation": "Belady's Anomaly is the phenomenon where increasing page frames increases page faults for FIFO replacement.",
+      "subject": "Technical (CS/IT)", "topic": "Operating Systems", "difficulty": "medium"
+    },
+    {
+      "id": "cil23q066", "questionNumber": 66,
+      "question": "The worst case space complexity of Depth First Search (DFS) on a graph with depth d is:",
+      "options": ["O(V)", "O(d)", "O(V²)", "O(E)"],
+      "correctAnswer": 1,
+      "explanation": "DFS space complexity is proportional to maximum recursion depth d, i.e., O(d).",
+      "subject": "Technical (CS/IT)", "topic": "Algorithms", "difficulty": "medium"
+    },
+    {
+      "id": "cil23q067", "questionNumber": 67,
+      "question": "What is a Foreign Key in a relational database?",
+      "options": ["A key that uniquely identifies a row in its own table", "A column or set of columns in one table that references the primary key of another table", "An encrypted key for remote access", "A secondary index"],
+      "correctAnswer": 1,
+      "explanation": "A foreign key enforces referential integrity by referencing primary key of another relation.",
+      "subject": "Technical (CS/IT)", "topic": "DBMS", "difficulty": "easy"
+    },
+    {
+      "id": "cil23q068", "questionNumber": 68,
+      "question": "Which scheduling algorithm gives minimum average waiting time?",
+      "options": ["FCFS", "SJF (Preemptive)", "Round Robin", "Priority Scheduling"],
+      "correctAnswer": 1,
+      "explanation": "Preemptive Shortest Job First (SRTF) is optimal and yields minimum average waiting time.",
+      "subject": "Technical (CS/IT)", "topic": "Operating Systems", "difficulty": "medium"
+    },
+    {
+      "id": "cil23q069", "questionNumber": 69,
+      "question": "Which port number is used by HTTP by default?",
+      "options": ["21", "25", "80", "443"],
+      "correctAnswer": 2,
+      "explanation": "HTTP uses port 80; HTTPS uses port 443.",
+      "subject": "Technical (CS/IT)", "topic": "Computer Networks", "difficulty": "easy"
+    },
+    {
+      "id": "cil23q070", "questionNumber": 70,
+      "question": "In C++, which keyword is used to declare a dynamic memory allocation?",
+      "options": ["malloc", "alloc", "new", "create"],
+      "correctAnswer": 2,
+      "explanation": "'new' operator allocates memory dynamically on the heap in C++.",
+      "subject": "Technical (CS/IT)", "topic": "Programming in C++", "difficulty": "easy"
+    },
+    {
+      "id": "cil23q071", "questionNumber": 71,
+      "question": "Which logic gate outputs 1 only when all inputs are 1?",
+      "options": ["OR Gate", "AND Gate", "NOR Gate", "XOR Gate"],
+      "correctAnswer": 1,
+      "explanation": "AND gate outputs 1 if and only if all inputs are 1.",
+      "subject": "Technical (CS/IT)", "topic": "Digital Logic", "difficulty": "easy"
+    },
+    {
+      "id": "cil23q072", "questionNumber": 72,
+      "question": "The Dual of boolean expression (A + 0) = A is:",
+      "options": ["A . 1 = A", "A . 0 = 0", "A + 1 = 1", "A . A = A"],
+      "correctAnswer": 0,
+      "explanation": "Duality principle replaces + with . and 0 with 1. So (A + 0) = A becomes A . 1 = A.",
+      "subject": "Technical (CS/IT)", "topic": "Digital Logic", "difficulty": "medium"
+    },
+    {
+      "id": "cil23q073", "questionNumber": 73,
+      "question": "How many select lines are required for a 16-to-1 Multiplexer?",
+      "options": ["2", "3", "4", "5"],
+      "correctAnswer": 2,
+      "explanation": "2^n = 16 => n = 4 select lines required.",
+      "subject": "Technical (CS/IT)", "topic": "Digital Logic", "difficulty": "easy"
+    },
+    {
+      "id": "cil23q074", "questionNumber": 74,
+      "question": "Which addressing mode specifies the operand location directly within the instruction?",
+      "options": ["Immediate Addressing", "Direct Addressing", "Indirect Addressing", "Register Addressing"],
+      "correctAnswer": 0,
+      "explanation": "In Immediate Addressing Mode, the operand value is explicitly given inside the instruction itself (e.g. MOV R1, #5).",
+      "subject": "Technical (CS/IT)", "topic": "Computer Architecture", "difficulty": "easy"
+    },
+    {
+      "id": "cil23q075", "questionNumber": 75,
+      "question": "A Cache Miss where data is accessed for the first time is called:",
+      "options": ["Conflict Miss", "Capacity Miss", "Compulsory Miss (Cold Miss)", "Coherence Miss"],
+      "correctAnswer": 2,
+      "explanation": "Compulsory/Cold miss occurs when data is requested for the very first time.",
+      "subject": "Technical (CS/IT)", "topic": "Computer Architecture", "difficulty": "medium"
+    },
+    {
+      "id": "cil23q076", "questionNumber": 76,
+      "question": "Which data structure is best suited for Breadth First Search (BFS) graph traversal?",
+      "options": ["Stack", "Queue", "Priority Queue", "Array"],
+      "correctAnswer": 1,
+      "explanation": "BFS uses a Queue to explore graph level by level.",
+      "subject": "Technical (CS/IT)", "topic": "Algorithms", "difficulty": "easy"
+    },
+    {
+      "id": "cil23q077", "questionNumber": 77,
+      "question": "What is the worst case time complexity of Merge Sort?",
+      "options": ["O(n²)", "O(n log n)", "O(n)", "O(2^n)"],
+      "correctAnswer": 1,
+      "explanation": "Merge sort divides array into halves consistently, yielding O(n log n) in all cases.",
+      "subject": "Technical (CS/IT)", "topic": "Algorithms", "difficulty": "easy"
+    },
+    {
+      "id": "cil23q078", "questionNumber": 78,
+      "question": "Which relational algebra operator selects tuples that satisfy a given predicate?",
+      "options": ["Projection (π)", "Selection (σ)", "Cartesian Product (×)", "Join (⋈)"],
+      "correctAnswer": 1,
+      "explanation": "Selection operator (σ) filters rows/tuples based on condition.",
+      "subject": "Technical (CS/IT)", "topic": "DBMS", "difficulty": "easy"
+    },
+    {
+      "id": "cil23q079", "questionNumber": 79,
+      "question": "A Semaphore S initialized to 1 is used for:",
+      "options": ["Counting resources", "Mutual Exclusion (Mutex)", "Barrier Synchronization", "Deadlock Recovery"],
+      "correctAnswer": 1,
+      "explanation": "A binary semaphore (value 0 or 1) acts as a Mutex lock.",
+      "subject": "Technical (CS/IT)", "topic": "Operating Systems", "difficulty": "medium"
+    },
+    {
+      "id": "cil23q080", "questionNumber": 80,
+      "question": "What is the subnet mask for a Class B IP network by default?",
+      "options": ["255.0.0.0", "255.255.0.0", "255.255.255.0", "255.255.255.255"],
+      "correctAnswer": 1,
+      "explanation": "Class B uses 16 network bits and 16 host bits, default subnet mask 255.255.0.0.",
+      "subject": "Technical (CS/IT)", "topic": "Computer Networks", "difficulty": "easy"
+    },
+    {
+      "id": "cil23q081", "questionNumber": 81,
+      "question": "Post-order traversal of a binary tree visits nodes in order:",
+      "options": ["Root, Left, Right", "Left, Root, Right", "Left, Right, Root", "Right, Left, Root"],
+      "correctAnswer": 2,
+      "explanation": "Post-order traversal order: Left Subtree → Right Subtree → Root Node.",
+      "subject": "Technical (CS/IT)", "topic": "Data Structures", "difficulty": "easy"
+    },
+    {
+      "id": "cil23q082", "questionNumber": 82,
+      "question": "In Software Testing, checking system components without executing code is:",
+      "options": ["Dynamic Testing", "Static Testing", "Black Box Testing", "White Box Testing"],
+      "correctAnswer": 1,
+      "explanation": "Static testing involves code reviews, walkthroughs, and inspections without running code.",
+      "subject": "Technical (CS/IT)", "topic": "Software Engineering", "difficulty": "medium"
+    },
+    {
+      "id": "cil23q083", "questionNumber": 83,
+      "question": "Cyclomatic Complexity of a flow graph with E edges and N nodes and P connected components is:",
+      "options": ["E - N + 2P", "E + N - 2P", "E - N + P", "N - E + 2P"],
+      "correctAnswer": 0,
+      "explanation": "McCabe's Cyclomatic Complexity V(G) = E - N + 2P.",
+      "subject": "Technical (CS/IT)", "topic": "Software Engineering", "difficulty": "hard"
+    },
+    {
+      "id": "cil23q084", "questionNumber": 84,
+      "question": "Which collision resolution technique in Hashing uses open addressing with linear probing?",
+      "options": ["Chaining", "Linear Probing", "Double Hashing", "Quadratic Probing"],
+      "correctAnswer": 1,
+      "explanation": "Linear probing checks consecutive slots (i + 1, i + 2...) linearly upon collision.",
+      "subject": "Technical (CS/IT)", "topic": "Data Structures", "difficulty": "easy"
+    },
+    {
+      "id": "cil23q085", "questionNumber": 85,
+      "question": "The time complexity to find an item in a Hash Table with good hash function is:",
+      "options": ["O(1) average case", "O(log n) worst case", "O(n log n)", "O(n²)"],
+      "correctAnswer": 0,
+      "explanation": "With uniform hashing and low load factor, average search time is O(1).",
+      "subject": "Technical (CS/IT)", "topic": "Data Structures", "difficulty": "easy"
+    },
+    {
+      "id": "cil23q086", "questionNumber": 86,
+      "question": "In ER Diagrams, an Entity Set that does not have sufficient attributes to form a primary key is:",
+      "options": ["Strong Entity Set", "Weak Entity Set", "Derived Entity Set", "Multivalued Entity Set"],
+      "correctAnswer": 1,
+      "explanation": "A Weak Entity Set depends on an identifying owner entity set and uses a discriminator/partial key.",
+      "subject": "Technical (CS/IT)", "topic": "DBMS", "difficulty": "medium"
+    },
+    {
+      "id": "cil23q087", "questionNumber": 87,
+      "question": "Which protocol works at Data Link Layer to map IP address to MAC address?",
+      "options": ["RARP", "ARP (Address Resolution Protocol)", "DNS", "DHCP"],
+      "correctAnswer": 1,
+      "explanation": "ARP maps 32-bit IPv4 addresses to 48-bit Ethernet MAC addresses.",
+      "subject": "Technical (CS/IT)", "topic": "Computer Networks", "difficulty": "easy"
+    },
+    {
+      "id": "cil23q088", "questionNumber": 88,
+      "question": "Virtual Memory is implemented using:",
+      "options": ["Segmentation & Paging", "Cache Memory only", "ROM", "Registers"],
+      "correctAnswer": 0,
+      "explanation": "Virtual memory uses Paging and Demand Segmentation supported by MMU.",
+      "subject": "Technical (CS/IT)", "topic": "Operating Systems", "difficulty": "medium"
+    },
+    {
+      "id": "cil23q089", "questionNumber": 89,
+      "question": "In COCOMO model, software projects are categorized into three modes: Organic, Semidetached, and:",
+      "options": ["Embedded", "Complex", "Distributed", "Parallel"],
+      "correctAnswer": 0,
+      "explanation": "COCOMO categorizes projects into Organic, Semi-detached, and Embedded modes based on complexity.",
+      "subject": "Technical (CS/IT)", "topic": "Software Engineering", "difficulty": "medium"
+    },
+    {
+      "id": "cil23q090", "questionNumber": 90,
+      "question": "Which type of language is generated by Context Free Grammar (CFG)?",
+      "options": ["Regular Language", "Context Free Language (CFL)", "Context Sensitive Language", "Recursive Language"],
+      "correctAnswer": 1,
+      "explanation": "CFG generates Context Free Languages, recognized by Pushdown Automata.",
+      "subject": "Technical (CS/IT)", "topic": "Theory of Computation", "difficulty": "easy"
+    },
+    {
+      "id": "cil23q091", "questionNumber": 91,
+      "question": "Pumping Lemma for Regular Languages is primarily used to:",
+      "options": ["Prove a given language is regular", "Prove a given language is NOT regular", "Minimize a DFA", "Convert NFA to DFA"],
+      "correctAnswer": 1,
+      "explanation": "Pumping Lemma is a proof tool used to show that a language is NOT regular.",
+      "subject": "Technical (CS/IT)", "topic": "Theory of Computation", "difficulty": "hard"
+    },
+    {
+      "id": "cil23q092", "questionNumber": 92,
+      "question": "Which flip-flop converts into T flip-flop when its inputs J and K are connected together?",
+      "options": ["D Flip-Flop", "JK Flip-Flop", "SR Flip-Flop", "Master-Slave Flip-Flop"],
+      "correctAnswer": 1,
+      "explanation": "Tying J and K inputs together converts a JK flip-flop into a Toggle (T) flip-flop.",
+      "subject": "Technical (CS/IT)", "topic": "Digital Logic", "difficulty": "easy"
+    },
+    {
+      "id": "cil23q093", "questionNumber": 93,
+      "question": "What is the maximum number of edges in an undirected simple graph with n vertices?",
+      "options": ["n(n-1)", "n(n-1)/2", "n²", "2^n"],
+      "correctAnswer": 1,
+      "explanation": "Max edges in undirected simple graph = nC2 = n(n-1)/2.",
+      "subject": "Technical (CS/IT)", "topic": "Graph Theory & Discrete Maths", "difficulty": "easy"
+    },
+    {
+      "id": "cil23q094", "questionNumber": 94,
+      "question": "In Symmetric Key Cryptography:",
+      "options": ["Same key is used for both Encryption and Decryption", "Public key encrypts and Private key decrypts", "No key is required", "Three keys are used"],
+      "correctAnswer": 0,
+      "explanation": "Symmetric encryption uses a single shared secret key for encryption and decryption.",
+      "subject": "Technical (CS/IT)", "topic": "Network Security", "difficulty": "easy"
+    },
+    {
+      "id": "cil23q095", "questionNumber": 95,
+      "question": "What is the main objective of Normalization in DBMS?",
+      "options": ["Increase query speed", "Eliminate Data Redundancy and avoid anomalies", "Encrypt sensitive data", "Create automatic indexes"],
+      "correctAnswer": 1,
+      "explanation": "Normalization organizes fields and tables to minimize redundancy and dependency anomalies.",
+      "subject": "Technical (CS/IT)", "topic": "DBMS", "difficulty": "easy"
+    },
+    {
+      "id": "cil23q096", "questionNumber": 96,
+      "question": "Thrashing in Operating System occurs when:",
+      "options": ["Disk is corrupted", "CPU spends more time paging than executing processes", "System memory is completely free", "Processes run too fast"],
+      "correctAnswer": 1,
+      "explanation": "Thrashing happens when system spends more time swapping pages in/out than doing useful work.",
+      "subject": "Technical (CS/IT)", "topic": "Operating Systems", "difficulty": "medium"
+    },
+    {
+      "id": "cil23q097", "questionNumber": 97,
+      "question": "A Deadlock State can be broken by:",
+      "options": ["Process Termination or Resource Preemption", "Increasing CPU clock speed", "Adding more RAM", "Opening new sockets"],
+      "correctAnswer": 0,
+      "explanation": "Recovery from deadlock involves terminating processes or preempting resources.",
+      "subject": "Technical (CS/IT)", "topic": "Operating Systems", "difficulty": "easy"
+    },
+    {
+      "id": "cil23q098", "questionNumber": 98,
+      "question": "Which protocol handles secure remote login over encrypted channels?",
+      "options": ["Telnet", "SSH (Secure Shell)", "FTP", "HTTP"],
+      "correctAnswer": 1,
+      "explanation": "SSH operates over port 22 providing encrypted remote shell logins.",
+      "subject": "Technical (CS/IT)", "topic": "Computer Networks", "difficulty": "easy"
+    },
+    {
+      "id": "cil23q099", "questionNumber": 99,
+      "question": "What is the time complexity of Heapify operation in Heap Sort?",
+      "options": ["O(1)", "O(log n)", "O(n)", "O(n log n)"],
+      "correctAnswer": 1,
+      "explanation": "Heapify takes O(log n) time to maintain heap property for a single node down the tree.",
+      "subject": "Technical (CS/IT)", "topic": "Algorithms", "difficulty": "medium"
+    },
+    {
+      "id": "cil23q100", "questionNumber": 100,
+      "question": "In a Compiler, intermediate code generation produces code that is:",
+      "options": ["Machine dependent", "Machine independent and easy to translate to target code", "High-level source code", "Assembly code only"],
+      "correctAnswer": 1,
+      "explanation": "Intermediate Representation (IR) is machine-independent, facilitating portability and optimization.",
+      "subject": "Technical (CS/IT)", "topic": "Compiler Design", "difficulty": "medium"
+    }
+  ]
+}

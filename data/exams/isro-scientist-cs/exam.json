@@ -1,0 +1,20 @@
+{
+  "examId": "isro-scientist-cs",
+  "name": "ISRO Scientist/Engineer 'SC' (Computer Science)",
+  "shortName": "ISRO Scientist CS",
+  "authority": "Indian Space Research Organisation (ISRO)",
+  "category": "Space / Technical",
+  "description": "ISRO Centralised Recruitment Board (ICRB) exam for Scientist/Engineer 'SC' in Computer Science. Tests core CS fundamentals, discrete mathematics, and general aptitude.",
+  "durationMinutes": 120,
+  "totalQuestions": 80,
+  "totalMarks": 240,
+  "marking": { "correct": 3, "negative": 1, "unattempted": 0 },
+  "sections": [
+    { "id": "core-computer-science", "name": "Core Computer Science", "maxQuestions": 60 },
+    { "id": "general-aptitude-maths", "name": "Aptitude & Mathematics", "maxQuestions": 20 }
+  ],
+  "tags": ["ISRO", "Scientist", "Space", "Computer Science", "ICRB", "Technical"],
+  "eligibility": "B.E./B.Tech in Computer Science & Engineering (First Class)",
+  "applicationMode": "Online",
+  "selectionProcess": ["Written Test", "Interview"]
+}

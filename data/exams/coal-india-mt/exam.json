@@ -1,0 +1,21 @@
+{
+  "examId": "coal-india-mt",
+  "name": "Coal India Management Trainee (CS/IT)",
+  "shortName": "Coal India MT",
+  "authority": "Coal India Limited (CIL)",
+  "category": "PSU",
+  "description": "CIL Management Trainee recruitment for Computer Science/IT discipline. Tests General English, General Knowledge/Awareness, and Technical knowledge in CS/IT.",
+  "durationMinutes": 120,
+  "totalQuestions": 100,
+  "totalMarks": 200,
+  "marking": { "correct": 2, "negative": 0.5, "unattempted": 0 },
+  "sections": [
+    { "id": "general-english", "name": "General English", "maxQuestions": 20 },
+    { "id": "general-knowledge", "name": "General Knowledge", "maxQuestions": 20 },
+    { "id": "technical", "name": "Technical (CS/IT)", "maxQuestions": 60 }
+  ],
+  "tags": ["Coal India", "CIL", "PSU", "Management Trainee", "CS", "IT", "Computer Science"],
+  "eligibility": "B.E./B.Tech in CS/IT",
+  "applicationMode": "Online",
+  "selectionProcess": ["Written Test", "Medical"]
+}

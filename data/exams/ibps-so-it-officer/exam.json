@@ -1,0 +1,49 @@
+{
+  "examId": "ibps-so-it-officer",
+  "name": "IBPS SO IT Officer",
+  "shortName": "IBPS SO IT",
+  "authority": "IBPS (Institute of Banking Personnel Selection)",
+  "category": "Banking",
+  "description": "Specialist Officer recruitment for IT Officer posts in public sector banks. Tests Reasoning, Quantitative Aptitude, English Language, and Professional Knowledge (IT).",
+  "durationMinutes": 120,
+  "totalQuestions": 125,
+  "totalMarks": 125,
+  "marking": {
+    "correct": 1,
+    "negative": 0.25,
+    "unattempted": 0
+  },
+  "sections": [
+    {
+      "id": "reasoning",
+      "name": "Reasoning",
+      "questionIds": [],
+      "maxQuestions": 25,
+      "maxMarks": 25
+    },
+    {
+      "id": "quantitative-aptitude",
+      "name": "Quantitative Aptitude",
+      "questionIds": [],
+      "maxQuestions": 25,
+      "maxMarks": 25
+    },
+    {
+      "id": "english",
+      "name": "English Language",
+      "questionIds": [],
+      "maxQuestions": 25,
+      "maxMarks": 25
+    },
+    {
+      "id": "professional-knowledge",
+      "name": "Professional Knowledge (IT)",
+      "questionIds": [],
+      "maxQuestions": 50,
+      "maxMarks": 50
+    }
+  ],
+  "tags": ["Banking", "IT", "Specialist Officer", "IBPS", "Computer Science"],
+  "allowNavigation": true,
+  "allowMarkForReview": true
+}
