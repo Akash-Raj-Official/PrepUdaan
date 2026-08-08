@@ -35,7 +35,7 @@ export async function getPaper(
 // ─── List all papers for an exam ───────────────────────────────────────────────
 // In production this would be a manifest file; for MVP we use a static map
 const PAPER_MANIFEST: Record<string, string[]> = {
-  "ibps-so-it-officer": ["2024", "2023"],
+  "ibps-so-it-officer": ["2025", "2024", "2023", "2022"],
   "coal-india-mt": ["2023", "2022"],
   "isro-scientist-cs": ["2023", "2020"],
 };
