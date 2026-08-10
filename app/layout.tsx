@@ -27,13 +27,6 @@ export const metadata: Metadata = {
     "banking exam mock",
     "technical viva interview prep",
   ],
-  icons: {
-    icon: [
-      { url: "/icon.svg", type: "image/svg+xml" },
-    ],
-    shortcut: "/icon.svg",
-    apple: "/icon.svg",
-  },
   openGraph: {
     title: "PrepUdaan — Government & Technical Exam Mock Tests",
     description:
