@@ -140,7 +140,7 @@ export default async function HomePage() {
             className="absolute top-0 left-1/4 w-96 h-96 rounded-full pointer-events-none"
             style={{
               background:
-                "radial-gradient(circle, rgba(99,102,241,0.12) 0%, transparent 70%)",
+                "radial-gradient(circle, var(--hero-orb-1) 0%, transparent 70%)",
               filter: "blur(40px)",
             }}
           />
@@ -148,15 +148,15 @@ export default async function HomePage() {
             className="absolute top-20 right-1/4 w-64 h-64 rounded-full pointer-events-none"
             style={{
               background:
-                "radial-gradient(circle, rgba(245,158,11,0.08) 0%, transparent 70%)",
+                "radial-gradient(circle, var(--hero-orb-2) 0%, transparent 70%)",
               filter: "blur(40px)",
             }}
           />
 
           <div className="max-w-4xl mx-auto text-center relative">
             {/* Badge */}
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-indigo-500/30 bg-indigo-500/10 text-indigo-300 text-sm font-medium mb-8 animate-fade-in-up">
-              <span className="w-2 h-2 rounded-full bg-indigo-400 animate-pulse inline-block"></span>
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full badge-indigo text-sm font-medium mb-8 animate-fade-in-up">
+              <span className="w-2 h-2 rounded-full bg-indigo-500 animate-pulse inline-block"></span>
               Official PYPs · Timed Mocks · Analytics · Technical Viva Prep
             </div>
 
@@ -181,7 +181,7 @@ export default async function HomePage() {
               <Link
                 href="/interview-prep"
                 id="hero-interview-prep-btn"
-                className="px-8 py-4 rounded-xl border border-amber-500/40 bg-amber-500/10 hover:bg-amber-500/20 text-amber-300 font-semibold text-lg transition-all duration-200 hover:-translate-y-0.5"
+                className="px-8 py-4 rounded-xl badge-amber font-semibold text-lg transition-all duration-200 hover:-translate-y-0.5 shadow-sm"
               >
                 🎓 Interview Prep Hub
               </Link>
@@ -209,10 +209,10 @@ export default async function HomePage() {
         {/* ── Privacy Notice ───────────────────────────────────────────────────── */}
         <section className="px-4 sm:px-6 pb-6">
           <div className="max-w-6xl mx-auto">
-            <div className="flex items-start gap-3 px-5 py-4 rounded-xl border border-emerald-500/20 bg-emerald-500/5">
-              <span className="text-emerald-400 text-lg mt-0.5 shrink-0">🔒</span>
-              <p className="text-sm text-emerald-300/80 leading-relaxed">
-                <strong className="text-emerald-300">100% Client-Side Privacy:</strong>{" "}
+            <div className="flex items-start gap-3 px-5 py-4 rounded-xl badge-emerald">
+              <span className="text-lg mt-0.5 shrink-0">🔒</span>
+              <p className="text-sm leading-relaxed opacity-95">
+                <strong className="font-bold">100% Client-Side Privacy:</strong>{" "}
                 Your responses, timings, and analytical reports are calculated strictly inside your browser and never transmitted to external servers.
               </p>
             </div>
@@ -264,7 +264,7 @@ export default async function HomePage() {
                     Genuinely new exam families undergoing question curation &amp; verification
                   </p>
                 </div>
-                <span className="text-xs px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 font-semibold">
+                <span className="text-xs px-3 py-1 rounded-full badge-amber font-semibold">
                   In Active Preparation
                 </span>
               </div>
@@ -273,13 +273,13 @@ export default async function HomePage() {
                 {UPCOMING_DETAILS.map((item) => (
                   <div
                     key={item.name}
-                    className="glass-card p-5 border border-[var(--border)]/60 bg-[var(--bg-card)]/40 hover:border-amber-500/30 transition-all"
+                    className="glass-card p-5 hover:border-[var(--accent-primary)]/40 transition-all"
                   >
                     <div className="flex items-center justify-between mb-2">
-                      <span className="text-xs font-semibold px-2 py-0.5 rounded bg-indigo-500/10 border border-indigo-500/20 text-indigo-300">
+                      <span className="text-xs font-semibold px-2 py-0.5 rounded badge-indigo">
                         {item.category}
                       </span>
-                      <span className="text-xs text-amber-400/90 font-mono">
+                      <span className="text-xs font-mono text-[var(--text-muted)]">
                         {item.timeline}
                       </span>
                     </div>
@@ -297,10 +297,10 @@ export default async function HomePage() {
         </section>
 
         {/* ── Technical Interview & Viva Spotlight ─────────────────────────────────── */}
-        <section className="px-4 sm:px-6 py-14 bg-indigo-950/20 border-t border-[var(--border)]">
+        <section className="px-4 sm:px-6 py-14 bg-[var(--spotlight-bg)] border-t border-[var(--border)] transition-colors duration-300">
           <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
             <div className="space-y-3 max-w-2xl">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-300 text-xs font-semibold">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full badge-amber text-xs font-semibold">
                 🎓 New Module
               </div>
               <h2 className="text-2xl sm:text-3xl font-extrabold text-[var(--text-primary)]">
@@ -436,17 +436,17 @@ function CategoryCard({
             key={exam.examId}
             href={`/exams/${exam.examId}`}
             id={`exam-link-${exam.examId}`}
-            className="flex items-center justify-between px-3 py-2.5 rounded-lg border border-[var(--border)] bg-[var(--bg-primary)]/50 hover:bg-indigo-500/10 hover:border-indigo-500/40 transition-all duration-200 group"
+            className="flex items-center justify-between px-3 py-2.5 rounded-lg border border-[var(--border)] bg-[var(--bg-secondary)] hover:bg-[var(--badge-indigo-bg)] hover:border-[var(--accent-primary)]/40 transition-all duration-200 group"
           >
             <div>
-              <div className="text-sm font-semibold text-[var(--text-primary)] group-hover:text-indigo-300 transition-colors">
+              <div className="text-sm font-semibold text-[var(--text-primary)] group-hover:text-[var(--accent-primary)] transition-colors">
                 {exam.shortName}
               </div>
               <div className="text-xs text-[var(--text-muted)]">
                 {exam.paperCount} paper{exam.paperCount !== 1 ? "s" : ""} available
               </div>
             </div>
-            <span className="text-[var(--text-muted)] group-hover:text-indigo-400 transition-colors text-sm">
+            <span className="text-[var(--text-muted)] group-hover:text-[var(--accent-primary)] transition-colors text-sm">
               →
             </span>
           </Link>
