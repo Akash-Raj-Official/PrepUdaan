@@ -96,14 +96,14 @@ function NavigatorPanel({
       <div className="px-3 pt-3 pb-2 border-b border-[var(--border)]">
         <div className="grid grid-cols-4 gap-1.5 text-xs">
           {[
-            { label: "Ans", value: answered, cls: "text-emerald-400 bg-emerald-500/10 border-emerald-500/20" },
-            { label: "Marked", value: marked, cls: "text-amber-400 bg-amber-500/10 border-amber-500/20" },
-            { label: "Visited", value: visited, cls: "text-blue-300 bg-blue-500/10 border-blue-500/20" },
-            { label: "Unseen", value: paper.totalQuestions - visited, cls: "text-[var(--text-muted)] bg-[var(--bg-card)] border-[var(--border)]" },
+            { label: "Ans", value: answered, cls: "badge-emerald" },
+            { label: "Marked", value: marked, cls: "badge-amber" },
+            { label: "Visited", value: visited, cls: "badge-indigo" },
+            { label: "Unseen", value: paper.totalQuestions - visited, cls: "text-[var(--text-muted)] bg-[var(--bg-card)] border border-[var(--border)]" },
           ].map((s) => (
-            <div key={s.label} className={`rounded-lg border p-1.5 text-center ${s.cls}`}>
+            <div key={s.label} className={`rounded-lg p-1.5 text-center ${s.cls}`}>
               <div className="font-bold text-sm leading-none">{s.value}</div>
-              <div className="opacity-70 leading-none mt-0.5 text-[0.6rem]">{s.label}</div>
+              <div className="opacity-80 leading-none mt-0.5 text-[0.6rem]">{s.label}</div>
             </div>
           ))}
         </div>
@@ -316,7 +316,7 @@ export default function ExamInterface({ paper, exam }: { paper: Paper; exam: Exa
             onClick={() => setShowNavDrawer(true)}
             className="md:hidden flex items-center gap-1 px-2.5 py-1.5 rounded-lg border border-[var(--border)] bg-[var(--bg-card)] text-[var(--text-secondary)] text-xs font-semibold"
           >
-            📋 <span className="text-emerald-400 font-bold">{answered}</span>
+            📋 <span className="text-emerald-700 dark:text-emerald-400 font-bold">{answered}</span>
           </button>
           <button
             id="submit-test-btn"
@@ -341,7 +341,7 @@ export default function ExamInterface({ paper, exam }: { paper: Paper; exam: Exa
             }}
             className={`px-3 py-2 text-xs font-medium whitespace-nowrap border-b-2 transition-all flex-shrink-0 ${
               i === currentSectionIdx
-                ? "border-indigo-500 text-indigo-300 bg-indigo-500/5"
+                ? "border-[var(--accent-primary)] text-[var(--accent-primary)] bg-[var(--badge-indigo-bg)] font-semibold"
                 : "border-transparent text-[var(--text-muted)] hover:text-[var(--text-secondary)]"
             }`}
           >
@@ -363,17 +363,17 @@ export default function ExamInterface({ paper, exam }: { paper: Paper; exam: Exa
                 Q {currentQ.questionNumber} / {paper.totalQuestions}
               </span>
               {currentQ.subject && (
-                <span className="text-xs text-indigo-400 bg-indigo-500/10 px-2.5 py-1 rounded-full border border-indigo-500/20">
+                <span className="text-xs px-2.5 py-1 rounded-full badge-indigo font-medium">
                   {currentQ.subject}
                 </span>
               )}
               {currentQ.difficulty && (
-                <span className={`text-xs px-2.5 py-1 rounded-full border ${
+                <span className={`text-xs px-2.5 py-1 rounded-full font-medium ${
                   currentQ.difficulty === "easy"
-                    ? "text-emerald-400 bg-emerald-500/10 border-emerald-500/20"
+                    ? "badge-emerald"
                     : currentQ.difficulty === "hard"
-                    ? "text-red-400 bg-red-500/10 border-red-500/20"
-                    : "text-amber-400 bg-amber-500/10 border-amber-500/20"
+                    ? "badge-red"
+                    : "badge-amber"
                 }`}>
                   {currentQ.difficulty}
                 </span>
@@ -439,7 +439,7 @@ export default function ExamInterface({ paper, exam }: { paper: Paper; exam: Exa
                 className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-all ${
                   session.questionStatus[currentQ.id] === "MARKED_FOR_REVIEW" ||
                   session.questionStatus[currentQ.id] === "ANSWERED_AND_MARKED"
-                    ? "bg-amber-500/20 border border-amber-500/40 text-amber-300"
+                    ? "badge-amber font-semibold"
                     : "border border-[var(--border)] text-[var(--text-secondary)] hover:bg-[var(--bg-card)]"
                 }`}
               >
@@ -505,13 +505,13 @@ export default function ExamInterface({ paper, exam }: { paper: Paper; exam: Exa
 
             <div className="grid grid-cols-3 gap-2 mb-5">
               {[
-                { label: "Answered", value: answered, cls: "bg-emerald-500/10 border-emerald-500/20 text-emerald-400" },
-                { label: "Unanswered", value: paper.totalQuestions - answered, cls: "bg-red-500/10 border-red-500/20 text-red-400" },
-                { label: "Marked", value: marked, cls: "bg-amber-500/10 border-amber-500/20 text-amber-400" },
+                { label: "Answered", value: answered, cls: "badge-emerald" },
+                { label: "Unanswered", value: paper.totalQuestions - answered, cls: "badge-red" },
+                { label: "Marked", value: marked, cls: "badge-amber" },
               ].map((s) => (
-                <div key={s.label} className={`border rounded-xl p-3 text-center ${s.cls}`}>
+                <div key={s.label} className={`rounded-xl p-3 text-center ${s.cls}`}>
                   <div className="text-xl font-bold">{s.value}</div>
-                  <div className="text-xs opacity-75 mt-0.5">{s.label}</div>
+                  <div className="text-xs opacity-80 mt-0.5">{s.label}</div>
                 </div>
               ))}
             </div>

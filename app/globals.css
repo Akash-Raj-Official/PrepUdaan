@@ -80,11 +80,11 @@
 
   --badge-amber-bg: #fffbeb;
   --badge-amber-border: #fde68a;
-  --badge-amber-text: #b45309;
+  --badge-amber-text: #92400e;   /* deep rich amber-brown with 7+:1 contrast ratio */
 
   --badge-emerald-bg: #ecfdf5;
   --badge-emerald-border: #a7f3d0;
-  --badge-emerald-text: #047857;
+  --badge-emerald-text: #065f46; /* deep rich emerald green with 7+:1 contrast ratio */
 
   --badge-indigo-bg: #eef2ff;
   --badge-indigo-border: #c7d2fe;

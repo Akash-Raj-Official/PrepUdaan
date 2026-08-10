@@ -200,8 +200,8 @@ export default function InterviewPrepPage() {
               </h3>
 
               {/* Model answer */}
-              <div className="p-4 rounded-xl bg-indigo-950/20 border border-indigo-500/20 space-y-1.5">
-                <div className="text-xs font-bold uppercase tracking-wider text-emerald-400">
+              <div className="p-4 rounded-xl bg-[var(--badge-indigo-bg)] border border-[var(--border)] space-y-1.5">
+                <div className="text-xs font-bold uppercase tracking-wider text-emerald-700 dark:text-emerald-400">
                   ✓ Model Viva Answer
                 </div>
                 <p className="text-sm text-[var(--text-secondary)] leading-relaxed">
@@ -228,7 +228,7 @@ export default function InterviewPrepPage() {
                 </div>
 
                 <div className="space-y-1.5">
-                  <div className="font-bold text-amber-400/90 uppercase tracking-wider">
+                  <div className="font-bold text-amber-700 dark:text-amber-400 uppercase tracking-wider">
                     Expected Interviewer Follow-Ups
                   </div>
                   <ul className="space-y-1 list-disc list-inside text-[var(--text-muted)]">

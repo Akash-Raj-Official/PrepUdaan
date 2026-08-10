@@ -147,22 +147,22 @@ export default function ResultClient() {
     if (scorePercent >= 80) return {
       emoji: "🏆", label: "Congratulations!",
       message: `Exceptional performance${userName ? `, ${userName}` : ""}! You're well-prepared for the real exam.`,
-      color: "border-emerald-500/30 bg-emerald-500/8 text-emerald-300",
+      color: "badge-emerald",
     };
     if (scorePercent >= 65) return {
       emoji: "🌟", label: "Well Done!",
       message: `Great effort${userName ? `, ${userName}` : ""}! A little more practice on weak areas will get you to the top.`,
-      color: "border-blue-500/30 bg-blue-500/8 text-blue-300",
+      color: "badge-indigo",
     };
     if (scorePercent >= 50) return {
       emoji: "💪", label: "Keep Going!",
       message: `You're on the right track${userName ? `, ${userName}` : ""}! Focus on accuracy and attempt more questions.`,
-      color: "border-amber-500/30 bg-amber-500/8 text-amber-300",
+      color: "badge-amber",
     };
     return {
       emoji: "📚", label: "Needs Improvement",
       message: `Don't give up${userName ? `, ${userName}` : ""}! Review the concepts, practise daily, and retake this paper.`,
-      color: "border-red-500/30 bg-red-500/8 text-red-300",
+      color: "badge-red",
     };
   })();
 
@@ -198,49 +198,38 @@ export default function ResultClient() {
           </h1>
           {userName && (
             <p className="text-[var(--text-secondary)] text-base mt-2">
-              Candidate: <span className="font-semibold text-indigo-300">{userName}</span>
+              Candidate: <span className="font-semibold text-[var(--accent-primary)]">{userName}</span>
             </p>
           )}
         </div>
 
-        {/* ── Personalised Feedback Banner ─────────────────────────────────────── */}
-        <div className={`rounded-2xl border px-5 py-4 flex items-start gap-4 animate-fade-in-up delay-100 ${feedback.color}`}>
-          <span className="text-3xl shrink-0">{feedback.emoji}</span>
-          <div>
-            <h2 className="font-bold text-lg mb-0.5">{feedback.label}</h2>
-            <p className="text-sm opacity-90 leading-relaxed">{feedback.message}</p>
-          </div>
-          <div className="ml-auto shrink-0 text-right hidden sm:block">
-            <div className="text-2xl font-extrabold">{scorePercent.toFixed(1)}%</div>
-            <div className="text-xs opacity-70">Score</div>
-          </div>
-        </div>
-
-        {/* ── Score Hero ────────────────────────────────────────────────────────── */}
-        <div className="glass-card p-8 text-center relative overflow-hidden glow-indigo animate-fade-in-up delay-100">
-          <div
-            className="absolute inset-0 pointer-events-none"
-            style={{
-              background:
-                "radial-gradient(ellipse at 50% 0%, rgba(99,102,241,0.12) 0%, transparent 70%)",
-            }}
-          />
-          <div className="relative">
-            <div className="text-6xl sm:text-8xl font-extrabold gradient-text animate-count-up">
+        {/* ── Score Banner ──────────────────────────────────────────────────────── */}
+        <div
+          className={`glass-card p-6 sm:p-8 text-center relative overflow-hidden animate-fade-in-up delay-100 ${feedback.color}`}
+        >
+          <div className="max-w-xl mx-auto relative">
+            <div className="text-4xl sm:text-5xl mb-3">{feedback.emoji}</div>
+            <div className="text-xs font-bold uppercase tracking-wider opacity-80 mb-1">
+              {feedback.label}
+            </div>
+            <p className="text-base sm:text-lg mb-6 leading-relaxed">
+              {feedback.message}
+            </p>
+            <div className="text-5xl sm:text-7xl font-extrabold tracking-tight">
               {result.score}
-              <span className="text-3xl sm:text-5xl text-[var(--text-muted)] font-normal">
+              <span className="text-3xl sm:text-5xl opacity-60 font-normal">
                 /{result.maxScore}
               </span>
             </div>
-            <div className="mt-3 text-lg text-[var(--text-secondary)]">
+            <div className="mt-3 text-lg font-medium opacity-90">
               Score —{" "}
               <span
                 className={
                   scorePercent >= 70
-                    ? "text-emerald-400 font-semibold"
+                    ? "text-emerald-700 dark:text-emerald-400 font-bold"
                     : scorePercent >= 50
-                    ? "text-amber-400 font-semibold"
-                    : "text-red-400 font-semibold"
+                    ? "text-amber-700 dark:text-amber-400 font-bold"
+                    : "text-red-700 dark:text-red-400 font-bold"
                 }
               >
                 {scorePercent.toFixed(1)}%
@@ -252,14 +241,14 @@ export default function ResultClient() {
         {/* ── Summary Stats ──────────────────────────────────────────────────────── */}
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 animate-fade-in-up delay-200">
           {[
-            { label: "Attempted", value: result.attempted, color: "text-blue-400" },
-            { label: "Correct", value: result.correct, color: "text-emerald-400" },
-            { label: "Incorrect", value: result.incorrect, color: "text-red-400" },
+            { label: "Attempted", value: result.attempted, color: "text-indigo-700 dark:text-indigo-400" },
+            { label: "Correct", value: result.correct, color: "text-emerald-700 dark:text-emerald-400" },
+            { label: "Incorrect", value: result.incorrect, color: "text-red-700 dark:text-red-400" },
             { label: "Unanswered", value: result.unattempted, color: "text-[var(--text-muted)]" },
             {
               label: "Accuracy",
               value: `${result.accuracy}%`,
-              color: result.accuracy >= 75 ? "text-emerald-400" : "text-amber-400",
+              color: result.accuracy >= 75 ? "text-emerald-700 dark:text-emerald-400" : "text-amber-700 dark:text-amber-400",
             },
             {
               label: "Attempt Rate",
@@ -472,27 +461,27 @@ export default function ResultClient() {
                               ? String.fromCharCode(65 + qr.userAnswer)
                               : <span className="text-[var(--text-muted)]">—</span>}
                           </td>
-                          <td className="px-4 py-3 font-mono text-xs text-emerald-400">
+                          <td className="px-4 py-3 font-mono text-xs text-emerald-700 dark:text-emerald-400 font-semibold">
                             {String.fromCharCode(65 + qr.correctAnswer)}
                           </td>
                           <td className="px-4 py-3">
                             {!qr.isAttempted ? (
                               <span className="text-[var(--text-muted)] text-xs">Skipped</span>
                             ) : qr.isCorrect ? (
-                              <span className="text-xs px-2 py-0.5 rounded-full bg-emerald-500/15 text-emerald-400 border border-emerald-500/20">
+                              <span className="text-xs px-2 py-0.5 rounded-full badge-emerald font-semibold">
                                 ✓ Correct
                               </span>
                             ) : (
-                              <span className="text-xs px-2 py-0.5 rounded-full bg-red-500/15 text-red-400 border border-red-500/20">
+                              <span className="text-xs px-2 py-0.5 rounded-full badge-red font-semibold">
                                 ✗ Wrong
                               </span>
                             )}
                           </td>
                           <td className={`px-4 py-3 text-xs font-semibold ${
                             qr.marksAwarded > 0
-                              ? "text-emerald-400"
+                              ? "text-emerald-700 dark:text-emerald-400"
                               : qr.marksAwarded < 0
-                              ? "text-red-400"
+                              ? "text-red-700 dark:text-red-400"
                               : "text-[var(--text-muted)]"
                           }`}>
                             {qr.marksAwarded > 0 ? "+" : ""}{qr.marksAwarded}
@@ -515,31 +504,31 @@ export default function ResultClient() {
           <Link
             href={`/exams/${examId}/papers/${paperId}`}
             id="retake-btn"
-            className="flex-1 py-4 rounded-xl border border-indigo-500/40 bg-indigo-500/10 hover:bg-indigo-500/20 text-indigo-300 font-semibold text-center transition-all"
+            className="flex-1 py-4 rounded-xl badge-indigo font-semibold text-center hover:opacity-90 transition-all shadow-sm"
           >
             🔄 Retake This Paper
           </Link>
           <Link
             href={`/exams/${examId}`}
             id="other-papers-btn"
-            className="flex-1 py-4 rounded-xl border border-[var(--border)] bg-[var(--bg-card)] hover:bg-[var(--bg-card-hover)] text-[var(--text-secondary)] font-semibold text-center transition-all"
+            className="flex-1 py-4 rounded-xl border border-[var(--border)] bg-[var(--bg-card)] hover:bg-[var(--bg-card-hover)] text-[var(--text-secondary)] font-semibold text-center transition-all shadow-sm"
           >
             📋 Other Papers
           </Link>
           <Link
             href="/"
             id="home-btn"
-            className="flex-1 py-4 rounded-xl border border-[var(--border)] bg-[var(--bg-card)] hover:bg-[var(--bg-card-hover)] text-[var(--text-secondary)] font-semibold text-center transition-all"
+            className="flex-1 py-4 rounded-xl border border-[var(--border)] bg-[var(--bg-card)] hover:bg-[var(--bg-card-hover)] text-[var(--text-secondary)] font-semibold text-center transition-all shadow-sm"
           >
             🏠 Home
           </Link>
         </div>
 
         {/* Privacy reminder */}
-        <div className="flex items-start gap-3 px-5 py-4 rounded-xl border border-amber-500/20 bg-amber-500/5">
-          <span className="text-amber-400 text-lg mt-0.5">⚠️</span>
-          <p className="text-sm text-amber-300/80">
-            <strong className="text-amber-300">Save your result!</strong>{" "}
+        <div className="flex items-start gap-3 px-5 py-4 rounded-xl badge-amber">
+          <span className="text-lg mt-0.5">⚠️</span>
+          <p className="text-sm opacity-95">
+            <strong className="font-bold">Save your result!</strong>{" "}
             This result is stored only in your browser session. It will be lost if you close this tab or navigate away. Take a screenshot before leaving.
           </p>
         </div>
@@ -586,11 +575,11 @@ function SectionCard({
           <div className="text-[var(--text-muted)]">Attempted</div>
         </div>
         <div>
-          <div className="font-semibold text-emerald-400">{section.correct}</div>
+          <div className="font-semibold text-emerald-700 dark:text-emerald-400">{section.correct}</div>
           <div className="text-[var(--text-muted)]">Correct</div>
         </div>
         <div>
-          <div className="font-semibold text-red-400">{section.incorrect}</div>
+          <div className="font-semibold text-red-700 dark:text-red-400">{section.incorrect}</div>
           <div className="text-[var(--text-muted)]">Incorrect</div>
         </div>
         <div>
@@ -622,10 +611,10 @@ function SubjectCard({
 
   const speedColor =
     subj.speedRating === "Fast"
-      ? "text-emerald-400"
+      ? "text-emerald-700 dark:text-emerald-400"
       : subj.speedRating === "Slow"
-      ? "text-red-400"
-      : "text-amber-400";
+      ? "text-red-700 dark:text-red-400"
+      : "text-amber-700 dark:text-amber-400";
 
   return (
     <div className="glass-card p-5">

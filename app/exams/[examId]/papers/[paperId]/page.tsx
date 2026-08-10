@@ -177,25 +177,25 @@ export default async function PaperInstructionsPage({ params }: Props) {
 
         {/* Marking scheme */}
         <div className="grid grid-cols-3 gap-3 mb-8 animate-fade-in-up delay-300">
-          <div className="glass-card p-4 text-center border border-emerald-500/20">
-            <div className="text-2xl font-bold text-emerald-400">+{marking.correct}</div>
+          <div className="glass-card p-4 text-center">
+            <div className="text-2xl font-bold text-emerald-700 dark:text-emerald-400">+{marking.correct}</div>
             <div className="text-xs text-[var(--text-muted)] mt-1">Correct</div>
           </div>
-          <div className="glass-card p-4 text-center border border-red-500/20">
-            <div className="text-2xl font-bold text-red-400">−{marking.negative}</div>
+          <div className="glass-card p-4 text-center">
+            <div className="text-2xl font-bold text-red-700 dark:text-red-400">−{marking.negative}</div>
             <div className="text-xs text-[var(--text-muted)] mt-1">Incorrect</div>
           </div>
-          <div className="glass-card p-4 text-center border border-[var(--border)]">
+          <div className="glass-card p-4 text-center">
             <div className="text-2xl font-bold text-[var(--text-muted)]">0</div>
             <div className="text-xs text-[var(--text-muted)] mt-1">Skipped</div>
           </div>
         </div>
 
         {/* Privacy note */}
-        <div className="flex items-start gap-3 px-5 py-4 rounded-xl border border-emerald-500/20 bg-emerald-500/5 mb-8 animate-fade-in-up delay-400">
-          <span className="text-emerald-400 text-lg mt-0.5">🔒</span>
-          <p className="text-sm text-emerald-300/80">
-            <strong className="text-emerald-300">Privacy Notice:</strong> Your responses and results are processed locally in your browser. They are never sent to our servers. Save or screenshot your result before leaving the result page.
+        <div className="flex items-start gap-3 px-5 py-4 rounded-xl badge-emerald mb-8 animate-fade-in-up delay-400">
+          <span className="text-lg mt-0.5">🔒</span>
+          <p className="text-sm opacity-95">
+            <strong className="font-bold">Privacy Notice:</strong> Your responses and results are processed locally in your browser. They are never sent to our servers. Save or screenshot your result before leaving the result page.
           </p>
         </div>
 

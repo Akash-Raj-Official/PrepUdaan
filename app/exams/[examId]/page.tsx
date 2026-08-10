@@ -214,7 +214,7 @@ function PaperCard({
             {paper.title}
           </span>
           {paper.isOfficial && (
-            <span className="px-2 py-0.5 text-xs rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400">
+            <span className="px-2 py-0.5 text-xs rounded-full badge-emerald font-medium">
               Official
             </span>
           )}
