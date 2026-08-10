@@ -2,15 +2,17 @@
 
 > **Modern, Free, & Private Competitive Exam Practice Platform**
 
-ExamForge is an open-source, client-side examination platform designed to help students and aspirants practice past papers and mock tests for competitive examinations (Banking, Space/Technical, PSUs, SSC, Railways, Teaching, and more). Built with **Next.js 16 (App Router)**, **React 19**, **Tailwind CSS v4**, and **TypeScript**.
+ExamForge is an open-source, client-side examination platform designed to help students and aspirants practice past papers, mock tests, and technical viva questions for competitive examinations (Banking, Space/Technical, PSUs, SSC, Railways, Teaching, and more). Built with **Next.js 16 (App Router)**, **React 19**, **Tailwind CSS v4**, and **TypeScript**.
 
 ---
 
 ## ✨ Features
 
-- 🎯 **Realistic Exam Simulator**: Timed test environment with section navigation, question palette, flagging for review, and auto-submit features.
-- 📊 **Comprehensive Performance Analytics**: Instant score computation, subject-wise breakdown, accuracy rate, speed ratings, and targeted improvement recommendations.
-- 🔒 **100% Free & Private**: All data processing runs client-side. No account registration, database, or tracking required.
+- 🌗 **Dark & Light Theme Toggle**: Instant, seamless dark and light mode switching with `localStorage` persistence, prefers-color-scheme detection, zero layout flash (FOUC prevention), and tailored CSS variable design tokens across all pages.
+- 🎓 **Technical Viva & Interview Prep Hub**: Specialized module for CS/IT aspirants (IBPS SO IT, ISRO Scientist, Coal India MT) featuring curated core technical questions, model responses, key concepts, and interviewer follow-up expectations.
+- 🎯 **Realistic Exam Simulator**: Timed test environment with section navigation, question palette, flagging for review, mobile drawer support, and auto-submit features.
+- 📊 **Comprehensive Performance Analytics**: Instant score computation, subject-wise breakdown, accuracy rate, speed ratings, candidate name personalization, and targeted improvement recommendations.
+- 🔒 **100% Free & Private**: All data processing runs client-side inside your browser. No account registration, backend database, or tracking required.
 - 📁 **JSON Schema-Driven Content**: Simple JSON file structures for adding new exams and past year question papers without touching application logic.
 - 🛠️ **Automated Validation CLI**: Built-in verification script (`npm run validate-exams`) to ensure all exam datasets comply with structural and answer constraints before deployment.
 - 🚀 **Static Export Ready**: Fully compatible with GitHub Pages, Vercel, Netlify, and Cloudflare Pages deployment via static site generation (SSG).
@@ -21,7 +23,7 @@ ExamForge is an open-source, client-side examination platform designed to help s
 
 - **Framework**: [Next.js 16](https://nextjs.org/) (App Router & SSG)
 - **UI Library**: [React 19](https://react.dev/)
-- **Styling**: [Tailwind CSS v4](https://tailwindcss.com/) & Vanilla CSS custom tokens
+- **Styling**: [Tailwind CSS v4](https://tailwindcss.com/) & CSS Custom Variables
 - **Language**: [TypeScript 5](https://www.typescriptlang.org/)
 - **CI/CD**: GitHub Actions (Automated Exam Validation & GitHub Pages Deployment)
 
@@ -74,11 +76,14 @@ examforge/
 │       └── deploy.yml          # GitHub Actions auto-deployment pipeline
 ├── app/                        # Next.js App Router pages & layouts
 │   ├── page.tsx                # Homepage catalog & exam directory
-│   ├── layout.tsx              # Root layout & font configuration
+│   ├── layout.tsx              # Root layout, theme script & font configuration
+│   ├── globals.css             # Theme design tokens & custom component styles
+│   ├── interview-prep/         # Technical viva & interview prep hub
 │   └── exams/                  # Dynamic routes for exam categories & papers
 ├── components/                 # UI components
-│   ├── exam/                   # Exam interface & result analytics components
-│   └── NameEntryModal.tsx     # Candidate name entry modal
+│   ├── ThemeToggle.tsx         # Dark/Light mode theme switcher button
+│   ├── NameEntryModal.tsx      # Candidate name entry modal
+│   └── exam/                   # Exam interface & result analytics components
 ├── data/
 │   └── exams/                  # Exam definitions & paper JSON files
 │       ├── ibps-so-it-officer/
