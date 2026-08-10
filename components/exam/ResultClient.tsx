@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { useParams } from "next/navigation";
 import ThemeToggle from "@/components/ThemeToggle";
+import Logo from "@/components/Logo";
 import { calculateScore } from "@/lib/scoring";
 import { analyseSessionBehaviour, generateInsights } from "@/lib/analytics";
 import {
@@ -186,8 +187,8 @@ export default function ResultClient() {
       <nav className="sticky top-0 z-50 border-b border-[var(--border)] bg-[var(--bg-primary)]/80 backdrop-blur-xl transition-colors duration-300">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 flex items-center justify-between h-16 text-sm">
           <div className="flex items-center gap-2 min-w-0">
-            <Link href="/" className="font-bold gradient-text text-lg flex items-center gap-1 shrink-0">
-              <span>⚡</span>PrepUdaan
+            <Link href="/" className="shrink-0 group">
+              <Logo size="sm" />
             </Link>
             <span className="text-[var(--border)]">/</span>
             <Link

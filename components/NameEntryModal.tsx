@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Logo from "@/components/Logo";
 
 const PRIMARY_STORAGE_KEY = "prepudaan_user_name";
 const LEGACY_STORAGE_KEY = "examforge_user_name";
@@ -54,15 +55,7 @@ export default function NameEntryModal() {
         <div className="p-8">
           {/* Icon */}
           <div className="flex justify-center mb-5">
-            <div
-              className="w-16 h-16 rounded-2xl flex items-center justify-center text-3xl"
-              style={{
-                background: "linear-gradient(135deg, rgba(99,102,241,0.2) 0%, rgba(167,139,250,0.15) 100%)",
-                border: "1px solid rgba(99,102,241,0.3)",
-              }}
-            >
-              ⚡
-            </div>
+            <Logo size="lg" showText={false} />
           </div>
 
           {!submitted ? (

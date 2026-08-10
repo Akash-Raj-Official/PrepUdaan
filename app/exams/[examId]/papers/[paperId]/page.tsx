@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { getExamConfig, getPaper, getAllExamSummaries, getPapersForExam } from "@/lib/data-loader";
 import type { Metadata } from "next";
 import ThemeToggle from "@/components/ThemeToggle";
+import Logo from "@/components/Logo";
 
 interface Props {
   params: Promise<{ examId: string; paperId: string }>;
@@ -78,8 +79,8 @@ export default async function PaperInstructionsPage({ params }: Props) {
       <nav className="sticky top-0 z-50 border-b border-[var(--border)] bg-[var(--bg-primary)]/80 backdrop-blur-xl transition-colors duration-300">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 flex items-center justify-between h-16 text-sm">
           <div className="flex items-center gap-2 min-w-0">
-            <Link href="/" className="font-bold gradient-text text-lg flex items-center gap-1 shrink-0">
-              <span>⚡</span>PrepUdaan
+            <Link href="/" className="shrink-0 group">
+              <Logo size="sm" />
             </Link>
             <span className="text-[var(--border)]">/</span>
             <Link href={`/exams/${examId}`} className="text-[var(--text-muted)] hover:text-[var(--text-secondary)] transition-colors shrink-0">

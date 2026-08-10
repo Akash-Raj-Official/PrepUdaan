@@ -3,6 +3,7 @@
 import { useState, useMemo } from "react";
 import Link from "next/link";
 import ThemeToggle from "@/components/ThemeToggle";
+import Logo from "@/components/Logo";
 import { VIVA_QUESTIONS, VivaTopic } from "@/data/viva-questions";
 
 const CATEGORIES = [
@@ -42,8 +43,8 @@ export default function InterviewPrepPage() {
       {/* Nav */}
       <nav className="sticky top-0 z-50 border-b border-[var(--border)] bg-[var(--bg-primary)]/80 backdrop-blur-xl transition-colors duration-300">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 flex items-center justify-between h-16 text-sm">
-          <Link href="/" className="flex items-center gap-1.5 font-bold gradient-text text-lg">
-            <span>⚡</span>PrepUdaan
+          <Link href="/" className="group">
+            <Logo size="md" />
           </Link>
           <div className="flex items-center gap-3 text-xs">
             <span className="px-2.5 py-1 rounded-full badge-amber font-semibold hidden sm:inline-block">

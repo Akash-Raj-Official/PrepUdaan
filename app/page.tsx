@@ -2,6 +2,7 @@ import Link from "next/link";
 import { getExamsByCategory, getExamStats } from "@/lib/data-loader";
 import type { ExamSummary } from "@/lib/types";
 import ThemeToggle from "@/components/ThemeToggle";
+import Logo from "@/components/Logo";
 
 // ─── Category metadata (icons, colors, order) ──────────────────────────────────
 const CATEGORY_META: Record<
@@ -111,11 +112,8 @@ export default async function HomePage() {
       {/* ── Navigation ────────────────────────────────────────────────────────── */}
       <nav className="sticky top-0 z-50 border-b border-[var(--border)] bg-[var(--bg-primary)]/80 backdrop-blur-xl transition-colors duration-300">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 flex items-center justify-between h-16">
-          <Link href="/" className="flex items-center gap-2 group">
-            <span className="text-2xl">⚡</span>
-            <span className="font-bold text-xl tracking-tight gradient-text">
-              PrepUdaan
-            </span>
+          <Link href="/" className="group">
+            <Logo size="md" />
           </Link>
           <div className="flex items-center gap-3 text-sm text-[var(--text-secondary)]">
             <Link
@@ -377,10 +375,9 @@ export default async function HomePage() {
       {/* ── Footer ──────────────────────────────────────────────────────────────── */}
       <footer className="border-t border-[var(--border)] py-8 px-4 sm:px-6 mt-auto">
         <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
-          <div className="flex items-center gap-2">
-            <span className="text-xl">⚡</span>
-            <span className="font-bold gradient-text">PrepUdaan</span>
-          </div>
+          <Link href="/">
+            <Logo size="sm" />
+          </Link>
           <p className="text-sm text-[var(--text-muted)] text-center">
             Take official-style papers. Understand performance. Master technical interview concepts.
           </p>

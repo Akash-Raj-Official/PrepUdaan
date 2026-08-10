@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { getExamConfig, getPapersForExam, getAllExamSummaries } from "@/lib/data-loader";
 import type { PaperSummary } from "@/lib/types";
 import ThemeToggle from "@/components/ThemeToggle";
+import Logo from "@/components/Logo";
 import type { Metadata } from "next";
 
 interface Props {
@@ -75,8 +76,8 @@ export default async function ExamPage({ params }: Props) {
       <nav className="sticky top-0 z-50 border-b border-[var(--border)] bg-[var(--bg-primary)]/80 backdrop-blur-xl transition-colors duration-300">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 flex items-center justify-between h-16 text-sm">
           <div className="flex items-center gap-3 min-w-0">
-            <Link href="/" className="flex items-center gap-1.5 font-bold gradient-text text-lg shrink-0">
-              <span>⚡</span>PrepUdaan
+            <Link href="/" className="shrink-0 group">
+              <Logo size="sm" />
             </Link>
             <span className="text-[var(--border)]">/</span>
             <span className="text-[var(--text-muted)] truncate hidden sm:inline">{exam.category}</span>
