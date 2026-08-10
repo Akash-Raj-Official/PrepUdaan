@@ -5,6 +5,9 @@ const EXAM_IDS = [
   "ibps-so-it-officer",
   "coal-india-mt",
   "isro-scientist-cs",
+  "ssc-selection-post",
+  "rrb-technician",
+  "bpsc-tre-pgt-cs",
 ];
 
 // ─── Load exam configuration ───────────────────────────────────────────────────
@@ -38,6 +41,9 @@ const PAPER_MANIFEST: Record<string, string[]> = {
   "ibps-so-it-officer": ["2025", "2024", "2023", "2022"],
   "coal-india-mt": ["2023", "2022"],
   "isro-scientist-cs": ["2023", "2020"],
+  "ssc-selection-post": ["2024"],
+  "rrb-technician": ["2024"],
+  "bpsc-tre-pgt-cs": ["2024"],
 };
 
 export async function getPapersForExam(examId: string): Promise<PaperSummary[]> {

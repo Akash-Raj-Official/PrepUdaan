@@ -1,0 +1,42 @@
+{
+  "examId": "rrb-technician",
+  "name": "RRB Technician (Grade I CS/Signal)",
+  "shortName": "RRB Technician",
+  "authority": "RRB (Railway Recruitment Board)",
+  "category": "Railway",
+  "description": "Recruitment exam for Technical Officers & Signal Technicians in Indian Railways. Covers Basic Science & Engineering, Computer Science/Electronics, General Intelligence, and General Awareness.",
+  "durationMinutes": 90,
+  "totalQuestions": 30,
+  "totalMarks": 30,
+  "marking": {
+    "correct": 1,
+    "negative": 0.33,
+    "unattempted": 0
+  },
+  "sections": [
+    {
+      "id": "basic-science-engg",
+      "name": "Basic Science & Engineering",
+      "questionIds": [],
+      "maxQuestions": 10,
+      "maxMarks": 10
+    },
+    {
+      "id": "cs-electronics",
+      "name": "Computer Science & Electronics Domain",
+      "questionIds": [],
+      "maxQuestions": 10,
+      "maxMarks": 10
+    },
+    {
+      "id": "general-reasoning",
+      "name": "General Intelligence & Reasoning",
+      "questionIds": [],
+      "maxQuestions": 10,
+      "maxMarks": 10
+    }
+  ],
+  "tags": ["Railway", "RRB", "Technician", "Computer Science", "Electronics"],
+  "allowNavigation": true,
+  "allowMarkForReview": true
+}

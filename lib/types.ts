@@ -9,6 +9,7 @@ export interface Question {
   options: [string, string, string, string]; // exactly 4 options
   correctAnswer: 0 | 1 | 2 | 3; // index into options
   explanation?: string;
+  sectionId?: string;
   subject?: string;
   topic?: string;
   difficulty?: Difficulty;

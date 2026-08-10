@@ -136,9 +136,11 @@ export default async function PaperInstructionsPage({ params }: Props) {
                   <span className="font-medium text-[var(--text-secondary)]">
                     {sec.name}
                   </span>
-                  <span className="text-xs text-[var(--text-muted)] ml-3">
-                    Q{sec.questionRange[0]} – Q{sec.questionRange[1]}
-                  </span>
+                  {sec.questionRange && (
+                    <span className="text-xs text-[var(--text-muted)] ml-3">
+                      Q{sec.questionRange[0]} – Q{sec.questionRange[1]}
+                    </span>
+                  )}
                 </div>
                 <div className="text-sm text-right">
                   <span className="font-semibold text-[var(--text-primary)]">

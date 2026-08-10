@@ -1,0 +1,105 @@
+{
+  "paperId": "2024",
+  "examId": "ssc-selection-post",
+  "title": "SSC Selection Post Phase XII (2024 Official PYP Mock)",
+  "year": 2024,
+  "durationMinutes": 60,
+  "totalQuestions": 8,
+  "totalMarks": 16,
+  "sections": [
+    { "sectionId": "general-intelligence", "name": "General Intelligence & Reasoning", "questionCount": 4, "marks": 8, "questionRange": [1, 4] },
+    { "sectionId": "general-awareness", "name": "General Awareness", "questionCount": 2, "marks": 4, "questionRange": [5, 6] },
+    { "sectionId": "quantitative-aptitude", "name": "Quantitative Aptitude", "questionCount": 1, "marks": 2, "questionRange": [7, 7] },
+    { "sectionId": "english-language", "name": "English Language", "questionCount": 1, "marks": 2, "questionRange": [8, 8] }
+  ],
+  "questions": [
+    {
+      "id": "ssc-2024-q01",
+      "questionNumber": 1,
+      "sectionId": "general-intelligence",
+      "question": "In a certain code language, 'PENCIL' is written as 'QFODJM'. How will 'PAPER' be written in that language?",
+      "options": ["QBQFS", "QBQFR", "QCPFS", "PAQFS"],
+      "correctAnswer": 0,
+      "topic": "Coding-Decoding",
+      "difficulty": "EASY",
+      "explanation": "Each letter is shifted forward by +1 position in the alphabet: P+1=Q, A+1=B, P+1=Q, E+1=F, R+1=S."
+    },
+    {
+      "id": "ssc-2024-q02",
+      "questionNumber": 2,
+      "sectionId": "general-intelligence",
+      "question": "Find the missing number in the series: 4, 9, 19, 39, 79, ?",
+      "options": ["159", "149", "158", "169"],
+      "correctAnswer": 0,
+      "topic": "Number Series",
+      "difficulty": "EASY",
+      "explanation": "Pattern: multiply by 2 and add 1. 4*2+1=9; 9*2+1=19; 19*2+1=39; 39*2+1=79; 79*2+1 = 159."
+    },
+    {
+      "id": "ssc-2024-q03",
+      "questionNumber": 3,
+      "sectionId": "general-intelligence",
+      "question": "Select the option that is related to the third term in the same way as the second term is related to the first: Doctor : Hospital :: Teacher : ?",
+      "options": ["School", "Office", "Court", "Laboratory"],
+      "correctAnswer": 0,
+      "topic": "Analogy",
+      "difficulty": "EASY",
+      "explanation": "A doctor works in a hospital; similarly, a teacher works in a school."
+    },
+    {
+      "id": "ssc-2024-q04",
+      "questionNumber": 4,
+      "sectionId": "general-intelligence",
+      "question": "If '+' means '-', '-' means '*', '*' means '/', and '/' means '+', then evaluate: 15 / 5 * 2 - 4 + 3.",
+      "options": ["22", "20", "25", "18"],
+      "correctAnswer": 0,
+      "topic": "Mathematical Operations",
+      "difficulty": "MEDIUM",
+      "explanation": "Replacing signs: 15 + 5 / 2 * 4 - 3 = 15 + 2.5 * 4 - 3 = 15 + 10 - 3 = 22."
+    },
+    {
+      "id": "ssc-2024-q05",
+      "questionNumber": 5,
+      "sectionId": "general-awareness",
+      "question": "Which Article of the Indian Constitution deals with the Right to Equality before Law?",
+      "options": ["Article 14", "Article 19", "Article 21", "Article 32"],
+      "correctAnswer": 0,
+      "topic": "Indian Polity",
+      "difficulty": "EASY",
+      "explanation": "Article 14 guarantees equality before law and equal protection of laws to all persons within the territory of India."
+    },
+    {
+      "id": "ssc-2024-q06",
+      "questionNumber": 6,
+      "sectionId": "general-awareness",
+      "question": "Who was the founder of the Maurya Empire in ancient India?",
+      "options": ["Chandragupta Maurya", "Ashoka", "Bindusara", "Chandragupta I"],
+      "correctAnswer": 0,
+      "topic": "Ancient History",
+      "difficulty": "EASY",
+      "explanation": "Chandragupta Maurya founded the Maurya Empire around 322 BCE with the assistance of Chanakya (Kautilya)."
+    },
+    {
+      "id": "ssc-2024-q07",
+      "questionNumber": 7,
+      "sectionId": "quantitative-aptitude",
+      "question": "If a shopkeeper marks an item 20% above cost price and offers a 10% discount, what is his net profit percentage?",
+      "options": ["8%", "10%", "12%", "6%"],
+      "correctAnswer": 0,
+      "topic": "Profit & Loss",
+      "difficulty": "EASY",
+      "explanation": "Let CP = 100. MP = 120. SP = 120 - (10% of 120) = 108. Net profit = (108 - 100) = 8%."
+    },
+    {
+      "id": "ssc-2024-q08",
+      "questionNumber": 8,
+      "sectionId": "english-language",
+      "question": "Select the synonym of the word 'BENEVOLENT'.",
+      "options": ["Kind", "Cruel", "Selfish", "Arrogant"],
+      "correctAnswer": 0,
+      "topic": "Vocabulary",
+      "difficulty": "EASY",
+      "explanation": "Benevolent means well-meaning and kindly."
+    }
+  ]
+}

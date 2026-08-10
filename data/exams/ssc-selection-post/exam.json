@@ -1,0 +1,49 @@
+{
+  "examId": "ssc-selection-post",
+  "name": "SSC Selection Post (Phase XII)",
+  "shortName": "SSC Selection Post",
+  "authority": "SSC (Staff Selection Commission)",
+  "category": "SSC",
+  "description": "Recruitment exam conducted by Staff Selection Commission for various graduate & technical posts. Tests General Intelligence, General Awareness, Quantitative Aptitude, and English Language.",
+  "durationMinutes": 60,
+  "totalQuestions": 30,
+  "totalMarks": 60,
+  "marking": {
+    "correct": 2,
+    "negative": 0.5,
+    "unattempted": 0
+  },
+  "sections": [
+    {
+      "id": "general-intelligence",
+      "name": "General Intelligence & Reasoning",
+      "questionIds": [],
+      "maxQuestions": 8,
+      "maxMarks": 16
+    },
+    {
+      "id": "general-awareness",
+      "name": "General Awareness",
+      "questionIds": [],
+      "maxQuestions": 7,
+      "maxMarks": 14
+    },
+    {
+      "id": "quantitative-aptitude",
+      "name": "Quantitative Aptitude",
+      "questionIds": [],
+      "maxQuestions": 8,
+      "maxMarks": 16
+    },
+    {
+      "id": "english-language",
+      "name": "English Language",
+      "questionIds": [],
+      "maxQuestions": 7,
+      "maxMarks": 14
+    }
+  ],
+  "tags": ["SSC", "Selection Post", "Staff Selection Commission", "Government Exam"],
+  "allowNavigation": true,
+  "allowMarkForReview": true
+}

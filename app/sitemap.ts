@@ -1,10 +1,19 @@
 import type { MetadataRoute } from "next";
+import { getAllExamSummaries } from "@/lib/data-loader";
 
 export const dynamic = "force-static";
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = "https://akash-raj-official.github.io/PrepUdaan";
   const now = new Date();
+
+  const exams = await getAllExamSummaries();
+  const examUrls: MetadataRoute.Sitemap = exams.map((e) => ({
+    url: `${baseUrl}/exams/${e.examId}`,
+    lastModified: now,
+    changeFrequency: "weekly",
+    priority: 0.8,
+  }));
 
   return [
     {
@@ -19,23 +28,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       priority: 0.9,
     },
-    {
-      url: `${baseUrl}/exams/ibps-so-it-officer`,
-      lastModified: now,
-      changeFrequency: "weekly",
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/exams/isro-scientist-cs`,
-      lastModified: now,
-      changeFrequency: "weekly",
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/exams/coal-india-mt`,
-      lastModified: now,
-      changeFrequency: "weekly",
-      priority: 0.8,
-    },
+    ...examUrls,
   ];
 }

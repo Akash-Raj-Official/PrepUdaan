@@ -1,0 +1,70 @@
+{
+  "paperId": "2024",
+  "examId": "bpsc-tre-pgt-cs",
+  "title": "BPSC TRE 3.0 PGT Computer Science (2024 Official PYP Mock)",
+  "year": 2024,
+  "durationMinutes": 150,
+  "totalQuestions": 5,
+  "totalMarks": 5,
+  "sections": [
+    { "sectionId": "general-studies", "name": "General Studies & Language", "questionCount": 1, "marks": 1, "questionRange": [1, 1] },
+    { "sectionId": "cs-core-domain", "name": "Computer Science Domain", "questionCount": 4, "marks": 4, "questionRange": [2, 5] }
+  ],
+  "questions": [
+    {
+      "id": "bpsc-2024-q01",
+      "questionNumber": 1,
+      "sectionId": "general-studies",
+      "question": "Who led the Revolt of 1857 in Bihar?",
+      "options": ["Kunwar Singh", "Nana Saheb", "Tantia Tope", "Begum Hazrat Mahal"],
+      "correctAnswer": 0,
+      "topic": "Modern History",
+      "difficulty": "EASY",
+      "explanation": "Veer Kunwar Singh of Jagdishpur led the 1857 Indian rebellion in Bihar."
+    },
+    {
+      "id": "bpsc-2024-q02",
+      "questionNumber": 2,
+      "sectionId": "cs-core-domain",
+      "question": "Which data structure follows the Last-In, First-Out (LIFO) principle?",
+      "options": ["Stack", "Queue", "Array", "Linked List"],
+      "correctAnswer": 0,
+      "topic": "Data Structures",
+      "difficulty": "EASY",
+      "explanation": "A Stack operates on LIFO order where elements inserted last are popped first."
+    },
+    {
+      "id": "bpsc-2024-q03",
+      "questionNumber": 3,
+      "sectionId": "cs-core-domain",
+      "question": "Which SQL statement is used to remove a table structure permanently along with all its data?",
+      "options": ["DROP TABLE", "DELETE FROM", "TRUNCATE TABLE", "REMOVE TABLE"],
+      "correctAnswer": 0,
+      "topic": "SQL DDL",
+      "difficulty": "EASY",
+      "explanation": "DROP TABLE deletes both table schema and data rows permanently."
+    },
+    {
+      "id": "bpsc-2024-q04",
+      "questionNumber": 4,
+      "sectionId": "cs-core-domain",
+      "question": "What is the time complexity of searching an element in a balanced Binary Search Tree (BST)?",
+      "options": ["O(log N)", "O(N)", "O(1)", "O(N^2)"],
+      "correctAnswer": 0,
+      "topic": "Algorithms",
+      "difficulty": "EASY",
+      "explanation": "In a balanced BST, tree height is log2(N), giving O(log N) search time."
+    },
+    {
+      "id": "bpsc-2024-q05",
+      "questionNumber": 5,
+      "sectionId": "cs-core-domain",
+      "question": "Which protocol is responsible for assigning automatic IP addresses to client devices in a network?",
+      "options": ["DHCP", "DNS", "FTP", "SMTP"],
+      "correctAnswer": 0,
+      "topic": "Networking",
+      "difficulty": "EASY",
+      "explanation": "DHCP (Dynamic Host Configuration Protocol) automatically assigns IP addresses and network parameters."
+    }
+  ]
+}

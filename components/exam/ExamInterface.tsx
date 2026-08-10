@@ -113,8 +113,10 @@ function NavigatorPanel({
       {/* Question grid */}
       <div className="flex-1 overflow-y-auto p-3 space-y-4">
         {paper.sections.map((sec) => {
-          const secQs = paper.questions.filter(
-            (q) => q.questionNumber >= sec.questionRange[0] && q.questionNumber <= sec.questionRange[1]
+          const secQs = paper.questions.filter((q) =>
+            sec.questionRange
+              ? q.questionNumber >= sec.questionRange[0] && q.questionNumber <= sec.questionRange[1]
+              : q.sectionId === sec.sectionId
           );
           return (
             <div key={sec.sectionId}>

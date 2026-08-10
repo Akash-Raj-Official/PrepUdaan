@@ -1,0 +1,35 @@
+{
+  "examId": "bpsc-tre-pgt-cs",
+  "name": "BPSC TRE (PGT Computer Science)",
+  "shortName": "BPSC TRE PGT CS",
+  "authority": "BPSC (Bihar Public Service Commission)",
+  "category": "Teaching",
+  "description": "Teacher Recruitment Examination conducted by BPSC for Senior Secondary Computer Science Teachers (Class 11-12). Covers General Studies, Language, and Core Computer Science Domain.",
+  "durationMinutes": 150,
+  "totalQuestions": 30,
+  "totalMarks": 30,
+  "marking": {
+    "correct": 1,
+    "negative": 0,
+    "unattempted": 0
+  },
+  "sections": [
+    {
+      "id": "general-studies",
+      "name": "General Studies & Language",
+      "questionIds": [],
+      "maxQuestions": 10,
+      "maxMarks": 10
+    },
+    {
+      "id": "cs-core-domain",
+      "name": "Computer Science Domain (DS, DBMS, OS, Networking)",
+      "questionIds": [],
+      "maxQuestions": 20,
+      "maxMarks": 20
+    }
+  ],
+  "tags": ["Teaching", "BPSC", "PGT Computer Science", "Bihar Teacher", "CS Core"],
+  "allowNavigation": true,
+  "allowMarkForReview": true
+}

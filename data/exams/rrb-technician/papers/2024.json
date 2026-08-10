@@ -1,0 +1,71 @@
+{
+  "paperId": "2024",
+  "examId": "rrb-technician",
+  "title": "RRB Technician Grade I CS/Signal (2024 Official PYP Mock)",
+  "year": 2024,
+  "durationMinutes": 90,
+  "totalQuestions": 5,
+  "totalMarks": 5,
+  "sections": [
+    { "sectionId": "basic-science-engg", "name": "Basic Science & Engineering", "questionCount": 2, "marks": 2, "questionRange": [1, 2] },
+    { "sectionId": "cs-electronics", "name": "Computer Science & Electronics Domain", "questionCount": 2, "marks": 2, "questionRange": [3, 4] },
+    { "sectionId": "general-reasoning", "name": "General Intelligence & Reasoning", "questionCount": 1, "marks": 1, "questionRange": [5, 5] }
+  ],
+  "questions": [
+    {
+      "id": "rrb-2024-q01",
+      "questionNumber": 1,
+      "sectionId": "basic-science-engg",
+      "question": "What is the SI unit of Electrical Resistance?",
+      "options": ["Ohm", "Volt", "Ampere", "Watt"],
+      "correctAnswer": 0,
+      "topic": "Physics & Electricity",
+      "difficulty": "EASY",
+      "explanation": "Resistance is measured in Ohms (symbol: Ω) according to Ohm's Law (V = IR)."
+    },
+    {
+      "id": "rrb-2024-q02",
+      "questionNumber": 2,
+      "sectionId": "basic-science-engg",
+      "question": "Which logic gate outputs 1 only when all of its inputs are 1?",
+      "options": ["AND Gate", "OR Gate", "XOR Gate", "NAND Gate"],
+      "correctAnswer": 0,
+      "topic": "Digital Electronics",
+      "difficulty": "EASY",
+      "explanation": "An AND gate produces a HIGH (1) output only if all binary inputs are HIGH (1)."
+    },
+    {
+      "id": "rrb-2024-q03",
+      "questionNumber": 3,
+      "sectionId": "cs-electronics",
+      "question": "Which memory component in a CPU acts as the fastest buffer storage for instruction execution?",
+      "options": ["CPU Registers", "L1 Cache", "RAM", "Secondary Storage"],
+      "correctAnswer": 0,
+      "topic": "Computer Organization",
+      "difficulty": "EASY",
+      "explanation": "CPU Registers are located directly inside the ALU/Control unit, providing sub-nanosecond access speeds."
+    },
+    {
+      "id": "rrb-2024-q04",
+      "questionNumber": 4,
+      "sectionId": "cs-electronics",
+      "question": "What is the decimal equivalent of binary number 10110_2?",
+      "options": ["22", "20", "18", "24"],
+      "correctAnswer": 0,
+      "topic": "Number Systems",
+      "difficulty": "EASY",
+      "explanation": "1*16 + 0*8 + 1*4 + 1*2 + 0*1 = 16 + 4 + 2 = 22."
+    },
+    {
+      "id": "rrb-2024-q05",
+      "questionNumber": 5,
+      "sectionId": "general-reasoning",
+      "question": "If A is B's brother, C is B's mother, and D is C's father, how is A related to D?",
+      "options": ["Grandson", "Grandfather", "Son", "Brother"],
+      "correctAnswer": 0,
+      "topic": "Blood Relations",
+      "difficulty": "EASY",
+      "explanation": "C is A's mother; D is C's father. Therefore, A is D's grandson."
+    }
+  ]
+}
