@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import ThemeToggle from "@/components/ThemeToggle";
 
 export const metadata: Metadata = {
-  title: "Technical Viva & Interview Prep | ExamForge",
+  title: "Technical Viva & Interview Prep | PrepUdaan",
   description:
     "Master technical interview & viva questions for IBPS SO IT, ISRO Scientist (CS), and Coal India MT (CS/IT). Curated questions on DBMS, OS, Computer Networks, Data Structures, and System Design.",
   keywords: [
@@ -15,14 +15,14 @@ export const metadata: Metadata = {
     "Operating system viva questions",
   ],
   openGraph: {
-    title: "Technical Viva & Interview Prep | ExamForge",
+    title: "Technical Viva & Interview Prep | PrepUdaan",
     description:
       "Master technical interview & viva questions for IBPS SO IT, ISRO Scientist, and Coal India MT.",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Technical Viva & Interview Prep | ExamForge",
+    title: "Technical Viva & Interview Prep | PrepUdaan",
     description:
       "Master technical interview & viva questions for IBPS SO IT, ISRO Scientist, and Coal India MT.",
   },
@@ -126,7 +126,7 @@ export default function InterviewPrepPage() {
       <nav className="sticky top-0 z-50 border-b border-[var(--border)] bg-[var(--bg-primary)]/80 backdrop-blur-xl transition-colors duration-300">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 flex items-center justify-between h-16 text-sm">
           <Link href="/" className="flex items-center gap-1.5 font-bold gradient-text text-lg">
-            <span>⚡</span>ExamForge
+            <span>⚡</span>PrepUdaan
           </Link>
           <div className="flex items-center gap-3 text-xs">
             <span className="px-2.5 py-1 rounded-full badge-amber font-semibold hidden sm:inline-block">

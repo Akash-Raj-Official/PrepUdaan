@@ -289,7 +289,7 @@ export default function ExamInterface({ paper, exam }: { paper: Paper; exam: Exa
       <header className="flex items-center justify-between px-3 sm:px-5 h-13 min-h-[52px] border-b border-[var(--border)] bg-[var(--bg-secondary)] shrink-0 gap-2">
         {/* Left: Logo + exam name */}
         <div className="flex items-center gap-2 min-w-0 flex-1">
-          <span className="font-bold gradient-text text-sm hidden sm:inline whitespace-nowrap">⚡ ExamForge</span>
+          <span className="font-bold gradient-text text-sm hidden sm:inline whitespace-nowrap">⚡ PrepUdaan</span>
           <span className="text-[var(--border)] hidden sm:inline">|</span>
           <span className="text-[var(--text-secondary)] text-xs font-medium truncate">
             {exam.shortName}

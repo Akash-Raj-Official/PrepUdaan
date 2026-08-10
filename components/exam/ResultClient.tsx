@@ -6,6 +6,13 @@ import { useParams } from "next/navigation";
 import ThemeToggle from "@/components/ThemeToggle";
 import { calculateScore } from "@/lib/scoring";
 import { analyseSessionBehaviour, generateInsights } from "@/lib/analytics";
+import {
+  saveAttemptToHistory,
+  getPaperAttempts,
+  exportProgressJSON,
+  importProgressJSON,
+  AttemptRecord,
+} from "@/lib/progress-storage";
 import type {
   TestSession,
   Paper,
@@ -73,10 +80,13 @@ export default function ResultClient() {
   );
   const [animationReady, setAnimationReady] = useState(false);
   const [userName, setUserName] = useState<string>("");
+  const [history, setHistory] = useState<AttemptRecord[]>([]);
+  const [expandedExplanation, setExpandedExplanation] = useState<string | null>(null);
+  const [backupMessage, setBackupMessage] = useState<string | null>(null);
 
   // Read user name from localStorage
   useEffect(() => {
-    const stored = localStorage.getItem("examforge_user_name");
+    const stored = localStorage.getItem("prepudaan_user_name") ?? localStorage.getItem("examforge_user_name");
     setUserName(stored && stored !== "Guest" ? stored : "");
   }, []);
 
@@ -106,6 +116,10 @@ export default function ResultClient() {
       setExam(examData);
       setResult(calculatedResult);
       setInsights(generatedInsights);
+
+      // Save to attempt history
+      saveAttemptToHistory(calculatedResult, paperData.title);
+      setHistory(getPaperAttempts(paperData.paperId));
 
       setTimeout(() => setAnimationReady(true), 100);
     } catch (e) {
@@ -173,7 +187,7 @@ export default function ResultClient() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 flex items-center justify-between h-16 text-sm">
           <div className="flex items-center gap-2 min-w-0">
             <Link href="/" className="font-bold gradient-text text-lg flex items-center gap-1 shrink-0">
-              <span>⚡</span>ExamForge
+              <span>⚡</span>PrepUdaan
             </Link>
             <span className="text-[var(--border)]">/</span>
             <Link
@@ -444,52 +458,72 @@ export default function ResultClient() {
                   <tbody>
                     {result.questionResults.map((qr, i) => {
                       return (
-                        <tr
-                          key={qr.questionId}
-                          className={`border-b border-[var(--border)]/50 hover:bg-[var(--bg-card)] transition-colors ${
-                            i % 2 === 0 ? "bg-[var(--bg-primary)]/20" : ""
-                          }`}
-                        >
-                          <td className="px-4 py-3 text-[var(--text-muted)] font-mono text-xs">
-                            {qr.questionNumber}
-                          </td>
-                          <td className="px-4 py-3 text-xs text-[var(--text-secondary)] max-w-[120px] truncate">
-                            {qr.subject ?? "—"}
-                          </td>
-                          <td className="px-4 py-3 font-mono text-xs">
-                            {qr.userAnswer !== null
-                              ? String.fromCharCode(65 + qr.userAnswer)
-                              : <span className="text-[var(--text-muted)]">—</span>}
-                          </td>
-                          <td className="px-4 py-3 font-mono text-xs text-emerald-700 dark:text-emerald-400 font-semibold">
-                            {String.fromCharCode(65 + qr.correctAnswer)}
-                          </td>
-                          <td className="px-4 py-3">
-                            {!qr.isAttempted ? (
-                              <span className="text-[var(--text-muted)] text-xs">Skipped</span>
-                            ) : qr.isCorrect ? (
-                              <span className="text-xs px-2 py-0.5 rounded-full badge-emerald font-semibold">
-                                ✓ Correct
-                              </span>
-                            ) : (
-                              <span className="text-xs px-2 py-0.5 rounded-full badge-red font-semibold">
-                                ✗ Wrong
-                              </span>
-                            )}
-                          </td>
-                          <td className={`px-4 py-3 text-xs font-semibold ${
-                            qr.marksAwarded > 0
-                              ? "text-emerald-700 dark:text-emerald-400"
-                              : qr.marksAwarded < 0
-                              ? "text-red-700 dark:text-red-400"
-                              : "text-[var(--text-muted)]"
-                          }`}>
-                            {qr.marksAwarded > 0 ? "+" : ""}{qr.marksAwarded}
-                          </td>
-                          <td className="px-4 py-3 text-xs text-[var(--text-muted)] font-mono">
-                            {qr.isAttempted ? formatTime(qr.timeSpentMs) : "—"}
-                          </td>
-                        </tr>
+                        <>
+                          <tr
+                            key={qr.questionId}
+                            className={`border-b border-[var(--border)]/50 hover:bg-[var(--bg-card)] transition-colors cursor-pointer ${
+                              i % 2 === 0 ? "bg-[var(--bg-primary)]/20" : ""
+                            }`}
+                            onClick={() =>
+                              setExpandedExplanation(
+                                expandedExplanation === qr.questionId ? null : qr.questionId
+                              )
+                            }
+                          >
+                            <td className="px-4 py-3 text-[var(--text-muted)] font-mono text-xs">
+                              {qr.questionNumber}
+                            </td>
+                            <td className="px-4 py-3 text-xs text-[var(--text-secondary)] max-w-[120px] truncate">
+                              {qr.subject ?? "—"}
+                            </td>
+                            <td className="px-4 py-3 font-mono text-xs">
+                              {qr.userAnswer !== null
+                                ? String.fromCharCode(65 + qr.userAnswer)
+                                : <span className="text-[var(--text-muted)]">—</span>}
+                            </td>
+                            <td className="px-4 py-3 font-mono text-xs text-emerald-700 dark:text-emerald-400 font-semibold">
+                              {String.fromCharCode(65 + qr.correctAnswer)}
+                            </td>
+                            <td className="px-4 py-3">
+                              {!qr.isAttempted ? (
+                                <span className="text-[var(--text-muted)] text-xs">Skipped</span>
+                              ) : qr.isCorrect ? (
+                                <span className="text-xs px-2 py-0.5 rounded-full badge-emerald font-semibold">
+                                  ✓ Correct
+                                </span>
+                              ) : (
+                                <span className="text-xs px-2 py-0.5 rounded-full badge-red font-semibold">
+                                  ✗ Wrong
+                                </span>
+                              )}
+                            </td>
+                            <td className={`px-4 py-3 text-xs font-semibold ${
+                              qr.marksAwarded > 0
+                                ? "text-emerald-700 dark:text-emerald-400"
+                                : qr.marksAwarded < 0
+                                ? "text-red-700 dark:text-red-400"
+                                : "text-[var(--text-muted)]"
+                            }`}>
+                              {qr.marksAwarded > 0 ? "+" : ""}{qr.marksAwarded}
+                            </td>
+                            <td className="px-4 py-3 text-xs text-[var(--text-muted)] font-mono">
+                              {qr.isAttempted ? formatTime(qr.timeSpentMs) : "—"}
+                            </td>
+                          </tr>
+                          {expandedExplanation === qr.questionId && (
+                            <tr key={`${qr.questionId}-exp`} className="bg-[var(--badge-indigo-bg)] border-b border-[var(--border)]">
+                              <td colSpan={7} className="px-5 py-3 text-xs text-[var(--text-secondary)]">
+                                <div className="font-bold text-[var(--accent-primary)] mb-1 uppercase tracking-wider">
+                                  💡 Explanation & Approach:
+                                </div>
+                                <p className="leading-relaxed">
+                                  {qr.explanation ??
+                                    `Option ${String.fromCharCode(65 + qr.correctAnswer)} is the correct answer. Review concepts in ${qr.subject ?? "this subject"} for deeper clarity.`}
+                                </p>
+                              </td>
+                            </tr>
+                          )}
+                        </>
                       );
                     })}
                   </tbody>
@@ -500,29 +534,78 @@ export default function ResultClient() {
         )}
 
         {/* ── Actions ───────────────────────────────────────────────────────────── */}
-        <div className="flex flex-col sm:flex-row gap-4 pt-4 animate-fade-in-up">
+        <div className="flex flex-col sm:flex-row flex-wrap gap-3 pt-4 animate-fade-in-up">
           <Link
             href={`/exams/${examId}/papers/${paperId}`}
             id="retake-btn"
-            className="flex-1 py-4 rounded-xl badge-indigo font-semibold text-center hover:opacity-90 transition-all shadow-sm"
+            className="flex-1 py-3.5 px-4 rounded-xl badge-indigo font-semibold text-center hover:opacity-90 transition-all shadow-sm text-sm"
           >
             🔄 Retake This Paper
           </Link>
-          <Link
-            href={`/exams/${examId}`}
-            id="other-papers-btn"
-            className="flex-1 py-4 rounded-xl border border-[var(--border)] bg-[var(--bg-card)] hover:bg-[var(--bg-card-hover)] text-[var(--text-secondary)] font-semibold text-center transition-all shadow-sm"
+
+          <button
+            id="export-progress-btn"
+            onClick={() => {
+              const dataStr = exportProgressJSON();
+              const blob = new Blob([dataStr], { type: "application/json" });
+              const url = URL.createObjectURL(blob);
+              const a = document.createElement("a");
+              a.href = url;
+              a.download = `prepudaan-progress-${new Date().toISOString().slice(0, 10)}.json`;
+              a.click();
+              URL.revokeObjectURL(url);
+              setBackupMessage("Progress exported successfully!");
+              setTimeout(() => setBackupMessage(null), 4000);
+            }}
+            className="flex-1 py-3.5 px-4 rounded-xl border border-[var(--border)] bg-[var(--bg-card)] hover:bg-[var(--bg-card-hover)] text-[var(--text-secondary)] font-semibold text-center transition-all shadow-sm text-sm cursor-pointer"
           >
-            📋 Other Papers
-          </Link>
+            📥 Export Progress (JSON)
+          </button>
+
+          <label
+            htmlFor="import-progress-file"
+            className="flex-1 py-3.5 px-4 rounded-xl border border-[var(--border)] bg-[var(--bg-card)] hover:bg-[var(--bg-card-hover)] text-[var(--text-secondary)] font-semibold text-center transition-all shadow-sm text-sm cursor-pointer"
+          >
+            📤 Import Progress (JSON)
+            <input
+              id="import-progress-file"
+              type="file"
+              accept=".json"
+              className="hidden"
+              onChange={(e) => {
+                const file = e.target.files?.[0];
+                if (!file) return;
+                const reader = new FileReader();
+                reader.onload = (evt) => {
+                  const content = evt.target?.result as string;
+                  const res = importProgressJSON(content);
+                  if (res.success) {
+                    setBackupMessage(`Imported ${res.count} attempt records successfully!`);
+                    setHistory(getPaperAttempts(paper.paperId));
+                  } else {
+                    setBackupMessage(`Import failed: ${res.error}`);
+                  }
+                  setTimeout(() => setBackupMessage(null), 5000);
+                };
+                reader.readAsText(file);
+              }}
+            />
+          </label>
+
           <Link
             href="/"
             id="home-btn"
-            className="flex-1 py-4 rounded-xl border border-[var(--border)] bg-[var(--bg-card)] hover:bg-[var(--bg-card-hover)] text-[var(--text-secondary)] font-semibold text-center transition-all shadow-sm"
+            className="flex-1 py-3.5 px-4 rounded-xl border border-[var(--border)] bg-[var(--bg-card)] hover:bg-[var(--bg-card-hover)] text-[var(--text-secondary)] font-semibold text-center transition-all shadow-sm text-sm"
           >
             🏠 Home
           </Link>
         </div>
+
+        {backupMessage && (
+          <div className="p-3 text-center text-xs font-semibold badge-emerald rounded-xl animate-fade-in-up">
+            {backupMessage}
+          </div>
+        )}
 
         {/* Privacy reminder */}
         <div className="flex items-start gap-3 px-5 py-4 rounded-xl badge-amber">

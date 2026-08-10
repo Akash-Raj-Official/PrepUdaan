@@ -2,7 +2,8 @@
 
 import { useState, useEffect } from "react";
 
-const STORAGE_KEY = "examforge_user_name";
+const PRIMARY_STORAGE_KEY = "prepudaan_user_name";
+const LEGACY_STORAGE_KEY = "examforge_user_name";
 
 export default function NameEntryModal() {
   const [visible, setVisible] = useState(false);
@@ -11,7 +12,7 @@ export default function NameEntryModal() {
   const [submitted, setSubmitted] = useState(false);
 
   useEffect(() => {
-    const stored = localStorage.getItem(STORAGE_KEY);
+    const stored = localStorage.getItem(PRIMARY_STORAGE_KEY) ?? localStorage.getItem(LEGACY_STORAGE_KEY);
     if (stored) {
       setName(stored);
       setVisible(false);
@@ -26,7 +27,7 @@ export default function NameEntryModal() {
     e.preventDefault();
     const trimmed = inputValue.trim();
     if (!trimmed) return;
-    localStorage.setItem(STORAGE_KEY, trimmed);
+    localStorage.setItem(PRIMARY_STORAGE_KEY, trimmed);
     setName(trimmed);
     setSubmitted(true);
     setTimeout(() => setVisible(false), 800);
@@ -67,7 +68,7 @@ export default function NameEntryModal() {
           {!submitted ? (
             <>
               <h2 className="text-2xl font-extrabold text-center text-[var(--text-primary)] mb-2">
-                Welcome to ExamForge!
+                Welcome to PrepUdaan!
               </h2>
               <p className="text-[var(--text-secondary)] text-center text-sm mb-7 leading-relaxed">
                 Enter your name to personalize your experience and result page.
@@ -91,15 +92,9 @@ export default function NameEntryModal() {
                     maxLength={40}
                     className="w-full px-4 py-3 rounded-xl text-[var(--text-primary)] text-base font-medium placeholder:text-[var(--text-muted)] focus:outline-none transition-all"
                     style={{
-                      background: "rgba(30,45,74,0.5)",
+                      background: "var(--bg-secondary)",
                       border: "1.5px solid var(--border)",
                     }}
-                    onFocus={(e) =>
-                      (e.target.style.borderColor = "rgba(99,102,241,0.6)")
-                    }
-                    onBlur={(e) =>
-                      (e.target.style.borderColor = "var(--border)")
-                    }
                   />
                 </div>
 
@@ -107,7 +102,7 @@ export default function NameEntryModal() {
                   id="name-submit-btn"
                   type="submit"
                   disabled={!inputValue.trim()}
-                  className="w-full py-3.5 rounded-xl font-bold text-white text-base transition-all duration-200 disabled:opacity-40 disabled:cursor-not-allowed"
+                  className="w-full py-3.5 rounded-xl font-bold text-white text-base transition-all duration-200 disabled:opacity-40 disabled:cursor-not-allowed cursor-pointer"
                   style={{
                     background: inputValue.trim()
                       ? "linear-gradient(135deg, #6366f1, #818cf8)"
@@ -125,10 +120,10 @@ export default function NameEntryModal() {
                   id="skip-name-btn"
                   onClick={() => {
                     const fallback = "Guest";
-                    localStorage.setItem(STORAGE_KEY, fallback);
+                    localStorage.setItem(PRIMARY_STORAGE_KEY, fallback);
                     setVisible(false);
                   }}
-                  className="w-full py-2 text-xs text-[var(--text-muted)] hover:text-[var(--text-secondary)] transition-colors"
+                  className="w-full py-2 text-xs text-[var(--text-muted)] hover:text-[var(--text-secondary)] transition-colors cursor-pointer"
                 >
                   Skip for now
                 </button>
@@ -154,5 +149,5 @@ export default function NameEntryModal() {
 // ── Utility to read the name from localStorage (used on result page) ──────────
 export function getUserName(): string {
   if (typeof window === "undefined") return "";
-  return localStorage.getItem(STORAGE_KEY) ?? "Guest";
+  return localStorage.getItem(PRIMARY_STORAGE_KEY) ?? localStorage.getItem(LEGACY_STORAGE_KEY) ?? "Guest";
 }

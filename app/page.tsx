@@ -114,7 +114,7 @@ export default async function HomePage() {
           <Link href="/" className="flex items-center gap-2 group">
             <span className="text-2xl">⚡</span>
             <span className="font-bold text-xl tracking-tight gradient-text">
-              ExamForge
+              PrepUdaan
             </span>
           </Link>
           <div className="flex items-center gap-3 text-sm text-[var(--text-secondary)]">
@@ -379,13 +379,13 @@ export default async function HomePage() {
         <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-2">
             <span className="text-xl">⚡</span>
-            <span className="font-bold gradient-text">ExamForge</span>
+            <span className="font-bold gradient-text">PrepUdaan</span>
           </div>
           <p className="text-sm text-[var(--text-muted)] text-center">
             Take official-style papers. Understand performance. Master technical interview concepts.
           </p>
           <p className="text-xs text-[var(--text-muted)]">
-            © {new Date().getFullYear()} ExamForge
+            © {new Date().getFullYear()} PrepUdaan
           </p>
         </div>
       </footer>

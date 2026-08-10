@@ -32,7 +32,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   ]);
   if (!exam || !paper) return {};
 
-  const fullTitle = `${paper.title} | ExamForge`;
+  const fullTitle = `${paper.title} | PrepUdaan`;
   const fullDesc = `Start ${paper.title} online mock test under official exam conditions. ${paper.totalQuestions} questions, ${paper.durationMinutes} minutes, detailed score & accuracy analysis.`;
   const keywords = [
     `${paper.title.toLowerCase()} mock test`,
@@ -79,7 +79,7 @@ export default async function PaperInstructionsPage({ params }: Props) {
         <div className="max-w-5xl mx-auto px-4 sm:px-6 flex items-center justify-between h-16 text-sm">
           <div className="flex items-center gap-2 min-w-0">
             <Link href="/" className="font-bold gradient-text text-lg flex items-center gap-1 shrink-0">
-              <span>⚡</span>ExamForge
+              <span>⚡</span>PrepUdaan
             </Link>
             <span className="text-[var(--border)]">/</span>
             <Link href={`/exams/${examId}`} className="text-[var(--text-muted)] hover:text-[var(--text-secondary)] transition-colors shrink-0">

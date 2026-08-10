@@ -198,7 +198,7 @@ function validatePaper(
 }
 
 // ─── Main ─────────────────────────────────────────────────────────────────────
-console.log(bold("\n🔍 ExamForge — Exam Validation\n"));
+console.log(bold("\n🔍 PrepUdaan — Exam Validation\n"));
 
 if (!fs.existsSync(DATA_DIR)) {
   console.log(red("data/exams/ directory not found. Run from project root."));

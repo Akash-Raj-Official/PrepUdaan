@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const exam = await getExamConfig(examId);
   if (!exam) return {};
 
-  const pageTitle = `${exam.name} | ExamForge`;
+  const pageTitle = `${exam.name} | PrepUdaan`;
   const pageDescription = `Practice official previous-year papers and mock tests for ${exam.name} (${exam.authority}). Detailed subject breakdown, speed ratings, and technical analysis.`;
   const customKeywords = [
     `${exam.name.toLowerCase()} mock test`,
@@ -76,7 +76,7 @@ export default async function ExamPage({ params }: Props) {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 flex items-center justify-between h-16 text-sm">
           <div className="flex items-center gap-3 min-w-0">
             <Link href="/" className="flex items-center gap-1.5 font-bold gradient-text text-lg shrink-0">
-              <span>⚡</span>ExamForge
+              <span>⚡</span>PrepUdaan
             </Link>
             <span className="text-[var(--border)]">/</span>
             <span className="text-[var(--text-muted)] truncate hidden sm:inline">{exam.category}</span>

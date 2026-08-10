@@ -115,6 +115,7 @@ export interface QuestionResult {
   questionNumber: number;
   subject?: string;
   topic?: string;
+  explanation?: string;
   userAnswer: 0 | 1 | 2 | 3 | null;
   correctAnswer: 0 | 1 | 2 | 3;
   isCorrect: boolean;

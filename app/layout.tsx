@@ -11,12 +11,13 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "ExamForge — Government & Technical Exam Mock Tests",
-    template: "%s | ExamForge",
+    default: "PrepUdaan — Government & Technical Exam Mock Tests",
+    template: "%s | PrepUdaan",
   },
   description:
-    "Practice previous-year papers under real exam conditions for IBPS SO, SSC, RRB, ISRO, Coal India, BPSC and more. Detailed performance analysis after every attempt.",
+    "Practice previous-year papers under real exam conditions for IBPS SO, SSC, RRB, ISRO, Coal India, BPSC and more on PrepUdaan. Detailed performance analysis, topic breakdowns, and viva preparation.",
   keywords: [
+    "PrepUdaan mock test",
     "IBPS SO IT Officer mock test",
     "SSC Selection Post mock",
     "government exam mock test",
@@ -24,6 +25,7 @@ export const metadata: Metadata = {
     "RRB Technician mock",
     "ISRO exam mock",
     "banking exam mock",
+    "technical viva interview prep",
   ],
   icons: {
     icon: [
@@ -31,9 +33,9 @@ export const metadata: Metadata = {
     ],
   },
   openGraph: {
-    title: "ExamForge — Government & Technical Exam Mock Tests",
+    title: "PrepUdaan — Government & Technical Exam Mock Tests",
     description:
-      "Take the actual-style paper, understand your performance, and know exactly what to improve.",
+      "Take actual-style papers, understand your performance, and master technical interview concepts on PrepUdaan.",
     type: "website",
   },
 };

@@ -38,6 +38,7 @@ export function calculateScore(
       questionNumber: q.questionNumber,
       subject: q.subject,
       topic: q.topic,
+      explanation: q.explanation,
       userAnswer,
       correctAnswer: q.correctAnswer,
       isCorrect,
