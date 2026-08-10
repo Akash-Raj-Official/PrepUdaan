@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getExamConfig, getPaper, getAllExamSummaries, getPapersForExam } from "@/lib/data-loader";
 import type { Metadata } from "next";
+import ThemeToggle from "@/components/ThemeToggle";
 
 interface Props {
   params: Promise<{ examId: string; paperId: string }>;
@@ -74,24 +75,27 @@ export default async function PaperInstructionsPage({ params }: Props) {
   return (
     <div className="gradient-hero min-h-screen">
       {/* Nav */}
-      <nav className="sticky top-0 z-50 border-b border-[var(--border)] bg-[var(--bg-primary)]/80 backdrop-blur-xl">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 flex items-center gap-2 h-16 text-sm">
-          <Link href="/" className="font-bold gradient-text text-lg flex items-center gap-1">
-            <span>⚡</span>ExamForge
-          </Link>
-          <span className="text-[var(--border)]">/</span>
-          <Link href={`/exams/${examId}`} className="text-[var(--text-muted)] hover:text-[var(--text-secondary)] transition-colors">
-            {exam.shortName}
-          </Link>
-          <span className="text-[var(--border)]">/</span>
-          <span className="text-[var(--text-secondary)] font-medium truncate">{paper.title}</span>
+      <nav className="sticky top-0 z-50 border-b border-[var(--border)] bg-[var(--bg-primary)]/80 backdrop-blur-xl transition-colors duration-300">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 flex items-center justify-between h-16 text-sm">
+          <div className="flex items-center gap-2 min-w-0">
+            <Link href="/" className="font-bold gradient-text text-lg flex items-center gap-1 shrink-0">
+              <span>⚡</span>ExamForge
+            </Link>
+            <span className="text-[var(--border)]">/</span>
+            <Link href={`/exams/${examId}`} className="text-[var(--text-muted)] hover:text-[var(--text-secondary)] transition-colors shrink-0">
+              {exam.shortName}
+            </Link>
+            <span className="text-[var(--border)]">/</span>
+            <span className="text-[var(--text-secondary)] font-medium truncate">{paper.title}</span>
+          </div>
+          <ThemeToggle />
         </div>
       </nav>
 
       <main className="max-w-3xl mx-auto px-4 sm:px-6 py-12">
         {/* Header */}
         <div className="text-center mb-10 animate-fade-in-up">
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-indigo-500/30 bg-indigo-500/10 text-indigo-300 text-xs font-medium mb-5">
+          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full badge-indigo text-xs font-medium mb-5">
             {paper.isOfficial ? "✓ Official Previous Year Paper" : "📝 Mock Test"}
           </div>
           <h1 className="text-3xl sm:text-4xl font-extrabold text-[var(--text-primary)] mb-3">

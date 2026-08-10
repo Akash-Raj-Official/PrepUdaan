@@ -1,11 +1,12 @@
 @import "tailwindcss";
 
 /* ─── Design Tokens ──────────────────────────────────────────────────────────── */
-:root {
+:root, [data-theme="dark"] {
   --bg-primary: #080d1a;
   --bg-secondary: #0d1426;
   --bg-card: #111827;
   --bg-card-hover: #1a2234;
+  --glass-bg: rgba(17, 24, 39, 0.75);
   --border: #1e2d4a;
   --border-light: #253450;
 
@@ -21,10 +22,90 @@
   --text-secondary: #94a3b8;
   --text-muted: #64748b;
 
+  --badge-amber-bg: rgba(245, 158, 11, 0.12);
+  --badge-amber-border: rgba(245, 158, 11, 0.3);
+  --badge-amber-text: #fcd34d;
+
+  --badge-emerald-bg: rgba(16, 185, 129, 0.12);
+  --badge-emerald-border: rgba(16, 185, 129, 0.3);
+  --badge-emerald-text: #6ee7b7;
+
+  --badge-indigo-bg: rgba(99, 102, 241, 0.12);
+  --badge-indigo-border: rgba(99, 102, 241, 0.3);
+  --badge-indigo-text: #a5b4fc;
+
+  --badge-red-bg: rgba(239, 68, 68, 0.12);
+  --badge-red-border: rgba(239, 68, 68, 0.3);
+  --badge-red-text: #fca5a5;
+
+  --badge-cyan-bg: rgba(6, 182, 212, 0.12);
+  --badge-cyan-border: rgba(6, 182, 212, 0.3);
+  --badge-cyan-text: #67e8f9;
+
+  --hero-orb-1: rgba(99, 102, 241, 0.15);
+  --hero-orb-2: rgba(245, 158, 11, 0.08);
+
+  --gradient-text: linear-gradient(135deg, #818cf8 0%, #a78bfa 50%, #f59e0b 100%);
+  --gradient-text-blue: linear-gradient(135deg, #60a5fa 0%, #818cf8 100%);
+  --spotlight-bg: rgba(49, 46, 129, 0.2);
+
+  --shadow-card: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+
   --radius-sm: 6px;
   --radius-md: 10px;
   --radius-lg: 16px;
   --radius-xl: 24px;
+}
+
+[data-theme="light"] {
+  --bg-primary: #f8fafc;
+  --bg-secondary: #ffffff;
+  --bg-card: #ffffff;
+  --bg-card-hover: #f1f5f9;
+  --glass-bg: rgba(255, 255, 255, 0.88);
+  --border: #e2e8f0;
+  --border-light: #cbd5e1;
+
+  --accent-primary: #4f46e5;       /* indigo-600 */
+  --accent-primary-light: #6366f1;
+  --accent-primary-glow: rgba(79, 70, 229, 0.12);
+  --accent-secondary: #d97706;     /* amber-600 */
+  --accent-success: #059669;       /* emerald-600 */
+  --accent-danger: #dc2626;        /* red-600 */
+  --accent-warning: #d97706;
+
+  --text-primary: #0f172a;        /* slate-900 */
+  --text-secondary: #334155;      /* slate-700 */
+  --text-muted: #64748b;          /* slate-500 */
+
+  --badge-amber-bg: #fffbeb;
+  --badge-amber-border: #fde68a;
+  --badge-amber-text: #b45309;
+
+  --badge-emerald-bg: #ecfdf5;
+  --badge-emerald-border: #a7f3d0;
+  --badge-emerald-text: #047857;
+
+  --badge-indigo-bg: #eef2ff;
+  --badge-indigo-border: #c7d2fe;
+  --badge-indigo-text: #4338ca;
+
+  --badge-red-bg: #fef2f2;
+  --badge-red-border: #fecaca;
+  --badge-red-text: #b91c1c;
+
+  --badge-cyan-bg: #ecfeff;
+  --badge-cyan-border: #a5f3fc;
+  --badge-cyan-text: #0e7490;
+
+  --hero-orb-1: rgba(99, 102, 241, 0.08);
+  --hero-orb-2: rgba(245, 158, 11, 0.06);
+
+  --gradient-text: linear-gradient(135deg, #4338ca 0%, #6d28d9 50%, #b45309 100%);
+  --gradient-text-blue: linear-gradient(135deg, #2563eb 0%, #4338ca 100%);
+  --spotlight-bg: #eef2ff;
+
+  --shadow-card: 0 4px 20px -2px rgba(0, 0, 0, 0.05), 0 2px 6px -1px rgba(0, 0, 0, 0.03);
 }
 
 /* ─── Base ────────────────────────────────────────────────────────────────────── */
@@ -38,6 +119,7 @@ body {
   color: var(--text-primary);
   min-height: 100vh;
   -webkit-font-smoothing: antialiased;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* ─── Scrollbar ───────────────────────────────────────────────────────────────── */
@@ -48,29 +130,32 @@ body {
 
 /* ─── Glassmorphism Card ─────────────────────────────────────────────────────── */
 .glass-card {
-  background: rgba(17, 24, 39, 0.7);
+  background: var(--glass-bg);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+  transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* ─── Gradient Backgrounds ───────────────────────────────────────────────────── */
 .gradient-hero {
-  background: radial-gradient(ellipse at 20% 50%, rgba(99, 102, 241, 0.15) 0%, transparent 60%),
-              radial-gradient(ellipse at 80% 20%, rgba(245, 158, 11, 0.08) 0%, transparent 50%),
+  background: radial-gradient(ellipse at 20% 50%, var(--hero-orb-1) 0%, transparent 60%),
+              radial-gradient(ellipse at 80% 20%, var(--hero-orb-2) 0%, transparent 50%),
               var(--bg-primary);
+  transition: background-color 0.3s ease;
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, #818cf8 0%, #a78bfa 50%, #f59e0b 100%);
+  background: var(--gradient-text);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 .gradient-text-blue {
-  background: linear-gradient(135deg, #60a5fa 0%, #818cf8 100%);
+  background: var(--gradient-text-blue);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -83,6 +168,37 @@ body {
 
 .glow-amber {
   box-shadow: 0 0 20px rgba(245, 158, 11, 0.2);
+}
+
+/* ─── Badges ─────────────────────────────────────────────────────────────────── */
+.badge-amber {
+  background: var(--badge-amber-bg);
+  border: 1px solid var(--badge-amber-border);
+  color: var(--badge-amber-text);
+}
+
+.badge-emerald {
+  background: var(--badge-emerald-bg);
+  border: 1px solid var(--badge-emerald-border);
+  color: var(--badge-emerald-text);
+}
+
+.badge-indigo {
+  background: var(--badge-indigo-bg);
+  border: 1px solid var(--badge-indigo-border);
+  color: var(--badge-indigo-text);
+}
+
+.badge-red {
+  background: var(--badge-red-bg);
+  border: 1px solid var(--badge-red-border);
+  color: var(--badge-red-text);
+}
+
+.badge-cyan {
+  background: var(--badge-cyan-bg);
+  border: 1px solid var(--badge-cyan-border);
+  color: var(--badge-cyan-text);
 }
 
 /* ─── Animations ─────────────────────────────────────────────────────────────── */
@@ -168,7 +284,7 @@ body {
 .category-card:hover {
   transform: translateY(-4px);
   border-color: rgba(99, 102, 241, 0.4);
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4), 0 0 20px rgba(99, 102, 241, 0.1);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12), 0 0 20px rgba(99, 102, 241, 0.1);
 }
 
 .category-card:hover::before {
@@ -183,7 +299,7 @@ body {
   padding: 14px 18px;
   border-radius: var(--radius-md);
   border: 2px solid var(--border);
-  background: rgba(17, 24, 39, 0.5);
+  background: var(--bg-card);
   color: var(--text-primary);
   cursor: pointer;
   transition: all 0.2s ease;
@@ -192,28 +308,28 @@ body {
 }
 
 .option-btn:hover:not(:disabled) {
-  border-color: rgba(99, 102, 241, 0.5);
-  background: rgba(99, 102, 241, 0.05);
+  border-color: var(--accent-primary-light);
+  background: var(--bg-card-hover);
 }
 
 .option-btn.selected {
   border-color: var(--accent-primary);
-  background: rgba(99, 102, 241, 0.12);
+  background: var(--badge-indigo-bg);
 }
 
 .option-btn.correct {
   border-color: var(--accent-success);
-  background: rgba(16, 185, 129, 0.1);
+  background: var(--badge-emerald-bg);
 }
 
 .option-btn.incorrect {
   border-color: var(--accent-danger);
-  background: rgba(239, 68, 68, 0.1);
+  background: var(--badge-red-bg);
 }
 
 .option-btn.correct-reveal {
   border-color: var(--accent-success);
-  background: rgba(16, 185, 129, 0.08);
+  background: var(--badge-emerald-bg);
 }
 
 /* ─── Question Navigator ─────────────────────────────────────────────────────── */
@@ -232,33 +348,33 @@ body {
 }
 
 .q-nav-btn.not-visited {
-  background: rgba(30, 41, 59, 0.8);
+  background: var(--bg-secondary);
   color: var(--text-secondary);
   border-color: var(--border);
 }
 
 .q-nav-btn.visited {
-  background: rgba(30, 41, 59, 0.8);
-  color: var(--text-secondary);
-  border-color: rgba(100, 116, 139, 0.5);
+  background: var(--bg-card-hover);
+  color: var(--text-primary);
+  border-color: var(--border-light);
 }
 
 .q-nav-btn.answered {
-  background: rgba(16, 185, 129, 0.2);
-  color: #6ee7b7;
-  border-color: rgba(16, 185, 129, 0.5);
+  background: var(--badge-emerald-bg);
+  color: var(--badge-emerald-text);
+  border-color: var(--badge-emerald-border);
 }
 
 .q-nav-btn.marked {
-  background: rgba(245, 158, 11, 0.2);
-  color: #fcd34d;
-  border-color: rgba(245, 158, 11, 0.5);
+  background: var(--badge-amber-bg);
+  color: var(--badge-amber-text);
+  border-color: var(--badge-amber-border);
 }
 
 .q-nav-btn.answered-marked {
-  background: rgba(139, 92, 246, 0.2);
-  color: #c4b5fd;
-  border-color: rgba(139, 92, 246, 0.5);
+  background: var(--badge-indigo-bg);
+  color: var(--badge-indigo-text);
+  border-color: var(--badge-indigo-border);
 }
 
 .q-nav-btn.current {
@@ -273,7 +389,7 @@ body {
 /* ─── Progress Bar ───────────────────────────────────────────────────────────── */
 .progress-track {
   height: 8px;
-  background: rgba(30, 45, 74, 0.8);
+  background: var(--border);
   border-radius: 99px;
   overflow: hidden;
 }
@@ -286,27 +402,27 @@ body {
 
 /* ─── Rating Badges ──────────────────────────────────────────────────────────── */
 .badge-strong {
-  background: rgba(16, 185, 129, 0.15);
-  color: #6ee7b7;
-  border: 1px solid rgba(16, 185, 129, 0.3);
+  background: var(--badge-emerald-bg);
+  color: var(--badge-emerald-text);
+  border: 1px solid var(--badge-emerald-border);
 }
 
 .badge-good {
-  background: rgba(99, 102, 241, 0.15);
-  color: #a5b4fc;
-  border: 1px solid rgba(99, 102, 241, 0.3);
+  background: var(--badge-indigo-bg);
+  color: var(--badge-indigo-text);
+  border: 1px solid var(--badge-indigo-border);
 }
 
 .badge-needs-attention {
-  background: rgba(245, 158, 11, 0.15);
-  color: #fcd34d;
-  border: 1px solid rgba(245, 158, 11, 0.3);
+  background: var(--badge-amber-bg);
+  color: var(--badge-amber-text);
+  border: 1px solid var(--badge-amber-border);
 }
 
 .badge-weak {
-  background: rgba(239, 68, 68, 0.15);
-  color: #fca5a5;
-  border: 1px solid rgba(239, 68, 68, 0.3);
+  background: var(--badge-red-bg);
+  color: var(--badge-red-text);
+  border: 1px solid var(--badge-red-border);
 }
 
 /* ─── Section indicator dots (nav) ──────────────────────────────────────────── */
@@ -321,7 +437,7 @@ body {
 .modal-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(8px);
   display: flex;
   align-items: center;
@@ -333,9 +449,9 @@ body {
 /* ─── Shimmer Loading ────────────────────────────────────────────────────────── */
 .shimmer {
   background: linear-gradient(90deg,
-    rgba(30, 41, 59, 0.4) 25%,
-    rgba(51, 65, 85, 0.6) 50%,
-    rgba(30, 41, 59, 0.4) 75%
+    var(--bg-secondary) 25%,
+    var(--border-light) 50%,
+    var(--bg-secondary) 75%
   );
   background-size: 200% 100%;
   animation: shimmer 1.5s infinite;
@@ -369,4 +485,3 @@ body {
 @supports (height: 100dvh) {
   .h-dvh { height: 100dvh; }
 }
-

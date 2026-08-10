@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { getExamsByCategory, getExamStats } from "@/lib/data-loader";
 import type { ExamSummary } from "@/lib/types";
+import ThemeToggle from "@/components/ThemeToggle";
 
 // ─── Category metadata (icons, colors, order) ──────────────────────────────────
 const CATEGORY_META: Record<
@@ -108,7 +109,7 @@ export default async function HomePage() {
   return (
     <div className="gradient-hero min-h-screen">
       {/* ── Navigation ────────────────────────────────────────────────────────── */}
-      <nav className="sticky top-0 z-50 border-b border-[var(--border)] bg-[var(--bg-primary)]/80 backdrop-blur-xl">
+      <nav className="sticky top-0 z-50 border-b border-[var(--border)] bg-[var(--bg-primary)]/80 backdrop-blur-xl transition-colors duration-300">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 flex items-center justify-between h-16">
           <Link href="/" className="flex items-center gap-2 group">
             <span className="text-2xl">⚡</span>
@@ -120,12 +121,13 @@ export default async function HomePage() {
             <Link
               href="/interview-prep"
               id="nav-interview-prep-btn"
-              className="px-3 py-1.5 rounded-lg bg-amber-500/10 border border-amber-500/30 text-amber-300 hover:bg-amber-500/20 text-xs font-semibold flex items-center gap-1.5 transition-all shadow-sm"
+              className="px-3 py-1.5 rounded-lg badge-amber hover:opacity-90 text-xs font-semibold flex items-center gap-1.5 transition-all shadow-sm"
             >
               <span>🎓</span> Technical Viva &amp; Interview Prep
             </Link>
             <span className="hidden md:inline text-[var(--border)]">|</span>
             <span className="hidden md:inline">100% Free &amp; Client-Side</span>
+            <ThemeToggle />
           </div>
         </div>
       </nav>

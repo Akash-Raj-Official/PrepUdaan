@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import ThemeToggle from "@/components/ThemeToggle";
 
 export const metadata: Metadata = {
   title: "Technical Viva & Interview Prep | ExamForge",
@@ -122,15 +123,16 @@ export default function InterviewPrepPage() {
   return (
     <div className="gradient-hero min-h-screen">
       {/* Nav */}
-      <nav className="sticky top-0 z-50 border-b border-[var(--border)] bg-[var(--bg-primary)]/80 backdrop-blur-xl">
+      <nav className="sticky top-0 z-50 border-b border-[var(--border)] bg-[var(--bg-primary)]/80 backdrop-blur-xl transition-colors duration-300">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 flex items-center justify-between h-16 text-sm">
           <Link href="/" className="flex items-center gap-1.5 font-bold gradient-text text-lg">
             <span>⚡</span>ExamForge
           </Link>
-          <div className="flex items-center gap-2 text-xs">
-            <span className="px-2.5 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-300 font-semibold">
+          <div className="flex items-center gap-3 text-xs">
+            <span className="px-2.5 py-1 rounded-full badge-amber font-semibold hidden sm:inline-block">
               🎓 Technical Viva &amp; Interview Hub
             </span>
+            <ThemeToggle />
           </div>
         </div>
       </nav>
@@ -138,7 +140,7 @@ export default function InterviewPrepPage() {
       <main className="max-w-5xl mx-auto px-4 sm:px-6 py-10">
         {/* Header */}
         <div className="mb-10 text-center animate-fade-in-up">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-amber-500/30 bg-amber-500/10 text-amber-300 text-xs font-semibold mb-4">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full badge-amber text-xs font-semibold mb-4">
             Specialized Preparation Module
           </div>
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[var(--text-primary)] mb-4 leading-tight">
@@ -156,7 +158,7 @@ export default function InterviewPrepPage() {
             {["IBPS SO IT Officer", "ISRO Scientist (CS)", "Coal India MT (CS/IT)"].map((exam) => (
               <span
                 key={exam}
-                className="px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-300 text-xs font-semibold"
+                className="px-3 py-1 rounded-full badge-indigo text-xs font-semibold"
               >
                 {exam}
               </span>

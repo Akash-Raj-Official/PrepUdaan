@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { useParams } from "next/navigation";
+import ThemeToggle from "@/components/ThemeToggle";
 import { calculateScore } from "@/lib/scoring";
 import { analyseSessionBehaviour, generateInsights } from "@/lib/analytics";
 import type {
@@ -168,20 +169,23 @@ export default function ResultClient() {
   return (
     <div className="gradient-hero min-h-screen pb-16">
       {/* Nav */}
-      <nav className="sticky top-0 z-50 border-b border-[var(--border)] bg-[var(--bg-primary)]/80 backdrop-blur-xl">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 flex items-center gap-2 h-16 text-sm">
-          <Link href="/" className="font-bold gradient-text text-lg flex items-center gap-1">
-            <span>⚡</span>ExamForge
-          </Link>
-          <span className="text-[var(--border)]">/</span>
-          <Link
-            href={`/exams/${examId}`}
-            className="text-[var(--text-muted)] hover:text-[var(--text-secondary)] transition-colors"
-          >
-            {exam.shortName}
-          </Link>
-          <span className="text-[var(--border)]">/</span>
-          <span className="text-[var(--text-secondary)] font-medium">Result</span>
+      <nav className="sticky top-0 z-50 border-b border-[var(--border)] bg-[var(--bg-primary)]/80 backdrop-blur-xl transition-colors duration-300">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 flex items-center justify-between h-16 text-sm">
+          <div className="flex items-center gap-2 min-w-0">
+            <Link href="/" className="font-bold gradient-text text-lg flex items-center gap-1 shrink-0">
+              <span>⚡</span>ExamForge
+            </Link>
+            <span className="text-[var(--border)]">/</span>
+            <Link
+              href={`/exams/${examId}`}
+              className="text-[var(--text-muted)] hover:text-[var(--text-secondary)] transition-colors shrink-0"
+            >
+              {exam.shortName}
+            </Link>
+            <span className="text-[var(--border)]">/</span>
+            <span className="text-[var(--text-secondary)] font-medium truncate">Result</span>
+          </div>
+          <ThemeToggle />
         </div>
       </nav>
 

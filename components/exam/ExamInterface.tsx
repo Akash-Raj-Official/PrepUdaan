@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useCallback, useRef } from "react";
 import { useRouter } from "next/navigation";
+import ThemeToggle from "@/components/ThemeToggle";
 import type {
   Paper,
   ExamConfig,
@@ -306,8 +307,9 @@ export default function ExamInterface({ paper, exam }: { paper: Paper; exam: Exa
           ⏱️ {timer.display}
         </div>
 
-        {/* Right: Mobile nav toggle + submit */}
+        {/* Right: Theme toggle + Mobile nav toggle + submit */}
         <div className="flex items-center gap-2 shrink-0">
+          <ThemeToggle />
           {/* Mobile nav toggle */}
           <button
             id="mobile-nav-btn"
@@ -319,7 +321,7 @@ export default function ExamInterface({ paper, exam }: { paper: Paper; exam: Exa
           <button
             id="submit-test-btn"
             onClick={() => setShowSubmitModal(true)}
-            className="px-3 py-1.5 sm:px-4 sm:py-2 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white text-xs sm:text-sm font-semibold transition-all"
+            className="px-3 py-1.5 sm:px-4 sm:py-2 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white text-xs sm:text-sm font-semibold transition-all cursor-pointer"
           >
             Submit
           </button>
