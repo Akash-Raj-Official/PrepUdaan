@@ -1,70 +1,123 @@
 {
   "paperId": "2024",
   "examId": "bpsc-tre-pgt-cs",
-  "title": "BPSC TRE 3.0 PGT Computer Science (2024 Official PYP Mock)",
+  "title": "BPSC TRE 3.0 PGT Computer Science (Practice Set — Syllabus & Topic-Weightage Aligned)",
   "year": 2024,
   "durationMinutes": 150,
-  "totalQuestions": 5,
-  "totalMarks": 5,
+  "totalQuestions": 15,
+  "totalMarks": 15,
+  "negativeMarking": false,
+  "note": "Pattern (Language qualifying + GS + Subject, 150 Q / 150 marks / 150 min / no negative marking) is corroborated across multiple 2026 sources. One source cites 220 Q for the actual 2024 TRE 3.0 paper instead — verify against the official BPSC notification before treating either figure as final. Questions below are original practice items aligned to verified topic-weightage, not verbatim reproductions of the real paper.",
   "sections": [
-    { "sectionId": "general-studies", "name": "General Studies & Language", "questionCount": 1, "marks": 1, "questionRange": [1, 1] },
-    { "sectionId": "cs-core-domain", "name": "Computer Science Domain", "questionCount": 4, "marks": 4, "questionRange": [2, 5] }
+    { "sectionId": "language", "name": "Language (Qualifying)", "questionCount": 0, "marks": 0, "note": "Qualifying only, not added to merit — recommend excluding from scored totals in your app" },
+    { "sectionId": "general-studies", "name": "General Studies", "questionCount": 3, "marks": 3, "questionRange": [1, 3] },
+    { "sectionId": "cs-core-domain", "name": "Computer Science Domain", "questionCount": 12, "marks": 12, "questionRange": [4, 15] }
   ],
   "questions": [
     {
-      "id": "bpsc-2024-q01",
-      "questionNumber": 1,
-      "sectionId": "general-studies",
+      "id": "bpsc-2024-q01", "questionNumber": 1, "sectionId": "general-studies",
       "question": "Who led the Revolt of 1857 in Bihar?",
       "options": ["Kunwar Singh", "Nana Saheb", "Tantia Tope", "Begum Hazrat Mahal"],
-      "correctAnswer": 0,
-      "topic": "Modern History",
-      "difficulty": "EASY",
-      "explanation": "Veer Kunwar Singh of Jagdishpur led the 1857 Indian rebellion in Bihar."
+      "correctAnswer": 0, "topic": "Modern History", "difficulty": "EASY",
+      "explanation": "Veer Kunwar Singh of Jagdishpur led the 1857 rebellion in Bihar."
     },
     {
-      "id": "bpsc-2024-q02",
-      "questionNumber": 2,
-      "sectionId": "cs-core-domain",
+      "id": "bpsc-2024-q02", "questionNumber": 2, "sectionId": "general-studies",
+      "question": "Which river is known as the 'Sorrow of Bihar'?",
+      "options": ["Kosi", "Gandak", "Son", "Punpun"],
+      "correctAnswer": 0, "topic": "Bihar Geography", "difficulty": "EASY",
+      "explanation": "The Kosi river's frequent, destructive course changes and flooding earned it this name."
+    },
+    {
+      "id": "bpsc-2024-q03", "questionNumber": 3, "sectionId": "general-studies",
+      "question": "Article 370 of the Indian Constitution dealt with the special status of which state/UT?",
+      "options": ["Jammu and Kashmir", "Sikkim", "Nagaland", "Punjab"],
+      "correctAnswer": 0, "topic": "Indian Polity", "difficulty": "EASY",
+      "explanation": "Article 370 granted special autonomous status to Jammu and Kashmir, revoked in August 2019."
+    },
+    {
+      "id": "bpsc-2024-q04", "questionNumber": 4, "sectionId": "cs-core-domain",
+      "question": "In a K-map simplification, how many variables can be grouped in a single valid group?",
+      "options": ["Only powers of 2 (1, 2, 4, 8...)", "Any number of cells", "Only odd numbers", "Only prime numbers"],
+      "correctAnswer": 0, "topic": "Digital Electronics", "difficulty": "MEDIUM",
+      "explanation": "K-map groups must contain 1, 2, 4, 8... adjacent cells (powers of 2) to yield valid simplification."
+    },
+    {
+      "id": "bpsc-2024-q05", "questionNumber": 5, "sectionId": "cs-core-domain",
+      "question": "Which logic gate produces an output of 1 only when all inputs are 1?",
+      "options": ["AND", "OR", "NAND", "XOR"],
+      "correctAnswer": 0, "topic": "Digital Electronics", "difficulty": "EASY",
+      "explanation": "AND gate output is HIGH only when every input is HIGH."
+    },
+    {
+      "id": "bpsc-2024-q06", "questionNumber": 6, "sectionId": "cs-core-domain",
+      "question": "Which OS scheduling algorithm can cause starvation of low-priority processes?",
+      "options": ["Priority Scheduling", "Round Robin", "FCFS", "SJF (non-preemptive) alone cannot"],
+      "correctAnswer": 0, "topic": "Operating System", "difficulty": "MEDIUM",
+      "explanation": "Pure priority scheduling can indefinitely delay low-priority processes if higher-priority ones keep arriving."
+    },
+    {
+      "id": "bpsc-2024-q07", "questionNumber": 7, "sectionId": "cs-core-domain",
+      "question": "What is thrashing in operating systems?",
+      "options": ["Excessive paging activity causing low CPU utilization", "A CPU scheduling technique", "A type of deadlock", "A file system corruption"],
+      "correctAnswer": 0, "topic": "Operating System", "difficulty": "MEDIUM",
+      "explanation": "Thrashing occurs when the system spends more time swapping pages than executing processes."
+    },
+    {
+      "id": "bpsc-2024-q08", "questionNumber": 8, "sectionId": "cs-core-domain",
+      "question": "In computer architecture, what does 'pipelining' primarily improve?",
+      "options": ["Instruction throughput", "Memory capacity", "Disk I/O speed", "Screen resolution"],
+      "correctAnswer": 0, "topic": "Computer Organization & Architecture", "difficulty": "MEDIUM",
+      "explanation": "Pipelining overlaps execution stages of successive instructions to increase throughput."
+    },
+    {
+      "id": "bpsc-2024-q09", "questionNumber": 9, "sectionId": "cs-core-domain",
       "question": "Which data structure follows the Last-In, First-Out (LIFO) principle?",
       "options": ["Stack", "Queue", "Array", "Linked List"],
-      "correctAnswer": 0,
-      "topic": "Data Structures",
-      "difficulty": "EASY",
-      "explanation": "A Stack operates on LIFO order where elements inserted last are popped first."
+      "correctAnswer": 0, "topic": "Data Structures", "difficulty": "EASY",
+      "explanation": "A Stack operates on LIFO order where the last element inserted is the first removed."
     },
     {
-      "id": "bpsc-2024-q03",
-      "questionNumber": 3,
-      "sectionId": "cs-core-domain",
-      "question": "Which SQL statement is used to remove a table structure permanently along with all its data?",
-      "options": ["DROP TABLE", "DELETE FROM", "TRUNCATE TABLE", "REMOVE TABLE"],
-      "correctAnswer": 0,
-      "topic": "SQL DDL",
-      "difficulty": "EASY",
-      "explanation": "DROP TABLE deletes both table schema and data rows permanently."
-    },
-    {
-      "id": "bpsc-2024-q04",
-      "questionNumber": 4,
-      "sectionId": "cs-core-domain",
-      "question": "What is the time complexity of searching an element in a balanced Binary Search Tree (BST)?",
+      "id": "bpsc-2024-q10", "questionNumber": 10, "sectionId": "cs-core-domain",
+      "question": "What is the time complexity of searching in a balanced Binary Search Tree?",
       "options": ["O(log N)", "O(N)", "O(1)", "O(N^2)"],
-      "correctAnswer": 0,
-      "topic": "Algorithms",
-      "difficulty": "EASY",
-      "explanation": "In a balanced BST, tree height is log2(N), giving O(log N) search time."
+      "correctAnswer": 0, "topic": "Data Structures & Algorithms", "difficulty": "EASY",
+      "explanation": "A balanced BST has height log2(N), giving O(log N) worst-case search time."
     },
     {
-      "id": "bpsc-2024-q05",
-      "questionNumber": 5,
-      "sectionId": "cs-core-domain",
-      "question": "Which protocol is responsible for assigning automatic IP addresses to client devices in a network?",
+      "id": "bpsc-2024-q11", "questionNumber": 11, "sectionId": "cs-core-domain",
+      "question": "Which of these is a supervised machine learning technique commonly referenced under AI/IoT topics in the syllabus?",
+      "options": ["Decision Tree", "K-Means Clustering", "Apriori Algorithm", "PCA"],
+      "correctAnswer": 0, "topic": "AI & IoT", "difficulty": "MEDIUM",
+      "explanation": "Decision Trees use labeled training data, making them a supervised technique; the others listed are unsupervised."
+    },
+    {
+      "id": "bpsc-2024-q12", "questionNumber": 12, "sectionId": "cs-core-domain",
+      "question": "In the OSI model, which layer is responsible for routing packets between different networks?",
+      "options": ["Network Layer", "Data Link Layer", "Transport Layer", "Session Layer"],
+      "correctAnswer": 0, "topic": "Computer Networks", "difficulty": "EASY",
+      "explanation": "The Network Layer (Layer 3) handles logical addressing and routing across networks."
+    },
+    {
+      "id": "bpsc-2024-q13", "questionNumber": 13, "sectionId": "cs-core-domain",
+      "question": "Which SDLC model is best suited for projects with rapidly changing requirements?",
+      "options": ["Agile Model", "Waterfall Model", "V-Model", "Big Bang Model"],
+      "correctAnswer": 0, "topic": "Software Engineering", "difficulty": "EASY",
+      "explanation": "Agile's iterative sprints accommodate evolving requirements better than rigid sequential models."
+    },
+    {
+      "id": "bpsc-2024-q14", "questionNumber": 14, "sectionId": "cs-core-domain",
+      "question": "Which normal form removes transitive dependency on the primary key?",
+      "options": ["3NF", "1NF", "2NF", "BCNF only"],
+      "correctAnswer": 0, "topic": "DBMS", "difficulty": "MEDIUM",
+      "explanation": "Third Normal Form (3NF) requires that non-key attributes depend only on the primary key, eliminating transitive dependencies."
+    },
+    {
+      "id": "bpsc-2024-q15", "questionNumber": 15, "sectionId": "cs-core-domain",
+      "question": "Which protocol is used to assign IP addresses automatically to devices on a network?",
       "options": ["DHCP", "DNS", "FTP", "SMTP"],
-      "correctAnswer": 0,
-      "topic": "Networking",
-      "difficulty": "EASY",
-      "explanation": "DHCP (Dynamic Host Configuration Protocol) automatically assigns IP addresses and network parameters."
+      "correctAnswer": 0, "topic": "Web Technology & Internet Concepts", "difficulty": "EASY",
+      "explanation": "DHCP (Dynamic Host Configuration Protocol) automatically assigns IP addresses and network configuration."
     }
   ]
 }

@@ -5,8 +5,8 @@
   "year": 2025,
   "shift": "Shift 1",
   "language": "English",
-  "durationMinutes": 120,
-  "totalQuestions": 125,
+  "durationMinutes": 80,
+  "totalQuestions": 100,
   "totalMarks": 125,
   "marking": {
     "correct": 1,
@@ -14,95 +14,236 @@
     "unattempted": 0
   },
   "sections": [
-    { "sectionId": "reasoning", "name": "Reasoning", "questionCount": 25, "marks": 25, "questionRange": [1, 25] },
-    { "sectionId": "quantitative-aptitude", "name": "Quantitative Aptitude", "questionCount": 25, "marks": 25, "questionRange": [26, 50] },
-    { "sectionId": "english", "name": "English Language", "questionCount": 25, "marks": 25, "questionRange": [51, 75] },
-    { "sectionId": "professional-knowledge", "name": "Professional Knowledge (IT)", "questionCount": 50, "marks": 50, "questionRange": [76, 125] }
+    {
+      "sectionId": "reasoning",
+      "name": "Reasoning",
+      "questionCount": 25,
+      "marks": 25,
+      "questionRange": [
+        1,
+        25
+      ],
+      "durationMinutes": 20,
+      "marking": {
+        "correct": 1,
+        "negative": 0.25,
+        "unattempted": 0
+      }
+    },
+    {
+      "sectionId": "quantitative-aptitude",
+      "name": "Quantitative Aptitude",
+      "questionCount": 25,
+      "marks": 25,
+      "questionRange": [
+        26,
+        50
+      ],
+      "durationMinutes": 20,
+      "marking": {
+        "correct": 1,
+        "negative": 0.25,
+        "unattempted": 0
+      }
+    },
+    {
+      "sectionId": "english",
+      "name": "English Language",
+      "questionCount": 25,
+      "marks": 25,
+      "questionRange": [
+        51,
+        75
+      ],
+      "durationMinutes": 20,
+      "marking": {
+        "correct": 1,
+        "negative": 0.25,
+        "unattempted": 0
+      }
+    },
+    {
+      "sectionId": "programming",
+      "name": "Programming",
+      "questionCount": 25,
+      "marks": 50,
+      "questionRange": [
+        76,
+        100
+      ],
+      "durationMinutes": 20,
+      "marking": {
+        "correct": 2,
+        "negative": 0.5,
+        "unattempted": 0
+      }
+    }
   ],
   "isOfficial": true,
   "questions": [
     {
-      "id": "25q001", "questionNumber": 1,
+      "id": "25q001",
+      "questionNumber": 1,
       "question": "Statements: All microservices are containerized. Some containerized apps run on Kubernetes. No monolithic app runs on Kubernetes. Conclusions: I. Some microservices run on Kubernetes. II. No containerized app is a monolithic app.",
-      "options": ["Only I follows", "Only II follows", "Neither I nor II follows", "Both I and II follow"],
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
       "correctAnswer": 2,
       "explanation": "Overlaps between microservices and Kubernetes are possible but not guaranteed. Containerized apps and monolithic apps can overlap outside Kubernetes. Neither follows definitely.",
-      "subject": "Reasoning", "topic": "Syllogism", "difficulty": "medium"
+      "subject": "Reasoning",
+      "topic": "Syllogism",
+      "difficulty": "medium"
     },
     {
-      "id": "25q002", "questionNumber": 2,
+      "id": "25q002",
+      "questionNumber": 2,
       "question": "If 'CLOUD' is coded as 'DMPVE', how is 'SERVER' coded under the same rule?",
-      "options": ["TFSWFS", "TFWSFS", "SFVTFS", "TFTWFS"],
+      "options": [
+        "TFSWFS",
+        "TFWSFS",
+        "SFVTFS",
+        "TFTWFS"
+      ],
       "correctAnswer": 0,
       "explanation": "Each letter is shifted forward by +1 position: S+1=T, E+1=F, R+1=S, V+1=W, E+1=F, R+1=S -> TFSWFS.",
-      "subject": "Reasoning", "topic": "Coding-Decoding", "difficulty": "easy"
+      "subject": "Reasoning",
+      "topic": "Coding-Decoding",
+      "difficulty": "easy"
     },
     {
-      "id": "25q003", "questionNumber": 3,
+      "id": "25q003",
+      "questionNumber": 3,
       "question": "In a family, K is the brother of L. M is the mother of K. N is the father of M. O is the daughter of L. How is O related to N?",
-      "options": ["Great-Granddaughter", "Granddaughter", "Niece", "Daughter"],
+      "options": [
+        "Great-Granddaughter",
+        "Granddaughter",
+        "Niece",
+        "Daughter"
+      ],
       "correctAnswer": 0,
       "explanation": "N is the grandfather of L (since N is father of L's mother M). O is the daughter of L. Therefore, O is the great-granddaughter of N.",
-      "subject": "Reasoning", "topic": "Blood Relations", "difficulty": "medium"
+      "subject": "Reasoning",
+      "topic": "Blood Relations",
+      "difficulty": "medium"
     },
     {
-      "id": "25q004", "questionNumber": 4,
+      "id": "25q004",
+      "questionNumber": 4,
       "question": "A person walks 12 km North from point X, then turns East and walks 9 km to reach Y. What is the shortest distance between X and Y?",
-      "options": ["15 km", "18 km", "21 km", "13 km"],
+      "options": [
+        "15 km",
+        "18 km",
+        "21 km",
+        "13 km"
+      ],
       "correctAnswer": 0,
       "explanation": "Shortest distance = sqrt(12^2 + 9^2) = sqrt(144 + 81) = sqrt(225) = 15 km.",
-      "subject": "Reasoning", "topic": "Direction Sense", "difficulty": "easy"
+      "subject": "Reasoning",
+      "topic": "Direction Sense",
+      "difficulty": "easy"
     },
     {
-      "id": "25q005", "questionNumber": 5,
+      "id": "25q005",
+      "questionNumber": 5,
       "question": "Find the missing term in the sequence: B2D, E5H, H10L, K17P, ?",
-      "options": ["N26T", "N25T", "M26T", "O26U"],
+      "options": [
+        "N26T",
+        "N25T",
+        "M26T",
+        "O26U"
+      ],
       "correctAnswer": 0,
       "explanation": "First letter: B(+3)->E(+3)->H(+3)->K(+3)->N. Middle number: 1^2+1=2, 2^2+1=5, 3^2+1=10, 4^2+1=17, 5^2+1=26. Last letter: D(+4)->H(+4)->L(+4)->P(+4)->T. Result = N26T.",
-      "subject": "Reasoning", "topic": "Alphanumeric Series", "difficulty": "medium"
+      "subject": "Reasoning",
+      "topic": "Alphanumeric Series",
+      "difficulty": "medium"
     },
     {
-      "id": "25q006", "questionNumber": 6,
+      "id": "25q006",
+      "questionNumber": 6,
       "question": "Six servers S1, S2, S3, S4, S5, S6 are mounted in a vertical rack. S3 is immediately above S5. S1 is at the top. Only two servers between S1 and S4. S6 is below S2. Which server is at the bottom?",
-      "options": ["S6", "S5", "S4", "S2"],
+      "options": [
+        "S6",
+        "S5",
+        "S4",
+        "S2"
+      ],
       "correctAnswer": 0,
       "explanation": "Order from top to bottom: S1, S2, S3, S4, S5, S6. S6 is at the bottom of the rack.",
-      "subject": "Reasoning", "topic": "Linear Puzzle", "difficulty": "hard"
+      "subject": "Reasoning",
+      "topic": "Linear Puzzle",
+      "difficulty": "hard"
     },
     {
-      "id": "25q007", "questionNumber": 7,
+      "id": "25q007",
+      "questionNumber": 7,
       "question": "Statements: P > Q >= R = S < T <= U. Conclusions: I. P > S II. U > R.",
-      "options": ["Only I follows", "Only II follows", "Both I and II follow", "Neither follows"],
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Both I and II follow",
+        "Neither follows"
+      ],
       "correctAnswer": 2,
       "explanation": "P > Q >= R = S implies P > S (I follows). R = S < T <= U implies U > R (II follows). Both follow.",
-      "subject": "Reasoning", "topic": "Inequalities", "difficulty": "easy"
+      "subject": "Reasoning",
+      "topic": "Inequalities",
+      "difficulty": "easy"
     },
     {
-      "id": "25q008", "questionNumber": 8,
+      "id": "25q008",
+      "questionNumber": 8,
       "question": "How many meaningful English words can be formed from 2nd, 5th, 6th and 8th letters of 'SECURITY' using each letter once?",
-      "options": ["One", "Two", "None", "Three"],
+      "options": [
+        "One",
+        "Two",
+        "None",
+        "Three"
+      ],
       "correctAnswer": 0,
       "explanation": "2nd=E, 5th=R, 6th=I, 8th=Y. Word formed: 'IREY' is invalid, 'EIRY' is invalid. Word formed: 'YIER' is invalid. Only 'EIRY' no, wait: E, R, I, Y -> no common word, wait: 2nd=E, 5th=R, 6th=I, 8th=Y -> Wait! Let's check 'RIME'? No, S-E-C-U-R-I-T-Y. 2nd=E, 4th=U, 5th=R, 6th=I. 'RISE'? 2nd=E, 5th=R, 6th=I, 7th=T -> R-I-T-E ('RITE').",
-      "subject": "Reasoning", "topic": "Word Formation", "difficulty": "medium"
+      "subject": "Reasoning",
+      "topic": "Word Formation",
+      "difficulty": "medium"
     },
     {
-      "id": "25q009", "questionNumber": 9,
+      "id": "25q009",
+      "questionNumber": 9,
       "question": "In a certain code, 'secure cloud system' is 'xi ma ko', 'cloud backup data' is 'ko ta pu', 'system backup recovery' is 'ma ta zo'. What is code for 'secure'?",
-      "options": ["xi", "ma", "ko", "ta"],
+      "options": [
+        "xi",
+        "ma",
+        "ko",
+        "ta"
+      ],
       "correctAnswer": 0,
       "explanation": "'cloud' = 'ko', 'system' = 'ma'. Therefore 'secure' = 'xi'.",
-      "subject": "Reasoning", "topic": "Coding-Decoding", "difficulty": "medium"
+      "subject": "Reasoning",
+      "topic": "Coding-Decoding",
+      "difficulty": "medium"
     },
     {
-      "id": "25q010", "questionNumber": 10,
+      "id": "25q010",
+      "questionNumber": 10,
       "question": "In a queue of 45 IT professionals, Ankit is 16th from the left. Nitin is 22nd from the right. How many professionals are between Ankit and Nitin?",
-      "options": ["7", "8", "9", "6"],
+      "options": [
+        "7",
+        "8",
+        "9",
+        "6"
+      ],
       "correctAnswer": 0,
       "explanation": "Nitin's position from left = 45 - 22 + 1 = 24. Number of persons between Ankit (16th) and Nitin (24th) = 24 - 16 - 1 = 7.",
-      "subject": "Reasoning", "topic": "Order and Ranking", "difficulty": "easy"
+      "subject": "Reasoning",
+      "topic": "Order and Ranking",
+      "difficulty": "easy"
     },
     {
-      "id": "25q011", "questionNumber": 11,
+      "id": "25q011",
+      "questionNumber": 11,
       "question": "Which assumption is implicit in statement: 'Implement multi-factor authentication (MFA) to prevent unauthorized account access'?",
       "options": [
         "Single-factor passwords alone can be compromised by cyber threats.",
@@ -112,378 +253,749 @@
       ],
       "correctAnswer": 0,
       "explanation": "Recommending MFA assumes that single password mechanisms are vulnerable to compromise.",
-      "subject": "Reasoning", "topic": "Critical Reasoning", "difficulty": "medium"
+      "subject": "Reasoning",
+      "topic": "Critical Reasoning",
+      "difficulty": "medium"
     },
     {
-      "id": "25q012", "questionNumber": 12,
+      "id": "25q012",
+      "questionNumber": 12,
       "question": "If '+' means '÷', '-' means '×', '×' means '+', '÷' means '-', what is value of: 48 + 8 - 4 × 12 ÷ 6 ?",
-      "options": ["30", "24", "18", "36"],
+      "options": [
+        "30",
+        "24",
+        "18",
+        "36"
+      ],
       "correctAnswer": 0,
       "explanation": "48 ÷ 8 × 4 + 12 - 6 = 6 × 4 + 12 - 6 = 24 + 12 - 6 = 30.",
-      "subject": "Reasoning", "topic": "Mathematical Operations", "difficulty": "easy"
+      "subject": "Reasoning",
+      "topic": "Mathematical Operations",
+      "difficulty": "easy"
     },
     {
-      "id": "25q013", "questionNumber": 13,
+      "id": "25q013",
+      "questionNumber": 13,
       "question": "Eight people A, B, C, D, E, F, G, H sit around a square table. Four sit at corners facing center and four sit in middle of sides facing outward. A sits at a corner. B is 3rd to right of A. How is B facing?",
-      "options": ["Facing center", "Facing outward", "Facing North", "Facing South"],
+      "options": [
+        "Facing center",
+        "Facing outward",
+        "Facing North",
+        "Facing South"
+      ],
       "correctAnswer": 0,
       "explanation": "Corner seats face center. Moving 3 positions along an 8-person square table alternates corner and side seats: Corner (A) -> Side (+1) -> Corner (+2) -> Side (+3). Wait: 1st right = side, 2nd right = corner, 3rd right = side! Facing outward.",
-      "subject": "Reasoning", "topic": "Seating Arrangement", "difficulty": "hard"
+      "subject": "Reasoning",
+      "topic": "Seating Arrangement",
+      "difficulty": "hard"
     },
     {
-      "id": "25q014", "questionNumber": 14,
+      "id": "25q014",
+      "questionNumber": 14,
       "question": "Which of the following is the odd one out?",
-      "options": ["PostgreSQL", "MongoDB", "MySQL", "Oracle RDBMS"],
+      "options": [
+        "PostgreSQL",
+        "MongoDB",
+        "MySQL",
+        "Oracle RDBMS"
+      ],
       "correctAnswer": 1,
       "explanation": "PostgreSQL, MySQL, and Oracle are Relational DBMSs (SQL). MongoDB is a NoSQL document database.",
-      "subject": "Reasoning", "topic": "Classification", "difficulty": "easy"
+      "subject": "Reasoning",
+      "topic": "Classification",
+      "difficulty": "easy"
     },
     {
-      "id": "25q015", "questionNumber": 15,
+      "id": "25q015",
+      "questionNumber": 15,
       "question": "Statements: Only a few APIs are public. All public APIs use HTTPS. Conclusions: I. Some APIs use HTTPS. II. All public APIs are private.",
-      "options": ["Only I follows", "Only II follows", "Both follow", "Neither follows"],
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Both follow",
+        "Neither follows"
+      ],
       "correctAnswer": 0,
       "explanation": "Public APIs use HTTPS, so those APIs definitely use HTTPS (I follows). II contradicts the premise.",
-      "subject": "Reasoning", "topic": "Syllogism", "difficulty": "medium"
+      "subject": "Reasoning",
+      "topic": "Syllogism",
+      "difficulty": "medium"
     },
     {
-      "id": "25q016", "questionNumber": 16,
+      "id": "25q016",
+      "questionNumber": 16,
       "question": "Point M is 6 m East of Point N. Point O is 8 m South of Point M. What is the shortest distance between N and O?",
-      "options": ["10 m", "12 m", "14 m", "9 m"],
+      "options": [
+        "10 m",
+        "12 m",
+        "14 m",
+        "9 m"
+      ],
       "correctAnswer": 0,
       "explanation": "Distance = sqrt(6^2 + 8^2) = sqrt(36 + 64) = sqrt(100) = 10 m.",
-      "subject": "Reasoning", "topic": "Direction Sense", "difficulty": "easy"
+      "subject": "Reasoning",
+      "topic": "Direction Sense",
+      "difficulty": "easy"
     },
     {
-      "id": "25q017", "questionNumber": 17,
+      "id": "25q017",
+      "questionNumber": 17,
       "question": "If '123' means 'fast network line', '345' means 'line rate high', '567' means 'high speed link', what digit stands for 'rate'?",
-      "options": ["4", "3", "5", "1"],
+      "options": [
+        "4",
+        "3",
+        "5",
+        "1"
+      ],
       "correctAnswer": 0,
       "explanation": "'3' appears in 123 & 345 -> 'line'. '5' appears in 345 & 567 -> 'high'. Remaining digit in 345 is '4' -> 'rate'.",
-      "subject": "Reasoning", "topic": "Coding-Decoding", "difficulty": "easy"
+      "subject": "Reasoning",
+      "topic": "Coding-Decoding",
+      "difficulty": "easy"
     },
     {
-      "id": "25q018", "questionNumber": 18,
+      "id": "25q018",
+      "questionNumber": 18,
       "question": "Statements: A <= B < C = D >= E > F. Conclusions: I. D > A II. D > F.",
-      "options": ["Only I follows", "Only II follows", "Both I and II follow", "Neither follows"],
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Both I and II follow",
+        "Neither follows"
+      ],
       "correctAnswer": 2,
       "explanation": "D = C > B >= A implies D > A (I follows). D >= E > F implies D > F (II follows). Both follow.",
-      "subject": "Reasoning", "topic": "Inequalities", "difficulty": "easy"
+      "subject": "Reasoning",
+      "topic": "Inequalities",
+      "difficulty": "easy"
     },
     {
-      "id": "25q019", "questionNumber": 19,
+      "id": "25q019",
+      "questionNumber": 19,
       "question": "Find the next term in the letter series: Z, W, T, Q, N, ?",
-      "options": ["K", "L", "M", "J"],
+      "options": [
+        "K",
+        "L",
+        "M",
+        "J"
+      ],
       "correctAnswer": 0,
       "explanation": "Each letter is decremented by 3: Z(26)->W(23)->T(20)->Q(17)->N(14)->K(11).",
-      "subject": "Reasoning", "topic": "Letter Series", "difficulty": "easy"
+      "subject": "Reasoning",
+      "topic": "Letter Series",
+      "difficulty": "easy"
     },
     {
-      "id": "25q020", "questionNumber": 20,
+      "id": "25q020",
+      "questionNumber": 20,
       "question": "In a row of 30 computers, Server Alpha is 15th from left and Server Beta is 20th from left. How many computers are between them?",
-      "options": ["4", "5", "6", "3"],
+      "options": [
+        "4",
+        "5",
+        "6",
+        "3"
+      ],
       "correctAnswer": 0,
       "explanation": "Computers between 15th and 20th position = 20 - 15 - 1 = 4.",
-      "subject": "Reasoning", "topic": "Order and Ranking", "difficulty": "easy"
+      "subject": "Reasoning",
+      "topic": "Order and Ranking",
+      "difficulty": "easy"
     },
     {
-      "id": "25q021", "questionNumber": 21,
+      "id": "25q021",
+      "questionNumber": 21,
       "question": "Find the odd pair of numbers:",
-      "options": ["11 - 121", "13 - 169", "17 - 289", "19 - 360"],
+      "options": [
+        "11 - 121",
+        "13 - 169",
+        "17 - 289",
+        "19 - 360"
+      ],
       "correctAnswer": 3,
       "explanation": "11^2=121, 13^2=169, 17^2=289. But 19^2 = 361 (not 360).",
-      "subject": "Reasoning", "topic": "Number Classification", "difficulty": "easy"
+      "subject": "Reasoning",
+      "topic": "Number Classification",
+      "difficulty": "easy"
     },
     {
-      "id": "22q022_25", "questionNumber": 22,
+      "id": "22q022_25",
+      "questionNumber": 22,
       "question": "If A is father of B, B is sister of C, and C is mother of D, how is A related to D?",
-      "options": ["Maternal Grandfather", "Paternal Grandfather", "Uncle", "Father"],
+      "options": [
+        "Maternal Grandfather",
+        "Paternal Grandfather",
+        "Uncle",
+        "Father"
+      ],
       "correctAnswer": 0,
       "explanation": "C is the mother of D, and A is the father of C (since A is father of B and B is sister of C). Therefore, A is maternal grandfather of D.",
-      "subject": "Reasoning", "topic": "Blood Relations", "difficulty": "medium"
+      "subject": "Reasoning",
+      "topic": "Blood Relations",
+      "difficulty": "medium"
     },
     {
-      "id": "25q023", "questionNumber": 23,
+      "id": "25q023",
+      "questionNumber": 23,
       "question": "Which number replaces '?' in: 3, 7, 15, 31, 63, ?",
-      "options": ["127", "125", "128", "130"],
+      "options": [
+        "127",
+        "125",
+        "128",
+        "130"
+      ],
       "correctAnswer": 0,
       "explanation": "Pattern: n × 2 + 1. 63 × 2 + 1 = 127.",
-      "subject": "Reasoning", "topic": "Number Series", "difficulty": "easy"
+      "subject": "Reasoning",
+      "topic": "Number Series",
+      "difficulty": "easy"
     },
     {
-      "id": "25q024", "questionNumber": 24,
+      "id": "25q024",
+      "questionNumber": 24,
       "question": "Select the option that correctly completes the statement: 'Every encrypted payload requires _____ for decryption.'",
-      "options": ["a valid cryptographic key", "a public IP address", "a SQL query", "a high GPU clock rate"],
+      "options": [
+        "a valid cryptographic key",
+        "a public IP address",
+        "a SQL query",
+        "a high GPU clock rate"
+      ],
       "correctAnswer": 0,
       "explanation": "Decryption requires the appropriate cryptographic key (symmetric or private key).",
-      "subject": "Reasoning", "topic": "Logical Statement", "difficulty": "easy"
+      "subject": "Reasoning",
+      "topic": "Logical Statement",
+      "difficulty": "easy"
     },
     {
-      "id": "25q025", "questionNumber": 25,
+      "id": "25q025",
+      "questionNumber": 25,
       "question": "If 'DATA' is coded as '5262', how is 'CODE' coded if letters are mapped to their alphabet positions + 1?",
-      "options": ["4-16-5-6", "3-15-4-5", "4-15-4-5", "5-16-6-7"],
+      "options": [
+        "4-16-5-6",
+        "3-15-4-5",
+        "4-15-4-5",
+        "5-16-6-7"
+      ],
       "correctAnswer": 0,
       "explanation": "C(3)+1=4, O(15)+1=16, D(4)+1=5, E(5)+1=6 -> 4-16-5-6.",
-      "subject": "Reasoning", "topic": "Coding-Decoding", "difficulty": "easy"
+      "subject": "Reasoning",
+      "topic": "Coding-Decoding",
+      "difficulty": "easy"
     },
     {
-      "id": "25q026", "questionNumber": 26,
+      "id": "25q026",
+      "questionNumber": 26,
       "question": "Simplify: (0.8 × 0.8 × 0.8 + 0.2 × 0.2 × 0.2) / (0.8 × 0.8 - 0.8 × 0.2 + 0.2 × 0.2)",
-      "options": ["1.0", "0.6", "0.8", "0.2"],
+      "options": [
+        "1.0",
+        "0.6",
+        "0.8",
+        "0.2"
+      ],
       "correctAnswer": 0,
       "explanation": "Using identity (a^3 + b^3) / (a^2 - ab + b^2) = (a + b) = 0.8 + 0.2 = 1.0.",
-      "subject": "Quantitative Aptitude", "topic": "Simplification", "difficulty": "easy"
+      "subject": "Quantitative Aptitude",
+      "topic": "Simplification",
+      "difficulty": "easy"
     },
     {
-      "id": "25q027", "questionNumber": 27,
+      "id": "25q027",
+      "questionNumber": 27,
       "question": "A sum of ₹16,000 earns ₹3,360 as compound interest in 2 years compounded annually. What is the rate of interest per annum?",
-      "options": ["10%", "12%", "8%", "15%"],
+      "options": [
+        "10%",
+        "12%",
+        "8%",
+        "15%"
+      ],
       "correctAnswer": 0,
       "explanation": "Amount = 16000 + 3360 = 19360. 19360 / 16000 = 1.21. (1 + r/100)^2 = 1.21 => 1 + r/100 = 1.1 => r = 10%.",
-      "subject": "Quantitative Aptitude", "topic": "Compound Interest", "difficulty": "medium"
+      "subject": "Quantitative Aptitude",
+      "topic": "Compound Interest",
+      "difficulty": "medium"
     },
     {
-      "id": "25q028", "questionNumber": 28,
+      "id": "25q028",
+      "questionNumber": 28,
       "question": "A train 300 m long crosses a pole in 15 seconds. How long will it take to cross a bridge 450 m long at the same speed?",
-      "options": ["37.5 seconds", "35 seconds", "40 seconds", "30 seconds"],
+      "options": [
+        "37.5 seconds",
+        "35 seconds",
+        "40 seconds",
+        "30 seconds"
+      ],
       "correctAnswer": 0,
       "explanation": "Speed = 300 / 15 = 20 m/s. Total distance for bridge = 300 + 450 = 750 m. Time = 750 / 20 = 37.5 seconds.",
-      "subject": "Quantitative Aptitude", "topic": "Time and Distance", "difficulty": "easy"
+      "subject": "Quantitative Aptitude",
+      "topic": "Time and Distance",
+      "difficulty": "easy"
     },
     {
-      "id": "25q029", "questionNumber": 29,
+      "id": "25q029",
+      "questionNumber": 29,
       "question": "The ratio of ages of X and Y present is 5:7. After 6 years, the ratio becomes 3:4. What is the present age of Y?",
-      "options": ["42 years", "35 years", "28 years", "49 years"],
+      "options": [
+        "42 years",
+        "35 years",
+        "28 years",
+        "49 years"
+      ],
       "correctAnswer": 0,
       "explanation": "(5x + 6) / (7x + 6) = 3 / 4 => 20x + 24 = 21x + 18 => x = 6. Y's present age = 7(6) = 42 years.",
-      "subject": "Quantitative Aptitude", "topic": "Problems on Ages", "difficulty": "medium"
+      "subject": "Quantitative Aptitude",
+      "topic": "Problems on Ages",
+      "difficulty": "medium"
     },
     {
-      "id": "25q030", "questionNumber": 30,
+      "id": "25q030",
+      "questionNumber": 30,
       "question": "Pipe A fills a tank in 15 hours and Pipe B fills it in 10 hours. Pipe C empties full tank in 30 hours. If all three are opened together, in how many hours will the tank be full?",
-      "options": ["7.5 hours", "8 hours", "6 hours", "10 hours"],
+      "options": [
+        "7.5 hours",
+        "8 hours",
+        "6 hours",
+        "10 hours"
+      ],
       "correctAnswer": 0,
       "explanation": "Net rate = 1/15 + 1/10 - 1/30 = (2 + 3 - 1)/30 = 4/30 = 2/15. Time required = 15/2 = 7.5 hours.",
-      "subject": "Quantitative Aptitude", "topic": "Pipes and Cisterns", "difficulty": "medium"
+      "subject": "Quantitative Aptitude",
+      "topic": "Pipes and Cisterns",
+      "difficulty": "medium"
     },
     {
-      "id": "25q031", "questionNumber": 31,
+      "id": "25q031",
+      "questionNumber": 31,
       "question": "20 programmers can build a web module in 18 days working 7 hours a day. How many days will 15 programmers take working 8 hours a day?",
-      "options": ["21 days", "24 days", "18 days", "20 days"],
+      "options": [
+        "21 days",
+        "24 days",
+        "18 days",
+        "20 days"
+      ],
       "correctAnswer": 0,
       "explanation": "20 × 18 × 7 = 15 × D2 × 8 => 2520 = 120 × D2 => D2 = 21 days.",
-      "subject": "Quantitative Aptitude", "topic": "Time and Work", "difficulty": "easy"
+      "subject": "Quantitative Aptitude",
+      "topic": "Time and Work",
+      "difficulty": "easy"
     },
     {
-      "id": "25q032", "questionNumber": 32,
+      "id": "25q032",
+      "questionNumber": 32,
       "question": "A merchant marks an item 50% above cost price and gives a discount of 20%. What is his profit percentage?",
-      "options": ["20%", "30%", "25%", "15%"],
+      "options": [
+        "20%",
+        "30%",
+        "25%",
+        "15%"
+      ],
       "correctAnswer": 0,
       "explanation": "CP = 100, MP = 150. SP = 150 × 0.80 = 120. Profit = 20%.",
-      "subject": "Quantitative Aptitude", "topic": "Profit and Loss", "difficulty": "easy"
+      "subject": "Quantitative Aptitude",
+      "topic": "Profit and Loss",
+      "difficulty": "easy"
     },
     {
-      "id": "25q033", "questionNumber": 33,
+      "id": "25q033",
+      "questionNumber": 33,
       "question": "What is the average of the first 10 multiples of 6?",
-      "options": ["33", "30", "36", "31.5"],
+      "options": [
+        "33",
+        "30",
+        "36",
+        "31.5"
+      ],
       "correctAnswer": 0,
       "explanation": "Average of an AP = (First term + Last term)/2 = (6 + 60)/2 = 66/2 = 33.",
-      "subject": "Quantitative Aptitude", "topic": "Averages", "difficulty": "easy"
+      "subject": "Quantitative Aptitude",
+      "topic": "Averages",
+      "difficulty": "easy"
     },
     {
-      "id": "25q034", "questionNumber": 34,
+      "id": "25q034",
+      "questionNumber": 34,
       "question": "Two numbers are in ratio 4:7. If 10 is subtracted from each, the ratio becomes 1:2. What is the larger number?",
-      "options": ["70", "40", "60", "50"],
+      "options": [
+        "70",
+        "40",
+        "60",
+        "50"
+      ],
       "correctAnswer": 0,
       "explanation": "(4x - 10)/(7x - 10) = 1/2 => 8x - 20 = 7x - 10 => x = 10. Larger number = 7(10) = 70.",
-      "subject": "Quantitative Aptitude", "topic": "Ratio and Proportion", "difficulty": "medium"
+      "subject": "Quantitative Aptitude",
+      "topic": "Ratio and Proportion",
+      "difficulty": "medium"
     },
     {
-      "id": "25q035", "questionNumber": 35,
+      "id": "25q035",
+      "questionNumber": 35,
       "question": "Two unbiased dice are rolled. What is the probability of getting a sum greater than 9?",
-      "options": ["1/6", "5/36", "1/9", "7/36"],
+      "options": [
+        "1/6",
+        "5/36",
+        "1/9",
+        "7/36"
+      ],
       "correctAnswer": 0,
       "explanation": "Sums > 9 are 10, 11, 12. Outcomes: (4,6),(5,5),(6,4),(5,6),(6,5),(6,6) -> 6 outcomes out of 36. Probability = 6/36 = 1/6.",
-      "subject": "Quantitative Aptitude", "topic": "Probability", "difficulty": "medium"
+      "subject": "Quantitative Aptitude",
+      "topic": "Probability",
+      "difficulty": "medium"
     },
     {
-      "id": "25q036", "questionNumber": 36,
+      "id": "25q036",
+      "questionNumber": 36,
       "question": "Roots of quadratic equation: 2x^2 - 9x + 10 = 0 are:",
-      "options": ["2 and 2.5", "2 and 5", "1 and 10", "3 and 4"],
+      "options": [
+        "2 and 2.5",
+        "2 and 5",
+        "1 and 10",
+        "3 and 4"
+      ],
       "correctAnswer": 0,
       "explanation": "2x^2 - 4x - 5x + 10 = 0 => 2x(x - 2) - 5(x - 2) = 0 => (2x - 5)(x - 2) = 0 => x = 2.5 or x = 2.",
-      "subject": "Quantitative Aptitude", "topic": "Quadratic Equations", "difficulty": "medium"
+      "subject": "Quantitative Aptitude",
+      "topic": "Quadratic Equations",
+      "difficulty": "medium"
     },
     {
-      "id": "25q037", "questionNumber": 37,
+      "id": "25q037",
+      "questionNumber": 37,
       "question": "A circular garden has a radius of 14 m. Find the cost of fencing it at ₹25 per meter (use π = 22/7):",
-      "options": ["₹2,200", "₹2,500", "₹1,800", "₹2,000"],
+      "options": [
+        "₹2,200",
+        "₹2,500",
+        "₹1,800",
+        "₹2,000"
+      ],
       "correctAnswer": 0,
       "explanation": "Circumference = 2 × (22/7) × 14 = 88 m. Cost = 88 × 25 = ₹2,200.",
-      "subject": "Quantitative Aptitude", "topic": "Mensuration", "difficulty": "easy"
+      "subject": "Quantitative Aptitude",
+      "topic": "Mensuration",
+      "difficulty": "easy"
     },
     {
-      "id": "25q038", "questionNumber": 38,
+      "id": "25q038",
+      "questionNumber": 38,
       "question": "In a mixture of 90 liters, the ratio of milk to water is 2:1. How much water must be added so that the ratio becomes 1:2?",
-      "options": ["90 liters", "60 liters", "45 liters", "30 liters"],
+      "options": [
+        "90 liters",
+        "60 liters",
+        "45 liters",
+        "30 liters"
+      ],
       "correctAnswer": 0,
       "explanation": "Milk = 60 L, Water = 30 L. New ratio 60 / (30 + W) = 1/2 => 30 + W = 120 => W = 90 liters.",
-      "subject": "Quantitative Aptitude", "topic": "Mixtures and Alligations", "difficulty": "medium"
+      "subject": "Quantitative Aptitude",
+      "topic": "Mixtures and Alligations",
+      "difficulty": "medium"
     },
     {
-      "id": "25q039", "questionNumber": 39,
+      "id": "25q039",
+      "questionNumber": 39,
       "question": "Simple interest on a sum of money for 3 years at 8% per annum is ₹2,400. What will be the compound interest on same sum for 2 years at 10% per annum?",
-      "options": ["₹2,100", "₹2,000", "₹2,200", "₹1,800"],
+      "options": [
+        "₹2,100",
+        "₹2,000",
+        "₹2,200",
+        "₹1,800"
+      ],
       "correctAnswer": 0,
       "explanation": "P = (2400 × 100)/(8 × 3) = ₹10,000. CI for 2 yrs @ 10% = 10000 × [(1.10)^2 - 1] = 10000 × 0.21 = ₹2,100.",
-      "subject": "Quantitative Aptitude", "topic": "Compound Interest", "difficulty": "medium"
+      "subject": "Quantitative Aptitude",
+      "topic": "Compound Interest",
+      "difficulty": "medium"
     },
     {
-      "id": "25q040", "questionNumber": 40,
+      "id": "25q040",
+      "questionNumber": 40,
       "question": "Find the missing term in series: 5, 16, 51, 158, ?",
-      "options": ["479", "475", "480", "460"],
+      "options": [
+        "479",
+        "475",
+        "480",
+        "460"
+      ],
       "correctAnswer": 0,
       "explanation": "Pattern: n × 3 + 1, n × 3 + 3, n × 3 + 5, n × 3 + 7. 158 × 3 + 7 = 474 + 7 = 481? Wait: 5×3+1=16, 16×3+3=51, 51×3+5=158, 158×3+7 = 481. If options are 479, wait: 5×3+1=16, 16×3+3=51, 51×3+5=158, 158×3+5=479.",
-      "subject": "Quantitative Aptitude", "topic": "Number Series", "difficulty": "hard"
+      "subject": "Quantitative Aptitude",
+      "topic": "Number Series",
+      "difficulty": "hard"
     },
     {
-      "id": "25q041", "questionNumber": 41,
+      "id": "25q041",
+      "questionNumber": 41,
       "question": "A boat goes 30 km downstream in 2 hours and 20 km upstream in 4 hours. What is the speed of the boat in still water?",
-      "options": ["10 km/h", "8 km/h", "12 km/h", "6 km/h"],
+      "options": [
+        "10 km/h",
+        "8 km/h",
+        "12 km/h",
+        "6 km/h"
+      ],
       "correctAnswer": 0,
       "explanation": "Downstream speed = 30/2 = 15 km/h. Upstream speed = 20/4 = 5 km/h. Boat speed = (15 + 5)/2 = 10 km/h.",
-      "subject": "Quantitative Aptitude", "topic": "Boats and Streams", "difficulty": "easy"
+      "subject": "Quantitative Aptitude",
+      "topic": "Boats and Streams",
+      "difficulty": "easy"
     },
     {
-      "id": "25q042", "questionNumber": 42,
+      "id": "25q042",
+      "questionNumber": 42,
       "question": "If 30% of A is added to 40% of B, the result is 80% of B. What percentage of A is B?",
-      "options": ["75%", "80%", "60%", "125%"],
+      "options": [
+        "75%",
+        "80%",
+        "60%",
+        "125%"
+      ],
       "correctAnswer": 0,
       "explanation": "0.30 A + 0.40 B = 0.80 B => 0.30 A = 0.40 B => B/A = 0.30/0.40 = 3/4 = 75%.",
-      "subject": "Quantitative Aptitude", "topic": "Percentages", "difficulty": "medium"
+      "subject": "Quantitative Aptitude",
+      "topic": "Percentages",
+      "difficulty": "medium"
     },
     {
-      "id": "25q043", "questionNumber": 43,
+      "id": "25q043",
+      "questionNumber": 43,
       "question": "How long will a 250 m train traveling at 90 km/h take to pass a tunnel 350 m long?",
-      "options": ["24 seconds", "20 seconds", "30 seconds", "25 seconds"],
+      "options": [
+        "24 seconds",
+        "20 seconds",
+        "30 seconds",
+        "25 seconds"
+      ],
       "correctAnswer": 0,
       "explanation": "Speed = 90 × (5/18) = 25 m/s. Total distance = 250 + 350 = 600 m. Time = 600 / 25 = 24 seconds.",
-      "subject": "Quantitative Aptitude", "topic": "Time and Distance", "difficulty": "easy"
+      "subject": "Quantitative Aptitude",
+      "topic": "Time and Distance",
+      "difficulty": "easy"
     },
     {
-      "id": "25q044", "questionNumber": 44,
+      "id": "25q044",
+      "questionNumber": 44,
       "question": "The LCM of two numbers is 180 and their ratio is 4:5. What is the smaller number?",
-      "options": ["36", "45", "27", "40"],
+      "options": [
+        "36",
+        "45",
+        "27",
+        "40"
+      ],
       "correctAnswer": 0,
       "explanation": "Let numbers be 4x and 5x. LCM = 20x = 180 => x = 9. Smaller number = 4(9) = 36.",
-      "subject": "Quantitative Aptitude", "topic": "HCF and LCM", "difficulty": "easy"
+      "subject": "Quantitative Aptitude",
+      "topic": "HCF and LCM",
+      "difficulty": "easy"
     },
     {
-      "id": "25q045", "questionNumber": 45,
+      "id": "25q045",
+      "questionNumber": 45,
       "question": "A person sells two laptops for ₹40,000 each. On one he gains 20% and on the other he loses 20%. What is his overall net percentage profit/loss?",
-      "options": ["4% loss", "4% profit", "No profit no loss", "2% loss"],
+      "options": [
+        "4% loss",
+        "4% profit",
+        "No profit no loss",
+        "2% loss"
+      ],
       "correctAnswer": 0,
       "explanation": "When two items are sold at same price with x% profit and x% loss, overall result is x^2/100 % loss = (20^2)/100 = 4% loss.",
-      "subject": "Quantitative Aptitude", "topic": "Profit and Loss", "difficulty": "medium"
+      "subject": "Quantitative Aptitude",
+      "topic": "Profit and Loss",
+      "difficulty": "medium"
     },
     {
-      "id": "25q046", "questionNumber": 46,
+      "id": "25q046",
+      "questionNumber": 46,
       "question": "At what rate of simple interest per annum will ₹8,000 amount to ₹11,200 in 4 years?",
-      "options": ["10%", "8%", "12%", "9%"],
+      "options": [
+        "10%",
+        "8%",
+        "12%",
+        "9%"
+      ],
       "correctAnswer": 0,
       "explanation": "SI = 11200 - 8000 = ₹3,200. Rate = (3200 × 100)/(8000 × 4) = 10%.",
-      "subject": "Quantitative Aptitude", "topic": "Simple Interest", "difficulty": "easy"
+      "subject": "Quantitative Aptitude",
+      "topic": "Simple Interest",
+      "difficulty": "easy"
     },
     {
-      "id": "25q047", "questionNumber": 47,
+      "id": "25q047",
+      "questionNumber": 47,
       "question": "In how many ways can 5 software engineers sit around a circular conference table?",
-      "options": ["24", "120", "60", "12"],
+      "options": [
+        "24",
+        "120",
+        "60",
+        "12"
+      ],
       "correctAnswer": 0,
       "explanation": "Circular permutations of n items = (n - 1)! = (5 - 1)! = 4! = 24.",
-      "subject": "Quantitative Aptitude", "topic": "Permutations and Combinations", "difficulty": "easy"
+      "subject": "Quantitative Aptitude",
+      "topic": "Permutations and Combinations",
+      "difficulty": "easy"
     },
     {
-      "id": "25q048", "questionNumber": 48,
+      "id": "25q048",
+      "questionNumber": 48,
       "question": "The mean of 20 observations was found to be 45. Later it was discovered that an observation 64 was misread as 46. What is the correct mean?",
-      "options": ["45.9", "46.2", "45.5", "46.8"],
+      "options": [
+        "45.9",
+        "46.2",
+        "45.5",
+        "46.8"
+      ],
       "correctAnswer": 0,
       "explanation": "Difference = 64 - 46 = +18. Adjustment to mean = 18 / 20 = +0.9. Correct mean = 45 + 0.9 = 45.9.",
-      "subject": "Quantitative Aptitude", "topic": "Averages", "difficulty": "medium"
+      "subject": "Quantitative Aptitude",
+      "topic": "Averages",
+      "difficulty": "medium"
     },
     {
-      "id": "25q049", "questionNumber": 49,
+      "id": "25q049",
+      "questionNumber": 49,
       "question": "The total surface area of a cube is 294 cm². What is the volume of the cube?",
-      "options": ["343 cm³", "216 cm³", "512 cm³", "243 cm³"],
+      "options": [
+        "343 cm³",
+        "216 cm³",
+        "512 cm³",
+        "243 cm³"
+      ],
       "correctAnswer": 0,
       "explanation": "6 a^2 = 294 => a^2 = 49 => a = 7 cm. Volume = a^3 = 7^3 = 343 cm³.",
-      "subject": "Quantitative Aptitude", "topic": "Mensuration", "difficulty": "easy"
+      "subject": "Quantitative Aptitude",
+      "topic": "Mensuration",
+      "difficulty": "easy"
     },
     {
-      "id": "25q050", "questionNumber": 50,
+      "id": "25q050",
+      "questionNumber": 50,
       "question": "What is the equivalent single discount for three successive discounts of 10%, 20%, and 25%?",
-      "options": ["46%", "45%", "50%", "44%"],
+      "options": [
+        "46%",
+        "45%",
+        "50%",
+        "44%"
+      ],
       "correctAnswer": 0,
       "explanation": "Multiplying factors = 0.90 × 0.80 × 0.75 = 0.54. Equivalent discount = 1 - 0.54 = 0.46 = 46%.",
-      "subject": "Quantitative Aptitude", "topic": "Discount", "difficulty": "medium"
+      "subject": "Quantitative Aptitude",
+      "topic": "Discount",
+      "difficulty": "medium"
     },
     {
-      "id": "25q051", "questionNumber": 51,
+      "id": "25q051",
+      "questionNumber": 51,
       "question": "Select the correct synonym for 'RESILIENT':",
-      "options": ["Adaptable", "Rigid", "Fragile", "Vulnerable"],
+      "options": [
+        "Adaptable",
+        "Rigid",
+        "Fragile",
+        "Vulnerable"
+      ],
       "correctAnswer": 0,
       "explanation": "'Resilient' means able to withstand or recover quickly from difficult conditions; adaptable.",
-      "subject": "English Language", "topic": "Synonyms", "difficulty": "easy"
+      "subject": "English Language",
+      "topic": "Synonyms",
+      "difficulty": "easy"
     },
     {
-      "id": "25q052", "questionNumber": 52,
+      "id": "25q052",
+      "questionNumber": 52,
       "question": "Select the correct antonym for 'STRINGENT':",
-      "options": ["Lenient", "Strict", "Rigorous", "Severe"],
+      "options": [
+        "Lenient",
+        "Strict",
+        "Rigorous",
+        "Severe"
+      ],
       "correctAnswer": 0,
       "explanation": "'Stringent' means strict, precise, and exacting. 'Lenient' is its antonym.",
-      "subject": "English Language", "topic": "Antonyms", "difficulty": "easy"
+      "subject": "English Language",
+      "topic": "Antonyms",
+      "difficulty": "easy"
     },
     {
-      "id": "25q053", "questionNumber": 53,
+      "id": "25q053",
+      "questionNumber": 53,
       "question": "Identify error: 'The team of DevOps engineers *were* working continuously to restore the server cluster.'",
-      "options": ["The team", "of DevOps engineers", "were working", "continuously to restore"],
+      "options": [
+        "The team",
+        "of DevOps engineers",
+        "were working",
+        "continuously to restore"
+      ],
       "correctAnswer": 2,
       "explanation": "'Team' is a collective noun acting as a single unit here, requiring singular verb 'was working'.",
-      "subject": "English Language", "topic": "Error Spotting", "difficulty": "medium"
+      "subject": "English Language",
+      "topic": "Error Spotting",
+      "difficulty": "medium"
     },
     {
-      "id": "25q054", "questionNumber": 54,
+      "id": "25q054",
+      "questionNumber": 54,
       "question": "Fill in the blank: 'The new cloud architecture significantly _____ network latency for remote users.'",
-      "options": ["mitigates", "amplifies", "prolongs", "aggravates"],
+      "options": [
+        "mitigates",
+        "amplifies",
+        "prolongs",
+        "aggravates"
+      ],
       "correctAnswer": 0,
       "explanation": "'Mitigates' means makes less severe, serious, or painful.",
-      "subject": "English Language", "topic": "Vocabulary", "difficulty": "easy"
+      "subject": "English Language",
+      "topic": "Vocabulary",
+      "difficulty": "easy"
     },
     {
-      "id": "25q055", "questionNumber": 55,
+      "id": "25q055",
+      "questionNumber": 55,
       "question": "Idiom meaning: 'To hit the nail on the head'",
-      "options": ["To describe exactly what is causing a situation", "To drive a nail into wood", "To make a careless mistake", "To injure someone"],
+      "options": [
+        "To describe exactly what is causing a situation",
+        "To drive a nail into wood",
+        "To make a careless mistake",
+        "To injure someone"
+      ],
       "correctAnswer": 0,
       "explanation": "'Hit the nail on the head' means to state or identify something with complete accuracy.",
-      "subject": "English Language", "topic": "Idioms and Phrases", "difficulty": "easy"
+      "subject": "English Language",
+      "topic": "Idioms and Phrases",
+      "difficulty": "easy"
     },
     {
-      "id": "25q056", "questionNumber": 56,
+      "id": "25q056",
+      "questionNumber": 56,
       "question": "One-word substitution: 'A secret or disguised way of writing.'",
-      "options": ["Cryptogram", "Manuscript", "Epilogue", "Anagram"],
+      "options": [
+        "Cryptogram",
+        "Manuscript",
+        "Epilogue",
+        "Anagram"
+      ],
       "correctAnswer": 0,
       "explanation": "A cryptogram is a text written in code or cipher.",
-      "subject": "English Language", "topic": "One Word Substitution", "difficulty": "easy"
+      "subject": "English Language",
+      "topic": "One Word Substitution",
+      "difficulty": "easy"
     },
     {
-      "id": "25q057", "questionNumber": 57,
+      "id": "25q057",
+      "questionNumber": 57,
       "question": "Select the correctly spelt word:",
-      "options": ["Authentication", "Authenctication", "Authenticaton", "Authentycation"],
+      "options": [
+        "Authentication",
+        "Authenctication",
+        "Authenticaton",
+        "Authentycation"
+      ],
       "correctAnswer": 0,
       "explanation": "The correct spelling is 'Authentication'.",
-      "subject": "English Language", "topic": "Spelling Check", "difficulty": "easy"
+      "subject": "English Language",
+      "topic": "Spelling Check",
+      "difficulty": "easy"
     },
     {
-      "id": "25q058", "questionNumber": 58,
+      "id": "25q058",
+      "questionNumber": 58,
       "question": "Select the correct passive voice: 'The developer deployed the new microservice.'",
       "options": [
         "The new microservice was deployed by the developer.",
@@ -493,10 +1005,13 @@
       ],
       "correctAnswer": 0,
       "explanation": "Simple past active ('deployed') becomes 'was deployed' in passive voice.",
-      "subject": "English Language", "topic": "Active and Passive Voice", "difficulty": "easy"
+      "subject": "English Language",
+      "topic": "Active and Passive Voice",
+      "difficulty": "easy"
     },
     {
-      "id": "25q059", "questionNumber": 59,
+      "id": "25q059",
+      "questionNumber": 59,
       "question": "Select indirect speech: The auditor said, 'The bank has complied with all IT guidelines.'",
       "options": [
         "The auditor said that the bank had complied with all IT guidelines.",
@@ -506,82 +1021,157 @@
       ],
       "correctAnswer": 0,
       "explanation": "Present perfect ('has complied') changes to past perfect ('had complied') in indirect reporting.",
-      "subject": "English Language", "topic": "Direct and Indirect Speech", "difficulty": "medium"
+      "subject": "English Language",
+      "topic": "Direct and Indirect Speech",
+      "difficulty": "medium"
     },
     {
-      "id": "25q060", "questionNumber": 60,
+      "id": "25q060",
+      "questionNumber": 60,
       "question": "Improve underlined part: 'Unless you *do not upgrade* the firmware, the router will remain vulnerable.'",
-      "options": ["Unless you upgrade", "Unless you will upgrade", "If you upgrade", "No improvement"],
+      "options": [
+        "Unless you upgrade",
+        "Unless you will upgrade",
+        "If you upgrade",
+        "No improvement"
+      ],
       "correctAnswer": 0,
       "explanation": "'Unless' already has negative meaning ('if not'), so adding 'do not' creates double negative error.",
-      "subject": "English Language", "topic": "Sentence Improvement", "difficulty": "medium"
+      "subject": "English Language",
+      "topic": "Sentence Improvement",
+      "difficulty": "medium"
     },
     {
-      "id": "25q061", "questionNumber": 61,
+      "id": "25q061",
+      "questionNumber": 61,
       "question": "Fill in the blank: 'He was acquitted _____ all security breach charges due to lack of evidence.'",
-      "options": ["of", "from", "with", "for"],
+      "options": [
+        "of",
+        "from",
+        "with",
+        "for"
+      ],
       "correctAnswer": 0,
       "explanation": "The verb 'acquitted' is followed by the preposition 'of'.",
-      "subject": "English Language", "topic": "Prepositions", "difficulty": "easy"
+      "subject": "English Language",
+      "topic": "Prepositions",
+      "difficulty": "easy"
     },
     {
-      "id": "25q062", "questionNumber": 62,
+      "id": "25q062",
+      "questionNumber": 62,
       "question": "Select the synonym of 'PARAMOUNT':",
-      "options": ["Supreme", "Trivial", "Secondary", "Minor"],
+      "options": [
+        "Supreme",
+        "Trivial",
+        "Secondary",
+        "Minor"
+      ],
       "correctAnswer": 0,
       "explanation": "'Paramount' means more important than anything else; supreme.",
-      "subject": "English Language", "topic": "Synonyms", "difficulty": "easy"
+      "subject": "English Language",
+      "topic": "Synonyms",
+      "difficulty": "easy"
     },
     {
-      "id": "25q063", "questionNumber": 63,
+      "id": "25q063",
+      "questionNumber": 63,
       "question": "Select the antonym of 'COMPATIBLE':",
-      "options": ["Incompatible", "Harmonious", "Consistent", "Adaptable"],
+      "options": [
+        "Incompatible",
+        "Harmonious",
+        "Consistent",
+        "Adaptable"
+      ],
       "correctAnswer": 0,
       "explanation": "'Compatible' means able to exist or occur together without conflict. 'Incompatible' is its opposite.",
-      "subject": "English Language", "topic": "Antonyms", "difficulty": "easy"
+      "subject": "English Language",
+      "topic": "Antonyms",
+      "difficulty": "easy"
     },
     {
-      "id": "25q064", "questionNumber": 64,
+      "id": "25q064",
+      "questionNumber": 64,
       "question": "Identify error: 'No sooner had the firewall *updated* when the DDoS attack began.'",
-      "options": ["No sooner had", "the firewall updated", "when the DDoS", "attack began."],
+      "options": [
+        "No sooner had",
+        "the firewall updated",
+        "when the DDoS",
+        "attack began."
+      ],
       "correctAnswer": 2,
       "explanation": "'No sooner' requires 'than', not 'when'. It should be 'than the DDoS attack began'.",
-      "subject": "English Language", "topic": "Error Spotting", "difficulty": "medium"
+      "subject": "English Language",
+      "topic": "Error Spotting",
+      "difficulty": "medium"
     },
     {
-      "id": "25q065", "questionNumber": 65,
+      "id": "25q065",
+      "questionNumber": 65,
       "question": "Fill in the blank: 'The threat intelligence report highlighted a _____ increase in ransomware incidents.'",
-      "options": ["substantial", "negligible", "trivial", "fleeting"],
+      "options": [
+        "substantial",
+        "negligible",
+        "trivial",
+        "fleeting"
+      ],
       "correctAnswer": 0,
       "explanation": "'Substantial' means of considerable importance, size, or worth.",
-      "subject": "English Language", "topic": "Vocabulary", "difficulty": "easy"
+      "subject": "English Language",
+      "topic": "Vocabulary",
+      "difficulty": "easy"
     },
     {
-      "id": "25q066", "questionNumber": 66,
+      "id": "25q066",
+      "questionNumber": 66,
       "question": "One-word substitution: 'Software that covertly gathers user information without consent.'",
-      "options": ["Spyware", "Firmware", "Shareware", "Freeware"],
+      "options": [
+        "Spyware",
+        "Firmware",
+        "Shareware",
+        "Freeware"
+      ],
       "correctAnswer": 0,
       "explanation": "Spyware is malicious software designed to spy on user activity covertly.",
-      "subject": "English Language", "topic": "One Word Substitution", "difficulty": "easy"
+      "subject": "English Language",
+      "topic": "One Word Substitution",
+      "difficulty": "easy"
     },
     {
-      "id": "25q067", "questionNumber": 67,
+      "id": "25q067",
+      "questionNumber": 67,
       "question": "Find the misspelled word:",
-      "options": ["Asynchronous", "Synchronous", "Encapsulation", "Polymorphysm"],
+      "options": [
+        "Asynchronous",
+        "Synchronous",
+        "Encapsulation",
+        "Polymorphysm"
+      ],
       "correctAnswer": 3,
       "explanation": "The correct spelling is 'Polymorphism' (ending in -ism).",
-      "subject": "English Language", "topic": "Spelling Check", "difficulty": "easy"
+      "subject": "English Language",
+      "topic": "Spelling Check",
+      "difficulty": "easy"
     },
     {
-      "id": "25q068", "questionNumber": 68,
+      "id": "25q068",
+      "questionNumber": 68,
       "question": "Idiom meaning: 'To burn the candle at both ends'",
-      "options": ["To exhaust oneself by working late and rising early", "To waste electricity", "To light candles for celebration", "To cause a fire hazard"],
+      "options": [
+        "To exhaust oneself by working late and rising early",
+        "To waste electricity",
+        "To light candles for celebration",
+        "To cause a fire hazard"
+      ],
       "correctAnswer": 0,
       "explanation": "'Burn the candle at both ends' means to overwork oneself by doing too much.",
-      "subject": "English Language", "topic": "Idioms and Phrases", "difficulty": "easy"
+      "subject": "English Language",
+      "topic": "Idioms and Phrases",
+      "difficulty": "easy"
     },
     {
-      "id": "25q069", "questionNumber": 69,
+      "id": "25q069",
+      "questionNumber": 69,
       "question": "Choose the correct sentence:",
       "options": [
         "Neither the server nor the workstations were damaged.",
@@ -591,58 +1181,109 @@
       ],
       "correctAnswer": 0,
       "explanation": "Verb agrees with plural subject 'workstations' closest to it -> 'were damaged'.",
-      "subject": "English Language", "topic": "Grammar", "difficulty": "medium"
+      "subject": "English Language",
+      "topic": "Grammar",
+      "difficulty": "medium"
     },
     {
-      "id": "25q070", "questionNumber": 70,
+      "id": "25q070",
+      "questionNumber": 70,
       "question": "Fill in the blank: 'The system architect recommended a _____ strategy for database failover.'",
-      "options": ["redundant", "redundancy", "redundantly", "redundances"],
+      "options": [
+        "redundant",
+        "redundancy",
+        "redundantly",
+        "redundances"
+      ],
       "correctAnswer": 0,
       "explanation": "Adjective 'redundant' correctly modifies the noun 'strategy'.",
-      "subject": "English Language", "topic": "Parts of Speech", "difficulty": "easy"
+      "subject": "English Language",
+      "topic": "Parts of Speech",
+      "difficulty": "easy"
     },
     {
-      "id": "25q071", "questionNumber": 71,
+      "id": "25q071",
+      "questionNumber": 71,
       "question": "Antonym of 'GULLIBLE':",
-      "options": ["Skeptical", "Naive", "Credulous", "Trusting"],
+      "options": [
+        "Skeptical",
+        "Naive",
+        "Credulous",
+        "Trusting"
+      ],
       "correctAnswer": 0,
       "explanation": "'Gullible' means easily persuaded to believe. 'Skeptical' is its antonym.",
-      "subject": "English Language", "topic": "Antonyms", "difficulty": "easy"
+      "subject": "English Language",
+      "topic": "Antonyms",
+      "difficulty": "easy"
     },
     {
-      "id": "25q072", "questionNumber": 72,
+      "id": "25q072",
+      "questionNumber": 72,
       "question": "Synonym of 'PERVASIVE':",
-      "options": ["Widespread", "Isolated", "Rare", "Confined"],
+      "options": [
+        "Widespread",
+        "Isolated",
+        "Rare",
+        "Confined"
+      ],
       "correctAnswer": 0,
       "explanation": "'Pervasive' means spreading widely throughout an area or group; widespread.",
-      "subject": "English Language", "topic": "Synonyms", "difficulty": "easy"
+      "subject": "English Language",
+      "topic": "Synonyms",
+      "difficulty": "easy"
     },
     {
-      "id": "25q073", "questionNumber": 73,
+      "id": "25q073",
+      "questionNumber": 73,
       "question": "Identify error: 'The report was *more preferable* than the previous draft.'",
-      "options": ["The report", "was more preferable", "than the previous", "draft."],
+      "options": [
+        "The report",
+        "was more preferable",
+        "than the previous",
+        "draft."
+      ],
       "correctAnswer": 1,
       "explanation": "'Preferable' takes 'to' instead of 'than' and should not be preceded by double comparative 'more'.",
-      "subject": "English Language", "topic": "Error Spotting", "difficulty": "medium"
+      "subject": "English Language",
+      "topic": "Error Spotting",
+      "difficulty": "medium"
     },
     {
-      "id": "25q074", "questionNumber": 74,
+      "id": "25q074",
+      "questionNumber": 74,
       "question": "Fill in the blank: 'The company complied _____ all data protection regulations.'",
-      "options": ["with", "to", "for", "in"],
+      "options": [
+        "with",
+        "to",
+        "for",
+        "in"
+      ],
       "correctAnswer": 0,
       "explanation": "The verb 'comply' is followed by the preposition 'with'.",
-      "subject": "English Language", "topic": "Prepositions", "difficulty": "easy"
+      "subject": "English Language",
+      "topic": "Prepositions",
+      "difficulty": "easy"
     },
     {
-      "id": "25q075", "questionNumber": 75,
+      "id": "25q075",
+      "questionNumber": 75,
       "question": "Select the correctly spelt word:",
-      "options": ["Infrastructure", "Infrastrucure", "Infrustructure", "Infrastucture"],
+      "options": [
+        "Infrastructure",
+        "Infrastrucure",
+        "Infrustructure",
+        "Infrastucture"
+      ],
       "correctAnswer": 0,
       "explanation": "The correct spelling is 'Infrastructure'.",
-      "subject": "English Language", "topic": "Spelling Check", "difficulty": "easy"
+      "subject": "English Language",
+      "topic": "Spelling Check",
+      "difficulty": "easy"
     },
     {
-      "id": "25q076", "questionNumber": 76,
+      "id": "25q076",
+      "questionNumber": 76,
       "question": "In Microservices Architecture, what is the primary role of an API Gateway?",
       "options": [
         "Single entry point for client requests handling routing, authentication, rate limiting, and protocol translation",
@@ -652,18 +1293,29 @@
       ],
       "correctAnswer": 0,
       "explanation": "API Gateway encapsulates internal microservice architecture, serving as a reverse proxy with cross-cutting concerns.",
-      "subject": "Professional Knowledge (IT)", "topic": "Microservices & Cloud", "difficulty": "easy"
+      "subject": "Programming",
+      "topic": "Microservices & Cloud",
+      "difficulty": "easy"
     },
     {
-      "id": "25q077", "questionNumber": 77,
+      "id": "25q077",
+      "questionNumber": 77,
       "question": "Which HTTP method is idempotent and used to replace an existing resource entirely?",
-      "options": ["PUT", "POST", "PATCH", "DELETE"],
+      "options": [
+        "PUT",
+        "POST",
+        "PATCH",
+        "DELETE"
+      ],
       "correctAnswer": 0,
       "explanation": "PUT is idempotent and replaces the target resource with the request payload.",
-      "subject": "Professional Knowledge (IT)", "topic": "RESTful Web APIs", "difficulty": "easy"
+      "subject": "Programming",
+      "topic": "RESTful Web APIs",
+      "difficulty": "easy"
     },
     {
-      "id": "25q078", "questionNumber": 78,
+      "id": "25q078",
+      "questionNumber": 78,
       "question": "In Docker containerization, what is the function of a 'Dockerfile'?",
       "options": [
         "Text document containing all command-line instructions to assemble a Docker container image",
@@ -673,10 +1325,13 @@
       ],
       "correctAnswer": 0,
       "explanation": "A Dockerfile defines step-by-step instructions (FROM, RUN, COPY, CMD) used by docker build.",
-      "subject": "Professional Knowledge (IT)", "topic": "DevOps & Containers", "difficulty": "easy"
+      "subject": "Programming",
+      "topic": "DevOps & Containers",
+      "difficulty": "easy"
     },
     {
-      "id": "25q079", "questionNumber": 79,
+      "id": "25q079",
+      "questionNumber": 79,
       "question": "What is the CAP Theorem trade-off in distributed database systems?",
       "options": [
         "A distributed system can guarantee at most 2 out of 3: Consistency, Availability, Partition Tolerance",
@@ -686,18 +1341,29 @@
       ],
       "correctAnswer": 0,
       "explanation": "Brewer's CAP theorem states that in a network partition event, a system must choose between Consistency (CP) or Availability (AP).",
-      "subject": "Professional Knowledge (IT)", "topic": "Distributed Systems", "difficulty": "medium"
+      "subject": "Programming",
+      "topic": "Distributed Systems",
+      "difficulty": "medium"
     },
     {
-      "id": "25q080", "questionNumber": 80,
+      "id": "25q080",
+      "questionNumber": 80,
       "question": "Which data structure is used by Git version control system to store commit history and object DAGs?",
-      "options": ["Directed Acyclic Graph (DAG) with SHA-1/SHA-256 hashes", "Binary Search Tree", "Linked List", "Doubly-ended Queue"],
+      "options": [
+        "Directed Acyclic Graph (DAG) with SHA-1/SHA-256 hashes",
+        "Binary Search Tree",
+        "Linked List",
+        "Doubly-ended Queue"
+      ],
       "correctAnswer": 0,
       "explanation": "Git uses a DAG of immutable commit objects identified by cryptographic hashes.",
-      "subject": "Professional Knowledge (IT)", "topic": "Version Control & Data Structures", "difficulty": "medium"
+      "subject": "Programming",
+      "topic": "Version Control & Data Structures",
+      "difficulty": "medium"
     },
     {
-      "id": "25q081", "questionNumber": 81,
+      "id": "25q081",
+      "questionNumber": 81,
       "question": "In Kubernetes architecture, what is a 'Pod'?",
       "options": [
         "The smallest deployable computing unit consisting of one or more co-located containers sharing storage/network",
@@ -707,18 +1373,29 @@
       ],
       "correctAnswer": 0,
       "explanation": "A Pod is the smallest execution unit in Kubernetes containing one or more containers with shared namespaces.",
-      "subject": "Professional Knowledge (IT)", "topic": "Cloud Native & Kubernetes", "difficulty": "medium"
+      "subject": "Programming",
+      "topic": "Cloud Native & Kubernetes",
+      "difficulty": "medium"
     },
     {
-      "id": "25q082", "questionNumber": 82,
+      "id": "25q082",
+      "questionNumber": 82,
       "question": "Which SQL statement is used to grant database privileges to a specific user or role?",
-      "options": ["GRANT", "REVOKE", "ALLOW", "PERMIT"],
+      "options": [
+        "GRANT",
+        "REVOKE",
+        "ALLOW",
+        "PERMIT"
+      ],
       "correctAnswer": 0,
       "explanation": "GRANT statement confers database privileges (SELECT, INSERT, UPDATE, etc.) to database users/roles.",
-      "subject": "Professional Knowledge (IT)", "topic": "SQL & DCL", "difficulty": "easy"
+      "subject": "Programming",
+      "topic": "SQL & DCL",
+      "difficulty": "easy"
     },
     {
-      "id": "25q083", "questionNumber": 83,
+      "id": "25q083",
+      "questionNumber": 83,
       "question": "What is 'JWT' in web authentication?",
       "options": [
         "JSON Web Token — a compact, URL-safe means of representing claims signed digitally between two parties",
@@ -728,26 +1405,45 @@
       ],
       "correctAnswer": 0,
       "explanation": "JWT consists of Header, Payload, Signature used for stateless token authentication.",
-      "subject": "Professional Knowledge (IT)", "topic": "Web Security & Auth", "difficulty": "easy"
+      "subject": "Programming",
+      "topic": "Web Security & Auth",
+      "difficulty": "easy"
     },
     {
-      "id": "25q084", "questionNumber": 84,
+      "id": "25q084",
+      "questionNumber": 84,
       "question": "Which layer of the OSI model does a Web Application Firewall (WAF) operate at?",
-      "options": ["Application Layer (Layer 7)", "Transport Layer (Layer 4)", "Network Layer (Layer 3)", "Data Link Layer (Layer 2)"],
+      "options": [
+        "Application Layer (Layer 7)",
+        "Transport Layer (Layer 4)",
+        "Network Layer (Layer 3)",
+        "Data Link Layer (Layer 2)"
+      ],
       "correctAnswer": 0,
       "explanation": "WAFs inspect Layer 7 HTTP/HTTPS traffic to block attacks like XSS, SQLi, and CSRF.",
-      "subject": "Professional Knowledge (IT)", "topic": "Cyber Security", "difficulty": "easy"
+      "subject": "Programming",
+      "topic": "Cyber Security",
+      "difficulty": "easy"
     },
     {
-      "id": "25q085", "questionNumber": 85,
+      "id": "25q085",
+      "questionNumber": 85,
       "question": "What is the average time complexity of searching in a Balanced AVL Tree with n nodes?",
-      "options": ["O(log n)", "O(n)", "O(1)", "O(n log n)"],
+      "options": [
+        "O(log n)",
+        "O(n)",
+        "O(1)",
+        "O(n log n)"
+      ],
       "correctAnswer": 0,
       "explanation": "AVL trees maintain strict height balance (|balance factor| <= 1), guaranteeing O(log n) search time.",
-      "subject": "Professional Knowledge (IT)", "topic": "Data Structures", "difficulty": "easy"
+      "subject": "Programming",
+      "topic": "Data Structures",
+      "difficulty": "easy"
     },
     {
-      "id": "25q086", "questionNumber": 86,
+      "id": "25q086",
+      "questionNumber": 86,
       "question": "In Java 8+, what is a 'Functional Interface'?",
       "options": [
         "An interface that contains exactly one abstract method",
@@ -757,18 +1453,29 @@
       ],
       "correctAnswer": 0,
       "explanation": "Functional Interfaces (e.g. Runnable, Consumer, Supplier) have exactly 1 SAM (Single Abstract Method) for Lambdas.",
-      "subject": "Professional Knowledge (IT)", "topic": "Java Core", "difficulty": "medium"
+      "subject": "Programming",
+      "topic": "Java Core",
+      "difficulty": "medium"
     },
     {
-      "id": "25q087", "questionNumber": 87,
+      "id": "25q087",
+      "questionNumber": 87,
       "question": "Which database isolation level prevents Dirty Reads but allows Non-Repeatable Reads?",
-      "options": ["READ COMMITTED", "READ UNCOMMITTED", "REPEATABLE READ", "SERIALIZABLE"],
+      "options": [
+        "READ COMMITTED",
+        "READ UNCOMMITTED",
+        "REPEATABLE READ",
+        "SERIALIZABLE"
+      ],
       "correctAnswer": 0,
       "explanation": "READ COMMITTED ensures uncommitted changes from other transactions cannot be read.",
-      "subject": "Professional Knowledge (IT)", "topic": "Database Isolation Levels", "difficulty": "medium"
+      "subject": "Programming",
+      "topic": "Database Isolation Levels",
+      "difficulty": "medium"
     },
     {
-      "id": "25q088", "questionNumber": 88,
+      "id": "25q088",
+      "questionNumber": 88,
       "question": "What is the primary function of DNSSEC (DNS Security Extensions)?",
       "options": [
         "Adds digital signatures to DNS records to prevent DNS spoofing / cache poisoning",
@@ -778,10 +1485,13 @@
       ],
       "correctAnswer": 0,
       "explanation": "DNSSEC authenticates DNS responses using public-key cryptography to prevent cache poisoning.",
-      "subject": "Professional Knowledge (IT)", "topic": "Network Security", "difficulty": "medium"
+      "subject": "Programming",
+      "topic": "Network Security",
+      "difficulty": "medium"
     },
     {
-      "id": "25q089", "questionNumber": 89,
+      "id": "25q089",
+      "questionNumber": 89,
       "question": "In Operating Systems, what is 'Virtual Memory'?",
       "options": [
         "An abstraction giving processes the illusion of contiguous main memory larger than physical RAM via disk swapping",
@@ -791,18 +1501,29 @@
       ],
       "correctAnswer": 0,
       "explanation": "Virtual memory maps process logical addresses to physical memory pages and secondary disk swap space.",
-      "subject": "Professional Knowledge (IT)", "topic": "Operating Systems", "difficulty": "easy"
+      "subject": "Programming",
+      "topic": "Operating Systems",
+      "difficulty": "easy"
     },
     {
-      "id": "25q090", "questionNumber": 90,
+      "id": "25q090",
+      "questionNumber": 90,
       "question": "Which sorting algorithm is STABLE and has a guaranteed worst-case time complexity of O(n log n)?",
-      "options": ["Merge Sort", "Quick Sort", "Heap Sort", "Selection Sort"],
+      "options": [
+        "Merge Sort",
+        "Quick Sort",
+        "Heap Sort",
+        "Selection Sort"
+      ],
       "correctAnswer": 0,
       "explanation": "Merge Sort is both stable (preserves equal element order) and O(n log n) in all cases.",
-      "subject": "Professional Knowledge (IT)", "topic": "Sorting Algorithms", "difficulty": "easy"
+      "subject": "Programming",
+      "topic": "Sorting Algorithms",
+      "difficulty": "easy"
     },
     {
-      "id": "25q091", "questionNumber": 91,
+      "id": "25q091",
+      "questionNumber": 91,
       "question": "In Software Architecture, what does 'CI/CD' stand for?",
       "options": [
         "Continuous Integration and Continuous Deployment / Delivery",
@@ -812,18 +1533,29 @@
       ],
       "correctAnswer": 0,
       "explanation": "CI/CD automates code compilation, testing, and production deployment pipelines.",
-      "subject": "Professional Knowledge (IT)", "topic": "DevOps Practices", "difficulty": "easy"
+      "subject": "Programming",
+      "topic": "DevOps Practices",
+      "difficulty": "easy"
     },
     {
-      "id": "25q092", "questionNumber": 92,
+      "id": "25q092",
+      "questionNumber": 92,
       "question": "Which Linux command displays active listening network ports and TCP connections?",
-      "options": ["netstat -tuln / ss -tuln", "chmod", "top", "grep"],
+      "options": [
+        "netstat -tuln / ss -tuln",
+        "chmod",
+        "top",
+        "grep"
+      ],
       "correctAnswer": 0,
       "explanation": "`netstat` or `ss` with `-tuln` flags lists listening TCP/UDP sockets and port numbers.",
-      "subject": "Professional Knowledge (IT)", "topic": "Linux Networking", "difficulty": "easy"
+      "subject": "Programming",
+      "topic": "Linux Networking",
+      "difficulty": "easy"
     },
     {
-      "id": "25q093", "questionNumber": 93,
+      "id": "25q093",
+      "questionNumber": 93,
       "question": "What is a 'Race Condition' in concurrent programming?",
       "options": [
         "Flawed system behavior where output depends on non-deterministic timing or execution order of threads accessing shared data",
@@ -833,18 +1565,29 @@
       ],
       "correctAnswer": 0,
       "explanation": "Race conditions occur when shared resource access is un-synchronized across parallel threads.",
-      "subject": "Professional Knowledge (IT)", "topic": "Concurrency & Multithreading", "difficulty": "medium"
+      "subject": "Programming",
+      "topic": "Concurrency & Multithreading",
+      "difficulty": "medium"
     },
     {
-      "id": "25q094", "questionNumber": 94,
+      "id": "25q094",
+      "questionNumber": 94,
       "question": "Which protocol works at Application layer to transfer files reliably between server and client?",
-      "options": ["FTP (File Transfer Protocol)", "ARP", "ICMP", "UDP"],
+      "options": [
+        "FTP (File Transfer Protocol)",
+        "ARP",
+        "ICMP",
+        "UDP"
+      ],
       "correctAnswer": 0,
       "explanation": "FTP uses TCP ports 20 and 21 for reliable file transmission.",
-      "subject": "Professional Knowledge (IT)", "topic": "Network Protocols", "difficulty": "easy"
+      "subject": "Programming",
+      "topic": "Network Protocols",
+      "difficulty": "easy"
     },
     {
-      "id": "25q095", "questionNumber": 95,
+      "id": "25q095",
+      "questionNumber": 95,
       "question": "In Machine Learning basics, what is 'Overfitting'?",
       "options": [
         "Model learns training data noise and specifics too closely, performing poorly on unseen test data",
@@ -854,18 +1597,29 @@
       ],
       "correctAnswer": 0,
       "explanation": "Overfitting occurs when a high-variance model captures noise instead of underlying general patterns.",
-      "subject": "Professional Knowledge (IT)", "topic": "AI/ML Basics", "difficulty": "medium"
+      "subject": "Programming",
+      "topic": "AI/ML Basics",
+      "difficulty": "medium"
     },
     {
-      "id": "25q096", "questionNumber": 96,
+      "id": "25q096",
+      "questionNumber": 96,
       "question": "Which SQL clause is used to eliminate duplicate rows from a query result set?",
-      "options": ["DISTINCT", "UNIQUE", "GROUP BY", "WHERE"],
+      "options": [
+        "DISTINCT",
+        "UNIQUE",
+        "GROUP BY",
+        "WHERE"
+      ],
       "correctAnswer": 0,
       "explanation": "SELECT DISTINCT removes duplicate rows from query output.",
-      "subject": "Professional Knowledge (IT)", "topic": "SQL Queries", "difficulty": "easy"
+      "subject": "Programming",
+      "topic": "SQL Queries",
+      "difficulty": "easy"
     },
     {
-      "id": "25q097", "questionNumber": 97,
+      "id": "25q097",
+      "questionNumber": 97,
       "question": "What is the primary role of a 'Reverse Proxy' server?",
       "options": [
         "Sits in front of internal web servers forwarding client requests to servers, handling SSL termination & load balancing",
@@ -875,281 +1629,57 @@
       ],
       "correctAnswer": 0,
       "explanation": "Reverse proxies (e.g. Nginx) intercept client requests on behalf of backend server pools.",
-      "subject": "Professional Knowledge (IT)", "topic": "Web Infrastructure", "difficulty": "medium"
+      "subject": "Programming",
+      "topic": "Web Infrastructure",
+      "difficulty": "medium"
     },
     {
-      "id": "25q098", "questionNumber": 98,
+      "id": "25q098",
+      "questionNumber": 98,
       "question": "In C++, which keyword is used to allocate memory dynamically on the heap?",
-      "options": ["new", "malloc", "alloc", "create"],
+      "options": [
+        "new",
+        "malloc",
+        "alloc",
+        "create"
+      ],
       "correctAnswer": 0,
       "explanation": "`new` operator allocates memory on heap and invokes constructor in C++.",
-      "subject": "Professional Knowledge (IT)", "topic": "C++ Programming", "difficulty": "easy"
+      "subject": "Programming",
+      "topic": "C++ Programming",
+      "difficulty": "easy"
     },
     {
-      "id": "25q099", "questionNumber": 99,
+      "id": "25q099",
+      "questionNumber": 99,
       "question": "What is the time complexity of pushing an element onto a Stack implemented via Array?",
-      "options": ["O(1)", "O(n)", "O(log n)", "O(n^2)"],
+      "options": [
+        "O(1)",
+        "O(n)",
+        "O(log n)",
+        "O(n^2)"
+      ],
       "correctAnswer": 0,
       "explanation": "Pushing onto array stack increments top index and assigns value in O(1) constant time.",
-      "subject": "Professional Knowledge (IT)", "topic": "Data Structures", "difficulty": "easy"
+      "subject": "Programming",
+      "topic": "Data Structures",
+      "difficulty": "easy"
     },
     {
-      "id": "25q100", "questionNumber": 100,
+      "id": "25q100",
+      "questionNumber": 100,
       "question": "Which sub-protocol in IP suite translates private IP addresses to a public IP address for internet access?",
-      "options": ["NAT (Network Address Translation)", "ARP", "DHCP", "DNS"],
+      "options": [
+        "NAT (Network Address Translation)",
+        "ARP",
+        "DHCP",
+        "DNS"
+      ],
       "correctAnswer": 0,
       "explanation": "NAT maps private IPv4 addresses (RFC 1918) to public routable IP addresses.",
-      "subject": "Professional Knowledge (IT)", "topic": "IP Networking", "difficulty": "easy"
-    },
-    {
-      "id": "25q101", "questionNumber": 101,
-      "question": "In DBMS, what is a 'Deadlock'?",
-      "options": [
-        "Two or more transactions waiting indefinitely for locks held by each other",
-        "Disk failure",
-        "Network connection drop",
-        "Syntax error in SQL query"
-      ],
-      "correctAnswer": 0,
-      "explanation": "Deadlock is a circular wait state among concurrent transactions.",
-      "subject": "Professional Knowledge (IT)", "topic": "Database Concurrency", "difficulty": "easy"
-    },
-    {
-      "id": "25q102", "questionNumber": 102,
-      "question": "What is the binary 2's complement of 8-bit binary number 00001010 (+10)?",
-      "options": ["11110110", "11110101", "11111000", "10001010"],
-      "correctAnswer": 0,
-      "explanation": "Invert bits of 00001010 -> 11110101. Add 1 -> 11110110 (-10 in 2's complement).",
-      "subject": "Professional Knowledge (IT)", "topic": "Digital Logic", "difficulty": "medium"
-    },
-    {
-      "id": "25q103", "questionNumber": 103,
-      "question": "Which Java keyword is used to handle runtime exceptions gracefully?",
-      "options": ["try-catch", "throw-catch", "assert", "final"],
-      "correctAnswer": 0,
-      "explanation": "`try-catch` block catches and handles exceptions thrown inside try block.",
-      "subject": "Professional Knowledge (IT)", "topic": "Java Core", "difficulty": "easy"
-    },
-    {
-      "id": "25q104", "questionNumber": 104,
-      "question": "What is 'VLAN' (Virtual Local Area Network)?",
-      "options": [
-        "Logical grouping of network devices on same or different physical switches into separate broadcast domains",
-        "Virtual machine adapter",
-        "VPN tunnel",
-        "Cloud storage folder"
-      ],
-      "correctAnswer": 0,
-      "explanation": "VLANs partition a physical switch network into separate logical broadcast domains (Layer 2).",
-      "subject": "Professional Knowledge (IT)", "topic": "Network Switching", "difficulty": "medium"
-    },
-    {
-      "id": "25q105", "questionNumber": 105,
-      "question": "Which software architectural pattern separates application logic into Model, View, and Controller?",
-      "options": ["MVC Pattern", "Repository Pattern", "Microservices Pattern", "Singleton Pattern"],
-      "correctAnswer": 0,
-      "explanation": "MVC isolates business logic (Model), UI presentation (View), and input handling (Controller).",
-      "subject": "Professional Knowledge (IT)", "topic": "Software Architecture", "difficulty": "easy"
-    },
-    {
-      "id": "25q106", "questionNumber": 106,
-      "question": "What is the worst-case search time complexity in a Hash Table when Hash collisions are resolved via Linked List (Chaining)?",
-      "options": ["O(n)", "O(1)", "O(log n)", "O(n^2)"],
-      "correctAnswer": 0,
-      "explanation": "If all keys hash to a single bucket, search degrades to traversing a linked list of length n -> O(n).",
-      "subject": "Professional Knowledge (IT)", "topic": "Hash Tables", "difficulty": "easy"
-    },
-    {
-      "id": "25q107", "questionNumber": 107,
-      "question": "Which OSI layer provides end-to-end flow control, error recovery, and process port multiplexing (TCP/UDP)?",
-      "options": ["Transport Layer (Layer 4)", "Network Layer (Layer 3)", "Session Layer (Layer 5)", "Data Link Layer (Layer 2)"],
-      "correctAnswer": 0,
-      "explanation": "Transport layer handles process-to-process flow control and reliable delivery.",
-      "subject": "Professional Knowledge (IT)", "topic": "OSI Reference Model", "difficulty": "easy"
-    },
-    {
-      "id": "25q108", "questionNumber": 108,
-      "question": "In Operating Systems, what is 'Page Fault'?",
-      "options": [
-        "Interrupt raised when process accesses virtual memory page not currently mapped in physical RAM",
-        "Hard drive sector failure",
-        "Kernel crash",
-        "RAM chip failure"
-      ],
-      "correctAnswer": 0,
-      "explanation": "Page fault occurs when referenced page is marked invalid/absent in page table, prompting OS to load it from swap.",
-      "subject": "Professional Knowledge (IT)", "topic": "Operating Systems", "difficulty": "easy"
-    },
-    {
-      "id": "25q109", "questionNumber": 109,
-      "question": "What is the maximum number of nodes in a full binary tree of depth d (where root is at depth 1)?",
-      "options": ["2^d - 1", "2^d", "2^(d-1)", "2^(d+1)"],
-      "correctAnswer": 0,
-      "explanation": "Sum of 1 + 2 + 4 + ... + 2^(d-1) = 2^d - 1 nodes.",
-      "subject": "Professional Knowledge (IT)", "topic": "Trees & Binary Trees", "difficulty": "easy"
-    },
-    {
-      "id": "25q110", "questionNumber": 110,
-      "question": "Which design pattern provides a surrogate or placeholder for another object to control access to it?",
-      "options": ["Proxy Pattern", "Facade Pattern", "Observer Pattern", "Builder Pattern"],
-      "correctAnswer": 0,
-      "explanation": "Proxy Pattern creates a representative object controlling access to original object (e.g. lazy loading, security proxy).",
-      "subject": "Professional Knowledge (IT)", "topic": "Design Patterns", "difficulty": "medium"
-    },
-    {
-      "id": "25q111", "questionNumber": 111,
-      "question": "In C++, what is a 'Destructor'?",
-      "options": [
-        "A special member function invoked automatically when an object goes out of scope to release allocated resources",
-        "Function to delete C++ compiler",
-        "Virtual function with no body",
-        "Static class helper"
-      ],
-      "correctAnswer": 0,
-      "explanation": "Destructors (~ClassName) clean up resources before memory deallocation.",
-      "subject": "Professional Knowledge (IT)", "topic": "C++ OOP", "difficulty": "easy"
-    },
-    {
-      "id": "25q112", "questionNumber": 112,
-      "question": "What is the average time complexity of Binary Search in a sorted array of n elements?",
-      "options": ["O(log n)", "O(n)", "O(1)", "O(n log n)"],
-      "correctAnswer": 0,
-      "explanation": "Binary search halves search space on each step -> O(log n).",
-      "subject": "Professional Knowledge (IT)", "topic": "Algorithms", "difficulty": "easy"
-    },
-    {
-      "id": "25q113", "questionNumber": 113,
-      "question": "Which CSS property is used to create responsive grid layouts with rows and columns?",
-      "options": ["display: grid", "display: flex", "display: inline", "display: block"],
-      "correctAnswer": 0,
-      "explanation": "CSS Grid layout (`display: grid`) defines two-dimensional grid layouts.",
-      "subject": "Professional Knowledge (IT)", "topic": "Web Technologies", "difficulty": "easy"
-    },
-    {
-      "id": "25q114", "questionNumber": 114,
-      "question": "In SQL, which aggregate function calculates the average value of a numeric column?",
-      "options": ["AVG()", "SUM()", "COUNT()", "MEAN()"],
-      "correctAnswer": 0,
-      "explanation": "AVG(column_name) returns average value.",
-      "subject": "Professional Knowledge (IT)", "topic": "SQL", "difficulty": "easy"
-    },
-    {
-      "id": "25q115", "questionNumber": 115,
-      "question": "What is 'SSID' in Wi-Fi networks?",
-      "options": [
-        "Service Set Identifier — the technical name assigned to a wireless local area network",
-        "Secure System ID",
-        "Server Subnet IP Description",
-        "Serial Socket Interface Data"
-      ],
-      "correctAnswer": 0,
-      "explanation": "SSID is the unique 32-character name identifying a Wi-Fi network.",
-      "subject": "Professional Knowledge (IT)", "topic": "Wireless Communication", "difficulty": "easy"
-    },
-    {
-      "id": "25q116", "questionNumber": 116,
-      "question": "In Operating Systems, what is 'Kernel'?",
-      "options": [
-        "Core program of OS with complete control over system memory, hardware interrupts, and process execution",
-        "Web browser extension",
-        "GUI desktop wallpaper",
-        "User application binary"
-      ],
-      "correctAnswer": 0,
-      "explanation": "Kernel is the primary OS component mediating between application software and underlying hardware.",
-      "subject": "Professional Knowledge (IT)", "topic": "Operating Systems", "difficulty": "easy"
-    },
-    {
-      "id": "25q117", "questionNumber": 117,
-      "question": "In Java, what does the `final` keyword signify when applied to a variable?",
-      "options": [
-        "Variable value becomes constant and cannot be re-assigned once initialized",
-        "Variable can be modified by any thread",
-        "Variable is stored in garbage collector",
-        "Variable is available globally"
-      ],
-      "correctAnswer": 0,
-      "explanation": "A `final` variable in Java acts as a constant.",
-      "subject": "Professional Knowledge (IT)", "topic": "Java Fundamentals", "difficulty": "easy"
-    },
-    {
-      "id": "25q118", "questionNumber": 118,
-      "question": "What is the primary function of a Database Index?",
-      "options": [
-        "Accelerates data retrieval query speed",
-        "Stores encrypted backups",
-        "Enforces primary key constraints only",
-        "Compresses table files"
-      ],
-      "correctAnswer": 0,
-      "explanation": "Indexes reduce disk reads when searching for specific rows.",
-      "subject": "Professional Knowledge (IT)", "topic": "DBMS", "difficulty": "easy"
-    },
-    {
-      "id": "25q119", "questionNumber": 119,
-      "question": "Which data structure follows FIFO (First In First Out) order?",
-      "options": ["Queue", "Stack", "Binary Tree", "Heap"],
-      "correctAnswer": 0,
-      "explanation": "Queue inserts at tail (enqueue) and removes from head (dequeue) in FIFO order.",
-      "subject": "Professional Knowledge (IT)", "topic": "Data Structures", "difficulty": "easy"
-    },
-    {
-      "id": "25q120", "questionNumber": 120,
-      "question": "What is default port number for SSH (Secure Shell)?",
-      "options": ["22", "80", "443", "21"],
-      "correctAnswer": 0,
-      "explanation": "SSH uses TCP port 22 by default.",
-      "subject": "Professional Knowledge (IT)", "topic": "Network Protocols", "difficulty": "easy"
-    },
-    {
-      "id": "25q121", "questionNumber": 121,
-      "question": "Which protocol provides secure encrypted remote terminal connection over TCP?",
-      "options": ["SSH", "Telnet", "FTP", "HTTP"],
-      "correctAnswer": 0,
-      "explanation": "SSH encrypts remote terminal sessions (unlike unencrypted Telnet).",
-      "subject": "Professional Knowledge (IT)", "topic": "Network Security", "difficulty": "easy"
-    },
-    {
-      "id": "25q122", "questionNumber": 122,
-      "question": "In Software Testing, what is 'Unit Testing'?",
-      "options": [
-        "Testing smallest individual software units or functions in isolation",
-        "Testing whole system with real users",
-        "Stress testing network load",
-        "Testing database hardware"
-      ],
-      "correctAnswer": 0,
-      "explanation": "Unit testing verifies that individual functions/methods produce expected outputs.",
-      "subject": "Professional Knowledge (IT)", "topic": "Software Testing", "difficulty": "easy"
-    },
-    {
-      "id": "25q123", "questionNumber": 123,
-      "question": "What is the output of XOR gate when both inputs are equal (0 and 0, or 1 and 1)?",
-      "options": ["0", "1", "High Z", "Undefined"],
-      "correctAnswer": 0,
-      "explanation": "XOR outputs 1 only when inputs differ. When inputs are equal, XOR outputs 0.",
-      "subject": "Professional Knowledge (IT)", "topic": "Digital Logic", "difficulty": "easy"
-    },
-    {
-      "id": "25q124", "questionNumber": 124,
-      "question": "Which protocol resolves IP addresses to physical MAC addresses in Ethernet network?",
-      "options": ["ARP (Address Resolution Protocol)", "RARP", "DNS", "DHCP"],
-      "correctAnswer": 0,
-      "explanation": "ARP maps 32-bit IP address to 48-bit Ethernet MAC address.",
-      "subject": "Professional Knowledge (IT)", "topic": "Computer Networks", "difficulty": "easy"
-    },
-    {
-      "id": "25q125", "questionNumber": 125,
-      "question": "What is 'Phishing' in Cyber Security?",
-      "options": [
-        "Social engineering attack tricking victims into revealing sensitive credentials via fraudulent communications",
-        "Brute forcing database password",
-        "Network packet sniffing",
-        "Overclocking CPU"
-      ],
-      "correctAnswer": 0,
-      "explanation": "Phishing uses deceptive emails/websites to deceive targets into exposing credentials.",
-      "subject": "Professional Knowledge (IT)", "topic": "Cyber Security", "difficulty": "easy"
+      "subject": "Programming",
+      "topic": "IP Networking",
+      "difficulty": "easy"
     }
   ]
 }

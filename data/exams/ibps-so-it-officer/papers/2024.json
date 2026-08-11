@@ -5,8 +5,8 @@
   "year": 2024,
   "shift": "Shift 1",
   "language": "English",
-  "durationMinutes": 120,
-  "totalQuestions": 125,
+  "durationMinutes": 80,
+  "totalQuestions": 100,
   "totalMarks": 125,
   "marking": {
     "correct": 1,
@@ -19,28 +19,64 @@
       "name": "Reasoning",
       "questionCount": 25,
       "marks": 25,
-      "questionRange": [1, 25]
+      "questionRange": [
+        1,
+        25
+      ],
+      "durationMinutes": 20,
+      "marking": {
+        "correct": 1,
+        "negative": 0.25,
+        "unattempted": 0
+      }
     },
     {
       "sectionId": "quantitative-aptitude",
       "name": "Quantitative Aptitude",
       "questionCount": 25,
       "marks": 25,
-      "questionRange": [26, 50]
+      "questionRange": [
+        26,
+        50
+      ],
+      "durationMinutes": 20,
+      "marking": {
+        "correct": 1,
+        "negative": 0.25,
+        "unattempted": 0
+      }
     },
     {
       "sectionId": "english",
       "name": "English Language",
       "questionCount": 25,
       "marks": 25,
-      "questionRange": [51, 75]
+      "questionRange": [
+        51,
+        75
+      ],
+      "durationMinutes": 20,
+      "marking": {
+        "correct": 1,
+        "negative": 0.25,
+        "unattempted": 0
+      }
     },
     {
-      "sectionId": "professional-knowledge",
-      "name": "Professional Knowledge (IT)",
-      "questionCount": 50,
+      "sectionId": "programming",
+      "name": "Programming",
+      "questionCount": 25,
       "marks": 50,
-      "questionRange": [76, 125]
+      "questionRange": [
+        76,
+        100
+      ],
+      "durationMinutes": 20,
+      "marking": {
+        "correct": 2,
+        "negative": 0.5,
+        "unattempted": 0
+      }
     }
   ],
   "isOfficial": true,
@@ -49,7 +85,12 @@
       "id": "q001",
       "questionNumber": 1,
       "question": "In a certain code, 'COMPUTER' is written as 'RFUVQNPC'. How is 'KEYBOARD' written in that code?",
-      "options": ["CSBZFZPE", "DRACKPES", "ESBZGYQF", "CRBZEYPE"],
+      "options": [
+        "CSBZFZPE",
+        "DRACKPES",
+        "ESBZGYQF",
+        "CRBZEYPE"
+      ],
       "correctAnswer": 0,
       "explanation": "Each letter is replaced by the letter that is 2 positions ahead in the reverse alphabet. C→R, O→F, M→U, P→V, U→Q, T→N, E→P, R→C. Applying same to KEYBOARD: K→C, E→S, Y→B, B→Z, O→F, A→Z, R→P, D→E → CSBZFZPE.",
       "subject": "Reasoning",
@@ -60,7 +101,12 @@
       "id": "q002",
       "questionNumber": 2,
       "question": "Five friends A, B, C, D and E are sitting in a row facing north. B is to the right of A. D is to the left of E and to the right of C. B is to the left of D. Who is sitting in the middle?",
-      "options": ["A", "B", "C", "D"],
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
       "correctAnswer": 1,
       "explanation": "The arrangement from left to right: A, B, D, E with C at the leftmost. Final order: C, A, B, D, E. B is in the middle.",
       "subject": "Reasoning",
@@ -71,7 +117,12 @@
       "id": "q003",
       "questionNumber": 3,
       "question": "If 'P' means '÷', 'Q' means '×', 'R' means '+' and 'S' means '−', what is the value of: 18 Q 12 P 4 R 5 S 6?",
-      "options": ["53", "47", "52", "45"],
+      "options": [
+        "53",
+        "47",
+        "52",
+        "45"
+      ],
       "correctAnswer": 0,
       "explanation": "Substituting: 18 × 12 ÷ 4 + 5 − 6 = 18 × 3 + 5 − 6 = 54 + 5 − 6 = 53.",
       "subject": "Reasoning",
@@ -82,7 +133,12 @@
       "id": "q004",
       "questionNumber": 4,
       "question": "Find the odd one out: 17, 23, 31, 37, 41, 43, 51",
-      "options": ["17", "51", "43", "37"],
+      "options": [
+        "17",
+        "51",
+        "43",
+        "37"
+      ],
       "correctAnswer": 1,
       "explanation": "51 = 3 × 17 is not a prime number. All others (17, 23, 31, 37, 41, 43) are prime numbers.",
       "subject": "Reasoning",
@@ -93,7 +149,12 @@
       "id": "q005",
       "questionNumber": 5,
       "question": "In a class of 50 students, Rahul ranks 12th from the top. What is his rank from the bottom?",
-      "options": ["38", "39", "40", "37"],
+      "options": [
+        "38",
+        "39",
+        "40",
+        "37"
+      ],
       "correctAnswer": 1,
       "explanation": "Rank from bottom = Total students − Rank from top + 1 = 50 − 12 + 1 = 39.",
       "subject": "Reasoning",
@@ -104,7 +165,12 @@
       "id": "q006",
       "questionNumber": 6,
       "question": "Pointing to a photograph, a man says, 'She is the daughter of the only son of my grandfather.' How is the woman in the photograph related to the man?",
-      "options": ["Sister", "Mother", "Aunt", "Niece"],
+      "options": [
+        "Sister",
+        "Mother",
+        "Aunt",
+        "Niece"
+      ],
       "correctAnswer": 0,
       "explanation": "The only son of his grandfather is his father. The daughter of his father is his sister.",
       "subject": "Reasoning",
@@ -115,7 +181,12 @@
       "id": "q007",
       "questionNumber": 7,
       "question": "What should come next in the series: Z, X, V, T, R, ?",
-      "options": ["P", "Q", "S", "O"],
+      "options": [
+        "P",
+        "Q",
+        "S",
+        "O"
+      ],
       "correctAnswer": 0,
       "explanation": "Each letter skips one: Z(-2)X(-2)V(-2)T(-2)R(-2)P. The pattern decrements by 2 each time.",
       "subject": "Reasoning",
@@ -126,7 +197,12 @@
       "id": "q008",
       "questionNumber": 8,
       "question": "If Monday = 2, Tuesday = 3 in a code, and the code for SATURDAY is derived by summing values of letters where each day-letter gets the number of its day, what is the value of WEDNESDAY?",
-      "options": ["4", "3", "5", "6"],
+      "options": [
+        "4",
+        "3",
+        "5",
+        "6"
+      ],
       "correctAnswer": 0,
       "explanation": "WEDNESDAY is the 4th day of the week, so its value is 4.",
       "subject": "Reasoning",
@@ -137,7 +213,12 @@
       "id": "q009",
       "questionNumber": 9,
       "question": "A is B's brother. C is A's mother. D is C's father. E is D's mother. How is A related to D?",
-      "options": ["Grandfather", "Grandson", "Son", "Uncle"],
+      "options": [
+        "Grandfather",
+        "Grandson",
+        "Son",
+        "Uncle"
+      ],
       "correctAnswer": 1,
       "explanation": "C is A's mother, D is C's father, so D is A's grandfather. Reversing, A is D's grandson.",
       "subject": "Reasoning",
@@ -148,7 +229,12 @@
       "id": "q010",
       "questionNumber": 10,
       "question": "If all lions are cats and all cats are dogs, which of the following is definitely true?",
-      "options": ["All lions are dogs", "All dogs are lions", "All cats are lions", "No dog is a lion"],
+      "options": [
+        "All lions are dogs",
+        "All dogs are lions",
+        "All cats are lions",
+        "No dog is a lion"
+      ],
       "correctAnswer": 0,
       "explanation": "From the premises: Lions→Cats→Dogs. Therefore all lions are dogs. The other options are not necessarily true.",
       "subject": "Reasoning",
@@ -159,7 +245,12 @@
       "id": "q011",
       "questionNumber": 11,
       "question": "In a code, FRIEND is written as HUMJTK. How is CANDLE written?",
-      "options": ["EDRFNG", "ECPFNG", "ECPFMH", "EDQGNH"],
+      "options": [
+        "EDRFNG",
+        "ECPFNG",
+        "ECPFMH",
+        "EDQGNH"
+      ],
       "correctAnswer": 1,
       "explanation": "Each letter is shifted by +2: F+2=H, R+2=T... wait — F→H(+2), R→U(+3), I→M(+4), E→J(+5), N→T(+6), D→K(+7). Applying: C+2=E, A+3=D... Applying same increments: C→E, A→D, N→R, D→I... Hmm, alternate interpretation: each letter +2: C→E, A→C, N→P, D→F, L→N, E→G → ECPFNG.",
       "subject": "Reasoning",
@@ -170,7 +261,12 @@
       "id": "q012",
       "questionNumber": 12,
       "question": "A train travels 360 km at a uniform speed. If the speed had been 10 km/h more, it would have taken 1 hour less. What is the speed of the train?",
-      "options": ["40 km/h", "50 km/h", "60 km/h", "70 km/h"],
+      "options": [
+        "40 km/h",
+        "50 km/h",
+        "60 km/h",
+        "70 km/h"
+      ],
       "correctAnswer": 2,
       "explanation": "Let speed = v. 360/v − 360/(v+10) = 1. Solving: 360(v+10) − 360v = v(v+10). 3600 = v²+10v. v²+10v−3600=0. (v+60)(v−60)=0. v=60 km/h.",
       "subject": "Reasoning",
@@ -181,7 +277,12 @@
       "id": "q013",
       "questionNumber": 13,
       "question": "How many such pairs of letters are there in the word EXAMINATION, each of which has as many letters between them in the word as in the English alphabet?",
-      "options": ["1", "2", "3", "4"],
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
       "correctAnswer": 2,
       "explanation": "In EXAMINATION (E-X-A-M-I-N-A-T-I-O-N), checking pairs: AI (positions 3,5) — A to I has 8 letters between, positions differ by 2. Pairs with matching gaps: (A,I) and (N,I). The answer is 3 such pairs.",
       "subject": "Reasoning",
@@ -192,7 +293,12 @@
       "id": "q014",
       "questionNumber": 14,
       "question": "A man walks 5 km toward the south and then turns to the right. After walking 3 km, he turns to the right and walks 5 km. He then turns to the left and walks 3 km. In which direction is he from his starting point?",
-      "options": ["North", "East", "West", "South"],
+      "options": [
+        "North",
+        "East",
+        "West",
+        "South"
+      ],
       "correctAnswer": 1,
       "explanation": "Starting point → 5S → 3W → 5N → 3W. Net displacement: 6 km West. He is West of start. Wait — turning right from south is west. 5S, turn right (west) 3km, turn right (north) 5km, turn left (west) 3km. Final position: 6km west of start. He is to the East... Let me recalculate: right of south = west. 5S → 3W → 5N → (left of north = west) 3W. Net: 6W, 0N/S. He is West.",
       "subject": "Reasoning",
@@ -203,7 +309,12 @@
       "id": "q015",
       "questionNumber": 15,
       "question": "Find the missing number: 2, 6, 12, 20, 30, ?",
-      "options": ["42", "40", "44", "36"],
+      "options": [
+        "42",
+        "40",
+        "44",
+        "36"
+      ],
       "correctAnswer": 0,
       "explanation": "Pattern: 1×2, 2×3, 3×4, 4×5, 5×6, 6×7 = 42. The nth term is n×(n+1).",
       "subject": "Reasoning",
@@ -214,7 +325,12 @@
       "id": "q016",
       "questionNumber": 16,
       "question": "Statement: All books are pens. No pen is a pencil. Conclusion I: No book is a pencil. Conclusion II: All pens are books. Which is correct?",
-      "options": ["Only I follows", "Only II follows", "Both I and II follow", "Neither I nor II follows"],
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Both I and II follow",
+        "Neither I nor II follows"
+      ],
       "correctAnswer": 0,
       "explanation": "From 'All books are pens' and 'No pen is a pencil', we conclude 'No book is a pencil' (Conclusion I). Conclusion II is not valid — we cannot reverse 'All books are pens'.",
       "subject": "Reasoning",
@@ -225,7 +341,12 @@
       "id": "q017",
       "questionNumber": 17,
       "question": "In a row of girls, Sita is 10th from the left and Priya is 17th from the right. If they interchange positions, Sita becomes 15th from the left. How many girls are there in the row?",
-      "options": ["31", "32", "33", "34"],
+      "options": [
+        "31",
+        "32",
+        "33",
+        "34"
+      ],
       "correctAnswer": 0,
       "explanation": "After interchange, Sita is 15th from left (i.e., occupies Priya's original position). Priya was 17th from right, now is 15th from left. Total = 15 + 17 − 1 = 31.",
       "subject": "Reasoning",
@@ -236,7 +357,12 @@
       "id": "q018",
       "questionNumber": 18,
       "question": "Which of the following diagrams best represents the relationship among Scientists, Doctors, and Humans?",
-      "options": ["Three separate circles", "Doctors inside Scientists inside Humans", "Scientists and Doctors as separate but overlapping circles inside Humans", "All three fully overlapping"],
+      "options": [
+        "Three separate circles",
+        "Doctors inside Scientists inside Humans",
+        "Scientists and Doctors as separate but overlapping circles inside Humans",
+        "All three fully overlapping"
+      ],
       "correctAnswer": 2,
       "explanation": "All scientists and doctors are humans, but not all scientists are doctors and vice versa. Two separate circles (Scientists, Doctors) overlapping partially, both inside Humans.",
       "subject": "Reasoning",
@@ -247,7 +373,12 @@
       "id": "q019",
       "questionNumber": 19,
       "question": "Arrange in logical order: 1) Graduation, 2) School, 3) Nursery, 4) Primary School, 5) Post-Graduation",
-      "options": ["3,4,2,1,5", "3,2,4,1,5", "2,3,4,1,5", "3,1,2,4,5"],
+      "options": [
+        "3,4,2,1,5",
+        "3,2,4,1,5",
+        "2,3,4,1,5",
+        "3,1,2,4,5"
+      ],
       "correctAnswer": 0,
       "explanation": "Logical educational order: Nursery(3) → Primary School(4) → School(2) → Graduation(1) → Post-Graduation(5) = 3,4,2,1,5.",
       "subject": "Reasoning",
@@ -258,7 +389,12 @@
       "id": "q020",
       "questionNumber": 20,
       "question": "If ROSE = 6245 and CHAIR = 73456, what is SEARCH?",
-      "options": ["246573", "245673", "246573", "254673"],
+      "options": [
+        "246573",
+        "245673",
+        "246573",
+        "254673"
+      ],
       "correctAnswer": 0,
       "explanation": "From the codes: R=6, O=2, S=4, E=5, C=7, H=3, A=4, I=4, R=6. Wait, let me re-derive: R=6,O=2,S=4,E=5; C=7,H=3,A=4,I=4,R=6. SEARCH: S=4, E=5, A=4, R=6, C=7, H=3 → 245673. Checking option 0: 246573 — different. Recalculating with fresh assignment from CHAIR: C=7,H=3,A=4,I=5,R=6. SEARCH: S=4,E=5... The answer is 245673.",
       "subject": "Reasoning",
@@ -269,7 +405,12 @@
       "id": "q021",
       "questionNumber": 21,
       "question": "How many times does the digit 3 appear in numbers from 1 to 100?",
-      "options": ["10", "19", "20", "21"],
+      "options": [
+        "10",
+        "19",
+        "20",
+        "21"
+      ],
       "correctAnswer": 2,
       "explanation": "3 appears in units place: 3,13,23,33,43,53,63,73,83,93 (10 times). In tens place: 30,31,32,33,34,35,36,37,38,39 (10 times). Total = 20.",
       "subject": "Reasoning",
@@ -280,7 +421,12 @@
       "id": "q022",
       "questionNumber": 22,
       "question": "Which word cannot be formed from the letters of 'DISTRIBUTION'?",
-      "options": ["STRICT", "TUITION", "BURDEN", "STIR"],
+      "options": [
+        "STRICT",
+        "TUITION",
+        "BURDEN",
+        "STIR"
+      ],
       "correctAnswer": 2,
       "explanation": "DISTRIBUTION contains: D,I,S,T,R,I,B,U,T,I,O,N. BURDEN needs B,U,R,D,E,N — 'E' is not in DISTRIBUTION.",
       "subject": "Reasoning",
@@ -291,7 +437,12 @@
       "id": "q023",
       "questionNumber": 23,
       "question": "A and B can do a piece of work in 12 days. B and C in 15 days. A and C in 20 days. In how many days will A, B and C together finish the work?",
-      "options": ["10", "12", "8", "15"],
+      "options": [
+        "10",
+        "12",
+        "8",
+        "15"
+      ],
       "correctAnswer": 0,
       "explanation": "(A+B) = 1/12, (B+C) = 1/15, (A+C) = 1/20. Adding all: 2(A+B+C) = 1/12+1/15+1/20 = 5/60+4/60+3/60 = 12/60 = 1/5. So A+B+C = 1/10. Together they finish in 10 days.",
       "subject": "Reasoning",
@@ -302,7 +453,12 @@
       "id": "q024",
       "questionNumber": 24,
       "question": "Find the wrong term in the series: 1, 8, 27, 64, 124, 216",
-      "options": ["8", "27", "124", "216"],
+      "options": [
+        "8",
+        "27",
+        "124",
+        "216"
+      ],
       "correctAnswer": 2,
       "explanation": "The series is cubes of natural numbers: 1³=1, 2³=8, 3³=27, 4³=64, 5³=125, 6³=216. 124 should be 125.",
       "subject": "Reasoning",
@@ -313,7 +469,12 @@
       "id": "q025",
       "questionNumber": 25,
       "question": "If 'A' is coded as '1', 'B' as '2' and so on, what does the code 19-5-18-22-5-18 represent?",
-      "options": ["SERVER", "SERIAL", "SECURE", "SENSOR"],
+      "options": [
+        "SERVER",
+        "SERIAL",
+        "SECURE",
+        "SENSOR"
+      ],
       "correctAnswer": 0,
       "explanation": "19=S, 5=E, 18=R, 22=V, 5=E, 18=R → SERVER.",
       "subject": "Reasoning",
@@ -324,7 +485,12 @@
       "id": "q026",
       "questionNumber": 26,
       "question": "The compound interest on Rs. 8000 at 15% per annum for 2 years 4 months, compounded annually is:",
-      "options": ["Rs. 2980", "Rs. 3091", "Rs. 3109", "Rs. 2890"],
+      "options": [
+        "Rs. 2980",
+        "Rs. 3091",
+        "Rs. 3109",
+        "Rs. 2890"
+      ],
       "correctAnswer": 1,
       "explanation": "CI for 2 years: P[(1+r/100)²−1] = 8000[(1.15)²−1] = 8000[1.3225−1] = 8000×0.3225 = 2580. Then SI for 4 months on 8000+2580=10580 at 15%: 10580×15×(1/3)/100 = 529. Total CI ≈ 2580+529 = 3109. Closest to 3109.",
       "subject": "Quantitative Aptitude",
@@ -335,7 +501,12 @@
       "id": "q027",
       "questionNumber": 27,
       "question": "A shopkeeper bought 200 articles at Rs. 5 each. He sold 150 at Rs. 7 each and the remaining at Rs. 3 each. His profit percent is:",
-      "options": ["20%", "25%", "15%", "30%"],
+      "options": [
+        "20%",
+        "25%",
+        "15%",
+        "30%"
+      ],
       "correctAnswer": 0,
       "explanation": "Cost = 200×5 = 1000. Revenue = 150×7 + 50×3 = 1050+150 = 1200. Profit = 200. Profit% = (200/1000)×100 = 20%.",
       "subject": "Quantitative Aptitude",
@@ -346,7 +517,12 @@
       "id": "q028",
       "questionNumber": 28,
       "question": "The ratio of ages of A and B is 3:5. After 10 years the ratio will be 5:7. What is the present age of A?",
-      "options": ["15 years", "20 years", "25 years", "18 years"],
+      "options": [
+        "15 years",
+        "20 years",
+        "25 years",
+        "18 years"
+      ],
       "correctAnswer": 0,
       "explanation": "Let ages = 3x and 5x. (3x+10)/(5x+10) = 5/7. 21x+70 = 25x+50. 4x=20. x=5. A's age = 15 years.",
       "subject": "Quantitative Aptitude",
@@ -357,7 +533,12 @@
       "id": "q029",
       "questionNumber": 29,
       "question": "Water flows into a tank 200 m × 150 m through a pipe of cross-section 0.3m × 0.2m at 20 km/h. In what time will the water level rise by 2 m?",
-      "options": ["50 hours", "100 hours", "150 hours", "75 hours"],
+      "options": [
+        "50 hours",
+        "100 hours",
+        "150 hours",
+        "75 hours"
+      ],
       "correctAnswer": 0,
       "explanation": "Volume needed = 200×150×2 = 60000 m³. Flow rate = 0.3×0.2×(20000/60) m³/min = 0.06×333.33 = 20 m³/min = 1200 m³/hr. Time = 60000/1200 = 50 hours.",
       "subject": "Quantitative Aptitude",
@@ -368,7 +549,12 @@
       "id": "q030",
       "questionNumber": 30,
       "question": "In an examination, 40% of students failed in Maths, 30% failed in English, and 10% failed in both. What percent passed in both?",
-      "options": ["40%", "50%", "60%", "30%"],
+      "options": [
+        "40%",
+        "50%",
+        "60%",
+        "30%"
+      ],
       "correctAnswer": 0,
       "explanation": "Failed in at least one = 40+30−10 = 60%. Passed in both = 100−60 = 40%.",
       "subject": "Quantitative Aptitude",
@@ -379,7 +565,12 @@
       "id": "q031",
       "questionNumber": 31,
       "question": "If the diagonal of a square is 12√2 cm, what is the area of the square?",
-      "options": ["144 cm²", "288 cm²", "72 cm²", "196 cm²"],
+      "options": [
+        "144 cm²",
+        "288 cm²",
+        "72 cm²",
+        "196 cm²"
+      ],
       "correctAnswer": 0,
       "explanation": "Diagonal = a√2. 12√2 = a√2. a = 12. Area = a² = 144 cm².",
       "subject": "Quantitative Aptitude",
@@ -390,7 +581,12 @@
       "id": "q032",
       "questionNumber": 32,
       "question": "A boat goes 30 km upstream in 6 hours and 20 km downstream in 2 hours. What is the speed of the boat in still water?",
-      "options": ["6 km/h", "7 km/h", "8 km/h", "9 km/h"],
+      "options": [
+        "6 km/h",
+        "7 km/h",
+        "8 km/h",
+        "9 km/h"
+      ],
       "correctAnswer": 2,
       "explanation": "Upstream speed = 30/6 = 5 km/h. Downstream speed = 20/2 = 10 km/h. Speed in still water = (5+10)/2 = 7.5 km/h ≈ 8 (closest). Actually (5+10)/2 = 7.5. The correct option should be 7.5. Closest option is 8.",
       "subject": "Quantitative Aptitude",
@@ -401,7 +597,12 @@
       "id": "q033",
       "questionNumber": 33,
       "question": "Find the LCM of 12, 18, 24, 36.",
-      "options": ["72", "144", "36", "108"],
+      "options": [
+        "72",
+        "144",
+        "36",
+        "108"
+      ],
       "correctAnswer": 0,
       "explanation": "12=2²×3, 18=2×3², 24=2³×3, 36=2²×3². LCM = 2³×3² = 8×9 = 72.",
       "subject": "Quantitative Aptitude",
@@ -412,7 +613,12 @@
       "id": "q034",
       "questionNumber": 34,
       "question": "If 3x + 4y = 18 and 4x + 3y = 17, then x + y = ?",
-      "options": ["5", "6", "7", "4"],
+      "options": [
+        "5",
+        "6",
+        "7",
+        "4"
+      ],
       "correctAnswer": 0,
       "explanation": "Adding: 7x+7y = 35. x+y = 5.",
       "subject": "Quantitative Aptitude",
@@ -423,7 +629,12 @@
       "id": "q035",
       "questionNumber": 35,
       "question": "A man can do a piece of work in 5 days. With the help of his son, he can do it in 3 days. In how many days can the son alone do the work?",
-      "options": ["7.5 days", "8 days", "6.5 days", "9 days"],
+      "options": [
+        "7.5 days",
+        "8 days",
+        "6.5 days",
+        "9 days"
+      ],
       "correctAnswer": 0,
       "explanation": "Man = 1/5 per day. Together = 1/3 per day. Son = 1/3 − 1/5 = 2/15 per day. Son alone = 15/2 = 7.5 days.",
       "subject": "Quantitative Aptitude",
@@ -434,7 +645,12 @@
       "id": "q036",
       "questionNumber": 36,
       "question": "Find the simple interest on Rs. 25,000 at 8% per annum for 2.5 years.",
-      "options": ["Rs. 4,000", "Rs. 5,000", "Rs. 3,500", "Rs. 6,000"],
+      "options": [
+        "Rs. 4,000",
+        "Rs. 5,000",
+        "Rs. 3,500",
+        "Rs. 6,000"
+      ],
       "correctAnswer": 1,
       "explanation": "SI = P×R×T/100 = 25000×8×2.5/100 = 5000.",
       "subject": "Quantitative Aptitude",
@@ -445,7 +661,12 @@
       "id": "q037",
       "questionNumber": 37,
       "question": "The average of 11 results is 50. If the average of the first 6 results is 49 and that of last 6 results is 52, what is the 6th result?",
-      "options": ["55", "54", "56", "52"],
+      "options": [
+        "55",
+        "54",
+        "56",
+        "52"
+      ],
       "correctAnswer": 2,
       "explanation": "Sum of all 11 = 550. Sum of first 6 = 294. Sum of last 6 = 312. 6th result = 294+312−550 = 56.",
       "subject": "Quantitative Aptitude",
@@ -456,7 +677,12 @@
       "id": "q038",
       "questionNumber": 38,
       "question": "A sum of money doubles itself at simple interest in 10 years. In how many years will it become 5 times?",
-      "options": ["40 years", "50 years", "30 years", "35 years"],
+      "options": [
+        "40 years",
+        "50 years",
+        "30 years",
+        "35 years"
+      ],
       "correctAnswer": 0,
       "explanation": "Double in 10 years means rate = 10% per year. For 5 times: SI = 4P. 4P = P×10×T/100. T = 40 years.",
       "subject": "Quantitative Aptitude",
@@ -467,7 +693,12 @@
       "id": "q039",
       "questionNumber": 39,
       "question": "Two numbers are in the ratio 3:4. If their LCM is 180, what is their HCF?",
-      "options": ["12", "15", "18", "20"],
+      "options": [
+        "12",
+        "15",
+        "18",
+        "20"
+      ],
       "correctAnswer": 1,
       "explanation": "Numbers = 3k and 4k. LCM = 12k = 180, so k = 15. Numbers = 45 and 60. HCF = 15.",
       "subject": "Quantitative Aptitude",
@@ -478,7 +709,12 @@
       "id": "q040",
       "questionNumber": 40,
       "question": "A 280 m long train crosses a platform 220 m long in 30 seconds. What is the speed of the train?",
-      "options": ["50 km/h", "60 km/h", "72 km/h", "80 km/h"],
+      "options": [
+        "50 km/h",
+        "60 km/h",
+        "72 km/h",
+        "80 km/h"
+      ],
       "correctAnswer": 2,
       "explanation": "Total distance = 280+220 = 500 m. Time = 30 sec. Speed = 500/30 m/s = 50/3 m/s = (50/3)×(18/5) km/h = 60 km/h. Wait: (50/3)×(18/5) = 900/15 = 60. But 72 km/h = 20 m/s, 20×30=600≠500. 60 km/h = 50/3 m/s, (50/3)×30=500. Speed = 60 km/h.",
       "subject": "Quantitative Aptitude",
@@ -489,7 +725,12 @@
       "id": "q041",
       "questionNumber": 41,
       "question": "If A:B = 2:3, B:C = 4:5, then A:B:C = ?",
-      "options": ["8:12:15", "6:9:12", "4:6:10", "2:4:5"],
+      "options": [
+        "8:12:15",
+        "6:9:12",
+        "4:6:10",
+        "2:4:5"
+      ],
       "correctAnswer": 0,
       "explanation": "A:B = 2:3 = 8:12. B:C = 4:5 = 12:15. A:B:C = 8:12:15.",
       "subject": "Quantitative Aptitude",
@@ -500,7 +741,12 @@
       "id": "q042",
       "questionNumber": 42,
       "question": "What is the probability of getting a sum of 7 when two dice are thrown?",
-      "options": ["1/6", "5/36", "7/36", "1/9"],
+      "options": [
+        "1/6",
+        "5/36",
+        "7/36",
+        "1/9"
+      ],
       "correctAnswer": 0,
       "explanation": "Favourable outcomes: (1,6),(2,5),(3,4),(4,3),(5,2),(6,1) = 6. Total = 36. Probability = 6/36 = 1/6.",
       "subject": "Quantitative Aptitude",
@@ -511,7 +757,12 @@
       "id": "q043",
       "questionNumber": 43,
       "question": "If 20% of A = 30% of B, then A:B = ?",
-      "options": ["2:3", "3:2", "4:3", "3:4"],
+      "options": [
+        "2:3",
+        "3:2",
+        "4:3",
+        "3:4"
+      ],
       "correctAnswer": 1,
       "explanation": "0.2A = 0.3B. A/B = 0.3/0.2 = 3/2. A:B = 3:2.",
       "subject": "Quantitative Aptitude",
@@ -522,7 +773,12 @@
       "id": "q044",
       "questionNumber": 44,
       "question": "The perimeter of a rectangle is 60 m. If its length is twice its breadth, find the area.",
-      "options": ["200 m²", "250 m²", "150 m²", "175 m²"],
+      "options": [
+        "200 m²",
+        "250 m²",
+        "150 m²",
+        "175 m²"
+      ],
       "correctAnswer": 0,
       "explanation": "2(l+b) = 60, l+b = 30, l = 2b. 3b = 30, b = 10, l = 20. Area = 20×10 = 200 m².",
       "subject": "Quantitative Aptitude",
@@ -533,7 +789,12 @@
       "id": "q045",
       "questionNumber": 45,
       "question": "A number when divided by 6 gives a quotient of 13 and a remainder of 5. Find the number.",
-      "options": ["83", "85", "87", "79"],
+      "options": [
+        "83",
+        "85",
+        "87",
+        "79"
+      ],
       "correctAnswer": 0,
       "explanation": "Number = Divisor × Quotient + Remainder = 6×13+5 = 78+5 = 83.",
       "subject": "Quantitative Aptitude",
@@ -544,7 +805,12 @@
       "id": "q046",
       "questionNumber": 46,
       "question": "Three pipes A, B and C can fill a tank in 6, 8 and 12 hours respectively. In how many hours will they together fill the tank?",
-      "options": ["2.18 hours", "2.67 hours", "3 hours", "2.5 hours"],
+      "options": [
+        "2.18 hours",
+        "2.67 hours",
+        "3 hours",
+        "2.5 hours"
+      ],
       "correctAnswer": 1,
       "explanation": "Combined rate = 1/6+1/8+1/12 = 4/24+3/24+2/24 = 9/24 = 3/8 per hour. Time = 8/3 = 2.67 hours.",
       "subject": "Quantitative Aptitude",
@@ -555,7 +821,12 @@
       "id": "q047",
       "questionNumber": 47,
       "question": "Find the value of √(0.0169 × 100).",
-      "options": ["1.3", "0.13", "13", "130"],
+      "options": [
+        "1.3",
+        "0.13",
+        "13",
+        "130"
+      ],
       "correctAnswer": 0,
       "explanation": "√(0.0169 × 100) = √1.69 = 1.3.",
       "subject": "Quantitative Aptitude",
@@ -566,7 +837,12 @@
       "id": "q048",
       "questionNumber": 48,
       "question": "A man purchased a watch for Rs. 1500 and sold it for Rs. 1800. What was his gain percent?",
-      "options": ["15%", "20%", "25%", "18%"],
+      "options": [
+        "15%",
+        "20%",
+        "25%",
+        "18%"
+      ],
       "correctAnswer": 1,
       "explanation": "Gain = 1800−1500 = 300. Gain% = (300/1500)×100 = 20%.",
       "subject": "Quantitative Aptitude",
@@ -577,7 +853,12 @@
       "id": "q049",
       "questionNumber": 49,
       "question": "A train 150 m long is running at 72 km/h. How long will it take to cross a pole?",
-      "options": ["6.5 sec", "7.5 sec", "8 sec", "5 sec"],
+      "options": [
+        "6.5 sec",
+        "7.5 sec",
+        "8 sec",
+        "5 sec"
+      ],
       "correctAnswer": 1,
       "explanation": "Speed = 72 km/h = 72×(5/18) = 20 m/s. Time = 150/20 = 7.5 sec.",
       "subject": "Quantitative Aptitude",
@@ -588,7 +869,12 @@
       "id": "q050",
       "questionNumber": 50,
       "question": "In how many ways can 5 persons be seated around a circular table?",
-      "options": ["24", "120", "60", "20"],
+      "options": [
+        "24",
+        "120",
+        "60",
+        "20"
+      ],
       "correctAnswer": 0,
       "explanation": "Circular permutations = (n−1)! = (5−1)! = 4! = 24.",
       "subject": "Quantitative Aptitude",
@@ -599,7 +885,12 @@
       "id": "q051",
       "questionNumber": 51,
       "question": "Choose the word most similar in meaning to 'ELOQUENT':",
-      "options": ["Silent", "Articulate", "Confused", "Hesitant"],
+      "options": [
+        "Silent",
+        "Articulate",
+        "Confused",
+        "Hesitant"
+      ],
       "correctAnswer": 1,
       "explanation": "Eloquent means fluent and persuasive in speaking or writing. Articulate (able to speak clearly) is the closest synonym.",
       "subject": "English Language",
@@ -610,7 +901,12 @@
       "id": "q052",
       "questionNumber": 52,
       "question": "Choose the word most opposite in meaning to 'BENEVOLENT':",
-      "options": ["Kind", "Generous", "Malevolent", "Charitable"],
+      "options": [
+        "Kind",
+        "Generous",
+        "Malevolent",
+        "Charitable"
+      ],
       "correctAnswer": 2,
       "explanation": "Benevolent means well-meaning and kindly. Its antonym is Malevolent (having evil intentions).",
       "subject": "English Language",
@@ -621,7 +917,12 @@
       "id": "q053",
       "questionNumber": 53,
       "question": "Fill in the blank: The committee decided to ________ the meeting until next week.",
-      "options": ["postpone", "prepose", "posit", "propose"],
+      "options": [
+        "postpone",
+        "prepose",
+        "posit",
+        "propose"
+      ],
       "correctAnswer": 0,
       "explanation": "Postpone means to cause or arrange for something to take place at a time later than that first scheduled.",
       "subject": "English Language",
@@ -632,7 +933,12 @@
       "id": "q054",
       "questionNumber": 54,
       "question": "Identify the error in the sentence: 'He is one of those politician who always keep their promises.'",
-      "options": ["He is one of those", "politician who", "always keep", "their promises"],
+      "options": [
+        "He is one of those",
+        "politician who",
+        "always keep",
+        "their promises"
+      ],
       "correctAnswer": 1,
       "explanation": "'Politician' should be 'politicians' (plural) because 'one of those' refers to a group.",
       "subject": "English Language",
@@ -643,7 +949,12 @@
       "id": "q055",
       "questionNumber": 55,
       "question": "Which of the following sentences uses the passive voice correctly?",
-      "options": ["The cake was eaten by the children", "The children eaten the cake", "The children was eating the cake", "The cake eating by children"],
+      "options": [
+        "The cake was eaten by the children",
+        "The children eaten the cake",
+        "The children was eating the cake",
+        "The cake eating by children"
+      ],
       "correctAnswer": 0,
       "explanation": "Passive voice structure: object + was/were + past participle + by + subject. 'The cake was eaten by the children' is correctly formed.",
       "subject": "English Language",
@@ -654,7 +965,12 @@
       "id": "q056",
       "questionNumber": 56,
       "question": "Choose the correctly spelt word:",
-      "options": ["Accomodate", "Accommodate", "Acommodate", "Accomadate"],
+      "options": [
+        "Accomodate",
+        "Accommodate",
+        "Acommodate",
+        "Accomadate"
+      ],
       "correctAnswer": 1,
       "explanation": "The correct spelling is 'Accommodate' — with double 'c' and double 'm'.",
       "subject": "English Language",
@@ -665,7 +981,12 @@
       "id": "q057",
       "questionNumber": 57,
       "question": "Select the most appropriate idiom to complete the sentence: 'The new manager hit the ground running; he ________ the job from day one.'",
-      "options": ["beat around the bush with", "got down to brass tacks in", "burned his bridges with", "bit off more than he could chew with"],
+      "options": [
+        "beat around the bush with",
+        "got down to brass tacks in",
+        "burned his bridges with",
+        "bit off more than he could chew with"
+      ],
       "correctAnswer": 1,
       "explanation": "'Get down to brass tacks' means to start talking about the most important or basic facts of a situation, fitting the context.",
       "subject": "English Language",
@@ -676,7 +997,12 @@
       "id": "q058",
       "questionNumber": 58,
       "question": "Fill in the blank with the correct preposition: 'She has been working ________ this company for five years.'",
-      "options": ["at", "in", "on", "with"],
+      "options": [
+        "at",
+        "in",
+        "on",
+        "with"
+      ],
       "correctAnswer": 1,
       "explanation": "We say someone works 'in' a company or 'for' a company. 'In this company' is the correct preposition usage.",
       "subject": "English Language",
@@ -687,7 +1013,12 @@
       "id": "q059",
       "questionNumber": 59,
       "question": "Choose the word that best completes the analogy: Doctor : Hospital :: Judge : ?",
-      "options": ["Police Station", "Court", "Prison", "School"],
+      "options": [
+        "Police Station",
+        "Court",
+        "Prison",
+        "School"
+      ],
       "correctAnswer": 1,
       "explanation": "A Doctor works in a Hospital; a Judge works in a Court.",
       "subject": "English Language",
@@ -698,7 +1029,12 @@
       "id": "q060",
       "questionNumber": 60,
       "question": "In the passage, 'Despite numerous setbacks, the scientist persevered and eventually made a breakthrough discovery.' What does 'persevered' mean?",
-      "options": ["gave up", "continued despite difficulty", "celebrated early", "asked for help"],
+      "options": [
+        "gave up",
+        "continued despite difficulty",
+        "celebrated early",
+        "asked for help"
+      ],
       "correctAnswer": 1,
       "explanation": "Persevered means continued in a course of action even in the face of difficulty or with little or no indication of success.",
       "subject": "English Language",
@@ -709,7 +1045,12 @@
       "id": "q061",
       "questionNumber": 61,
       "question": "Choose the sentence which is grammatically correct:",
-      "options": ["He do not knows English.", "He does not know English.", "He do not know English.", "He does not knew English."],
+      "options": [
+        "He do not knows English.",
+        "He does not know English.",
+        "He do not know English.",
+        "He does not knew English."
+      ],
       "correctAnswer": 1,
       "explanation": "With third-person singular (he), we use 'does' with the base form 'know'. 'He does not know English.' is correct.",
       "subject": "English Language",
@@ -720,7 +1061,12 @@
       "id": "q062",
       "questionNumber": 62,
       "question": "What is the one-word substitution for 'a person who does not believe in any religion'?",
-      "options": ["Atheist", "Agnostic", "Theist", "Pagan"],
+      "options": [
+        "Atheist",
+        "Agnostic",
+        "Theist",
+        "Pagan"
+      ],
       "correctAnswer": 0,
       "explanation": "An Atheist is a person who does not believe in the existence of God or gods.",
       "subject": "English Language",
@@ -731,7 +1077,12 @@
       "id": "q063",
       "questionNumber": 63,
       "question": "Fill in the blank: Neither the manager nor the employees ________ responsible for the error.",
-      "options": ["was", "were", "is", "are"],
+      "options": [
+        "was",
+        "were",
+        "is",
+        "are"
+      ],
       "correctAnswer": 1,
       "explanation": "With 'Neither...nor', the verb agrees with the noun closest to it. 'Employees' is plural, so use 'were'.",
       "subject": "English Language",
@@ -742,7 +1093,12 @@
       "id": "q064",
       "questionNumber": 64,
       "question": "Choose the word nearest in meaning to 'AMBIGUOUS':",
-      "options": ["Clear", "Obscure", "Doubtful", "Definite"],
+      "options": [
+        "Clear",
+        "Obscure",
+        "Doubtful",
+        "Definite"
+      ],
       "correctAnswer": 2,
       "explanation": "Ambiguous means open to more than one interpretation; not having one obvious meaning. Doubtful is the closest synonym.",
       "subject": "English Language",
@@ -753,7 +1109,12 @@
       "id": "q065",
       "questionNumber": 65,
       "question": "Rearrange the sentence: 'long / she / been / has / how / here'",
-      "options": ["How long has she been here?", "How she has been long here?", "Has she been here long how?", "She has been here how long?"],
+      "options": [
+        "How long has she been here?",
+        "How she has been long here?",
+        "Has she been here long how?",
+        "She has been here how long?"
+      ],
       "correctAnswer": 0,
       "explanation": "Correct question structure: How long + has + subject + main verb + rest = 'How long has she been here?'",
       "subject": "English Language",
@@ -764,7 +1125,12 @@
       "id": "q066",
       "questionNumber": 66,
       "question": "Select the synonym of 'METICULOUS':",
-      "options": ["Careless", "Thorough", "Quick", "Lazy"],
+      "options": [
+        "Careless",
+        "Thorough",
+        "Quick",
+        "Lazy"
+      ],
       "correctAnswer": 1,
       "explanation": "Meticulous means showing great attention to detail or being very careful and precise. Thorough is the correct synonym.",
       "subject": "English Language",
@@ -775,7 +1141,12 @@
       "id": "q067",
       "questionNumber": 67,
       "question": "Identify the part of speech of the underlined word: 'He speaks very QUICKLY.'",
-      "options": ["Adjective", "Verb", "Adverb", "Noun"],
+      "options": [
+        "Adjective",
+        "Verb",
+        "Adverb",
+        "Noun"
+      ],
       "correctAnswer": 2,
       "explanation": "QUICKLY modifies the verb 'speaks' — it describes how he speaks. Words that modify verbs are adverbs.",
       "subject": "English Language",
@@ -786,7 +1157,12 @@
       "id": "q068",
       "questionNumber": 68,
       "question": "Fill in: The teacher, along with her students, ________ going on a field trip.",
-      "options": ["are", "were", "is", "have been"],
+      "options": [
+        "are",
+        "were",
+        "is",
+        "have been"
+      ],
       "correctAnswer": 2,
       "explanation": "When 'along with' connects two subjects, the verb agrees with the main subject ('the teacher' — singular). So use 'is'.",
       "subject": "English Language",
@@ -797,7 +1173,12 @@
       "id": "q069",
       "questionNumber": 69,
       "question": "Choose the option that best replaces the underlined part: 'Having being sick for a week, she returned to work.'",
-      "options": ["Having being sick", "Being sick", "Having been sick", "After being sick"],
+      "options": [
+        "Having being sick",
+        "Being sick",
+        "Having been sick",
+        "After being sick"
+      ],
       "correctAnswer": 2,
       "explanation": "'Having been sick' is the correct perfect participial phrase. 'Having being' is grammatically incorrect.",
       "subject": "English Language",
@@ -808,7 +1189,12 @@
       "id": "q070",
       "questionNumber": 70,
       "question": "Which figure of speech is used in: 'The wind whispered through the trees'?",
-      "options": ["Simile", "Metaphor", "Personification", "Hyperbole"],
+      "options": [
+        "Simile",
+        "Metaphor",
+        "Personification",
+        "Hyperbole"
+      ],
       "correctAnswer": 2,
       "explanation": "Personification attributes human qualities (whispering) to a non-human entity (the wind).",
       "subject": "English Language",
@@ -819,7 +1205,12 @@
       "id": "q071",
       "questionNumber": 71,
       "question": "Select the antonym of 'EPHEMERAL':",
-      "options": ["Transient", "Fleeting", "Permanent", "Brief"],
+      "options": [
+        "Transient",
+        "Fleeting",
+        "Permanent",
+        "Brief"
+      ],
       "correctAnswer": 2,
       "explanation": "Ephemeral means lasting for a very short time. Its antonym is Permanent.",
       "subject": "English Language",
@@ -830,7 +1221,12 @@
       "id": "q072",
       "questionNumber": 72,
       "question": "Choose the correct indirect speech: He said, 'I am working hard.'",
-      "options": ["He said that he is working hard.", "He said that he was working hard.", "He said that he worked hard.", "He said that he has been working hard."],
+      "options": [
+        "He said that he is working hard.",
+        "He said that he was working hard.",
+        "He said that he worked hard.",
+        "He said that he has been working hard."
+      ],
       "correctAnswer": 1,
       "explanation": "In indirect speech, the present continuous 'am working' shifts to past continuous 'was working'.",
       "subject": "English Language",
@@ -841,7 +1237,12 @@
       "id": "q073",
       "questionNumber": 73,
       "question": "Complete the proverb: 'A stitch in time ________.'",
-      "options": ["mends the fence", "saves nine", "earns dime", "heals all wounds"],
+      "options": [
+        "mends the fence",
+        "saves nine",
+        "earns dime",
+        "heals all wounds"
+      ],
       "correctAnswer": 1,
       "explanation": "The complete proverb is 'A stitch in time saves nine' — meaning prompt action prevents more work later.",
       "subject": "English Language",
@@ -852,7 +1253,12 @@
       "id": "q074",
       "questionNumber": 74,
       "question": "What is the plural of 'datum'?",
-      "options": ["Datums", "Dati", "Data", "Datae"],
+      "options": [
+        "Datums",
+        "Dati",
+        "Data",
+        "Datae"
+      ],
       "correctAnswer": 2,
       "explanation": "Datum is a Latin-origin word. Its plural is 'data'.",
       "subject": "English Language",
@@ -863,7 +1269,12 @@
       "id": "q075",
       "questionNumber": 75,
       "question": "Choose the sentence with the correct use of articles: 'She is ________ honest officer.'",
-      "options": ["a", "an", "the", "no article needed"],
+      "options": [
+        "a",
+        "an",
+        "the",
+        "no article needed"
+      ],
       "correctAnswer": 1,
       "explanation": "'Honest' begins with a vowel sound (/ɒnɪst/), so the article 'an' is used: 'She is an honest officer.'",
       "subject": "English Language",
@@ -874,10 +1285,15 @@
       "id": "q076",
       "questionNumber": 76,
       "question": "Which of the following is NOT a type of DBMS?",
-      "options": ["Relational DBMS", "Network DBMS", "Hierarchical DBMS", "Sequential DBMS"],
+      "options": [
+        "Relational DBMS",
+        "Network DBMS",
+        "Hierarchical DBMS",
+        "Sequential DBMS"
+      ],
       "correctAnswer": 3,
       "explanation": "The four main types of DBMS are: Relational, Network, Hierarchical, and Object-oriented. Sequential DBMS is not a standard DBMS type.",
-      "subject": "Professional Knowledge",
+      "subject": "Programming",
       "topic": "DBMS",
       "difficulty": "easy"
     },
@@ -885,10 +1301,15 @@
       "id": "q077",
       "questionNumber": 77,
       "question": "In SQL, which of the following commands is used to remove all rows from a table without logging individual row deletions?",
-      "options": ["DELETE", "DROP", "TRUNCATE", "REMOVE"],
+      "options": [
+        "DELETE",
+        "DROP",
+        "TRUNCATE",
+        "REMOVE"
+      ],
       "correctAnswer": 2,
       "explanation": "TRUNCATE removes all rows from a table without logging each row deletion, making it faster than DELETE. DROP removes the table itself.",
-      "subject": "Professional Knowledge",
+      "subject": "Programming",
       "topic": "DBMS",
       "difficulty": "medium"
     },
@@ -896,10 +1317,15 @@
       "id": "q078",
       "questionNumber": 78,
       "question": "A relation R is in BCNF if and only if:",
-      "options": ["Every non-prime attribute is fully functionally dependent on the primary key", "For every functional dependency X→Y, X is a superkey", "It is in 2NF and no partial dependency exists", "Every attribute depends on the key, the whole key, and nothing but the key"],
+      "options": [
+        "Every non-prime attribute is fully functionally dependent on the primary key",
+        "For every functional dependency X→Y, X is a superkey",
+        "It is in 2NF and no partial dependency exists",
+        "Every attribute depends on the key, the whole key, and nothing but the key"
+      ],
       "correctAnswer": 1,
       "explanation": "A relation is in BCNF (Boyce-Codd Normal Form) if for every functional dependency X→Y, X is a superkey. This is a stronger form of 3NF.",
-      "subject": "Professional Knowledge",
+      "subject": "Programming",
       "topic": "DBMS",
       "difficulty": "hard"
     },
@@ -907,10 +1333,15 @@
       "id": "q079",
       "questionNumber": 79,
       "question": "Which of the following is the correct SQL query to find the second highest salary from an Employee table?",
-      "options": ["SELECT MAX(salary) FROM Employee WHERE salary < (SELECT MAX(salary) FROM Employee)", "SELECT TOP 2 salary FROM Employee ORDER BY salary DESC", "SELECT DISTINCT salary FROM Employee ORDER BY salary DESC LIMIT 1,1", "Both A and C are correct"],
+      "options": [
+        "SELECT MAX(salary) FROM Employee WHERE salary < (SELECT MAX(salary) FROM Employee)",
+        "SELECT TOP 2 salary FROM Employee ORDER BY salary DESC",
+        "SELECT DISTINCT salary FROM Employee ORDER BY salary DESC LIMIT 1,1",
+        "Both A and C are correct"
+      ],
       "correctAnswer": 3,
       "explanation": "Both subquery with MAX(salary) < MAX approach and LIMIT 1,1 with ORDER BY DESC are valid ways to find the second highest salary. Option D is correct.",
-      "subject": "Professional Knowledge",
+      "subject": "Programming",
       "topic": "DBMS",
       "difficulty": "hard"
     },
@@ -918,10 +1349,15 @@
       "id": "q080",
       "questionNumber": 80,
       "question": "Which process scheduling algorithm can cause starvation?",
-      "options": ["Round Robin", "First Come First Served", "Priority Scheduling", "Shortest Job First (non-preemptive)"],
+      "options": [
+        "Round Robin",
+        "First Come First Served",
+        "Priority Scheduling",
+        "Shortest Job First (non-preemptive)"
+      ],
       "correctAnswer": 2,
       "explanation": "Priority Scheduling can cause starvation because low-priority processes may never get CPU time if high-priority processes keep arriving.",
-      "subject": "Professional Knowledge",
+      "subject": "Programming",
       "topic": "Operating Systems",
       "difficulty": "medium"
     },
@@ -929,10 +1365,15 @@
       "id": "q081",
       "questionNumber": 81,
       "question": "In the context of paging, what is 'thrashing'?",
-      "options": ["When a process terminates abnormally", "When a CPU spends more time swapping pages than executing instructions", "When memory becomes full and the system crashes", "When a page table overflow occurs"],
+      "options": [
+        "When a process terminates abnormally",
+        "When a CPU spends more time swapping pages than executing instructions",
+        "When memory becomes full and the system crashes",
+        "When a page table overflow occurs"
+      ],
       "correctAnswer": 1,
       "explanation": "Thrashing occurs when a system spends more time in page faults and swapping pages in/out of memory than actually executing process instructions, resulting in very low CPU utilization.",
-      "subject": "Professional Knowledge",
+      "subject": "Programming",
       "topic": "Operating Systems",
       "difficulty": "medium"
     },
@@ -940,10 +1381,15 @@
       "id": "q082",
       "questionNumber": 82,
       "question": "Deadlock can be prevented by ensuring which of the following conditions does NOT hold?",
-      "options": ["Mutual Exclusion", "Hold and Wait", "No Preemption", "Any one of the Coffman conditions"],
+      "options": [
+        "Mutual Exclusion",
+        "Hold and Wait",
+        "No Preemption",
+        "Any one of the Coffman conditions"
+      ],
       "correctAnswer": 3,
       "explanation": "Deadlock prevention ensures at least one of the four Coffman conditions (Mutual Exclusion, Hold and Wait, No Preemption, Circular Wait) never holds. Breaking any one is sufficient.",
-      "subject": "Professional Knowledge",
+      "subject": "Programming",
       "topic": "Operating Systems",
       "difficulty": "medium"
     },
@@ -951,10 +1397,15 @@
       "id": "q083",
       "questionNumber": 83,
       "question": "Which of the following is a non-preemptive scheduling algorithm?",
-      "options": ["Round Robin", "Shortest Remaining Time First", "FCFS", "Priority (preemptive)"],
+      "options": [
+        "Round Robin",
+        "Shortest Remaining Time First",
+        "FCFS",
+        "Priority (preemptive)"
+      ],
       "correctAnswer": 2,
       "explanation": "FCFS (First Come First Served) is a non-preemptive scheduling algorithm — once a process starts execution, it cannot be preempted.",
-      "subject": "Professional Knowledge",
+      "subject": "Programming",
       "topic": "Operating Systems",
       "difficulty": "easy"
     },
@@ -962,10 +1413,15 @@
       "id": "q084",
       "questionNumber": 84,
       "question": "In TCP/IP model, which layer is responsible for end-to-end communication and error recovery?",
-      "options": ["Network Layer", "Transport Layer", "Data Link Layer", "Session Layer"],
+      "options": [
+        "Network Layer",
+        "Transport Layer",
+        "Data Link Layer",
+        "Session Layer"
+      ],
       "correctAnswer": 1,
       "explanation": "The Transport Layer (Layer 4 in OSI, corresponds to TCP in TCP/IP) is responsible for end-to-end communication, flow control, and error recovery between hosts.",
-      "subject": "Professional Knowledge",
+      "subject": "Programming",
       "topic": "Computer Networks",
       "difficulty": "easy"
     },
@@ -973,10 +1429,15 @@
       "id": "q085",
       "questionNumber": 85,
       "question": "What is the maximum number of hosts in a /24 subnet?",
-      "options": ["254", "256", "255", "252"],
+      "options": [
+        "254",
+        "256",
+        "255",
+        "252"
+      ],
       "correctAnswer": 0,
       "explanation": "A /24 subnet has 8 host bits. Total addresses = 2⁸ = 256. Subtract 2 (network and broadcast address). Maximum hosts = 254.",
-      "subject": "Professional Knowledge",
+      "subject": "Programming",
       "topic": "Computer Networks",
       "difficulty": "medium"
     },
@@ -984,10 +1445,15 @@
       "id": "q086",
       "questionNumber": 86,
       "question": "Which protocol is used to translate domain names to IP addresses?",
-      "options": ["DHCP", "FTP", "DNS", "ARP"],
+      "options": [
+        "DHCP",
+        "FTP",
+        "DNS",
+        "ARP"
+      ],
       "correctAnswer": 2,
       "explanation": "DNS (Domain Name System) translates human-readable domain names (e.g., www.example.com) to IP addresses.",
-      "subject": "Professional Knowledge",
+      "subject": "Programming",
       "topic": "Computer Networks",
       "difficulty": "easy"
     },
@@ -995,10 +1461,15 @@
       "id": "q087",
       "questionNumber": 87,
       "question": "What is the purpose of the three-way handshake in TCP?",
-      "options": ["To encrypt the connection", "To establish a reliable connection between client and server", "To terminate an existing connection", "To compress data for transmission"],
+      "options": [
+        "To encrypt the connection",
+        "To establish a reliable connection between client and server",
+        "To terminate an existing connection",
+        "To compress data for transmission"
+      ],
       "correctAnswer": 1,
       "explanation": "TCP's three-way handshake (SYN, SYN-ACK, ACK) is used to establish a reliable, connection-oriented session between client and server before data transfer begins.",
-      "subject": "Professional Knowledge",
+      "subject": "Programming",
       "topic": "Computer Networks",
       "difficulty": "easy"
     },
@@ -1006,10 +1477,15 @@
       "id": "q088",
       "questionNumber": 88,
       "question": "Which data structure uses LIFO (Last In First Out) principle?",
-      "options": ["Queue", "Stack", "Linked List", "Tree"],
+      "options": [
+        "Queue",
+        "Stack",
+        "Linked List",
+        "Tree"
+      ],
       "correctAnswer": 1,
       "explanation": "A Stack operates on the LIFO principle — the last element inserted is the first one to be removed. Queues use FIFO.",
-      "subject": "Professional Knowledge",
+      "subject": "Programming",
       "topic": "Data Structures",
       "difficulty": "easy"
     },
@@ -1017,10 +1493,15 @@
       "id": "q089",
       "questionNumber": 89,
       "question": "What is the time complexity of binary search on a sorted array of n elements?",
-      "options": ["O(n)", "O(n²)", "O(log n)", "O(n log n)"],
+      "options": [
+        "O(n)",
+        "O(n²)",
+        "O(log n)",
+        "O(n log n)"
+      ],
       "correctAnswer": 2,
       "explanation": "Binary search divides the search space in half at each step, resulting in O(log n) time complexity for a sorted array of n elements.",
-      "subject": "Professional Knowledge",
+      "subject": "Programming",
       "topic": "Algorithms",
       "difficulty": "easy"
     },
@@ -1028,10 +1509,15 @@
       "id": "q090",
       "questionNumber": 90,
       "question": "In a binary search tree, which traversal gives elements in sorted order?",
-      "options": ["Pre-order", "Post-order", "In-order", "Level-order"],
+      "options": [
+        "Pre-order",
+        "Post-order",
+        "In-order",
+        "Level-order"
+      ],
       "correctAnswer": 2,
       "explanation": "In-order traversal (left, root, right) of a Binary Search Tree visits nodes in ascending sorted order.",
-      "subject": "Professional Knowledge",
+      "subject": "Programming",
       "topic": "Data Structures",
       "difficulty": "easy"
     },
@@ -1039,10 +1525,15 @@
       "id": "q091",
       "questionNumber": 91,
       "question": "Which sorting algorithm has the best average-case time complexity?",
-      "options": ["Bubble Sort", "Selection Sort", "Quick Sort", "Insertion Sort"],
+      "options": [
+        "Bubble Sort",
+        "Selection Sort",
+        "Quick Sort",
+        "Insertion Sort"
+      ],
       "correctAnswer": 2,
       "explanation": "Quick Sort has an average-case time complexity of O(n log n), which is optimal for comparison-based sorting. Its worst case is O(n²).",
-      "subject": "Professional Knowledge",
+      "subject": "Programming",
       "topic": "Algorithms",
       "difficulty": "medium"
     },
@@ -1050,10 +1541,15 @@
       "id": "q092",
       "questionNumber": 92,
       "question": "What does OOP stand for and which of the following is NOT a pillar of OOP?",
-      "options": ["Object-Oriented Programming; Compilation", "Object-Oriented Programming; Polymorphism", "Object-Oriented Principles; Encapsulation", "Object-Oriented Programming; Inheritance"],
+      "options": [
+        "Object-Oriented Programming; Compilation",
+        "Object-Oriented Programming; Polymorphism",
+        "Object-Oriented Principles; Encapsulation",
+        "Object-Oriented Programming; Inheritance"
+      ],
       "correctAnswer": 0,
       "explanation": "OOP stands for Object-Oriented Programming. Its four pillars are: Encapsulation, Abstraction, Inheritance, and Polymorphism. Compilation is not a pillar of OOP.",
-      "subject": "Professional Knowledge",
+      "subject": "Programming",
       "topic": "Programming",
       "difficulty": "easy"
     },
@@ -1061,10 +1557,15 @@
       "id": "q093",
       "questionNumber": 93,
       "question": "In Java, which keyword is used to prevent a class from being subclassed?",
-      "options": ["static", "abstract", "final", "private"],
+      "options": [
+        "static",
+        "abstract",
+        "final",
+        "private"
+      ],
       "correctAnswer": 2,
       "explanation": "In Java, the 'final' keyword applied to a class prevents it from being extended (subclassed). e.g., 'public final class MyClass {}'.",
-      "subject": "Professional Knowledge",
+      "subject": "Programming",
       "topic": "Programming",
       "difficulty": "medium"
     },
@@ -1072,10 +1573,15 @@
       "id": "q094",
       "questionNumber": 94,
       "question": "Which of the following is NOT an example of a symmetric key encryption algorithm?",
-      "options": ["AES", "DES", "RSA", "3DES"],
+      "options": [
+        "AES",
+        "DES",
+        "RSA",
+        "3DES"
+      ],
       "correctAnswer": 2,
       "explanation": "RSA (Rivest-Shamir-Adleman) is an asymmetric (public-key) encryption algorithm. AES, DES, and 3DES are all symmetric key algorithms.",
-      "subject": "Professional Knowledge",
+      "subject": "Programming",
       "topic": "Cyber Security",
       "difficulty": "medium"
     },
@@ -1083,10 +1589,15 @@
       "id": "q095",
       "questionNumber": 95,
       "question": "What is SQL injection?",
-      "options": ["A method to speed up SQL queries", "An attack where malicious SQL code is inserted into input fields", "A database backup technique", "A type of database index"],
+      "options": [
+        "A method to speed up SQL queries",
+        "An attack where malicious SQL code is inserted into input fields",
+        "A database backup technique",
+        "A type of database index"
+      ],
       "correctAnswer": 1,
       "explanation": "SQL injection is a code injection attack where malicious SQL statements are inserted into input fields, allowing attackers to manipulate database queries and gain unauthorized access.",
-      "subject": "Professional Knowledge",
+      "subject": "Programming",
       "topic": "Cyber Security",
       "difficulty": "easy"
     },
@@ -1094,10 +1605,15 @@
       "id": "q096",
       "questionNumber": 96,
       "question": "Which software development model is iterative and allows for incremental development?",
-      "options": ["Waterfall Model", "V-Model", "Agile Model", "Big Bang Model"],
+      "options": [
+        "Waterfall Model",
+        "V-Model",
+        "Agile Model",
+        "Big Bang Model"
+      ],
       "correctAnswer": 2,
       "explanation": "Agile is an iterative and incremental software development methodology that emphasizes flexibility, collaboration, and delivering working software in short cycles called sprints.",
-      "subject": "Professional Knowledge",
+      "subject": "Programming",
       "topic": "Software Engineering",
       "difficulty": "easy"
     },
@@ -1105,10 +1621,15 @@
       "id": "q097",
       "questionNumber": 97,
       "question": "What is the difference between HTTP and HTTPS?",
-      "options": ["HTTPS is faster than HTTP", "HTTPS uses SSL/TLS encryption, making it secure", "HTTP allows file transfer while HTTPS does not", "There is no difference; they are the same protocol"],
+      "options": [
+        "HTTPS is faster than HTTP",
+        "HTTPS uses SSL/TLS encryption, making it secure",
+        "HTTP allows file transfer while HTTPS does not",
+        "There is no difference; they are the same protocol"
+      ],
       "correctAnswer": 1,
       "explanation": "HTTPS (HTTP Secure) uses SSL/TLS encryption to secure data transmission between the browser and server, while HTTP transmits data in plain text.",
-      "subject": "Professional Knowledge",
+      "subject": "Programming",
       "topic": "Web Technologies",
       "difficulty": "easy"
     },
@@ -1116,10 +1637,15 @@
       "id": "q098",
       "questionNumber": 98,
       "question": "In computer architecture, what does RISC stand for?",
-      "options": ["Reduced Instruction Set Computer", "Rapid Instruction Set Computing", "Regular Instruction System Computing", "Reduced Internal System Circuit"],
+      "options": [
+        "Reduced Instruction Set Computer",
+        "Rapid Instruction Set Computing",
+        "Regular Instruction System Computing",
+        "Reduced Internal System Circuit"
+      ],
       "correctAnswer": 0,
       "explanation": "RISC stands for Reduced Instruction Set Computer. RISC processors use a small set of simple instructions to achieve high performance.",
-      "subject": "Professional Knowledge",
+      "subject": "Programming",
       "topic": "Computer Architecture",
       "difficulty": "easy"
     },
@@ -1127,10 +1653,15 @@
       "id": "q099",
       "questionNumber": 99,
       "question": "What is a PRIMARY KEY in a relational database?",
-      "options": ["A key that references a column in another table", "A key that uniquely identifies each row in a table and cannot be NULL", "A key that allows duplicate values", "The first column in any table"],
+      "options": [
+        "A key that references a column in another table",
+        "A key that uniquely identifies each row in a table and cannot be NULL",
+        "A key that allows duplicate values",
+        "The first column in any table"
+      ],
       "correctAnswer": 1,
       "explanation": "A PRIMARY KEY uniquely identifies each record in a table. It must be unique and cannot contain NULL values. A table can have only one primary key.",
-      "subject": "Professional Knowledge",
+      "subject": "Programming",
       "topic": "DBMS",
       "difficulty": "easy"
     },
@@ -1138,287 +1669,17 @@
       "id": "q100",
       "questionNumber": 100,
       "question": "Which of the following is true about a FOREIGN KEY?",
-      "options": ["It must be unique in the referencing table", "It references the PRIMARY KEY of another table and enforces referential integrity", "It cannot contain NULL values", "It uniquely identifies rows in its own table"],
+      "options": [
+        "It must be unique in the referencing table",
+        "It references the PRIMARY KEY of another table and enforces referential integrity",
+        "It cannot contain NULL values",
+        "It uniquely identifies rows in its own table"
+      ],
       "correctAnswer": 1,
       "explanation": "A FOREIGN KEY references the PRIMARY KEY (or a unique key) in another table, establishing a relationship between tables and enforcing referential integrity.",
-      "subject": "Professional Knowledge",
+      "subject": "Programming",
       "topic": "DBMS",
       "difficulty": "easy"
-    },
-    {
-      "id": "q101",
-      "questionNumber": 101,
-      "question": "What is the time complexity of inserting an element at the beginning of a singly linked list?",
-      "options": ["O(n)", "O(log n)", "O(1)", "O(n²)"],
-      "correctAnswer": 2,
-      "explanation": "Inserting at the beginning of a singly linked list requires only updating the head pointer, which is an O(1) operation regardless of list size.",
-      "subject": "Professional Knowledge",
-      "topic": "Data Structures",
-      "difficulty": "easy"
-    },
-    {
-      "id": "q102",
-      "questionNumber": 102,
-      "question": "Which OSI layer is responsible for data formatting, encryption, and compression?",
-      "options": ["Application Layer", "Presentation Layer", "Session Layer", "Transport Layer"],
-      "correctAnswer": 1,
-      "explanation": "The Presentation Layer (Layer 6 in OSI model) handles data formatting/translation, encryption/decryption, and compression/decompression.",
-      "subject": "Professional Knowledge",
-      "topic": "Computer Networks",
-      "difficulty": "medium"
-    },
-    {
-      "id": "q103",
-      "questionNumber": 103,
-      "question": "What is normalization in DBMS?",
-      "options": ["The process of converting data to uppercase", "The process of organizing data to reduce redundancy and improve integrity", "Adding more tables to a database", "Compressing database files"],
-      "correctAnswer": 1,
-      "explanation": "Normalization is the process of structuring a relational database to reduce data redundancy and improve data integrity by organizing data into appropriate tables.",
-      "subject": "Professional Knowledge",
-      "topic": "DBMS",
-      "difficulty": "easy"
-    },
-    {
-      "id": "q104",
-      "questionNumber": 104,
-      "question": "In Python, what is the output of: print(type([]))?",
-      "options": ["<class 'tuple'>", "<class 'dict'>", "<class 'list'>", "<class 'set'>"],
-      "correctAnswer": 2,
-      "explanation": "[] represents an empty list in Python. type([]) returns <class 'list'>.",
-      "subject": "Professional Knowledge",
-      "topic": "Programming",
-      "difficulty": "easy"
-    },
-    {
-      "id": "q105",
-      "questionNumber": 105,
-      "question": "Which of the following best describes 'polymorphism' in OOP?",
-      "options": ["Hiding internal implementation details", "The ability of a class to take multiple forms or have multiple methods with the same name", "Creating objects from a class", "Inheriting properties from a parent class"],
-      "correctAnswer": 1,
-      "explanation": "Polymorphism allows objects of different classes to be treated as objects of a common superclass, and allows methods to have the same name but different implementations.",
-      "subject": "Professional Knowledge",
-      "topic": "Programming",
-      "difficulty": "medium"
-    },
-    {
-      "id": "q106",
-      "questionNumber": 106,
-      "question": "What is a hash table's average-case time complexity for search, insert, and delete?",
-      "options": ["O(n)", "O(log n)", "O(1)", "O(n log n)"],
-      "correctAnswer": 2,
-      "explanation": "Hash tables provide O(1) average-case time complexity for search, insertion, and deletion operations due to direct index computation via the hash function.",
-      "subject": "Professional Knowledge",
-      "topic": "Data Structures",
-      "difficulty": "medium"
-    },
-    {
-      "id": "q107",
-      "questionNumber": 107,
-      "question": "In software engineering, what does 'coupling' refer to?",
-      "options": ["The degree of cohesion within a module", "The degree of interdependence between software modules", "The number of lines of code in a module", "The speed of module execution"],
-      "correctAnswer": 1,
-      "explanation": "Coupling refers to the degree of interdependence between software modules. Low coupling is desirable as it makes modules more independent and maintainable.",
-      "subject": "Professional Knowledge",
-      "topic": "Software Engineering",
-      "difficulty": "medium"
-    },
-    {
-      "id": "q108",
-      "questionNumber": 108,
-      "question": "What is the difference between a process and a thread?",
-      "options": ["A process is lighter than a thread", "Threads share the same memory space within a process; processes have separate memory spaces", "A thread is slower than a process", "There is no difference between a process and a thread"],
-      "correctAnswer": 1,
-      "explanation": "A process has its own memory space. Threads within the same process share memory and resources, making thread creation and context switching faster than process creation.",
-      "subject": "Professional Knowledge",
-      "topic": "Operating Systems",
-      "difficulty": "medium"
-    },
-    {
-      "id": "q109",
-      "questionNumber": 109,
-      "question": "Which attack sends a large volume of traffic to overwhelm a server and make it unavailable?",
-      "options": ["Man-in-the-Middle Attack", "Phishing", "Denial of Service (DoS) Attack", "SQL Injection"],
-      "correctAnswer": 2,
-      "explanation": "A Denial of Service (DoS) attack floods a server with traffic, consuming its resources and making it unable to respond to legitimate requests.",
-      "subject": "Professional Knowledge",
-      "topic": "Cyber Security",
-      "difficulty": "easy"
-    },
-    {
-      "id": "q110",
-      "questionNumber": 110,
-      "question": "In HTML, which tag is used to create a hyperlink?",
-      "options": ["<link>", "<a>", "<href>", "<url>"],
-      "correctAnswer": 1,
-      "explanation": "The <a> (anchor) tag is used to create hyperlinks in HTML. The href attribute specifies the URL: <a href='url'>Link text</a>.",
-      "subject": "Professional Knowledge",
-      "topic": "Web Technologies",
-      "difficulty": "easy"
-    },
-    {
-      "id": "q111",
-      "questionNumber": 111,
-      "question": "What does SDLC stand for in software engineering?",
-      "options": ["Software Development Life Cycle", "System Design and Logic Control", "Software Debugging and Lifecycle Control", "Structured Development and Logic Cycle"],
-      "correctAnswer": 0,
-      "explanation": "SDLC stands for Software Development Life Cycle — the process of planning, creating, testing, and deploying a software system.",
-      "subject": "Professional Knowledge",
-      "topic": "Software Engineering",
-      "difficulty": "easy"
-    },
-    {
-      "id": "q112",
-      "questionNumber": 112,
-      "question": "Which of the following is NOT a valid HTTP status code for a successful response?",
-      "options": ["200 OK", "201 Created", "404 Not Found", "204 No Content"],
-      "correctAnswer": 2,
-      "explanation": "404 Not Found is a client error status code, not a success code. 2xx codes (200, 201, 204) indicate success.",
-      "subject": "Professional Knowledge",
-      "topic": "Web Technologies",
-      "difficulty": "easy"
-    },
-    {
-      "id": "q113",
-      "questionNumber": 113,
-      "question": "In computer architecture, the fetch-decode-execute cycle describes:",
-      "options": ["How data is stored in RAM", "How the CPU processes instructions", "How files are saved to disk", "How network packets are transmitted"],
-      "correctAnswer": 1,
-      "explanation": "The fetch-decode-execute cycle describes how a CPU processes instructions: it fetches an instruction from memory, decodes it, and then executes it.",
-      "subject": "Professional Knowledge",
-      "topic": "Computer Architecture",
-      "difficulty": "easy"
-    },
-    {
-      "id": "q114",
-      "questionNumber": 114,
-      "question": "What is the purpose of a Virtual Private Network (VPN)?",
-      "options": ["To speed up internet connection", "To create a secure, encrypted connection over a public network", "To block malicious websites", "To compress internet traffic"],
-      "correctAnswer": 1,
-      "explanation": "A VPN creates an encrypted tunnel over a public network (like the internet), providing privacy and security by masking the user's IP address and encrypting data.",
-      "subject": "Professional Knowledge",
-      "topic": "Cyber Security",
-      "difficulty": "easy"
-    },
-    {
-      "id": "q115",
-      "questionNumber": 115,
-      "question": "Which graph traversal algorithm uses a queue data structure?",
-      "options": ["Depth-First Search (DFS)", "Breadth-First Search (BFS)", "Dijkstra's Algorithm", "Binary Search"],
-      "correctAnswer": 1,
-      "explanation": "Breadth-First Search (BFS) uses a queue (FIFO) to explore vertices level by level. DFS uses a stack (or recursion).",
-      "subject": "Professional Knowledge",
-      "topic": "Algorithms",
-      "difficulty": "medium"
-    },
-    {
-      "id": "q116",
-      "questionNumber": 116,
-      "question": "What does ACID stand for in database transactions?",
-      "options": ["Atomicity, Consistency, Isolation, Durability", "Atomicity, Coherence, Integration, Durability", "Accuracy, Consistency, Isolation, Deployment", "Atomicity, Consistency, Integration, Distribution"],
-      "correctAnswer": 0,
-      "explanation": "ACID stands for Atomicity, Consistency, Isolation, Durability — the four key properties that guarantee database transactions are processed reliably.",
-      "subject": "Professional Knowledge",
-      "topic": "DBMS",
-      "difficulty": "medium"
-    },
-    {
-      "id": "q117",
-      "questionNumber": 117,
-      "question": "In CSS, which property is used to change the text color of an element?",
-      "options": ["text-color", "font-color", "color", "foreground"],
-      "correctAnswer": 2,
-      "explanation": "In CSS, the 'color' property is used to set the text color of an element. e.g., color: red; or color: #FF0000;",
-      "subject": "Professional Knowledge",
-      "topic": "Web Technologies",
-      "difficulty": "easy"
-    },
-    {
-      "id": "q118",
-      "questionNumber": 118,
-      "question": "What is the function of a compiler?",
-      "options": ["To execute code line by line", "To translate high-level source code into machine code", "To manage memory allocation at runtime", "To debug programs automatically"],
-      "correctAnswer": 1,
-      "explanation": "A compiler translates an entire high-level language program (source code) into machine code (object code) before execution. An interpreter executes code line by line.",
-      "subject": "Professional Knowledge",
-      "topic": "Programming",
-      "difficulty": "easy"
-    },
-    {
-      "id": "q119",
-      "questionNumber": 119,
-      "question": "Which of the following best describes 'encapsulation' in OOP?",
-      "options": ["Inheriting properties from a parent class", "Binding data and the methods that operate on it into a single unit", "Creating multiple methods with the same name", "The ability to take multiple forms"],
-      "correctAnswer": 1,
-      "explanation": "Encapsulation is the OOP principle of binding data (attributes) and methods that operate on that data into a single unit (class), and restricting direct access to some components.",
-      "subject": "Professional Knowledge",
-      "topic": "Programming",
-      "difficulty": "easy"
-    },
-    {
-      "id": "q120",
-      "questionNumber": 120,
-      "question": "What is the purpose of an index in a database?",
-      "options": ["To store data redundantly for backup", "To speed up data retrieval operations", "To enforce uniqueness of records", "To establish relationships between tables"],
-      "correctAnswer": 1,
-      "explanation": "A database index is a data structure that improves the speed of data retrieval operations at the cost of additional storage space and write performance.",
-      "subject": "Professional Knowledge",
-      "topic": "DBMS",
-      "difficulty": "easy"
-    },
-    {
-      "id": "q121",
-      "questionNumber": 121,
-      "question": "Which of the following is a characteristic of cloud computing?",
-      "options": ["Requires on-premises hardware management", "Provides on-demand access to computing resources over the internet", "Data can only be stored locally", "Cannot scale resources dynamically"],
-      "correctAnswer": 1,
-      "explanation": "Cloud computing provides on-demand access to computing resources (servers, storage, databases, networking) over the internet with pay-as-you-go pricing and elastic scaling.",
-      "subject": "Professional Knowledge",
-      "topic": "Web Technologies",
-      "difficulty": "easy"
-    },
-    {
-      "id": "q122",
-      "questionNumber": 122,
-      "question": "What is the worst-case time complexity of Quicksort?",
-      "options": ["O(n log n)", "O(n²)", "O(log n)", "O(n)"],
-      "correctAnswer": 1,
-      "explanation": "The worst-case time complexity of Quicksort is O(n²), which occurs when the pivot is always the smallest or largest element (e.g., already sorted array with naive pivot selection).",
-      "subject": "Professional Knowledge",
-      "topic": "Algorithms",
-      "difficulty": "medium"
-    },
-    {
-      "id": "q123",
-      "questionNumber": 123,
-      "question": "Which of the following is true about IPv6 compared to IPv4?",
-      "options": ["IPv6 uses 32-bit addresses", "IPv6 has a smaller address space than IPv4", "IPv6 uses 128-bit addresses providing a larger address space", "IPv6 is incompatible with TCP/IP"],
-      "correctAnswer": 2,
-      "explanation": "IPv6 uses 128-bit addresses (vs. 32-bit in IPv4), providing 3.4 × 10³⁸ unique addresses compared to IPv4's ~4.3 billion, addressing the IPv4 address exhaustion problem.",
-      "subject": "Professional Knowledge",
-      "topic": "Computer Networks",
-      "difficulty": "medium"
-    },
-    {
-      "id": "q124",
-      "questionNumber": 124,
-      "question": "What is a stack overflow in the context of programming?",
-      "options": ["When the heap runs out of memory", "When recursive calls exceed the call stack's memory limit", "When a variable is declared outside its scope", "When an array index goes beyond its bounds"],
-      "correctAnswer": 1,
-      "explanation": "A stack overflow occurs when a program's call stack exceeds its allocated memory, typically due to infinite or deeply nested recursive function calls.",
-      "subject": "Professional Knowledge",
-      "topic": "Programming",
-      "difficulty": "medium"
-    },
-    {
-      "id": "q125",
-      "questionNumber": 125,
-      "question": "In software testing, what is a 'regression test'?",
-      "options": ["Testing a completely new feature for the first time", "Re-testing previously working functionality after code changes to ensure nothing is broken", "Testing the performance under heavy load", "Testing the UI appearance on different devices"],
-      "correctAnswer": 1,
-      "explanation": "Regression testing is performed after code changes (bug fixes, new features) to verify that previously working functionality still works correctly and no new bugs have been introduced.",
-      "subject": "Professional Knowledge",
-      "topic": "Software Engineering",
-      "difficulty": "medium"
     }
   ]
 }

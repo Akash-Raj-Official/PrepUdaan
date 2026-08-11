@@ -130,4 +130,50 @@ describe("calculateScore", () => {
     expect(result.accuracy).toBe(0);
     expect(result.attemptRate).toBe(0);
   });
+
+  it("calculates score with per-section marking schemes (e.g. IBPS SO pattern)", () => {
+    const multiSectionPaper: Paper = {
+      paperId: "ibps-test",
+      examId: "ibps-so-it-officer",
+      title: "IBPS Test Paper",
+      year: 2025,
+      language: "English",
+      isOfficial: true,
+      totalQuestions: 2,
+      totalMarks: 3,
+      durationMinutes: 40,
+      marking: { correct: 1, negative: 0.25, unattempted: 0 },
+      sections: [
+        { sectionId: "reasoning", name: "Reasoning", questionRange: [1, 1], questionCount: 1, marks: 1, marking: { correct: 1, negative: 0.25, unattempted: 0 } },
+        { sectionId: "programming", name: "Programming", questionRange: [2, 2], questionCount: 1, marks: 2, marking: { correct: 2, negative: 0.5, unattempted: 0 } }
+      ],
+      questions: [
+        { id: "q1", questionNumber: 1, question: "Reasoning Q", options: ["A", "B", "C", "D"], correctAnswer: 0, subject: "Reasoning" },
+        { id: "q2", questionNumber: 2, question: "Programming Q", options: ["A", "B", "C", "D"], correctAnswer: 1, subject: "Programming" }
+      ]
+    };
+
+    const session: TestSession = {
+      paperId: "ibps-test",
+      examId: "ibps-so-it-officer",
+      startTime: 1000,
+      submittedAt: 61000,
+      durationMs: 60000,
+      currentQuestionIndex: 1,
+      isSubmitted: true,
+      answers: {
+        q1: 3, // Wrong (-0.25)
+        q2: 1  // Correct (+2)
+      },
+      questionStatus: { q1: "ANSWERED", q2: "ANSWERED" },
+      timings: {}
+    };
+
+    const result = calculateScore(session, multiSectionPaper, mockExam);
+
+    expect(result.attempted).toBe(2);
+    expect(result.correct).toBe(1);
+    expect(result.incorrect).toBe(1);
+    expect(result.score).toBe(1.75); // +2 - 0.25 = 1.75
+  });
 });

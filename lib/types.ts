@@ -21,6 +21,8 @@ export interface Section {
   questionIds: string[]; // ordered list of question IDs in this section
   maxQuestions: number;
   maxMarks: number;
+  durationMinutes?: number;
+  marking?: MarkingScheme;
 }
 
 export interface MarkingScheme {
@@ -77,6 +79,8 @@ export interface PaperSection {
   questionCount: number;
   marks: number;
   questionRange: [number, number]; // 1-indexed [start, end] inclusive
+  durationMinutes?: number;
+  marking?: MarkingScheme;
 }
 
 // ─── Test Session (runtime state) ─────────────────────────────────────────────

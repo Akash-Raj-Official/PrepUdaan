@@ -26,9 +26,18 @@ export function calculateScore(
     const isCorrect = isAttempted && userAnswer === q.correctAnswer;
     const isIncorrect = isAttempted && !isCorrect;
 
+    const sec = paper.sections.find(
+      (s) =>
+        (s.questionRange &&
+          q.questionNumber >= s.questionRange[0] &&
+          q.questionNumber <= s.questionRange[1]) ||
+        s.sectionId === q.sectionId
+    );
+    const qMarking = sec?.marking ?? marking;
+
     let marksAwarded = 0;
-    if (isCorrect) marksAwarded = marking.correct;
-    else if (isIncorrect) marksAwarded = -marking.negative;
+    if (isCorrect) marksAwarded = qMarking.correct;
+    else if (isIncorrect) marksAwarded = -qMarking.negative;
 
     const timing = timings[q.id];
     const timeSpentMs = timing?.timeSpentMs ?? 0;
@@ -211,9 +220,12 @@ function computeRatings(
   // Target avg time: full duration / total questions (in ms)
   const targetAvgMs = (durationMinutes * 60 * 1000) / totalQuestions;
 
-  // Technical Knowledge — proxy: accuracy on Professional Knowledge questions
+  // Technical Knowledge — proxy: accuracy on Professional Knowledge / Programming questions
   const pkQuestions = questionResults.filter(
-    (r) => r.subject === "Professional Knowledge"
+    (r) =>
+      r.subject === "Professional Knowledge" ||
+      r.subject === "Professional Knowledge (IT)" ||
+      r.subject === "Programming"
   );
   const pkAccuracy =
     pkQuestions.length > 0 && pkQuestions.some((r) => r.isAttempted)

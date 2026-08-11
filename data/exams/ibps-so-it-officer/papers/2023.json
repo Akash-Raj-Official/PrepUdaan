@@ -5,8 +5,8 @@
   "year": 2023,
   "shift": "Shift 1",
   "language": "English",
-  "durationMinutes": 120,
-  "totalQuestions": 125,
+  "durationMinutes": 80,
+  "totalQuestions": 100,
   "totalMarks": 125,
   "marking": {
     "correct": 1,
@@ -14,1012 +14,1672 @@
     "unattempted": 0
   },
   "sections": [
-    { "sectionId": "reasoning", "name": "Reasoning", "questionCount": 25, "marks": 25, "questionRange": [1, 25] },
-    { "sectionId": "quantitative-aptitude", "name": "Quantitative Aptitude", "questionCount": 25, "marks": 25, "questionRange": [26, 50] },
-    { "sectionId": "english", "name": "English Language", "questionCount": 25, "marks": 25, "questionRange": [51, 75] },
-    { "sectionId": "professional-knowledge", "name": "Professional Knowledge (IT)", "questionCount": 50, "marks": 50, "questionRange": [76, 125] }
+    {
+      "sectionId": "reasoning",
+      "name": "Reasoning",
+      "questionCount": 25,
+      "marks": 25,
+      "questionRange": [
+        1,
+        25
+      ],
+      "durationMinutes": 20,
+      "marking": {
+        "correct": 1,
+        "negative": 0.25,
+        "unattempted": 0
+      }
+    },
+    {
+      "sectionId": "quantitative-aptitude",
+      "name": "Quantitative Aptitude",
+      "questionCount": 25,
+      "marks": 25,
+      "questionRange": [
+        26,
+        50
+      ],
+      "durationMinutes": 20,
+      "marking": {
+        "correct": 1,
+        "negative": 0.25,
+        "unattempted": 0
+      }
+    },
+    {
+      "sectionId": "english",
+      "name": "English Language",
+      "questionCount": 25,
+      "marks": 25,
+      "questionRange": [
+        51,
+        75
+      ],
+      "durationMinutes": 20,
+      "marking": {
+        "correct": 1,
+        "negative": 0.25,
+        "unattempted": 0
+      }
+    },
+    {
+      "sectionId": "programming",
+      "name": "Programming",
+      "questionCount": 25,
+      "marks": 50,
+      "questionRange": [
+        76,
+        100
+      ],
+      "durationMinutes": 20,
+      "marking": {
+        "correct": 2,
+        "negative": 0.5,
+        "unattempted": 0
+      }
+    }
   ],
   "isOfficial": true,
   "questions": [
     {
-      "id": "23q001", "questionNumber": 1,
+      "id": "23q001",
+      "questionNumber": 1,
       "question": "In a row of 40 students, Ramesh is 11th from the left. Suresh is 14th from the right. How many students are between them?",
-      "options": ["14", "15", "16", "17"],
+      "options": [
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
       "correctAnswer": 1,
       "explanation": "Ramesh is at position 11. Suresh is at position 40-14+1=27. Students between them = 27-11-1 = 15.",
-      "subject": "Reasoning", "topic": "Ranking", "difficulty": "medium"
+      "subject": "Reasoning",
+      "topic": "Ranking",
+      "difficulty": "medium"
     },
     {
-      "id": "23q002", "questionNumber": 2,
+      "id": "23q002",
+      "questionNumber": 2,
       "question": "Six friends P, Q, R, S, T and U sit around a circular table facing the centre. P sits opposite R. Q is to the immediate left of P. S is to the immediate right of R. Who sits opposite Q?",
-      "options": ["S", "T", "U", "R"],
+      "options": [
+        "S",
+        "T",
+        "U",
+        "R"
+      ],
       "correctAnswer": 1,
       "explanation": "Placing P and R opposite each other, Q is left of P, S is right of R. Working around: P-Q-?-R-S-? The person opposite Q (across the circle) is T.",
-      "subject": "Reasoning", "topic": "Circular Arrangement", "difficulty": "hard"
+      "subject": "Reasoning",
+      "topic": "Circular Arrangement",
+      "difficulty": "hard"
     },
     {
-      "id": "23q003", "questionNumber": 3,
+      "id": "23q003",
+      "questionNumber": 3,
       "question": "If MAGIC is coded as 13-1-7-9-3, how is LOGIC coded?",
-      "options": ["12-15-7-9-3", "11-14-7-8-2", "12-14-6-8-2", "12-15-9-7-3"],
+      "options": [
+        "12-15-7-9-3",
+        "11-14-7-8-2",
+        "12-14-6-8-2",
+        "12-15-9-7-3"
+      ],
       "correctAnswer": 0,
       "explanation": "Each letter is replaced by its position in the alphabet: M=13, A=1, G=7, I=9, C=3. So L=12, O=15, G=7, I=9, C=3 → 12-15-7-9-3.",
-      "subject": "Reasoning", "topic": "Coding-Decoding", "difficulty": "easy"
+      "subject": "Reasoning",
+      "topic": "Coding-Decoding",
+      "difficulty": "easy"
     },
     {
-      "id": "23q004", "questionNumber": 4,
+      "id": "23q004",
+      "questionNumber": 4,
       "question": "Statement: All pens are pencils. Some pencils are erasers. Conclusion I: Some pens are erasers. Conclusion II: All erasers are pencils. Which follows?",
-      "options": ["Only I follows", "Only II follows", "Both follow", "Neither follows"],
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Both follow",
+        "Neither follows"
+      ],
       "correctAnswer": 3,
       "explanation": "From 'All pens are pencils' and 'Some pencils are erasers', we cannot conclusively say some pens are erasers (the pencils that are erasers may not be pens). Neither conclusion necessarily follows.",
-      "subject": "Reasoning", "topic": "Syllogisms", "difficulty": "hard"
+      "subject": "Reasoning",
+      "topic": "Syllogisms",
+      "difficulty": "hard"
     },
     {
-      "id": "23q005", "questionNumber": 5,
+      "id": "23q005",
+      "questionNumber": 5,
       "question": "Find the next term: 3, 9, 27, 81, ?",
-      "options": ["162", "243", "180", "270"],
+      "options": [
+        "162",
+        "243",
+        "180",
+        "270"
+      ],
       "correctAnswer": 1,
       "explanation": "Each term is multiplied by 3: 3×3=9, 9×3=27, 27×3=81, 81×3=243.",
-      "subject": "Reasoning", "topic": "Number Series", "difficulty": "easy"
+      "subject": "Reasoning",
+      "topic": "Number Series",
+      "difficulty": "easy"
     },
     {
-      "id": "23q006", "questionNumber": 6,
+      "id": "23q006",
+      "questionNumber": 6,
       "question": "Rohit walks 4 km North, then turns East and walks 3 km. He then turns South and walks 4 km. How far and in which direction is he from his starting point?",
-      "options": ["3 km East", "5 km East", "3 km West", "7 km East"],
+      "options": [
+        "3 km East",
+        "5 km East",
+        "3 km West",
+        "7 km East"
+      ],
       "correctAnswer": 0,
       "explanation": "4N + 3E + 4S = net 0 North/South and 3 km East. He is 3 km East of the starting point.",
-      "subject": "Reasoning", "topic": "Direction Sense", "difficulty": "easy"
+      "subject": "Reasoning",
+      "topic": "Direction Sense",
+      "difficulty": "easy"
     },
     {
-      "id": "23q007", "questionNumber": 7,
+      "id": "23q007",
+      "questionNumber": 7,
       "question": "Introducing a boy, a girl says, 'He is the son of the daughter of the father of my uncle.' How is the boy related to the girl?",
-      "options": ["Cousin", "Brother", "Son", "Uncle"],
+      "options": [
+        "Cousin",
+        "Brother",
+        "Son",
+        "Uncle"
+      ],
       "correctAnswer": 0,
       "explanation": "Father of her uncle = her grandfather. Daughter of her grandfather = her mother or aunt. Son of her aunt = her cousin.",
-      "subject": "Reasoning", "topic": "Blood Relations", "difficulty": "medium"
+      "subject": "Reasoning",
+      "topic": "Blood Relations",
+      "difficulty": "medium"
     },
     {
-      "id": "23q008", "questionNumber": 8,
+      "id": "23q008",
+      "questionNumber": 8,
       "question": "Find the odd one out: 8, 27, 64, 100, 125",
-      "options": ["8", "27", "100", "125"],
+      "options": [
+        "8",
+        "27",
+        "100",
+        "125"
+      ],
       "correctAnswer": 2,
       "explanation": "8=2³, 27=3³, 64=4³, 125=5³ are all perfect cubes. 100 is not a perfect cube (it's 10²).",
-      "subject": "Reasoning", "topic": "Odd One Out", "difficulty": "easy"
+      "subject": "Reasoning",
+      "topic": "Odd One Out",
+      "difficulty": "easy"
     },
     {
-      "id": "23q009", "questionNumber": 9,
+      "id": "23q009",
+      "questionNumber": 9,
       "question": "In a certain code, '256' means 'you are good', '637' means 'we are bad', and '358' means 'good and bad'. What is the code for 'and'?",
-      "options": ["5", "3", "8", "Cannot be determined"],
+      "options": [
+        "5",
+        "3",
+        "8",
+        "Cannot be determined"
+      ],
       "correctAnswer": 2,
       "explanation": "'Good' appears in 256 and 358, so good=5. 'Bad' appears in 637 and 358, so bad=3. 'Are' appears in 256 and 637, so are=6. Remaining in 358: 8=and.",
-      "subject": "Reasoning", "topic": "Coding-Decoding", "difficulty": "hard"
+      "subject": "Reasoning",
+      "topic": "Coding-Decoding",
+      "difficulty": "hard"
     },
     {
-      "id": "23q010", "questionNumber": 10,
+      "id": "23q010",
+      "questionNumber": 10,
       "question": "How many meaningful English words can be formed using letters A, E, R, T each once only?",
-      "options": ["1", "2", "3", "4"],
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
       "correctAnswer": 2,
       "explanation": "Words: RATE, TEAR, TARE, RATE, RETA... Valid common words: RATE, TEAR, TARE, ARTE, TREA — at least 3 common ones: RATE, TEAR, TARE.",
-      "subject": "Reasoning", "topic": "Word Formation", "difficulty": "medium"
+      "subject": "Reasoning",
+      "topic": "Word Formation",
+      "difficulty": "medium"
     },
     {
-      "id": "23q011", "questionNumber": 11,
+      "id": "23q011",
+      "questionNumber": 11,
       "question": "In a class test, Anita scored more than Beena, Beena scored more than Chitra, Deepa scored more than Anita, Ekta scored less than Beena. Who scored the highest?",
-      "options": ["Anita", "Beena", "Deepa", "Ekta"],
+      "options": [
+        "Anita",
+        "Beena",
+        "Deepa",
+        "Ekta"
+      ],
       "correctAnswer": 2,
       "explanation": "Order: Deepa > Anita > Beena > Chitra, and Beena > Ekta. Deepa scored the highest.",
-      "subject": "Reasoning", "topic": "Comparison", "difficulty": "easy"
+      "subject": "Reasoning",
+      "topic": "Comparison",
+      "difficulty": "easy"
     },
     {
-      "id": "23q012", "questionNumber": 12,
+      "id": "23q012",
+      "questionNumber": 12,
       "question": "If × means +, + means ÷, − means × and ÷ means −, then: 8 × 4 − 3 + 2 ÷ 1 = ?",
-      "options": ["18", "19", "17", "20"],
+      "options": [
+        "18",
+        "19",
+        "17",
+        "20"
+      ],
       "correctAnswer": 2,
       "explanation": "Substituting: 8+4×3÷2-1 = 8+12÷2-1 = 8+6-1 = 13. Let me recalculate properly: 8×4−3+2÷1 becomes 8+4×3÷2−1 = 8+12/2-1 = 8+6-1=13. Hmm. Actually: 8+4×3÷2-1. Following BODMAS: 4×3=12, 12÷2=6, then 8+6-1=13. The closest option is 13, but checking option C=17: Let me recheck with correct substitution: 8+(4×3)÷2-1 = 8+12÷2-1=8+6-1=13. Answer should be 13. Best option = 17 is wrong. Let me recheck — 8×4−3+2÷1 → 8+4×3÷2-1 = 8+(4×3÷2)-1 = 8+6-1=13. Since 13 isn't an option, the intended answer working is: 8+4×3÷2-1 where × is done first: 4×3=12, ÷2=6, 8+6=14-1=13. This suggests option C (17) may use different precedence. With left-to-right: (((8+4)×3)÷2)-1=(12×3÷2)-1=18-1=17.",
-      "subject": "Reasoning", "topic": "Mathematical Operations", "difficulty": "hard"
+      "subject": "Reasoning",
+      "topic": "Mathematical Operations",
+      "difficulty": "hard"
     },
     {
-      "id": "23q013", "questionNumber": 13,
+      "id": "23q013",
+      "questionNumber": 13,
       "question": "What comes next: AZ, BY, CX, DW, ?",
-      "options": ["EV", "FU", "EU", "EW"],
+      "options": [
+        "EV",
+        "FU",
+        "EU",
+        "EW"
+      ],
       "correctAnswer": 0,
       "explanation": "First letters go forward: A, B, C, D, E. Second letters go backward: Z, Y, X, W, V. So next is EV.",
-      "subject": "Reasoning", "topic": "Series", "difficulty": "easy"
+      "subject": "Reasoning",
+      "topic": "Series",
+      "difficulty": "easy"
     },
     {
-      "id": "23q014", "questionNumber": 14,
+      "id": "23q014",
+      "questionNumber": 14,
       "question": "A mirror is placed to the right of the word 'SPARK'. What is its mirror image?",
-      "options": ["KRAPS", "ΚRAPS", "SPARK reversed", "ƧPARK"],
+      "options": [
+        "KRAPS",
+        "ΚRAPS",
+        "SPARK reversed",
+        "ƧPARK"
+      ],
       "correctAnswer": 3,
       "explanation": "In a mirror placed to the right, the image of SPARK would appear with each letter individually mirrored but order unchanged. The image appears as ƧPARK (S reversed).",
-      "subject": "Reasoning", "topic": "Mirror Images", "difficulty": "medium"
+      "subject": "Reasoning",
+      "topic": "Mirror Images",
+      "difficulty": "medium"
     },
     {
-      "id": "23q015", "questionNumber": 15,
+      "id": "23q015",
+      "questionNumber": 15,
       "question": "Two statements are given followed by two conclusions. Statements: All dogs are animals. No animal is a stone. Conclusion I: No dog is a stone. Conclusion II: No stone is an animal.",
-      "options": ["Only I follows", "Only II follows", "Both follow", "Neither follows"],
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Both follow",
+        "Neither follows"
+      ],
       "correctAnswer": 2,
       "explanation": "From 'All dogs are animals' and 'No animal is a stone': No dog is a stone (I follows). Since no animal is a stone, by conversion, no stone is an animal (II also follows).",
-      "subject": "Reasoning", "topic": "Syllogisms", "difficulty": "medium"
+      "subject": "Reasoning",
+      "topic": "Syllogisms",
+      "difficulty": "medium"
     },
     {
-      "id": "23q016", "questionNumber": 16,
+      "id": "23q016",
+      "questionNumber": 16,
       "question": "DEPARTURE is related to ARRIVAL as INFLATION is related to:",
-      "options": ["Prices", "Economy", "Deflation", "Money"],
+      "options": [
+        "Prices",
+        "Economy",
+        "Deflation",
+        "Money"
+      ],
       "correctAnswer": 2,
       "explanation": "DEPARTURE and ARRIVAL are opposites. INFLATION's opposite is DEFLATION.",
-      "subject": "Reasoning", "topic": "Analogy", "difficulty": "easy"
+      "subject": "Reasoning",
+      "topic": "Analogy",
+      "difficulty": "easy"
     },
     {
-      "id": "23q017", "questionNumber": 17,
+      "id": "23q017",
+      "questionNumber": 17,
       "question": "Arrange in meaningful order: 1) Absorption 2) Digestion 3) Swallowing 4) Chewing 5) Egestion",
-      "options": ["4,3,2,1,5", "3,4,2,1,5", "4,2,3,1,5", "4,3,1,2,5"],
+      "options": [
+        "4,3,2,1,5",
+        "3,4,2,1,5",
+        "4,2,3,1,5",
+        "4,3,1,2,5"
+      ],
       "correctAnswer": 0,
       "explanation": "The digestive process: Chewing(4) → Swallowing(3) → Digestion(2) → Absorption(1) → Egestion(5).",
-      "subject": "Reasoning", "topic": "Logical Sequence", "difficulty": "easy"
+      "subject": "Reasoning",
+      "topic": "Logical Sequence",
+      "difficulty": "easy"
     },
     {
-      "id": "23q018", "questionNumber": 18,
+      "id": "23q018",
+      "questionNumber": 18,
       "question": "In how many ways can the letters of the word 'BANK' be arranged?",
-      "options": ["12", "24", "48", "6"],
+      "options": [
+        "12",
+        "24",
+        "48",
+        "6"
+      ],
       "correctAnswer": 1,
       "explanation": "BANK has 4 distinct letters. Number of arrangements = 4! = 4×3×2×1 = 24.",
-      "subject": "Reasoning", "topic": "Permutation", "difficulty": "easy"
+      "subject": "Reasoning",
+      "topic": "Permutation",
+      "difficulty": "easy"
     },
     {
-      "id": "23q019", "questionNumber": 19,
+      "id": "23q019",
+      "questionNumber": 19,
       "question": "Find the missing number in the series: 2, 5, 10, 17, 26, ?",
-      "options": ["35", "37", "36", "38"],
+      "options": [
+        "35",
+        "37",
+        "36",
+        "38"
+      ],
       "correctAnswer": 1,
       "explanation": "Differences: 3, 5, 7, 9, 11. Next difference is 11, so 26+11=37.",
-      "subject": "Reasoning", "topic": "Number Series", "difficulty": "medium"
+      "subject": "Reasoning",
+      "topic": "Number Series",
+      "difficulty": "medium"
     },
     {
-      "id": "23q020", "questionNumber": 20,
+      "id": "23q020",
+      "questionNumber": 20,
       "question": "If all Q are P, and some P are R, then:",
-      "options": ["All Q are R", "Some Q are R", "No Q is R", "Either all or none of Q are R"],
+      "options": [
+        "All Q are R",
+        "Some Q are R",
+        "No Q is R",
+        "Either all or none of Q are R"
+      ],
       "correctAnswer": 3,
       "explanation": "All Q are P, and some P are R. The Q's and R's may or may not overlap — we cannot determine definitively. 'Either all or none' best captures the uncertainty.",
-      "subject": "Reasoning", "topic": "Syllogisms", "difficulty": "hard"
+      "subject": "Reasoning",
+      "topic": "Syllogisms",
+      "difficulty": "hard"
     },
     {
-      "id": "23q021", "questionNumber": 21,
+      "id": "23q021",
+      "questionNumber": 21,
       "question": "Count the number of triangles in a figure that has 4 straight lines all passing through a common point.",
-      "options": ["8", "6", "4", "12"],
+      "options": [
+        "8",
+        "6",
+        "4",
+        "12"
+      ],
       "correctAnswer": 0,
       "explanation": "4 lines through a common point create 8 regions/sectors. The number of triangles = 2×(number of regions between adjacent lines combined in groups) = 4C2 × 2 = 8. With 4 lines = 8 sectors, each adjacent pair + opposite makes triangles. The answer is 8.",
-      "subject": "Reasoning", "topic": "Figure Counting", "difficulty": "hard"
+      "subject": "Reasoning",
+      "topic": "Figure Counting",
+      "difficulty": "hard"
     },
     {
-      "id": "23q022", "questionNumber": 22,
+      "id": "23q022",
+      "questionNumber": 22,
       "question": "In a certain language, 'PENCIL' is coded as 'OFMDLK'. How is 'RUBBER' coded?",
-      "options": ["QTSADS", "QTAADS", "QTAAER", "STBBFS"],
+      "options": [
+        "QTSADS",
+        "QTAADS",
+        "QTAAER",
+        "STBBFS"
+      ],
       "correctAnswer": 0,
       "explanation": "Each letter is replaced by the previous letter in the alphabet: P→O, E→D (wait: P→O, E→D? No. P→O(−1), E→D? But E→D is −1 and N→M is −1, C→B is −1, I→H is −1, L→K is −1. So each letter −1: R→Q, U→T, B→A, B→A, E→D, R→S — wait R+1=S. Let me re-examine: PENCIL→OFMDLK: P→O(−1), E→F(+1)? No: P=16,O=15; E=5,F=6; N=14,M=13; C=3,D=4; I=9,L=12? No. P→O(−1), E→F? That's +1. Hmm, alternating: P→O(−1), E→F(+1), N→M(−1), C→D(+1), I→H(−1), L→K(−1)? That's inconsistent. Let me try P→O(−1),E→D(−1)... PENCIL coded OFMDLK: P=16→O=15, E=5→F=6? No F≠M. Actually E=5, M=13. That's +8. P→O, E→M: these don't follow a simple pattern. Let me just accept option 0 is correct by elimination.",
-      "subject": "Reasoning", "topic": "Coding-Decoding", "difficulty": "hard"
+      "subject": "Reasoning",
+      "topic": "Coding-Decoding",
+      "difficulty": "hard"
     },
     {
-      "id": "23q023", "questionNumber": 23,
+      "id": "23q023",
+      "questionNumber": 23,
       "question": "Sita is taller than Mita. Gita is shorter than Sita but taller than Mita. Rita is taller than Gita but shorter than Sita. Who is the shortest?",
-      "options": ["Mita", "Gita", "Rita", "Sita"],
+      "options": [
+        "Mita",
+        "Gita",
+        "Rita",
+        "Sita"
+      ],
       "correctAnswer": 0,
       "explanation": "Order: Sita > Rita > Gita > Mita. Mita is the shortest.",
-      "subject": "Reasoning", "topic": "Comparison", "difficulty": "easy"
+      "subject": "Reasoning",
+      "topic": "Comparison",
+      "difficulty": "easy"
     },
     {
-      "id": "23q024", "questionNumber": 24,
+      "id": "23q024",
+      "questionNumber": 24,
       "question": "A dice has faces 1,2,3,4,5,6. When 3 is on top, 5 is at the bottom. When 1 is on top, what is at the bottom?",
-      "options": ["2", "6", "4", "5"],
+      "options": [
+        "2",
+        "6",
+        "4",
+        "5"
+      ],
       "correctAnswer": 1,
       "explanation": "On a standard die, opposite faces sum to 7. 3+4=7, 5+2=7, 1+6=7. So when 1 is on top, 6 is at the bottom.",
-      "subject": "Reasoning", "topic": "Dice", "difficulty": "easy"
+      "subject": "Reasoning",
+      "topic": "Dice",
+      "difficulty": "easy"
     },
     {
-      "id": "23q025", "questionNumber": 25,
+      "id": "23q025",
+      "questionNumber": 25,
       "question": "If every alternate letter of MATHEMATICS starting from M is replaced by the next letter in the alphabet, what is the new word?",
-      "options": ["NBTIFNBUJDT", "NATHEMAGICS", "NATHEMAGICT", "MATHEMATICS"],
+      "options": [
+        "NBTIFNBUJDT",
+        "NATHEMAGICS",
+        "NATHEMAGICT",
+        "MATHEMATICS"
+      ],
       "correctAnswer": 1,
       "explanation": "Alternate letters (M,T,E,A,I,S — positions 1,3,5,7,9,11) replaced by next letter: M→N, T→U? Wait. Positions 1,3,5,7,9,11 of MATHEMATICS: M,T,E,A,I,C → N,U,F,B,J,D. With unchanged: A,H,M,T,S. This gives NATHEMAJICS... approximate: NATHEMAGICS.",
-      "subject": "Reasoning", "topic": "Letter Substitution", "difficulty": "hard"
+      "subject": "Reasoning",
+      "topic": "Letter Substitution",
+      "difficulty": "hard"
     },
     {
-      "id": "23q026", "questionNumber": 26,
+      "id": "23q026",
+      "questionNumber": 26,
       "question": "A number is increased by 20% and then decreased by 20%. The net change is:",
-      "options": ["0%", "4% increase", "4% decrease", "2% decrease"],
+      "options": [
+        "0%",
+        "4% increase",
+        "4% decrease",
+        "2% decrease"
+      ],
       "correctAnswer": 2,
       "explanation": "Let number = 100. After 20% increase = 120. After 20% decrease = 120 × 0.8 = 96. Net change = −4%. So 4% decrease.",
-      "subject": "Quantitative Aptitude", "topic": "Percentage", "difficulty": "medium"
+      "subject": "Quantitative Aptitude",
+      "topic": "Percentage",
+      "difficulty": "medium"
     },
     {
-      "id": "23q027", "questionNumber": 27,
+      "id": "23q027",
+      "questionNumber": 27,
       "question": "The present age of a father is 4 times that of his son. After 6 years, the father's age will be 3 times the son's age. What is the son's present age?",
-      "options": ["10 years", "12 years", "14 years", "16 years"],
+      "options": [
+        "10 years",
+        "12 years",
+        "14 years",
+        "16 years"
+      ],
       "correctAnswer": 1,
       "explanation": "Let son = x, father = 4x. After 6 years: 4x+6 = 3(x+6). 4x+6 = 3x+18. x=12. Son's present age = 12.",
-      "subject": "Quantitative Aptitude", "topic": "Ages", "difficulty": "medium"
+      "subject": "Quantitative Aptitude",
+      "topic": "Ages",
+      "difficulty": "medium"
     },
     {
-      "id": "23q028", "questionNumber": 28,
+      "id": "23q028",
+      "questionNumber": 28,
       "question": "Rs. 5000 is lent at 10% per annum compound interest for 2 years. What is the compound interest?",
-      "options": ["Rs. 1000", "Rs. 1050", "Rs. 1100", "Rs. 950"],
+      "options": [
+        "Rs. 1000",
+        "Rs. 1050",
+        "Rs. 1100",
+        "Rs. 950"
+      ],
       "correctAnswer": 1,
       "explanation": "A = 5000(1.1)² = 5000×1.21 = 6050. CI = 6050−5000 = Rs. 1050.",
-      "subject": "Quantitative Aptitude", "topic": "Compound Interest", "difficulty": "medium"
+      "subject": "Quantitative Aptitude",
+      "topic": "Compound Interest",
+      "difficulty": "medium"
     },
     {
-      "id": "23q029", "questionNumber": 29,
+      "id": "23q029",
+      "questionNumber": 29,
       "question": "A man covers a distance of 180 km at 60 km/h and the next 120 km at 40 km/h. What is his average speed for the whole journey?",
-      "options": ["48 km/h", "50 km/h", "52 km/h", "54 km/h"],
+      "options": [
+        "48 km/h",
+        "50 km/h",
+        "52 km/h",
+        "54 km/h"
+      ],
       "correctAnswer": 1,
       "explanation": "Total distance = 300 km. Total time = 180/60 + 120/40 = 3 + 3 = 6 hours. Average speed = 300/6 = 50 km/h.",
-      "subject": "Quantitative Aptitude", "topic": "Speed and Distance", "difficulty": "medium"
+      "subject": "Quantitative Aptitude",
+      "topic": "Speed and Distance",
+      "difficulty": "medium"
     },
     {
-      "id": "23q030", "questionNumber": 30,
+      "id": "23q030",
+      "questionNumber": 30,
       "question": "What is 15% of 30% of 800?",
-      "options": ["36", "30", "40", "48"],
+      "options": [
+        "36",
+        "30",
+        "40",
+        "48"
+      ],
       "correctAnswer": 0,
       "explanation": "30% of 800 = 240. 15% of 240 = 36.",
-      "subject": "Quantitative Aptitude", "topic": "Percentage", "difficulty": "easy"
+      "subject": "Quantitative Aptitude",
+      "topic": "Percentage",
+      "difficulty": "easy"
     },
     {
-      "id": "23q031", "questionNumber": 31,
+      "id": "23q031",
+      "questionNumber": 31,
       "question": "The cost price of 12 articles equals the selling price of 10 articles. Find the profit percentage.",
-      "options": ["15%", "20%", "25%", "10%"],
+      "options": [
+        "15%",
+        "20%",
+        "25%",
+        "10%"
+      ],
       "correctAnswer": 1,
       "explanation": "Let CP of each = 1. CP of 12 = SP of 10 = 12. SP of 1 article = 12/10 = 1.2. Profit% = (0.2/1)×100 = 20%.",
-      "subject": "Quantitative Aptitude", "topic": "Profit and Loss", "difficulty": "medium"
+      "subject": "Quantitative Aptitude",
+      "topic": "Profit and Loss",
+      "difficulty": "medium"
     },
     {
-      "id": "23q032", "questionNumber": 32,
+      "id": "23q032",
+      "questionNumber": 32,
       "question": "The radius of a circle is doubled. By what percentage does the area increase?",
-      "options": ["100%", "200%", "300%", "400%"],
+      "options": [
+        "100%",
+        "200%",
+        "300%",
+        "400%"
+      ],
       "correctAnswer": 2,
       "explanation": "Area = πr². New area = π(2r)² = 4πr². Increase = 3πr². Percentage increase = (3πr²/πr²)×100 = 300%.",
-      "subject": "Quantitative Aptitude", "topic": "Mensuration", "difficulty": "medium"
+      "subject": "Quantitative Aptitude",
+      "topic": "Mensuration",
+      "difficulty": "medium"
     },
     {
-      "id": "23q033", "questionNumber": 33,
+      "id": "23q033",
+      "questionNumber": 33,
       "question": "A is 40% more efficient than B. A can complete a job in 21 days. How many days will B take to complete the job alone?",
-      "options": ["28 days", "29.4 days", "30 days", "35 days"],
+      "options": [
+        "28 days",
+        "29.4 days",
+        "30 days",
+        "35 days"
+      ],
       "correctAnswer": 1,
       "explanation": "A is 40% more efficient. If B's efficiency = 1, A's = 1.4. B's time = A's time × 1.4 = 21×1.4 = 29.4 days.",
-      "subject": "Quantitative Aptitude", "topic": "Work and Time", "difficulty": "hard"
+      "subject": "Quantitative Aptitude",
+      "topic": "Work and Time",
+      "difficulty": "hard"
     },
     {
-      "id": "23q034", "questionNumber": 34,
+      "id": "23q034",
+      "questionNumber": 34,
       "question": "The sum of three consecutive odd numbers is 57. What is the largest number?",
-      "options": ["17", "19", "21", "23"],
+      "options": [
+        "17",
+        "19",
+        "21",
+        "23"
+      ],
       "correctAnswer": 2,
       "explanation": "Let numbers = n-2, n, n+2. Sum = 3n = 57. n=19. Largest = 21.",
-      "subject": "Quantitative Aptitude", "topic": "Number System", "difficulty": "easy"
+      "subject": "Quantitative Aptitude",
+      "topic": "Number System",
+      "difficulty": "easy"
     },
     {
-      "id": "23q035", "questionNumber": 35,
+      "id": "23q035",
+      "questionNumber": 35,
       "question": "A bag contains 3 red, 4 blue, and 5 green balls. One ball is drawn at random. What is the probability that it is not green?",
-      "options": ["5/12", "7/12", "1/2", "2/3"],
+      "options": [
+        "5/12",
+        "7/12",
+        "1/2",
+        "2/3"
+      ],
       "correctAnswer": 1,
       "explanation": "Total = 12. Not green = 3+4 = 7. Probability = 7/12.",
-      "subject": "Quantitative Aptitude", "topic": "Probability", "difficulty": "easy"
+      "subject": "Quantitative Aptitude",
+      "topic": "Probability",
+      "difficulty": "easy"
     },
     {
-      "id": "23q036", "questionNumber": 36,
+      "id": "23q036",
+      "questionNumber": 36,
       "question": "HCF of 36, 84, and 120 is:",
-      "options": ["6", "12", "18", "24"],
+      "options": [
+        "6",
+        "12",
+        "18",
+        "24"
+      ],
       "correctAnswer": 1,
       "explanation": "36=2²×3², 84=2²×3×7, 120=2³×3×5. HCF = 2²×3 = 12.",
-      "subject": "Quantitative Aptitude", "topic": "LCM and HCF", "difficulty": "medium"
+      "subject": "Quantitative Aptitude",
+      "topic": "LCM and HCF",
+      "difficulty": "medium"
     },
     {
-      "id": "23q037", "questionNumber": 37,
+      "id": "23q037",
+      "questionNumber": 37,
       "question": "If x + 1/x = 3, find x² + 1/x².",
-      "options": ["7", "9", "11", "6"],
+      "options": [
+        "7",
+        "9",
+        "11",
+        "6"
+      ],
       "correctAnswer": 0,
       "explanation": "(x + 1/x)² = x² + 2 + 1/x² = 9. Therefore x² + 1/x² = 9 − 2 = 7.",
-      "subject": "Quantitative Aptitude", "topic": "Algebra", "difficulty": "medium"
+      "subject": "Quantitative Aptitude",
+      "topic": "Algebra",
+      "difficulty": "medium"
     },
     {
-      "id": "23q038", "questionNumber": 38,
+      "id": "23q038",
+      "questionNumber": 38,
       "question": "The marked price of an article is Rs. 800. It is sold at two successive discounts of 10% and 5%. Find the selling price.",
-      "options": ["Rs. 684", "Rs. 700", "Rs. 680", "Rs. 720"],
+      "options": [
+        "Rs. 684",
+        "Rs. 700",
+        "Rs. 680",
+        "Rs. 720"
+      ],
       "correctAnswer": 0,
       "explanation": "After 10% discount: 800×0.9 = 720. After 5% discount: 720×0.95 = 684.",
-      "subject": "Quantitative Aptitude", "topic": "Discount", "difficulty": "medium"
+      "subject": "Quantitative Aptitude",
+      "topic": "Discount",
+      "difficulty": "medium"
     },
     {
-      "id": "23q039", "questionNumber": 39,
+      "id": "23q039",
+      "questionNumber": 39,
       "question": "A cistern is filled by pipe A in 4 hours and emptied by pipe B in 6 hours. If both are opened simultaneously, when will the cistern be full?",
-      "options": ["10 hours", "12 hours", "8 hours", "16 hours"],
+      "options": [
+        "10 hours",
+        "12 hours",
+        "8 hours",
+        "16 hours"
+      ],
       "correctAnswer": 1,
       "explanation": "Net fill rate = 1/4 − 1/6 = 3/12 − 2/12 = 1/12 per hour. Time to fill = 12 hours.",
-      "subject": "Quantitative Aptitude", "topic": "Pipes and Cisterns", "difficulty": "medium"
+      "subject": "Quantitative Aptitude",
+      "topic": "Pipes and Cisterns",
+      "difficulty": "medium"
     },
     {
-      "id": "23q040", "questionNumber": 40,
+      "id": "23q040",
+      "questionNumber": 40,
       "question": "A person deposits Rs. 12,000 in a bank at 8% per annum simple interest. After how many years will he get Rs. 4,800 as interest?",
-      "options": ["4", "5", "6", "3"],
+      "options": [
+        "4",
+        "5",
+        "6",
+        "3"
+      ],
       "correctAnswer": 1,
       "explanation": "SI = PRT/100. 4800 = 12000×8×T/100. T = 4800×100/(12000×8) = 480000/96000 = 5 years.",
-      "subject": "Quantitative Aptitude", "topic": "Simple Interest", "difficulty": "easy"
+      "subject": "Quantitative Aptitude",
+      "topic": "Simple Interest",
+      "difficulty": "easy"
     },
     {
-      "id": "23q041", "questionNumber": 41,
+      "id": "23q041",
+      "questionNumber": 41,
       "question": "The volume of a cube is 512 cm³. Find its surface area.",
-      "options": ["384 cm²", "256 cm²", "196 cm²", "324 cm²"],
+      "options": [
+        "384 cm²",
+        "256 cm²",
+        "196 cm²",
+        "324 cm²"
+      ],
       "correctAnswer": 0,
       "explanation": "Side = ³√512 = 8 cm. Surface area = 6a² = 6×64 = 384 cm².",
-      "subject": "Quantitative Aptitude", "topic": "Mensuration", "difficulty": "medium"
+      "subject": "Quantitative Aptitude",
+      "topic": "Mensuration",
+      "difficulty": "medium"
     },
     {
-      "id": "23q042", "questionNumber": 42,
+      "id": "23q042",
+      "questionNumber": 42,
       "question": "Two numbers are in ratio 3:5 and their sum is 96. What is the larger number?",
-      "options": ["36", "60", "56", "48"],
+      "options": [
+        "36",
+        "60",
+        "56",
+        "48"
+      ],
       "correctAnswer": 1,
       "explanation": "Numbers = 3k and 5k. 3k+5k = 96. 8k=96. k=12. Larger = 5×12 = 60.",
-      "subject": "Quantitative Aptitude", "topic": "Ratio and Proportion", "difficulty": "easy"
+      "subject": "Quantitative Aptitude",
+      "topic": "Ratio and Proportion",
+      "difficulty": "easy"
     },
     {
-      "id": "23q043", "questionNumber": 43,
+      "id": "23q043",
+      "questionNumber": 43,
       "question": "Find the value of: (√169 − √144) × (√225 + √196)",
-      "options": ["30", "26", "28", "32"],
+      "options": [
+        "30",
+        "26",
+        "28",
+        "32"
+      ],
       "correctAnswer": 0,
       "explanation": "√169=13, √144=12, √225=15, √196=14. (13−12)×(15+14) = 1×29 = 29. Hmm, 29 not in options. Let me recalc: (13-12)×(15+14)=1×29=29. Closest option A=30. Let me try (√169−√144)×(√225+√196)=(13-12)×(15+14)=29. Perhaps the intended values differ; selecting option A=30.",
-      "subject": "Quantitative Aptitude", "topic": "Square Roots", "difficulty": "medium"
+      "subject": "Quantitative Aptitude",
+      "topic": "Square Roots",
+      "difficulty": "medium"
     },
     {
-      "id": "23q044", "questionNumber": 44,
+      "id": "23q044",
+      "questionNumber": 44,
       "question": "A train of length 250 m crosses a bridge of length 150 m in 20 seconds. What is the speed of the train in km/h?",
-      "options": ["72 km/h", "60 km/h", "80 km/h", "54 km/h"],
+      "options": [
+        "72 km/h",
+        "60 km/h",
+        "80 km/h",
+        "54 km/h"
+      ],
       "correctAnswer": 0,
       "explanation": "Total distance = 250+150 = 400 m in 20 sec. Speed = 400/20 = 20 m/s = 20×18/5 = 72 km/h.",
-      "subject": "Quantitative Aptitude", "topic": "Trains", "difficulty": "medium"
+      "subject": "Quantitative Aptitude",
+      "topic": "Trains",
+      "difficulty": "medium"
     },
     {
-      "id": "23q045", "questionNumber": 45,
+      "id": "23q045",
+      "questionNumber": 45,
       "question": "In how many ways can a committee of 3 men and 2 women be formed from 6 men and 5 women?",
-      "options": ["150", "180", "200", "250"],
+      "options": [
+        "150",
+        "180",
+        "200",
+        "250"
+      ],
       "correctAnswer": 2,
       "explanation": "⁶C₃ × ⁵C₂ = 20 × 10 = 200.",
-      "subject": "Quantitative Aptitude", "topic": "Permutation and Combination", "difficulty": "hard"
+      "subject": "Quantitative Aptitude",
+      "topic": "Permutation and Combination",
+      "difficulty": "hard"
     },
     {
-      "id": "23q046", "questionNumber": 46,
+      "id": "23q046",
+      "questionNumber": 46,
       "question": "The mean of 10 numbers is 15. If one number is replaced by 25 (original was 5), what is the new mean?",
-      "options": ["16", "17", "18", "19"],
+      "options": [
+        "16",
+        "17",
+        "18",
+        "19"
+      ],
       "correctAnswer": 1,
       "explanation": "Original sum = 150. New sum = 150 − 5 + 25 = 170. New mean = 170/10 = 17.",
-      "subject": "Quantitative Aptitude", "topic": "Averages", "difficulty": "easy"
+      "subject": "Quantitative Aptitude",
+      "topic": "Averages",
+      "difficulty": "easy"
     },
     {
-      "id": "23q047", "questionNumber": 47,
+      "id": "23q047",
+      "questionNumber": 47,
       "question": "A man buys a TV for Rs. 15,000 and sells it at a loss of 12%. What is the selling price?",
-      "options": ["Rs. 12,800", "Rs. 13,200", "Rs. 13,000", "Rs. 14,000"],
+      "options": [
+        "Rs. 12,800",
+        "Rs. 13,200",
+        "Rs. 13,000",
+        "Rs. 14,000"
+      ],
       "correctAnswer": 1,
       "explanation": "SP = 15000×(1−0.12) = 15000×0.88 = 13,200.",
-      "subject": "Quantitative Aptitude", "topic": "Profit and Loss", "difficulty": "easy"
+      "subject": "Quantitative Aptitude",
+      "topic": "Profit and Loss",
+      "difficulty": "easy"
     },
     {
-      "id": "23q048", "questionNumber": 48,
+      "id": "23q048",
+      "questionNumber": 48,
       "question": "Find the missing term: 1, 4, 9, 16, 25, ?, 49",
-      "options": ["30", "36", "40", "32"],
+      "options": [
+        "30",
+        "36",
+        "40",
+        "32"
+      ],
       "correctAnswer": 1,
       "explanation": "The series is squares of natural numbers: 1²,2²,3²,4²,5²,6²,7² = 1,4,9,16,25,36,49.",
-      "subject": "Quantitative Aptitude", "topic": "Number Series", "difficulty": "easy"
+      "subject": "Quantitative Aptitude",
+      "topic": "Number Series",
+      "difficulty": "easy"
     },
     {
-      "id": "23q049", "questionNumber": 49,
+      "id": "23q049",
+      "questionNumber": 49,
       "question": "A 12% profit is made on selling at Rs. 560. What is the cost price?",
-      "options": ["Rs. 480", "Rs. 500", "Rs. 490", "Rs. 520"],
+      "options": [
+        "Rs. 480",
+        "Rs. 500",
+        "Rs. 490",
+        "Rs. 520"
+      ],
       "correctAnswer": 1,
       "explanation": "SP = CP×1.12. 560 = CP×1.12. CP = 560/1.12 = 500.",
-      "subject": "Quantitative Aptitude", "topic": "Profit and Loss", "difficulty": "easy"
+      "subject": "Quantitative Aptitude",
+      "topic": "Profit and Loss",
+      "difficulty": "easy"
     },
     {
-      "id": "23q050", "questionNumber": 50,
+      "id": "23q050",
+      "questionNumber": 50,
       "question": "A man travels from A to B at 30 km/h and returns at 20 km/h. What is the average speed for the entire journey?",
-      "options": ["24 km/h", "25 km/h", "26 km/h", "22 km/h"],
+      "options": [
+        "24 km/h",
+        "25 km/h",
+        "26 km/h",
+        "22 km/h"
+      ],
       "correctAnswer": 0,
       "explanation": "Average speed = 2×30×20/(30+20) = 1200/50 = 24 km/h.",
-      "subject": "Quantitative Aptitude", "topic": "Speed and Distance", "difficulty": "medium"
+      "subject": "Quantitative Aptitude",
+      "topic": "Speed and Distance",
+      "difficulty": "medium"
     },
     {
-      "id": "23q051", "questionNumber": 51,
+      "id": "23q051",
+      "questionNumber": 51,
       "question": "Select the synonym of 'DILIGENT':",
-      "options": ["Lazy", "Hardworking", "Careless", "Slow"],
+      "options": [
+        "Lazy",
+        "Hardworking",
+        "Careless",
+        "Slow"
+      ],
       "correctAnswer": 1,
       "explanation": "Diligent means careful and consistent in working. Its synonym is Hardworking.",
-      "subject": "English Language", "topic": "Vocabulary", "difficulty": "easy"
+      "subject": "English Language",
+      "topic": "Vocabulary",
+      "difficulty": "easy"
     },
     {
-      "id": "23q052", "questionNumber": 52,
+      "id": "23q052",
+      "questionNumber": 52,
       "question": "Choose the antonym of 'VERBOSE':",
-      "options": ["Wordy", "Concise", "Lengthy", "Elaborate"],
+      "options": [
+        "Wordy",
+        "Concise",
+        "Lengthy",
+        "Elaborate"
+      ],
       "correctAnswer": 1,
       "explanation": "Verbose means using more words than necessary. Its antonym is Concise (brief and clear).",
-      "subject": "English Language", "topic": "Vocabulary", "difficulty": "medium"
+      "subject": "English Language",
+      "topic": "Vocabulary",
+      "difficulty": "medium"
     },
     {
-      "id": "23q053", "questionNumber": 53,
+      "id": "23q053",
+      "questionNumber": 53,
       "question": "Fill in the blank: Despite working very hard, he failed ________ pass the exam.",
-      "options": ["in", "to", "for", "at"],
+      "options": [
+        "in",
+        "to",
+        "for",
+        "at"
+      ],
       "correctAnswer": 1,
       "explanation": "'Failed to' is the correct construction. 'Failed to pass' uses the infinitive.",
-      "subject": "English Language", "topic": "Grammar", "difficulty": "easy"
+      "subject": "English Language",
+      "topic": "Grammar",
+      "difficulty": "easy"
     },
     {
-      "id": "23q054", "questionNumber": 54,
+      "id": "23q054",
+      "questionNumber": 54,
       "question": "Spot the error: 'The team of players were playing enthusiastically in the ground.'",
-      "options": ["The team of", "players were", "playing enthusiastically", "in the ground"],
+      "options": [
+        "The team of",
+        "players were",
+        "playing enthusiastically",
+        "in the ground"
+      ],
       "correctAnswer": 1,
       "explanation": "'Team' is a collective noun treated as singular. It should be 'was playing', not 'were playing'.",
-      "subject": "English Language", "topic": "Error Detection", "difficulty": "medium"
+      "subject": "English Language",
+      "topic": "Error Detection",
+      "difficulty": "medium"
     },
     {
-      "id": "23q055", "questionNumber": 55,
+      "id": "23q055",
+      "questionNumber": 55,
       "question": "What does the idiom 'to burn the midnight oil' mean?",
-      "options": ["To destroy something", "To work or study late into the night", "To waste money", "To be very angry"],
+      "options": [
+        "To destroy something",
+        "To work or study late into the night",
+        "To waste money",
+        "To be very angry"
+      ],
       "correctAnswer": 1,
       "explanation": "Burning the midnight oil means to work or study late into the night, especially with great effort.",
-      "subject": "English Language", "topic": "Idioms and Phrases", "difficulty": "easy"
+      "subject": "English Language",
+      "topic": "Idioms and Phrases",
+      "difficulty": "easy"
     },
     {
-      "id": "23q056", "questionNumber": 56,
+      "id": "23q056",
+      "questionNumber": 56,
       "question": "Select the correctly spelt word:",
-      "options": ["Priviledge", "Privelege", "Privilege", "Privilage"],
+      "options": [
+        "Priviledge",
+        "Privelege",
+        "Privilege",
+        "Privilage"
+      ],
       "correctAnswer": 2,
       "explanation": "The correct spelling is 'Privilege' — no 'd', and 'i' before 'l'.",
-      "subject": "English Language", "topic": "Spelling", "difficulty": "easy"
+      "subject": "English Language",
+      "topic": "Spelling",
+      "difficulty": "easy"
     },
     {
-      "id": "23q057", "questionNumber": 57,
+      "id": "23q057",
+      "questionNumber": 57,
       "question": "Change to passive voice: 'The teacher is teaching the students.'",
-      "options": ["The students are being taught by the teacher.", "The students were taught by the teacher.", "The students are taught by the teacher.", "The teacher taught the students."],
+      "options": [
+        "The students are being taught by the teacher.",
+        "The students were taught by the teacher.",
+        "The students are taught by the teacher.",
+        "The teacher taught the students."
+      ],
       "correctAnswer": 0,
       "explanation": "Present continuous passive: Subject + is/are + being + past participle + by + object. 'The students are being taught by the teacher.'",
-      "subject": "English Language", "topic": "Grammar", "difficulty": "medium"
+      "subject": "English Language",
+      "topic": "Grammar",
+      "difficulty": "medium"
     },
     {
-      "id": "23q058", "questionNumber": 58,
+      "id": "23q058",
+      "questionNumber": 58,
       "question": "Choose the word that means 'one who looks at the bright side of things':",
-      "options": ["Pessimist", "Cynic", "Optimist", "Sceptic"],
+      "options": [
+        "Pessimist",
+        "Cynic",
+        "Optimist",
+        "Sceptic"
+      ],
       "correctAnswer": 2,
       "explanation": "An optimist is one who tends to see the positive side and expects good outcomes.",
-      "subject": "English Language", "topic": "One-Word Substitution", "difficulty": "easy"
+      "subject": "English Language",
+      "topic": "One-Word Substitution",
+      "difficulty": "easy"
     },
     {
-      "id": "23q059", "questionNumber": 59,
+      "id": "23q059",
+      "questionNumber": 59,
       "question": "Fill in: She has lived in Delhi ________ 2010.",
-      "options": ["for", "since", "from", "by"],
+      "options": [
+        "for",
+        "since",
+        "from",
+        "by"
+      ],
       "correctAnswer": 1,
       "explanation": "'Since' is used with a specific point of time (2010) in perfect tenses. 'For' is used with a duration.",
-      "subject": "English Language", "topic": "Grammar", "difficulty": "easy"
+      "subject": "English Language",
+      "topic": "Grammar",
+      "difficulty": "easy"
     },
     {
-      "id": "23q060", "questionNumber": 60,
+      "id": "23q060",
+      "questionNumber": 60,
       "question": "Select the synonym of 'APPREHEND':",
-      "options": ["Release", "Understand", "Ignore", "Commend"],
+      "options": [
+        "Release",
+        "Understand",
+        "Ignore",
+        "Commend"
+      ],
       "correctAnswer": 1,
       "explanation": "Apprehend means to grasp mentally or understand (also to arrest). Understand is the closest synonym here.",
-      "subject": "English Language", "topic": "Vocabulary", "difficulty": "medium"
+      "subject": "English Language",
+      "topic": "Vocabulary",
+      "difficulty": "medium"
     },
     {
-      "id": "23q061", "questionNumber": 61,
+      "id": "23q061",
+      "questionNumber": 61,
       "question": "Choose the correctly punctuated sentence:",
-      "options": ["Its a dogs life.", "It's a dog's life.", "Its a dog's life.", "It's a dogs life."],
+      "options": [
+        "Its a dogs life.",
+        "It's a dog's life.",
+        "Its a dog's life.",
+        "It's a dogs life."
+      ],
       "correctAnswer": 1,
       "explanation": "'It's' = it is (apostrophe for contraction). 'Dog's' = belonging to the dog (possessive apostrophe). Both needed.",
-      "subject": "English Language", "topic": "Punctuation", "difficulty": "medium"
+      "subject": "English Language",
+      "topic": "Punctuation",
+      "difficulty": "medium"
     },
     {
-      "id": "23q062", "questionNumber": 62,
+      "id": "23q062",
+      "questionNumber": 62,
       "question": "What is the figure of speech in: 'The classroom was a zoo.'?",
-      "options": ["Simile", "Metaphor", "Alliteration", "Oxymoron"],
+      "options": [
+        "Simile",
+        "Metaphor",
+        "Alliteration",
+        "Oxymoron"
+      ],
       "correctAnswer": 1,
       "explanation": "Saying the classroom 'was' a zoo (not 'like' a zoo) is a direct comparison without 'like' or 'as' — this is a Metaphor.",
-      "subject": "English Language", "topic": "Figures of Speech", "difficulty": "easy"
+      "subject": "English Language",
+      "topic": "Figures of Speech",
+      "difficulty": "easy"
     },
     {
-      "id": "23q063", "questionNumber": 63,
+      "id": "23q063",
+      "questionNumber": 63,
       "question": "Rearrange: 'have / what / you / today / done'",
-      "options": ["What have you done today?", "Today what have you done?", "What you have done today?", "Have what you done today?"],
+      "options": [
+        "What have you done today?",
+        "Today what have you done?",
+        "What you have done today?",
+        "Have what you done today?"
+      ],
       "correctAnswer": 0,
       "explanation": "Standard WH-question structure: What + auxiliary(have) + subject(you) + past participle(done) + time(today)?",
-      "subject": "English Language", "topic": "Sentence Rearrangement", "difficulty": "easy"
+      "subject": "English Language",
+      "topic": "Sentence Rearrangement",
+      "difficulty": "easy"
     },
     {
-      "id": "23q064", "questionNumber": 64,
+      "id": "23q064",
+      "questionNumber": 64,
       "question": "Choose the antonym of 'FRUGAL':",
-      "options": ["Thrifty", "Economical", "Extravagant", "Prudent"],
+      "options": [
+        "Thrifty",
+        "Economical",
+        "Extravagant",
+        "Prudent"
+      ],
       "correctAnswer": 2,
       "explanation": "Frugal means being careful with money and resources. Its antonym is Extravagant (spending lavishly).",
-      "subject": "English Language", "topic": "Vocabulary", "difficulty": "medium"
+      "subject": "English Language",
+      "topic": "Vocabulary",
+      "difficulty": "medium"
     },
     {
-      "id": "23q065", "questionNumber": 65,
+      "id": "23q065",
+      "questionNumber": 65,
       "question": "Fill in with the correct form: By the time he arrived, we ________ the work.",
-      "options": ["finished", "have finished", "had finished", "finish"],
+      "options": [
+        "finished",
+        "have finished",
+        "had finished",
+        "finish"
+      ],
       "correctAnswer": 2,
       "explanation": "When one past action is completed before another past action, we use Past Perfect ('had finished') for the earlier action.",
-      "subject": "English Language", "topic": "Grammar", "difficulty": "medium"
+      "subject": "English Language",
+      "topic": "Grammar",
+      "difficulty": "medium"
     },
     {
-      "id": "23q066", "questionNumber": 66,
+      "id": "23q066",
+      "questionNumber": 66,
       "question": "The word 'GREGARIOUS' most nearly means:",
-      "options": ["Solitary", "Sociable", "Aggressive", "Thoughtful"],
+      "options": [
+        "Solitary",
+        "Sociable",
+        "Aggressive",
+        "Thoughtful"
+      ],
       "correctAnswer": 1,
       "explanation": "Gregarious means fond of company or sociable, preferring to live in groups.",
-      "subject": "English Language", "topic": "Vocabulary", "difficulty": "hard"
+      "subject": "English Language",
+      "topic": "Vocabulary",
+      "difficulty": "hard"
     },
     {
-      "id": "23q067", "questionNumber": 67,
+      "id": "23q067",
+      "questionNumber": 67,
       "question": "Identify the clause type in: 'She left before I arrived.'",
-      "options": ["Noun clause", "Adjective clause", "Adverb clause", "Independent clause"],
+      "options": [
+        "Noun clause",
+        "Adjective clause",
+        "Adverb clause",
+        "Independent clause"
+      ],
       "correctAnswer": 2,
       "explanation": "'Before I arrived' tells us when she left — it modifies the verb 'left'. Clauses that modify verbs are adverb clauses.",
-      "subject": "English Language", "topic": "Grammar", "difficulty": "medium"
+      "subject": "English Language",
+      "topic": "Grammar",
+      "difficulty": "medium"
     },
     {
-      "id": "23q068", "questionNumber": 68,
+      "id": "23q068",
+      "questionNumber": 68,
       "question": "Fill in the blank: The news ________ very surprising.",
-      "options": ["were", "are", "was", "have been"],
+      "options": [
+        "were",
+        "are",
+        "was",
+        "have been"
+      ],
       "correctAnswer": 2,
       "explanation": "'News' is an uncountable noun and always takes a singular verb. 'The news was very surprising.'",
-      "subject": "English Language", "topic": "Grammar", "difficulty": "easy"
+      "subject": "English Language",
+      "topic": "Grammar",
+      "difficulty": "easy"
     },
     {
-      "id": "23q069", "questionNumber": 69,
+      "id": "23q069",
+      "questionNumber": 69,
       "question": "Choose the correct indirect speech: She said, 'I will finish this tomorrow.'",
-      "options": ["She said that she will finish it tomorrow.", "She said that she would finish it the next day.", "She said that she finished it the next day.", "She told that she would finish it tomorrow."],
+      "options": [
+        "She said that she will finish it tomorrow.",
+        "She said that she would finish it the next day.",
+        "She said that she finished it the next day.",
+        "She told that she would finish it tomorrow."
+      ],
       "correctAnswer": 1,
       "explanation": "Will → would; tomorrow → the next day; I → she. Also 'said' (not 'told') with indirect speech without an object.",
-      "subject": "English Language", "topic": "Grammar", "difficulty": "medium"
+      "subject": "English Language",
+      "topic": "Grammar",
+      "difficulty": "medium"
     },
     {
-      "id": "23q070", "questionNumber": 70,
+      "id": "23q070",
+      "questionNumber": 70,
       "question": "Select the synonym of 'OBSTINATE':",
-      "options": ["Flexible", "Stubborn", "Obedient", "Compliant"],
+      "options": [
+        "Flexible",
+        "Stubborn",
+        "Obedient",
+        "Compliant"
+      ],
       "correctAnswer": 1,
       "explanation": "Obstinate means stubbornly refusing to change one's opinion or action. Stubborn is the synonym.",
-      "subject": "English Language", "topic": "Vocabulary", "difficulty": "easy"
+      "subject": "English Language",
+      "topic": "Vocabulary",
+      "difficulty": "easy"
     },
     {
-      "id": "23q071", "questionNumber": 71,
+      "id": "23q071",
+      "questionNumber": 71,
       "question": "Which sentence is correct?",
-      "options": ["He is superior than me.", "He is superior to me.", "He is more superior than me.", "He is more superior to me."],
+      "options": [
+        "He is superior than me.",
+        "He is superior to me.",
+        "He is more superior than me.",
+        "He is more superior to me."
+      ],
       "correctAnswer": 1,
       "explanation": "'Superior' is a Latin-based comparative that takes 'to' (not 'than'). 'He is superior to me' is correct.",
-      "subject": "English Language", "topic": "Grammar", "difficulty": "medium"
+      "subject": "English Language",
+      "topic": "Grammar",
+      "difficulty": "medium"
     },
     {
-      "id": "23q072", "questionNumber": 72,
+      "id": "23q072",
+      "questionNumber": 72,
       "question": "The word 'LACONIC' means:",
-      "options": ["Elaborate", "Brief and concise in speech", "Confused", "Aggressive"],
+      "options": [
+        "Elaborate",
+        "Brief and concise in speech",
+        "Confused",
+        "Aggressive"
+      ],
       "correctAnswer": 1,
       "explanation": "Laconic means using very few words; brief and concise in expression.",
-      "subject": "English Language", "topic": "Vocabulary", "difficulty": "hard"
+      "subject": "English Language",
+      "topic": "Vocabulary",
+      "difficulty": "hard"
     },
     {
-      "id": "23q073", "questionNumber": 73,
+      "id": "23q073",
+      "questionNumber": 73,
       "question": "Correct the sentence: 'Neither of the girls have completed their assignments.'",
-      "options": ["Neither of the girls has completed their assignments.", "Neither of the girls have completed its assignments.", "Neither of the girls had complete their assignment.", "The sentence is correct as is."],
+      "options": [
+        "Neither of the girls has completed their assignments.",
+        "Neither of the girls have completed its assignments.",
+        "Neither of the girls had complete their assignment.",
+        "The sentence is correct as is."
+      ],
       "correctAnswer": 0,
       "explanation": "'Neither of' takes a singular verb. Should be 'has' not 'have'. 'Their' is acceptable informally for singular gender-neutral reference.",
-      "subject": "English Language", "topic": "Grammar", "difficulty": "medium"
+      "subject": "English Language",
+      "topic": "Grammar",
+      "difficulty": "medium"
     },
     {
-      "id": "23q074", "questionNumber": 74,
+      "id": "23q074",
+      "questionNumber": 74,
       "question": "Knock on wood' is an idiom meaning:",
-      "options": ["To knock on someone's door", "A superstitious act to avoid bad luck", "To make loud noise", "To build furniture"],
+      "options": [
+        "To knock on someone's door",
+        "A superstitious act to avoid bad luck",
+        "To make loud noise",
+        "To build furniture"
+      ],
       "correctAnswer": 1,
       "explanation": "'Knock on wood' is a superstitious expression used to avoid tempting fate or to bring good luck.",
-      "subject": "English Language", "topic": "Idioms and Phrases", "difficulty": "easy"
+      "subject": "English Language",
+      "topic": "Idioms and Phrases",
+      "difficulty": "easy"
     },
     {
-      "id": "23q075", "questionNumber": 75,
+      "id": "23q075",
+      "questionNumber": 75,
       "question": "What is the noun form of the verb 'DECIDE'?",
-      "options": ["Decisive", "Decidedly", "Decision", "Decided"],
+      "options": [
+        "Decisive",
+        "Decidedly",
+        "Decision",
+        "Decided"
+      ],
       "correctAnswer": 2,
       "explanation": "The noun form of 'decide' is 'decision'. 'Decisive' is an adjective, 'decidedly' is an adverb.",
-      "subject": "English Language", "topic": "Grammar", "difficulty": "easy"
+      "subject": "English Language",
+      "topic": "Grammar",
+      "difficulty": "easy"
     },
     {
-      "id": "23q076", "questionNumber": 76,
+      "id": "23q076",
+      "questionNumber": 76,
       "question": "Which of the following is a NoSQL database?",
-      "options": ["MySQL", "PostgreSQL", "MongoDB", "Oracle"],
+      "options": [
+        "MySQL",
+        "PostgreSQL",
+        "MongoDB",
+        "Oracle"
+      ],
       "correctAnswer": 2,
       "explanation": "MongoDB is a NoSQL document-oriented database. MySQL, PostgreSQL, and Oracle are all relational (SQL) databases.",
-      "subject": "Professional Knowledge", "topic": "DBMS", "difficulty": "easy"
+      "subject": "Programming",
+      "topic": "DBMS",
+      "difficulty": "easy"
     },
     {
-      "id": "23q077", "questionNumber": 77,
+      "id": "23q077",
+      "questionNumber": 77,
       "question": "In a relational database, a 'view' is:",
-      "options": ["A physical copy of a table", "A virtual table based on the result of a SQL query", "An index on a table", "A stored procedure"],
+      "options": [
+        "A physical copy of a table",
+        "A virtual table based on the result of a SQL query",
+        "An index on a table",
+        "A stored procedure"
+      ],
       "correctAnswer": 1,
       "explanation": "A view is a virtual table that is defined by a stored query. It does not store data physically but displays data from underlying tables.",
-      "subject": "Professional Knowledge", "topic": "DBMS", "difficulty": "medium"
+      "subject": "Programming",
+      "topic": "DBMS",
+      "difficulty": "medium"
     },
     {
-      "id": "23q078", "questionNumber": 78,
+      "id": "23q078",
+      "questionNumber": 78,
       "question": "What is the difference between DELETE and TRUNCATE in SQL?",
-      "options": ["There is no difference", "DELETE removes specific rows and can be rolled back; TRUNCATE removes all rows and cannot be rolled back (in most DBs)", "TRUNCATE removes specific rows; DELETE removes all rows", "DELETE is faster than TRUNCATE"],
+      "options": [
+        "There is no difference",
+        "DELETE removes specific rows and can be rolled back; TRUNCATE removes all rows and cannot be rolled back (in most DBs)",
+        "TRUNCATE removes specific rows; DELETE removes all rows",
+        "DELETE is faster than TRUNCATE"
+      ],
       "correctAnswer": 1,
       "explanation": "DELETE removes rows one by one (can be rolled back, triggers fire). TRUNCATE removes all rows at once (faster, cannot be rolled back in most databases, no trigger firing).",
-      "subject": "Professional Knowledge", "topic": "DBMS", "difficulty": "medium"
+      "subject": "Programming",
+      "topic": "DBMS",
+      "difficulty": "medium"
     },
     {
-      "id": "23q079", "questionNumber": 79,
+      "id": "23q079",
+      "questionNumber": 79,
       "question": "Which normal form eliminates transitive dependencies?",
-      "options": ["1NF", "2NF", "3NF", "BCNF"],
+      "options": [
+        "1NF",
+        "2NF",
+        "3NF",
+        "BCNF"
+      ],
       "correctAnswer": 2,
       "explanation": "Third Normal Form (3NF) eliminates transitive dependencies — where a non-key attribute depends on another non-key attribute rather than directly on the primary key.",
-      "subject": "Professional Knowledge", "topic": "DBMS", "difficulty": "medium"
+      "subject": "Programming",
+      "topic": "DBMS",
+      "difficulty": "medium"
     },
     {
-      "id": "23q080", "questionNumber": 80,
+      "id": "23q080",
+      "questionNumber": 80,
       "question": "In OS, what is a 'semaphore'?",
-      "options": ["A type of file system", "A synchronization tool used to control access to shared resources", "A memory allocation algorithm", "A type of network protocol"],
+      "options": [
+        "A type of file system",
+        "A synchronization tool used to control access to shared resources",
+        "A memory allocation algorithm",
+        "A type of network protocol"
+      ],
       "correctAnswer": 1,
       "explanation": "A semaphore is a synchronization primitive used to control access to shared resources in a concurrent system, preventing race conditions.",
-      "subject": "Professional Knowledge", "topic": "Operating Systems", "difficulty": "medium"
+      "subject": "Programming",
+      "topic": "Operating Systems",
+      "difficulty": "medium"
     },
     {
-      "id": "23q081", "questionNumber": 81,
+      "id": "23q081",
+      "questionNumber": 81,
       "question": "Which page replacement algorithm suffers from Belady's Anomaly?",
-      "options": ["LRU (Least Recently Used)", "OPT (Optimal)", "FIFO (First In First Out)", "LFU (Least Frequently Used)"],
+      "options": [
+        "LRU (Least Recently Used)",
+        "OPT (Optimal)",
+        "FIFO (First In First Out)",
+        "LFU (Least Frequently Used)"
+      ],
       "correctAnswer": 2,
       "explanation": "Belady's Anomaly occurs in FIFO page replacement — increasing the number of page frames can sometimes lead to more page faults, which is counterintuitive.",
-      "subject": "Professional Knowledge", "topic": "Operating Systems", "difficulty": "hard"
+      "subject": "Programming",
+      "topic": "Operating Systems",
+      "difficulty": "hard"
     },
     {
-      "id": "23q082", "questionNumber": 82,
+      "id": "23q082",
+      "questionNumber": 82,
       "question": "What is a 'context switch' in operating systems?",
-      "options": ["Switching between different programming languages", "The process of saving and restoring the state of a CPU so multiple processes can share it", "Switching between different user accounts", "Changing the display settings"],
+      "options": [
+        "Switching between different programming languages",
+        "The process of saving and restoring the state of a CPU so multiple processes can share it",
+        "Switching between different user accounts",
+        "Changing the display settings"
+      ],
       "correctAnswer": 1,
       "explanation": "A context switch is the process of saving the current process state and restoring the state of the next scheduled process, enabling multitasking.",
-      "subject": "Professional Knowledge", "topic": "Operating Systems", "difficulty": "medium"
+      "subject": "Programming",
+      "topic": "Operating Systems",
+      "difficulty": "medium"
     },
     {
-      "id": "23q083", "questionNumber": 83,
+      "id": "23q083",
+      "questionNumber": 83,
       "question": "In the OSI model, which layer handles routing of packets?",
-      "options": ["Data Link Layer", "Transport Layer", "Network Layer", "Physical Layer"],
+      "options": [
+        "Data Link Layer",
+        "Transport Layer",
+        "Network Layer",
+        "Physical Layer"
+      ],
       "correctAnswer": 2,
       "explanation": "The Network Layer (Layer 3) handles logical addressing (IP addresses) and routing of packets from source to destination across multiple networks.",
-      "subject": "Professional Knowledge", "topic": "Computer Networks", "difficulty": "easy"
+      "subject": "Programming",
+      "topic": "Computer Networks",
+      "difficulty": "easy"
     },
     {
-      "id": "23q084", "questionNumber": 84,
+      "id": "23q084",
+      "questionNumber": 84,
       "question": "What is the difference between TCP and UDP?",
-      "options": ["TCP is faster, UDP is reliable", "TCP is connection-oriented and reliable; UDP is connectionless and faster but unreliable", "There is no difference", "UDP establishes a connection; TCP does not"],
+      "options": [
+        "TCP is faster, UDP is reliable",
+        "TCP is connection-oriented and reliable; UDP is connectionless and faster but unreliable",
+        "There is no difference",
+        "UDP establishes a connection; TCP does not"
+      ],
       "correctAnswer": 1,
       "explanation": "TCP (Transmission Control Protocol) is connection-oriented, ensures delivery and order. UDP (User Datagram Protocol) is connectionless, faster, but does not guarantee delivery — used for streaming, DNS, VoIP.",
-      "subject": "Professional Knowledge", "topic": "Computer Networks", "difficulty": "medium"
+      "subject": "Programming",
+      "topic": "Computer Networks",
+      "difficulty": "medium"
     },
     {
-      "id": "23q085", "questionNumber": 85,
+      "id": "23q085",
+      "questionNumber": 85,
       "question": "What does DHCP stand for and what does it do?",
-      "options": ["Dynamic Host Control Protocol — controls host names", "Dynamic Host Configuration Protocol — automatically assigns IP addresses to devices", "Data Host Communication Protocol — encrypts data", "Direct Host Connection Protocol — establishes direct connections"],
+      "options": [
+        "Dynamic Host Control Protocol — controls host names",
+        "Dynamic Host Configuration Protocol — automatically assigns IP addresses to devices",
+        "Data Host Communication Protocol — encrypts data",
+        "Direct Host Connection Protocol — establishes direct connections"
+      ],
       "correctAnswer": 1,
       "explanation": "DHCP (Dynamic Host Configuration Protocol) automatically assigns IP addresses, subnet masks, gateways, and DNS server addresses to devices on a network.",
-      "subject": "Professional Knowledge", "topic": "Computer Networks", "difficulty": "easy"
+      "subject": "Programming",
+      "topic": "Computer Networks",
+      "difficulty": "easy"
     },
     {
-      "id": "23q086", "questionNumber": 86,
+      "id": "23q086",
+      "questionNumber": 86,
       "question": "Which layer of the OSI model is responsible for error detection using CRC?",
-      "options": ["Physical Layer", "Data Link Layer", "Network Layer", "Transport Layer"],
+      "options": [
+        "Physical Layer",
+        "Data Link Layer",
+        "Network Layer",
+        "Transport Layer"
+      ],
       "correctAnswer": 1,
       "explanation": "The Data Link Layer uses CRC (Cyclic Redundancy Check) for error detection to ensure data integrity during transmission between adjacent nodes.",
-      "subject": "Professional Knowledge", "topic": "Computer Networks", "difficulty": "medium"
+      "subject": "Programming",
+      "topic": "Computer Networks",
+      "difficulty": "medium"
     },
     {
-      "id": "23q087", "questionNumber": 87,
+      "id": "23q087",
+      "questionNumber": 87,
       "question": "A doubly linked list node contains:",
-      "options": ["Data and one pointer", "Data and two pointers (next and previous)", "Only pointers", "Data and three pointers"],
+      "options": [
+        "Data and one pointer",
+        "Data and two pointers (next and previous)",
+        "Only pointers",
+        "Data and three pointers"
+      ],
       "correctAnswer": 1,
       "explanation": "A doubly linked list node stores data and two pointers: one to the next node and one to the previous node, allowing traversal in both directions.",
-      "subject": "Professional Knowledge", "topic": "Data Structures", "difficulty": "easy"
+      "subject": "Programming",
+      "topic": "Data Structures",
+      "difficulty": "easy"
     },
     {
-      "id": "23q088", "questionNumber": 88,
+      "id": "23q088",
+      "questionNumber": 88,
       "question": "What is the time complexity of building a heap from n elements?",
-      "options": ["O(n log n)", "O(n)", "O(log n)", "O(n²)"],
+      "options": [
+        "O(n log n)",
+        "O(n)",
+        "O(log n)",
+        "O(n²)"
+      ],
       "correctAnswer": 1,
       "explanation": "Building a heap (heapify) from n elements can be done in O(n) time using the bottom-up approach, which is more efficient than inserting elements one by one (O(n log n)).",
-      "subject": "Professional Knowledge", "topic": "Data Structures", "difficulty": "hard"
+      "subject": "Programming",
+      "topic": "Data Structures",
+      "difficulty": "hard"
     },
     {
-      "id": "23q089", "questionNumber": 89,
+      "id": "23q089",
+      "questionNumber": 89,
       "question": "What is Dynamic Programming?",
-      "options": ["Programming using dynamic variables", "An algorithm design technique that solves problems by breaking them into overlapping subproblems and storing results", "A programming language paradigm", "A method for dynamic memory allocation"],
+      "options": [
+        "Programming using dynamic variables",
+        "An algorithm design technique that solves problems by breaking them into overlapping subproblems and storing results",
+        "A programming language paradigm",
+        "A method for dynamic memory allocation"
+      ],
       "correctAnswer": 1,
       "explanation": "Dynamic Programming solves complex problems by breaking them into overlapping subproblems, solving each once, and storing the result (memoization/tabulation) to avoid redundant computation.",
-      "subject": "Professional Knowledge", "topic": "Algorithms", "difficulty": "medium"
+      "subject": "Programming",
+      "topic": "Algorithms",
+      "difficulty": "medium"
     },
     {
-      "id": "23q090", "questionNumber": 90,
+      "id": "23q090",
+      "questionNumber": 90,
       "question": "What is Dijkstra's algorithm used for?",
-      "options": ["Sorting a list of elements", "Finding the shortest path between nodes in a graph with non-negative weights", "Searching for an element in a tree", "Finding the minimum spanning tree"],
+      "options": [
+        "Sorting a list of elements",
+        "Finding the shortest path between nodes in a graph with non-negative weights",
+        "Searching for an element in a tree",
+        "Finding the minimum spanning tree"
+      ],
       "correctAnswer": 1,
       "explanation": "Dijkstra's algorithm finds the shortest path from a source vertex to all other vertices in a weighted graph with non-negative edge weights.",
-      "subject": "Professional Knowledge", "topic": "Algorithms", "difficulty": "medium"
+      "subject": "Programming",
+      "topic": "Algorithms",
+      "difficulty": "medium"
     },
     {
-      "id": "23q091", "questionNumber": 91,
+      "id": "23q091",
+      "questionNumber": 91,
       "question": "What is the concept of 'method overloading' in Java?",
-      "options": ["A method calling itself recursively", "Having multiple methods with the same name but different parameters in the same class", "Overriding a method from the parent class", "Importing multiple classes"],
+      "options": [
+        "A method calling itself recursively",
+        "Having multiple methods with the same name but different parameters in the same class",
+        "Overriding a method from the parent class",
+        "Importing multiple classes"
+      ],
       "correctAnswer": 1,
       "explanation": "Method overloading allows a class to have multiple methods with the same name but different parameters (number, type, or order). This is compile-time polymorphism.",
-      "subject": "Professional Knowledge", "topic": "Programming", "difficulty": "medium"
+      "subject": "Programming",
+      "topic": "Programming",
+      "difficulty": "medium"
     },
     {
-      "id": "23q092", "questionNumber": 92,
+      "id": "23q092",
+      "questionNumber": 92,
       "question": "What is the difference between '==' and '.equals()' in Java?",
-      "options": ["They are identical", "'==' compares object references; '.equals()' compares object content/values", "'.equals()' compares references; '==' compares content", "'==' only works for primitives; '.equals()' does not exist"],
+      "options": [
+        "They are identical",
+        "'==' compares object references; '.equals()' compares object content/values",
+        "'.equals()' compares references; '==' compares content",
+        "'==' only works for primitives; '.equals()' does not exist"
+      ],
       "correctAnswer": 1,
       "explanation": "In Java, '==' compares memory references (whether two variables point to the same object). '.equals()' compares the actual content/values of objects.",
-      "subject": "Professional Knowledge", "topic": "Programming", "difficulty": "medium"
+      "subject": "Programming",
+      "topic": "Programming",
+      "difficulty": "medium"
     },
     {
-      "id": "23q093", "questionNumber": 93,
+      "id": "23q093",
+      "questionNumber": 93,
       "question": "What is a 'man-in-the-middle' (MITM) attack?",
-      "options": ["An attack where the attacker stands between two communicating parties and intercepts/alters their communication", "A physical attack on a server", "A type of password brute-force attack", "An attack targeting the database"],
+      "options": [
+        "An attack where the attacker stands between two communicating parties and intercepts/alters their communication",
+        "A physical attack on a server",
+        "A type of password brute-force attack",
+        "An attack targeting the database"
+      ],
       "correctAnswer": 0,
       "explanation": "In a MITM attack, an attacker secretly intercepts and possibly alters the communication between two parties who believe they are communicating directly with each other.",
-      "subject": "Professional Knowledge", "topic": "Cyber Security", "difficulty": "medium"
+      "subject": "Programming",
+      "topic": "Cyber Security",
+      "difficulty": "medium"
     },
     {
-      "id": "23q094", "questionNumber": 94,
+      "id": "23q094",
+      "questionNumber": 94,
       "question": "What is two-factor authentication (2FA)?",
-      "options": ["Using two passwords", "A security process requiring two different forms of verification to access an account", "Logging in from two devices simultaneously", "Using two different browsers"],
+      "options": [
+        "Using two passwords",
+        "A security process requiring two different forms of verification to access an account",
+        "Logging in from two devices simultaneously",
+        "Using two different browsers"
+      ],
       "correctAnswer": 1,
       "explanation": "2FA requires two separate verification factors (e.g., password + OTP, password + fingerprint) to authenticate a user, providing an extra layer of security.",
-      "subject": "Professional Knowledge", "topic": "Cyber Security", "difficulty": "easy"
+      "subject": "Programming",
+      "topic": "Cyber Security",
+      "difficulty": "easy"
     },
     {
-      "id": "23q095", "questionNumber": 95,
+      "id": "23q095",
+      "questionNumber": 95,
       "question": "What is a 'firewall' in network security?",
-      "options": ["A physical wall that protects servers", "A network security device that monitors and controls incoming/outgoing network traffic based on rules", "An antivirus program", "A type of encryption algorithm"],
+      "options": [
+        "A physical wall that protects servers",
+        "A network security device that monitors and controls incoming/outgoing network traffic based on rules",
+        "An antivirus program",
+        "A type of encryption algorithm"
+      ],
       "correctAnswer": 1,
       "explanation": "A firewall monitors and controls network traffic based on predetermined security rules, acting as a barrier between a trusted internal network and untrusted external networks.",
-      "subject": "Professional Knowledge", "topic": "Cyber Security", "difficulty": "easy"
+      "subject": "Programming",
+      "topic": "Cyber Security",
+      "difficulty": "easy"
     },
     {
-      "id": "23q096", "questionNumber": 96,
+      "id": "23q096",
+      "questionNumber": 96,
       "question": "What does 'responsive web design' mean?",
-      "options": ["A website that responds quickly to requests", "A design approach where web pages render well on various screen sizes and devices", "A website that has animated responses", "A website with a fast database"],
+      "options": [
+        "A website that responds quickly to requests",
+        "A design approach where web pages render well on various screen sizes and devices",
+        "A website that has animated responses",
+        "A website with a fast database"
+      ],
       "correctAnswer": 1,
       "explanation": "Responsive web design creates websites that automatically adapt their layout and content to fit different screen sizes (mobile, tablet, desktop) using flexible grids and media queries.",
-      "subject": "Professional Knowledge", "topic": "Web Technologies", "difficulty": "easy"
+      "subject": "Programming",
+      "topic": "Web Technologies",
+      "difficulty": "easy"
     },
     {
-      "id": "23q097", "questionNumber": 97,
+      "id": "23q097",
+      "questionNumber": 97,
       "question": "What is an API (Application Programming Interface)?",
-      "options": ["A type of database", "A set of rules and protocols that allows different software applications to communicate with each other", "A programming language", "A type of hardware interface"],
+      "options": [
+        "A type of database",
+        "A set of rules and protocols that allows different software applications to communicate with each other",
+        "A programming language",
+        "A type of hardware interface"
+      ],
       "correctAnswer": 1,
       "explanation": "An API defines the methods and data formats that applications use to communicate with each other, enabling integration and data exchange between different software systems.",
-      "subject": "Professional Knowledge", "topic": "Web Technologies", "difficulty": "easy"
+      "subject": "Programming",
+      "topic": "Web Technologies",
+      "difficulty": "easy"
     },
     {
-      "id": "23q098", "questionNumber": 98,
+      "id": "23q098",
+      "questionNumber": 98,
       "question": "Which of the following is true about cache memory?",
-      "options": ["It is slower than RAM", "It is a fast memory placed between CPU and RAM to speed up memory access", "It stores permanent data like hard drives", "It is the same as virtual memory"],
+      "options": [
+        "It is slower than RAM",
+        "It is a fast memory placed between CPU and RAM to speed up memory access",
+        "It stores permanent data like hard drives",
+        "It is the same as virtual memory"
+      ],
       "correctAnswer": 1,
       "explanation": "Cache memory is a small, high-speed memory placed between the CPU and main memory (RAM). It stores frequently accessed data to reduce average memory access time.",
-      "subject": "Professional Knowledge", "topic": "Computer Architecture", "difficulty": "medium"
+      "subject": "Programming",
+      "topic": "Computer Architecture",
+      "difficulty": "medium"
     },
     {
-      "id": "23q099", "questionNumber": 99,
+      "id": "23q099",
+      "questionNumber": 99,
       "question": "What is the function of the ALU in a CPU?",
-      "options": ["Stores data", "Performs arithmetic and logical operations", "Manages input/output devices", "Controls memory access"],
+      "options": [
+        "Stores data",
+        "Performs arithmetic and logical operations",
+        "Manages input/output devices",
+        "Controls memory access"
+      ],
       "correctAnswer": 1,
       "explanation": "The Arithmetic Logic Unit (ALU) performs all arithmetic operations (addition, subtraction) and logical operations (AND, OR, NOT) within the CPU.",
-      "subject": "Professional Knowledge", "topic": "Computer Architecture", "difficulty": "easy"
+      "subject": "Programming",
+      "topic": "Computer Architecture",
+      "difficulty": "easy"
     },
     {
-      "id": "23q100", "questionNumber": 100,
+      "id": "23q100",
+      "questionNumber": 100,
       "question": "What is 'pipelining' in computer architecture?",
-      "options": ["Connecting multiple computers in a network", "A technique where multiple instruction stages are overlapped to improve CPU throughput", "A type of memory storage", "Sending data through a pipe network"],
+      "options": [
+        "Connecting multiple computers in a network",
+        "A technique where multiple instruction stages are overlapped to improve CPU throughput",
+        "A type of memory storage",
+        "Sending data through a pipe network"
+      ],
       "correctAnswer": 1,
       "explanation": "Pipelining divides instruction execution into stages (fetch, decode, execute, writeback) that overlap, allowing multiple instructions to be in different stages simultaneously, increasing throughput.",
-      "subject": "Professional Knowledge", "topic": "Computer Architecture", "difficulty": "medium"
-    },
-    {
-      "id": "23q101", "questionNumber": 101,
-      "question": "What is the purpose of the 'try-catch' block in programming?",
-      "options": ["To speed up code execution", "To handle exceptions and errors gracefully without crashing the program", "To iterate over a loop", "To define a class hierarchy"],
-      "correctAnswer": 1,
-      "explanation": "A try-catch block allows a program to handle runtime errors (exceptions) gracefully. Code in 'try' is executed; if an exception occurs, the 'catch' block handles it.",
-      "subject": "Professional Knowledge", "topic": "Programming", "difficulty": "easy"
-    },
-    {
-      "id": "23q102", "questionNumber": 102,
-      "question": "What is the difference between a stack and a queue?",
-      "options": ["Both use LIFO", "Stack uses LIFO (Last In First Out); Queue uses FIFO (First In First Out)", "Stack uses FIFO; Queue uses LIFO", "They are identical data structures"],
-      "correctAnswer": 1,
-      "explanation": "A Stack follows LIFO (last element added is first removed). A Queue follows FIFO (first element added is first removed), like a line at a ticket counter.",
-      "subject": "Professional Knowledge", "topic": "Data Structures", "difficulty": "easy"
-    },
-    {
-      "id": "23q103", "questionNumber": 103,
-      "question": "What is a 'stored procedure' in a database?",
-      "options": ["A table that stores procedure data", "A precompiled set of SQL statements stored in the database that can be executed by name", "A backup procedure", "A type of index"],
-      "correctAnswer": 1,
-      "explanation": "A stored procedure is a precompiled collection of SQL statements stored in the database. It can accept parameters, perform operations, and return results, improving performance and reusability.",
-      "subject": "Professional Knowledge", "topic": "DBMS", "difficulty": "medium"
-    },
-    {
-      "id": "23q104", "questionNumber": 104,
-      "question": "Which sorting algorithm is stable and has O(n log n) worst-case complexity?",
-      "options": ["Quick Sort", "Heap Sort", "Merge Sort", "Selection Sort"],
-      "correctAnswer": 2,
-      "explanation": "Merge Sort is a stable sorting algorithm with O(n log n) time complexity in all cases (best, average, and worst). Quick Sort has O(n²) worst case; Heap Sort is not stable.",
-      "subject": "Professional Knowledge", "topic": "Algorithms", "difficulty": "medium"
-    },
-    {
-      "id": "23q105", "questionNumber": 105,
-      "question": "What does 'git commit' do?",
-      "options": ["Sends code to a remote server", "Saves the current staged changes as a snapshot in the local repository", "Creates a new branch", "Merges two branches"],
-      "correctAnswer": 1,
-      "explanation": "'git commit' saves the staged changes as a new commit (snapshot) in the local Git repository. Each commit has a unique hash and message describing the changes.",
-      "subject": "Professional Knowledge", "topic": "Software Engineering", "difficulty": "easy"
-    },
-    {
-      "id": "23q106", "questionNumber": 106,
-      "question": "What is 'Big O notation' used to describe?",
-      "options": ["The amount of memory used", "The upper bound of the time or space complexity of an algorithm as input grows", "The exact time an algorithm takes", "The number of lines of code"],
-      "correctAnswer": 1,
-      "explanation": "Big O notation describes the upper bound (worst case) of an algorithm's time or space complexity as a function of input size n, characterizing algorithm efficiency.",
-      "subject": "Professional Knowledge", "topic": "Algorithms", "difficulty": "medium"
-    },
-    {
-      "id": "23q107", "questionNumber": 107,
-      "question": "Which of the following is a characteristic of object-oriented programming?",
-      "options": ["Sequential execution only", "Inheritance, allowing a class to derive properties from another class", "No use of functions", "Single type of variable"],
-      "correctAnswer": 1,
-      "explanation": "Inheritance is a key OOP principle that allows a class (child) to inherit attributes and methods from another class (parent), promoting code reuse.",
-      "subject": "Professional Knowledge", "topic": "Programming", "difficulty": "easy"
-    },
-    {
-      "id": "23q108", "questionNumber": 108,
-      "question": "What is 'load balancing' in computing?",
-      "options": ["Balancing the weight of servers", "Distributing network or application traffic across multiple servers to ensure no single server is overwhelmed", "Compressing files to reduce load", "Monitoring CPU load"],
-      "correctAnswer": 1,
-      "explanation": "Load balancing distributes incoming requests or processing workloads across multiple servers, preventing any single server from becoming overloaded and improving reliability.",
-      "subject": "Professional Knowledge", "topic": "Web Technologies", "difficulty": "medium"
-    },
-    {
-      "id": "23q109", "questionNumber": 109,
-      "question": "What is ransomware?",
-      "options": ["Software that monitors user activity", "Malware that encrypts a victim's files and demands payment for the decryption key", "A type of antivirus software", "Software used to recover lost files"],
-      "correctAnswer": 1,
-      "explanation": "Ransomware is malicious software that encrypts the victim's files, making them inaccessible, and demands a ransom payment for the decryption key.",
-      "subject": "Professional Knowledge", "topic": "Cyber Security", "difficulty": "easy"
-    },
-    {
-      "id": "23q110", "questionNumber": 110,
-      "question": "In Python, what is a 'dictionary'?",
-      "options": ["A sorted list of words", "A collection of key-value pairs that allows fast lookup by key", "A type of loop", "A string manipulation function"],
-      "correctAnswer": 1,
-      "explanation": "A Python dictionary is an unordered collection of key-value pairs. Keys must be unique and immutable, and values can be any type. It provides O(1) average lookup time.",
-      "subject": "Professional Knowledge", "topic": "Programming", "difficulty": "easy"
-    },
-    {
-      "id": "23q111", "questionNumber": 111,
-      "question": "What is the purpose of 'unit testing' in software development?",
-      "options": ["Testing the entire application at once", "Testing individual units or components of code in isolation to verify they work correctly", "Testing with real users", "Load testing the system"],
-      "correctAnswer": 1,
-      "explanation": "Unit testing tests individual functions, methods, or components of a program in isolation to verify each unit produces the expected output for given inputs.",
-      "subject": "Professional Knowledge", "topic": "Software Engineering", "difficulty": "easy"
-    },
-    {
-      "id": "23q112", "questionNumber": 112,
-      "question": "What is 'REST' in web development?",
-      "options": ["A programming language", "Representational State Transfer — an architectural style for designing web services using HTTP", "A database query language", "A testing framework"],
-      "correctAnswer": 1,
-      "explanation": "REST (Representational State Transfer) is an architectural style for web APIs that uses standard HTTP methods (GET, POST, PUT, DELETE) and is stateless.",
-      "subject": "Professional Knowledge", "topic": "Web Technologies", "difficulty": "medium"
-    },
-    {
-      "id": "23q113", "questionNumber": 113,
-      "question": "What is a 'race condition' in concurrent programming?",
-      "options": ["A competition between two programs", "A situation where program behavior depends on the relative timing of events such as thread execution order", "A fast execution of code", "A type of sorting algorithm"],
-      "correctAnswer": 1,
-      "explanation": "A race condition occurs when multiple threads access shared data simultaneously and the outcome depends on the execution order, leading to unpredictable and incorrect results.",
-      "subject": "Professional Knowledge", "topic": "Operating Systems", "difficulty": "hard"
-    },
-    {
-      "id": "23q114", "questionNumber": 114,
-      "question": "What is the difference between INNER JOIN and LEFT JOIN in SQL?",
-      "options": ["They are identical", "INNER JOIN returns only matching rows; LEFT JOIN returns all rows from the left table and matching rows from the right", "LEFT JOIN returns only matching rows; INNER JOIN returns all rows", "LEFT JOIN is faster than INNER JOIN"],
-      "correctAnswer": 1,
-      "explanation": "INNER JOIN returns only rows with matching values in both tables. LEFT JOIN returns all rows from the left table and matched rows from the right table (NULL for non-matches).",
-      "subject": "Professional Knowledge", "topic": "DBMS", "difficulty": "medium"
-    },
-    {
-      "id": "23q115", "questionNumber": 115,
-      "question": "What is 'subnetting' in networking?",
-      "options": ["Connecting subnets to the internet", "Dividing a large network into smaller sub-networks to improve performance and security", "Assigning MAC addresses", "A type of network cable"],
-      "correctAnswer": 1,
-      "explanation": "Subnetting divides a large IP network into smaller, more manageable subnetworks, improving performance, security, and efficient use of IP address space.",
-      "subject": "Professional Knowledge", "topic": "Computer Networks", "difficulty": "medium"
-    },
-    {
-      "id": "23q116", "questionNumber": 116,
-      "question": "Which of the following best describes 'abstraction' in OOP?",
-      "options": ["Copying properties from another class", "Hiding complex implementation details and showing only the essential features to the user", "Having multiple methods with the same name", "Preventing a class from being subclassed"],
-      "correctAnswer": 1,
-      "explanation": "Abstraction hides complex internal implementation details and exposes only the necessary functionality to the user, simplifying interaction with objects.",
-      "subject": "Professional Knowledge", "topic": "Programming", "difficulty": "medium"
-    },
-    {
-      "id": "23q117", "questionNumber": 117,
-      "question": "What is a 'deadlock' in operating systems?",
-      "options": ["A type of sorting lock", "A situation where two or more processes are stuck waiting for each other to release resources, resulting in none making progress", "A method to lock files", "A fast memory access technique"],
-      "correctAnswer": 1,
-      "explanation": "A deadlock occurs when multiple processes each hold a resource and wait for another resource held by another process, causing all of them to wait indefinitely.",
-      "subject": "Professional Knowledge", "topic": "Operating Systems", "difficulty": "medium"
-    },
-    {
-      "id": "23q118", "questionNumber": 118,
-      "question": "What does 'SSL/TLS' stand for and what is its purpose?",
-      "options": ["Secure Socket Layer/Transport Layer Security — protocols that provide encrypted communication over a network", "Server Software License/Transfer Layer Service — for licensing software", "Static Server Link/Technical Layer Support — for server management", "None of the above"],
-      "correctAnswer": 0,
-      "explanation": "SSL (Secure Sockets Layer) and TLS (Transport Layer Security) are cryptographic protocols that provide secure, encrypted communication between a client and server over a network (used in HTTPS).",
-      "subject": "Professional Knowledge", "topic": "Cyber Security", "difficulty": "medium"
-    },
-    {
-      "id": "23q119", "questionNumber": 119,
-      "question": "In Java, what is the 'garbage collector'?",
-      "options": ["A tool for removing unused code", "An automatic memory management system that identifies and frees memory no longer in use", "A program to delete temporary files", "A way to collect user inputs"],
-      "correctAnswer": 1,
-      "explanation": "Java's garbage collector automatically identifies objects that are no longer referenced and frees the memory they occupy, preventing memory leaks without manual deallocation.",
-      "subject": "Professional Knowledge", "topic": "Programming", "difficulty": "medium"
-    },
-    {
-      "id": "23q120", "questionNumber": 120,
-      "question": "What is the function of a 'router' in a network?",
-      "options": ["To amplify network signals", "To forward data packets between computer networks, determining the best path", "To connect devices in a LAN using cables", "To assign MAC addresses"],
-      "correctAnswer": 1,
-      "explanation": "A router forwards data packets between different networks, using routing tables and protocols to determine the most efficient path for data to travel.",
-      "subject": "Professional Knowledge", "topic": "Computer Networks", "difficulty": "easy"
-    },
-    {
-      "id": "23q121", "questionNumber": 121,
-      "question": "What is 'DevOps'?",
-      "options": ["A programming language", "A set of practices combining software development and IT operations to shorten development cycles", "A type of database", "A network protocol"],
-      "correctAnswer": 1,
-      "explanation": "DevOps is a culture and set of practices that combines software development (Dev) and IT operations (Ops) to shorten the systems development life cycle and deliver high-quality software continuously.",
-      "subject": "Professional Knowledge", "topic": "Software Engineering", "difficulty": "medium"
-    },
-    {
-      "id": "23q122", "questionNumber": 122,
-      "question": "What is an AVL tree?",
-      "options": ["A tree where all leaves are at the same level", "A self-balancing Binary Search Tree where the height difference between left and right subtrees is at most 1", "A tree with no children", "A tree used only for sorting"],
-      "correctAnswer": 1,
-      "explanation": "An AVL tree is a self-balancing BST where the heights of the left and right subtrees of any node differ by at most 1. It ensures O(log n) time for search, insert, and delete.",
-      "subject": "Professional Knowledge", "topic": "Data Structures", "difficulty": "hard"
-    },
-    {
-      "id": "23q123", "questionNumber": 123,
-      "question": "What is the difference between a compiler and an interpreter?",
-      "options": ["A compiler is slower; an interpreter is faster", "A compiler translates the entire source code at once before execution; an interpreter translates and executes line by line", "An interpreter translates the whole program; a compiler translates line by line", "They are identical"],
-      "correctAnswer": 1,
-      "explanation": "A compiler translates the entire program into machine code before execution. An interpreter translates and executes code line by line at runtime. Compiled programs generally run faster.",
-      "subject": "Professional Knowledge", "topic": "Programming", "difficulty": "medium"
-    },
-    {
-      "id": "23q124", "questionNumber": 124,
-      "question": "In software engineering, what is a 'use case'?",
-      "options": ["A test case for unit testing", "A description of how a user interacts with a system to achieve a specific goal", "A case study of software failure", "A coding style guide"],
-      "correctAnswer": 1,
-      "explanation": "A use case describes a specific interaction between a user (actor) and the system, defining the steps to achieve a particular goal. It is used in requirements gathering and system design.",
-      "subject": "Professional Knowledge", "topic": "Software Engineering", "difficulty": "medium"
-    },
-    {
-      "id": "23q125", "questionNumber": 125,
-      "question": "What is 'containerization' in software deployment?",
-      "options": ["Storing data in containers", "Packaging an application and its dependencies into a container that can run consistently across different environments", "A type of database design", "A network topology"],
-      "correctAnswer": 1,
-      "explanation": "Containerization packages an application with all its dependencies, libraries, and configuration files into a container (e.g., Docker), ensuring it runs consistently in any environment.",
-      "subject": "Professional Knowledge", "topic": "Software Engineering", "difficulty": "medium"
+      "subject": "Programming",
+      "topic": "Computer Architecture",
+      "difficulty": "medium"
     }
   ]
 }
